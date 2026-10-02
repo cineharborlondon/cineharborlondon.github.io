@@ -1,50 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cine Harbor London</title>
+  <title>Cine Harbor</title>
 
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    main {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: clamp(48px, 9vw, 120px);
-      font-weight: 400;
-      margin: 0;
-      letter-spacing: -0.05em;
-    }
-
-    p {
-      font-size: 14px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <main>
-    <div>
-      <h1>CINE HARBOR</h1>
-      <p>London · Film & Visual Work</p>
+<header class="header">
+
+  <a href="/" class="logo">
+    CINE HARBOR
+  </a>
+
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <h1>
+      CINE<br>
+      HARBOR
+    </h1>
+
+    <div class="hero-bottom">
+      <p>Film / Video / London</p>
+      <p>Scroll ↓</p>
     </div>
-  </main>
+
+  </section>
+
+
+  <section class="work" id="work">
+
+    <div class="section-title">
+      <p>Selected Work</p>
+    </div>
+
+
+    <div class="projects">
+
+      <article class="project">
+
+        <div class="video-placeholder">
+          VIDEO
+        </div>
+
+        <div class="project-info">
+          <h2>Project One</h2>
+          <p>Commercial / 2026</p>
+        </div>
+
+      </article>
+
+
+      <article class="project">
+
+        <div class="video-placeholder">
+          VIDEO
+        </div>
+
+        <div class="project-info">
+          <h2>Project Two</h2>
+          <p>Film / 2026</p>
+        </div>
+
+      </article>
+
+
+      <article class="project">
+
+        <div class="video-placeholder">
+          VIDEO
+        </div>
+
+        <div class="project-info">
+          <h2>Project Three</h2>
+          <p>Music Video / 2025</p>
+        </div>
+
+      </article>
+
+
+      <article class="project">
+
+        <div class="video-placeholder">
+          VIDEO
+        </div>
+
+        <div class="project-info">
+          <h2>Project Four</h2>
+          <p>Personal / 2025</p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <section class="about" id="about">
+
+    <p class="small-title">About</p>
+
+    <h2>
+      Cine Harbor is a London-based
+      film and visual production studio.
+    </h2>
+
+  </section>
+
+
+  <section class="contact" id="contact">
+
+    <p>Contact</p>
+
+    <a href="mailto:hello@example.com">
+      hello@example.com
+    </a>
+
+  </section>
+
+</main>
 
 </body>
+
 </html>
