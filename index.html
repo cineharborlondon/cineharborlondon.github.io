@@ -1,142 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Cine Harbor</title>
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebe4d6">
+  <meta name="description" content="Cine Harbor — a London-based cinematography portfolio. Films, moving images, and creative collaborations.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Cine Harbor — Cinematography · London</title>
+  <link rel="icon" href="assets/favicon.svg?v=849-175" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=vimeo-social">
+  <script src="script.js?v=vimeo-social" defer></script>
 </head>
+<body id="top">
+  <a class="skip-link" href="#work">Skip to selected work</a>
+  <div class="page-shell work-page">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Cine Harbor, home"><img class="site-logo" src="assets/logo.svg?v=849-175" width="389" height="123" alt="Cine Harbor"></a>
+      <nav aria-label="Main navigation">
+        <a href="#work" aria-current="location">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<body>
+    <main class="work-main" id="work-swipe-area" aria-label="Work — swipe left or right to change category">
+      <section class="work-section" id="work" aria-labelledby="work-heading">
+        <h1 id="work-heading" class="visually-hidden">Work</h1>
+        <div class="section-heading work-heading">
+          <div class="work-tabs" role="tablist" aria-label="Work categories">
+            <button type="button" role="tab" id="tab-films" aria-controls="panel-films" aria-selected="true" tabindex="0">Films</button>
+            <button type="button" role="tab" id="tab-commercials" aria-controls="panel-commercials" aria-selected="false" tabindex="-1">Commercials</button>
+            <button type="button" role="tab" id="tab-photography" aria-controls="panel-photography" aria-selected="false" tabindex="-1">Photography</button>
+            <button type="button" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="false" tabindex="-1">Social Contents</button>
+          </div>
+          <div class="work-controls">
+            <span class="section-index" id="work-count" aria-hidden="true">01 — 02</span>
+            <button type="button" class="preview-toggle" id="toggle-previews" aria-label="Pause previews" aria-pressed="false" title="Pause previews"><span aria-hidden="true">Ⅱ</span></button>
+            <button type="button" class="category-arrow" id="previous-category" aria-label="Previous work category" disabled><span aria-hidden="true">‹</span></button>
+            <button type="button" class="category-arrow" id="next-category" aria-label="Next work category"><span aria-hidden="true">›</span></button>
+          </div>
+        </div>
+        <div class="work-viewport" id="work-viewport" aria-label="Swipe left or right to change work category">
+          <div class="work-track" id="work-track">
+            <div class="work-panel" id="panel-films" role="tabpanel" aria-labelledby="tab-films" tabindex="0"></div>
+            <div class="work-panel" id="panel-commercials" role="tabpanel" aria-labelledby="tab-commercials" tabindex="0" aria-hidden="true" inert></div>
+            <div class="work-panel" id="panel-photography" role="tabpanel" aria-labelledby="tab-photography" tabindex="0" aria-hidden="true" inert></div>
+            <div class="work-panel" id="panel-social" role="tabpanel" aria-labelledby="tab-social" tabindex="0" aria-hidden="true" inert></div>
+          </div>
+        </div>
+        <p class="visually-hidden" id="work-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p>Enable JavaScript to browse work categories and the video player. You can watch the films on <a href="https://www.youtube.com/watch?v=SQthAn3F6oI">YouTube</a>.</p></noscript>
+      </section>
 
-<header class="header">
+    </main>
 
-  <a href="/" class="logo">
-    CINE HARBOR
-  </a>
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Cine Harbor</p>
+      <img class="footer-logo" src="assets/logo.svg?v=849-175" width="389" height="123" alt="" aria-hidden="true">
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
 
-  <nav>
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-</header>
-
-
-<main>
-
-  <section class="hero">
-
-    <h1>
-      CINE<br>
-      HARBOR
-    </h1>
-
-    <div class="hero-bottom">
-      <p>Film / Video / London</p>
-      <p>Scroll ↓</p>
+  <dialog id="video-dialog" aria-labelledby="video-title" aria-describedby="video-credit">
+    <div class="player-panel">
+      <div class="player-header">
+        <div><p class="eyebrow" id="viewer-mode">Now playing</p><h2 id="video-title"></h2></div>
+        <button class="close-button" id="close-video" type="button" autofocus aria-label="Close video">Close <span aria-hidden="true">×</span></button>
+      </div>
+      <div class="video-frame" id="video-frame"></div>
+      <div class="player-footer">
+        <p id="video-credit"></p>
+        <a id="video-link" target="_blank" rel="noopener noreferrer">Open film</a>
+      </div>
+      <p class="player-help" id="player-help">If playback is unavailable here, open the original film.</p>
     </div>
-
-  </section>
-
-
-  <section class="work" id="work">
-
-    <div class="section-title">
-      <p>Selected Work</p>
-    </div>
-
-
-    <div class="projects">
-
-      <article class="project">
-
-        <div class="video-placeholder">
-          VIDEO
-        </div>
-
-        <div class="project-info">
-          <h2>Project One</h2>
-          <p>Commercial / 2026</p>
-        </div>
-
-      </article>
-
-
-      <article class="project">
-
-        <div class="video-placeholder">
-          VIDEO
-        </div>
-
-        <div class="project-info">
-          <h2>Project Two</h2>
-          <p>Film / 2026</p>
-        </div>
-
-      </article>
-
-
-      <article class="project">
-
-        <div class="video-placeholder">
-          VIDEO
-        </div>
-
-        <div class="project-info">
-          <h2>Project Three</h2>
-          <p>Music Video / 2025</p>
-        </div>
-
-      </article>
-
-
-      <article class="project">
-
-        <div class="video-placeholder">
-          VIDEO
-        </div>
-
-        <div class="project-info">
-          <h2>Project Four</h2>
-          <p>Personal / 2025</p>
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <section class="about" id="about">
-
-    <p class="small-title">About</p>
-
-    <h2>
-      Cine Harbor is a London-based
-      film and visual production studio.
-    </h2>
-
-  </section>
-
-
-  <section class="contact" id="contact">
-
-    <p>Contact</p>
-
-    <a href="mailto:hello@example.com">
-      hello@example.com
-    </a>
-
-  </section>
-
-</main>
-
+  </dialog>
 </body>
-
 </html>
