@@ -4,11 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ebe4d6">
-  <meta name="description" content="Cine Harbor — a London-based cinematography portfolio. Films, moving images, and creative collaborations.">
+  <meta name="description" content="Cine Harbor is a London-based creative production studio working across commercial film, social content, branded storytelling, events and photography.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>About — Cine Harbor</title>
   <link rel="icon" href="assets/favicon.svg?v=845" type="image/svg+xml">
   <link rel="stylesheet" href="style.css?v=film-stage-4">
+  <style>
+    /* About-only layout: keep the shared site palette and slogan. */
+    .about-page { max-width: 1360px; margin-inline: auto; }
+    .about-page .about-section {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+      padding: clamp(36px, 4vw, 64px) 0 clamp(64px, 7vw, 112px);
+    }
+    .about-page .about-content {
+      grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+      align-items: start;
+      gap: clamp(36px, 6vw, 96px);
+    }
+    .about-page .statement { line-height: 1.08; }
+    .about-locations {
+      margin-top: 28px;
+      font-family: var(--heading-font);
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: .03em;
+    }
+    .about-page .biography { max-width: 560px; padding-top: 0; font-size: 20px; line-height: 1.6; }
+    .about-page .biography p + p { margin-top: 24px; }
+    .about-page .studio-intro { font-family: var(--heading-font); font-size: 21px; font-weight: 400; line-height: 1.5; }
+    @media (max-width: 760px) {
+      .about-page .about-content { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+      .about-page .statement { font-size: clamp(48px, 10vw, 64px); }
+      .about-locations { margin-top: 20px; }
+      .about-page .biography { max-width: 100%; font-size: 19px; }
+      .about-page .studio-intro { font-size: 20px; }
+    }
+  </style>
   <script src="projects.js?v=film-stage-4" defer></script>
   <script src="script.js?v=film-stage-4" defer></script>
 </head>
@@ -24,14 +56,19 @@
       </nav>
     </header>
 
-    <main class="info-page">
+    <main class="info-page about-page">
       <section class="about-section text-section" id="about" aria-labelledby="about-heading">
         <h1 id="about-heading" class="eyebrow">About</h1>
         <div class="about-content">
-          <p class="statement">A feeling.<br>A frame.<br>A story.</p>
+          <div class="about-identity">
+            <p class="statement">A feeling.<br>A frame.<br>A story.</p>
+            <p class="about-locations">London · Europe · US</p>
+          </div>
           <div class="biography">
-            <p id="about-copy">Cine Harbor is a London-based cinematography portfolio, with a focus on light, atmosphere, and the moments that make a story feel human.</p>
-            <p class="muted">For films, moving images,<br>and creative collaborations.</p>
+            <!-- Keep the full studio introduction here; it is not replaced by the legacy JS short bio. -->
+            <p class="studio-intro">Cine Harbor is a London-based creative production studio working across commercial film, social content, branded storytelling, events and photography.</p>
+            <p>From fast-moving social campaigns and live coverage to cinematic brand films and narrative-led productions, we build flexible teams around each brief — combining creative development, production and post-production in one streamlined workflow.</p>
+            <p>Our work spans brands, agencies, cultural organisations and public figures across the UK, Europe and the US.</p>
           </div>
         </div>
       </section>
