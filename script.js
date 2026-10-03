@@ -9,104 +9,7 @@ const site = {
   about: 'Cine Harbor is a London-based cinematography portfolio, with a focus on light, atmosphere, and the moments that make a story feel human.',
 };
 
-// collection: films / commercials / photography / social；kind: video / photo。
-// 照片填写 cover，可选 full 图片原图路径，无需 youtube。
-// 以下为用户提供的作品链接，按用户指定分类展示。
-// credit 暂留空，待提供真实职务/团队后补充。
-// youtube 填 11 位视频 ID；cover 留空自动使用 YouTube 封面，
-// 或填写本地相对路径，例如 assets/my-film.jpg。
-// Vimeo 项目改填 vimeo 数字 ID，并提供 cover；aspectRatio 可指定竖屏比例。
-// previewStart 指定静音预览起点（秒）；previewScale 调整首页裁切倍率。
-const projects = [
-  {
-    "collection": "films",
-    "kind": "video",
-    "title": "How to Stay Chic and Warm in London",
-    "youtube": "SQthAn3F6oI",
-    "previewStart": 8,
-    "previewScale": 1.2,
-    "cover": "",
-    "credit": "",
-    "sample": false
-  },
-  {
-    "collection": "films",
-    "kind": "video",
-    "title": "The Polyphony of Life",
-    "youtube": "KQa5HaSCOWg",
-    "previewStart": 8,
-    "previewScale": 1.2,
-    "cover": "",
-    "credit": "",
-    "sample": false
-  },
-  {
-    "collection": "commercials",
-    "kind": "video",
-    "title": "Realme x Adam Valdez TVC",
-    "youtube": "YpQjEYLskJM",
-    "previewStart": 8,
-    "previewScale": 1.2,
-    "cover": "",
-    "credit": "",
-    "sample": false
-  },
-  {
-    "collection": "commercials",
-    "kind": "video",
-    "title": "Navimow Circle | A Lawn to Come Home to",
-    "youtube": "BeA_n14lwOI",
-    "previewStart": 13,
-    "previewScale": 1.2,
-    "cover": "",
-    "credit": "",
-    "sample": false
-  },
-  {
-    "collection": "commercials",
-    "kind": "video",
-    "title": "Experience the Magic: Transform Your Photos with AI | realme 13 Pro Series",
-    "youtube": "FpO699gSHzc",
-    "previewStart": 8,
-    "previewScale": 1.2,
-    "cover": "",
-    "credit": "",
-    "sample": false
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "Qin Wen × IFA CEO Leif Lindner Interview in IFA 2026",
-    "youtube": "mudYbXa8Yy4",
-    "previewStart": 8,
-    "previewScale": 1.2,
-    "cover": "",
-    "credit": "",
-    "sample": false
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "Starry Mart London Dock Grand Opening 2025",
-    "youtube": "h0nhiedkHGQ",
-    "previewStart": 8,
-    "previewScale": 1.2,
-    "cover": "",
-    "credit": "",
-    "sample": false
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "W Magazine China Music Showroom: Summer 26 Playlist",
-    "vimeo": "1221238820",
-    "aspectRatio": 0.75,
-    "previewStart": 8,
-    "cover": "assets/w-magazine-summer-26.jpg",
-    "credit": "",
-    "sample": false
-  }
-];
+
 
 const aboutCopy = document.querySelector('#about-copy');
 if (aboutCopy) aboutCopy.textContent = site.about;
@@ -138,14 +41,10 @@ function initPortfolio() {
   const panels = [...track.querySelectorAll('[role="tabpanel"]')];
   const previous = document.querySelector('#previous-category');
   const next = document.querySelector('#next-category');
-  const dialog = document.querySelector('#video-dialog');
-  const frame = document.querySelector('#video-frame');
-  const closeButton = document.querySelector('#close-video');
   let activeIndex = 0;
-  let opener = null;
   let gesture = null;
   let suppressClickUntil = 0;
-  const previews = createPreviews(dialog);
+  const previews = createPreviews();
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -154,73 +53,17 @@ function initPortfolio() {
     return node;
   }
 
-  function openProject(project, trigger) {
-    const isPhoto = project.kind === 'photo';
-    const isVimeo = /^\d+$/.test(project.vimeo || '');
-    const provider = isVimeo ? 'Vimeo' : 'YouTube';
-    if (!isPhoto && !isVimeo && !/^[a-zA-Z0-9_-]{11}$/.test(project.youtube || '')) return;
-    const externalUrl = isPhoto ? (project.full || project.cover) : isVimeo ? `https://vimeo.com/${project.vimeo}` : `https://www.youtube.com/watch?v=${project.youtube}`;
-    if (!externalUrl) return;
-    if (typeof dialog.showModal !== 'function') {
-      window.location.assign(externalUrl);
-      return;
-    }
-    opener = trigger;
-    document.querySelector('#video-title').textContent = project.title;
-    document.querySelector('#video-credit').textContent = `${project.sample ? (isPhoto ? 'Sample photograph · ' : 'Sample film · ') : ''}${project.credit || ''}`;
-    document.querySelector('#viewer-mode').textContent = isPhoto ? 'Now viewing' : 'Now playing';
-    const playerHelp = document.querySelector('#player-help');
-    playerHelp.hidden = isPhoto;
-    playerHelp.textContent = `If playback is unavailable here, open the film on ${provider}.`;
-    closeButton.setAttribute('aria-label', isPhoto ? 'Close photograph' : 'Close video');
-    const externalLink = document.querySelector('#video-link');
-    externalLink.href = externalUrl;
-    externalLink.textContent = isPhoto ? 'Open full image' : `Watch on ${provider}`;
-    frame.classList.toggle('is-photo', isPhoto);
-    const aspectRatio = Number(project.aspectRatio) || 16 / 9;
-    frame.classList.toggle('is-portrait', !isPhoto && aspectRatio < 1);
-    frame.style.setProperty('--video-ratio', String(aspectRatio));
-    if (isPhoto) {
-      const image = document.createElement('img');
-      image.src = externalUrl;
-      image.alt = project.alt || project.title;
-      frame.replaceChildren(image);
-    } else {
-      const iframe = document.createElement('iframe');
-      iframe.title = `${project.title} — ${provider} video player`;
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen';
-      iframe.allowFullscreen = true;
-      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-      if (isVimeo) {
-        // Vimeo 的去品牌参数是否生效取决于上传账户的套餐；免费片源无法保证无 Logo。
-        const params = new URLSearchParams({ autoplay: '1', playsinline: '1', title: '0', byline: '0', portrait: '0', badge: '0', vimeo_logo: '0', dnt: '1' });
-        iframe.src = `https://player.vimeo.com/video/${project.vimeo}?${params}`;
-      } else {
-        // YouTube 已废弃 modestbranding，不使用遮罩或裁切伪装去标。
-        const params = new URLSearchParams({ autoplay: '1', playsinline: '1', rel: '0' });
-        if (/^https?:$/.test(window.location.protocol)) params.set('origin', window.location.origin);
-        iframe.src = `https://www.youtube-nocookie.com/embed/${project.youtube}?${params}`;
-      }
-      frame.replaceChildren(iframe);
-    }
-    document.body.classList.add('modal-open');
-    dialog.showModal();
-    previews.refresh();
-    closeButton.focus();
-  }
-
   function projectCard(project, index) {
     const isPhoto = project.kind === 'photo';
     const article = element('article', 'project');
-    const button = element('button', 'project-button');
-    button.type = 'button';
-    button.setAttribute('aria-label', `${isPhoto ? 'View' : 'Play'} ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);
-    button.setAttribute('aria-haspopup', 'dialog');
+    const button = element('a', 'project-button');
+    button.href = project.url;
+    button.setAttribute('aria-label', `View ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);
     const visual = element('span', 'project-image');
     visual.classList.toggle('portrait-source', Number(project.aspectRatio) > 0 && Number(project.aspectRatio) < 1);
     const fallback = element('span', 'image-fallback', project.title);
     fallback.setAttribute('aria-hidden', 'true');
-    fallback.append(element('small', '', isPhoto ? 'View photograph' : 'Watch film'));
+    fallback.append(element('small', '', isPhoto ? 'View photographs' : 'View project'));
     const img = document.createElement('img');
     img.alt = '';
     img.width = 1280;
@@ -238,13 +81,12 @@ function initPortfolio() {
     img.addEventListener('load', () => { if (!isPhoto && img.naturalWidth < 200) nextCover(); });
     if (covers.length) img.src = covers[0];
     else img.hidden = true;
-    visual.append(fallback, img, element('span', isPhoto ? 'play-label photo-label' : 'play-label', isPhoto ? 'View photograph' : 'Watch film'));
+    visual.append(fallback, img, element('span', isPhoto ? 'play-label photo-label' : 'play-label', isPhoto ? 'View photographs' : 'View project'));
     const caption = element('span', 'project-caption');
     const title = element('span', 'project-title', project.title);
     title.title = project.title;
     caption.append(title);
     button.append(visual, caption);
-    button.addEventListener('click', () => openProject(project, button));
     article.append(button);
     if (!isPhoto && (project.youtube || project.vimeo) && site.platformPreviews) previews.add(visual, project);
     return article;
@@ -275,6 +117,7 @@ function initPortfolio() {
     index = Math.max(0, Math.min(categories.length - 1, index));
     const focusWasInPanel = index !== activeIndex && panels[activeIndex].contains(document.activeElement);
     activeIndex = index;
+    history.replaceState(null, '', '#' + categories[index].id);
     tabs.forEach((tab, i) => {
       tab.setAttribute('aria-selected', String(i === index));
       tab.tabIndex = i === index ? 0 : -1;
@@ -321,7 +164,7 @@ function initPortfolio() {
   // 整个 Work 主区域响应手势，包括分类栏、作品及两侧和下方空白。
   // 触屏滑动和鼠标拖动共用 Pointer Events；纵向滚动由浏览器处理。
   swipeArea.addEventListener('pointerdown', event => {
-    if (!event.isPrimary || event.button !== 0 || dialog.open) return;
+    if (!event.isPrimary || event.button !== 0) return;
     gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, dx: 0, dragging: false };
   });
   swipeArea.addEventListener('pointermove', event => {
@@ -365,7 +208,7 @@ function initPortfolio() {
   let lastWheelAt = 0;
   let wheelLocked = false;
   swipeArea.addEventListener('wheel', event => {
-    if (event.ctrlKey || dialog.open) return;
+    if (event.ctrlKey) return;
     const dx = event.shiftKey && !event.deltaX ? event.deltaY : event.deltaX;
     if (!dx || (!event.shiftKey && Math.abs(dx) <= Math.abs(event.deltaY))) return;
     event.preventDefault();
@@ -380,29 +223,20 @@ function initPortfolio() {
     }
   }, { passive: false });
 
-  closeButton.addEventListener('click', () => dialog.close());
-  let backdropPointerDown = false;
-  dialog.addEventListener('pointerdown', event => { backdropPointerDown = event.target === dialog; });
-  dialog.addEventListener('click', event => {
-    if (event.target === dialog && backdropPointerDown) dialog.close();
-    backdropPointerDown = false;
-  });
-  dialog.addEventListener('close', () => {
-    frame.replaceChildren();
-    document.body.classList.remove('modal-open');
-    opener?.focus({ preventScroll: true });
-    previews.refresh();
-  });
-
   if ('ResizeObserver' in window) {
     const observer = new ResizeObserver(fitHeight);
     panels.forEach(panel => observer.observe(panel));
   } else window.addEventListener('resize', fitHeight);
-  setCategory(0, false, false);
+  const initialCategory = categories.findIndex(category => '#' + category.id === location.hash);
+  setCategory(Math.max(0, initialCategory), false, false);
+  window.addEventListener('hashchange', () => {
+    const index = categories.findIndex(category => '#' + category.id === location.hash);
+    if (index >= 0) setCategory(index, false, false);
+  });
 }
 
-// 首页只加载进入视野的静音短预览；完整影片仍由点击后的独立弹层播放。
-function createPreviews(dialog) {
+// 首页只加载进入视野的静音短预览；完整影片在项目详情页播放。
+function createPreviews() {
   const toggle = document.querySelector('#toggle-previews');
   toggle.hidden = !site.platformPreviews;
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -515,7 +349,7 @@ function createPreviews(dialog) {
   }
 
   function shouldPlay(entry) {
-    return enabled && entry.visible && !entry.failed && !document.hidden && !dialog.open &&
+    return enabled && entry.visible && !entry.failed && !document.hidden &&
       !entry.visual.closest('[inert]') && entry.visual.clientWidth >= 200 && entry.visual.clientHeight >= 200;
   }
 
