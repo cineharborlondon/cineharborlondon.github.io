@@ -152,8 +152,6 @@ dialog::backdrop { background: #101110; }
 .work-tabs button { position: relative; flex-shrink: 0; border: 0; background: transparent; padding: 9px 12px; font-size: 13px; line-height: 1.5; letter-spacing: .055em; text-transform: uppercase; color: var(--muted); cursor: pointer; transition: background-color .2s, color .2s; }
 .work-tabs button:hover, .work-tabs button[aria-selected="true"] { color: var(--ink); }
 .work-tabs button[aria-selected="true"] { color: var(--ink); }
-.work-tabs button::after { content: ''; position: absolute; inset: 1px -2px; background: currentColor; mask: url("/assets/selection-circle.svg") center / 100% 100% no-repeat; -webkit-mask: url("/assets/selection-circle.svg") center / 100% 100% no-repeat; opacity: 0; pointer-events: none; transform: rotate(-2deg); }
-.work-tabs button[aria-selected="true"]::after { opacity: 1; }
 .work-controls { display: flex; align-items: center; flex-shrink: 0; gap: 6px; }
 .work-controls .section-index { margin-right: 12px; white-space: nowrap; }
 .preview-toggle { display: grid; place-content: center; width: 36px; height: 36px; margin-right: 6px; padding: 0; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 50%; font-size: 15px; cursor: pointer; }
@@ -255,4 +253,58 @@ h1, h2, h3, .project-title, .statement, .contact-title, .work-tabs, .eyebrow, na
 .biography, .project-description, .project-category, .project-facts, .contact-details { font-weight: 500; }
 @media (max-width: 600px) {
   .project-title-row { flex-wrap: wrap; gap: 12px; }
+}
+
+/* A full-width celluloid stage with the original parchment header and footer. */
+.work-main {
+  --ink: #eee4cf;
+  --muted: #b9aa92;
+  --accent: #d2b88c;
+  --line: rgb(210 184 140 / 22%);
+  --highlight: rgb(210 184 140 / 10%);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #20211f;
+  color: var(--ink);
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+.work-main .work-section { position: relative; z-index: 1; }
+.work-main .section-heading { border-top: 0; padding-top: 16px; padding-bottom: 26px; }
+.work-main .work-tabs button { color: var(--muted); font-weight: 400; }
+.work-main .work-tabs button[aria-selected="true"] { color: #eee4cf; font-weight: 600; }
+.work-main .work-tabs button:hover { color: var(--accent); }
+.work-main .project-title { font-family: var(--heading-font); color: #eee4cf; }
+.film-atmosphere { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+.film-glow {
+  position: absolute;
+  inset: -60px;
+  opacity: .68;
+  background:
+    radial-gradient(ellipse 35% 38% at 0% 100%, rgb(204 119 42 / 50%), transparent 78%),
+    radial-gradient(ellipse 28% 32% at 100% 0%, rgb(191 148 74 / 32%), transparent 80%);
+  animation: film-halation 16s ease-in-out infinite alternate;
+}
+.film-rail {
+  position: absolute;
+  left: -152px;
+  right: -152px;
+  height: 24px;
+  opacity: .7;
+  background: url('/assets/film-perforation.svg') 0 center / 38px 24px repeat-x;
+}
+.film-rail-top { top: 5px; }
+.film-rail-bottom { bottom: 5px; }
+@keyframes film-halation {
+  from { transform: translate(-10px, 4px) scale(1); filter: brightness(.88); }
+  to { transform: translate(18px, -8px) scale(1.06); filter: brightness(1.14); }
+}
+@media (max-width: 640px) {
+  .work-main { padding-top: 28px; padding-bottom: 28px; }
+  .work-main .section-heading { padding-bottom: 18px; }
+  .film-glow { background-size: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .film-glow { animation: none; }
 }

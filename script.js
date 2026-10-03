@@ -41,6 +41,27 @@ function initPortfolio() {
   const panels = [...track.querySelectorAll('[role="tabpanel"]')];
   const previous = document.querySelector('#previous-category');
   const next = document.querySelector('#next-category');
+  const filmMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const filmRails = [...swipeArea.querySelectorAll('.film-rail')];
+  const filmGlow = swipeArea.querySelector('.film-glow');
+
+  function moveFilm(direction) {
+    if (!direction || filmMotion.matches) return;
+    filmRails.forEach(rail => {
+      rail.getAnimations().forEach(animation => animation.cancel());
+      rail.animate([
+        { transform: 'translateX(0)' },
+        { transform: `translateX(${-direction * 114}px)` },
+      ], { duration: 900, easing: 'cubic-bezier(.22,.7,.28,1)' });
+    });
+    if (filmGlow) {
+      // Keep the ambient drift; replace only the previous switch pulse.
+      filmGlow.getAnimations().filter(animation => animation.id === 'film-switch').forEach(animation => animation.cancel());
+      const pulse = filmGlow.animate([{ opacity: .68 }, { opacity: .95, offset: .4 }, { opacity: .68 }], { duration: 1300, easing: 'ease-in-out' });
+      pulse.id = 'film-switch';
+    }
+  }
+
   let activeIndex = 0;
   let gesture = null;
   let suppressClickUntil = 0;
@@ -116,7 +137,9 @@ function initPortfolio() {
   function setCategory(index, focusTab = false, announce = true) {
     index = Math.max(0, Math.min(categories.length - 1, index));
     const focusWasInPanel = index !== activeIndex && panels[activeIndex].contains(document.activeElement);
+    const direction = Math.sign(index - activeIndex);
     activeIndex = index;
+    if (announce) moveFilm(direction);
     history.replaceState(null, '', '#' + categories[index].id);
     tabs.forEach((tab, i) => {
       tab.setAttribute('aria-selected', String(i === index));

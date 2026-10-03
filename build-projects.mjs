@@ -7,7 +7,7 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 const projects = JSON.parse(readFileSync(path.join(root, 'projects-data.json'), 'utf8'));
 const labels = { films: 'Films', commercials: 'Commercials', photography: 'Photography', social: 'Social Contents' };
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const version = 'brown-circle-3';
+const version = 'film-stage-4';
 writeFileSync(path.join(root, 'projects.js'), '// Generated from projects-data.json by build-projects.mjs.\nconst projects = ' + JSON.stringify(projects, null, 2) + ';\n');
 
 function photo(image, index, hero = false) {
