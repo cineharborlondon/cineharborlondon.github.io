@@ -7,7 +7,7 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 const projects = JSON.parse(readFileSync(path.join(root, 'projects-data.json'), 'utf8'));
 const labels = { films: 'Films', commercials: 'Commercials', photography: 'Photography', social: 'Social Contents' };
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const version = 'project-pages-1';
+const version = 'brown-josefin-2';
 writeFileSync(path.join(root, 'projects.js'), '// Generated from projects-data.json by build-projects.mjs.\nconst projects = ' + JSON.stringify(projects, null, 2) + ';\n');
 
 function photo(image, index, hero = false) {
@@ -39,7 +39,7 @@ for (const project of projects) {
 <body id="top"><a class="skip-link" href="#project">Skip to project</a><div class="page-shell detail-page">
 <header class="site-header"><a class="wordmark" href="${back}" aria-label="Cine Harbor, work"><img class="site-logo" src="/assets/logo.svg?v=849-175" width="389" height="123" alt="Cine Harbor"></a><nav aria-label="Main navigation"><a href="${back}" aria-current="location">Work</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></header>
 <main id="project"><div class="detail-breadcrumb"><a href="${back}">${label}</a><span>${esc(project.title)}</span></div>${hero}
-<section class="project-information" aria-labelledby="project-title"><div><h1 id="project-title">${esc(project.title)}</h1><p class="project-category">${label}${project.year ? ' · ' + esc(project.year) : ''}</p></div>${description}<div class="project-facts">${project.location ? `<p>${esc(project.location)}</p>` : ''}${credits}${!isPhoto ? `<a class="original-film" href="${external}" target="_blank" rel="noopener noreferrer">Watch on ${provider}</a>` : `<p>${images.length} photographs</p>`}</div></section>
+<section class="project-information" aria-labelledby="project-title"><div class="project-heading"><h1 id="project-title">${esc(project.title)}</h1><p class="project-category">${label}${project.year ? ' · ' + esc(project.year) : ''}</p></div>${description}<div class="project-facts">${project.location ? `<p>${esc(project.location)}</p>` : ''}${credits}${!isPhoto ? `<a class="original-film" href="${external}" target="_blank" rel="noopener noreferrer">Watch on ${provider}</a>` : `<p>${images.length} photographs</p>`}</div></section>
 ${gallery}<nav class="project-pagination" aria-label="Project navigation"><a href="${back}">Back to ${label}</a>${next ? `<a href="${esc(next.url)}"><span>Next project</span><strong>${esc(next.title)}</strong></a>` : ''}</nav></main>
 <footer class="site-footer"><p>© ${new Date().getFullYear()} Cine Harbor</p><img class="footer-logo" src="/assets/logo.svg?v=849-175" width="389" height="123" alt="" aria-hidden="true"><a href="#top">Back to top</a></footer></div>${lightbox}</body></html>\n`;
   writeFileSync(path.join(root, project.url.slice(1)), html);
