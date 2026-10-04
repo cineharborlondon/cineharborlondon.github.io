@@ -1,0 +1,18 @@
+/* An atmospheric, full-screen backdrop behind About. */
+.about-video-page { --ink: #eee4cf; --body-ink: #eee4cf; --muted: #d0c1ab; --accent: #e6c492; --line: rgb(238 228 207 / 23%); --highlight: rgb(238 228 207 / 12%); background: #20211f; color: var(--ink); }
+.about-video-backdrop { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; background: #20211f url('https://i.vimeocdn.com/video/2208338103-2c9090d48f2d077ef6ed65f65dcd3cf96dbd5ac46d50d181b43ebb5222d9bd6c-d_295x166?region=us') center / cover no-repeat; }
+.about-video-backdrop iframe { position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; min-width: 221.875vh; min-height: 45.071vw; transform: translate(-50%, -50%); border: 0; opacity: 0; transition: opacity 1s; }
+.about-video-page.background-ready .about-video-backdrop iframe { opacity: 1; }
+.about-video-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgb(12 14 13 / 66%), rgb(12 14 13 / 38%) 55%, rgb(12 14 13 / 48%)); }
+.about-video-page .page-shell { position: relative; z-index: 1; }
+.about-video-page .site-logo { filter: brightness(0) invert(1) sepia(.18); }
+.about-video-page .about-page { border-top: 0; }
+.about-video-page .about-section { margin-top: 0; }
+.about-video-page .about-content { text-shadow: 0 1px 12px rgb(0 0 0 / 22%); }
+.about-video-page .skip-link { background: #20211f; }
+.about-video-page .page-return { justify-content: space-between; align-items: center; gap: 20px; }
+#about-background-toggle { min-height: 44px; padding: 8px 0; background: transparent; border: 0; color: var(--muted); font-family: var(--heading-font); font-size: 12px; cursor: pointer; }
+#about-background-toggle:hover { color: var(--ink); }
+.about-video-page .page-return a:only-child { margin-left: auto; }
+@media (max-width: 760px) { .about-video-shade { background: rgb(12 14 13 / 60%); } .about-video-page .about-content { gap: 34px; } .about-video-page .about-page { padding: 38px 0 48px; } }
+@media (prefers-reduced-motion: reduce) { .about-video-backdrop iframe { transition: none; } }
