@@ -468,7 +468,15 @@ function createPreviews() {
     toggle.setAttribute('aria-pressed', String(!enabled));
     toggle.setAttribute('aria-label', enabled ? 'Pause previews' : 'Play previews');
     toggle.title = enabled ? 'Pause previews' : 'Play previews';
-    toggle.querySelector('span').textContent = enabled ? 'Ⅱ' : '▷';
+    toggle.querySelector('span').innerHTML = enabled
+      ? '<svg viewBox="0 0 24 24" class="preview-icon"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>'
+      : '<svg viewBox="0 0 24 24" class="preview-icon"><path d="M7 4.5a.8.8 0 0 1 1.2-.7l12 7.5a.8.8 0 0 1 0 1.4l-12 7.5a.8.8 0 0 1-1.2-.7Z"/></svg>';
+    document.querySelector('#work-swipe-area').classList.toggle('previews-paused', !enabled);
+    if (!enabled) entries.forEach(entry => {
+      clearTimeout(entry.revealTimer);
+      entry.visual.classList.remove('preview-ready');
+      entry.visual.dataset.previewState = 'paused';
+    });
   }
   toggle.addEventListener('click', () => {
     enabled = !enabled;
