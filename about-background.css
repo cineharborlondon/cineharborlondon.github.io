@@ -1,6 +1,6 @@
 /* An atmospheric, full-screen backdrop behind About. */
 .about-video-page { --ink: #eee4cf; --body-ink: #eee4cf; --muted: #d0c1ab; --accent: #e6c492; --line: rgb(238 228 207 / 23%); --highlight: rgb(238 228 207 / 12%); background: #20211f; color: var(--ink); }
-.about-video-backdrop { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; background: #20211f url('https://i.vimeocdn.com/video/2208338103-2c9090d48f2d077ef6ed65f65dcd3cf96dbd5ac46d50d181b43ebb5222d9bd6c-d_295x166?region=us') center / cover no-repeat; }
+.about-video-backdrop { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; background: #20211f url('https://i.vimeocdn.com/video/2208338103-2c9090d48f2d077ef6ed65f65dcd3cf96dbd5ac46d50d181b43ebb5222d9bd6c-d_1280?region=us') center / cover no-repeat; }
 .about-video-backdrop iframe { position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; min-width: 221.875vh; min-height: 45.071vw; transform: translate(-50%, -50%); border: 0; opacity: 0; transition: opacity 1s; }
 .about-video-page.background-ready .about-video-backdrop iframe { opacity: 1; }
 .about-video-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgb(12 14 13 / 66%), rgb(12 14 13 / 38%) 55%, rgb(12 14 13 / 48%)); }
