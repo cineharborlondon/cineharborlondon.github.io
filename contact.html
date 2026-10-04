@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ebe4d6">
-  <meta name="description" content="Cine Harbor — a London-based cinematography portfolio. Films, moving images, and creative collaborations.">
+  <meta name="description" content="Start a conversation with Cine Harbor about commercials, films, photography or an idea you would like to develop.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Contact — Cine Harbor</title>
   <link rel="icon" href="assets/favicon.svg?v=845" type="image/svg+xml">
   <link rel="stylesheet" href="style.css?v=film-stage-4">
-  <script src="projects.js?v=film-stage-4" defer></script>
-  <script src="script.js?v=film-stage-4" defer></script>
+  <link rel="stylesheet" href="contact.css?v=conversation-6">
+  <script src="contact.js?v=conversation-6" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#contact">Skip to contact</a>
@@ -24,19 +24,62 @@
       </nav>
     </header>
 
-    <main class="info-page">
-      <section class="contact-section text-section" id="contact" aria-labelledby="contact-heading">
-        <h1 id="contact-heading" class="eyebrow">Contact</h1>
-        <div class="contact-content">
-          <p class="contact-title">Let’s make something<br>worth watching.</p>
-          <div class="contact-details">
-            <p class="eyebrow">Project enquiries</p>
-            <a id="email-link" class="email-link" hidden></a>
-            <p id="contact-placeholder" class="muted">Contact details coming soon.</p>
-            <p class="location">Based in London, UK</p>
-          </div>
-        </div>
-      </section>
+    <main class="info-page contact-page" id="contact">
+      <div class="enquiry-layout">
+        <section class="enquiry-intro" aria-labelledby="contact-heading">
+          <h1 id="contact-heading">Every project<br>starts with a<br>conversation.</h1>
+          <p class="enquiry-invitation">An idea, a question, or something you’re still figuring out. We’re happy to help.</p>
+          <dl class="enquiry-contacts">
+            <div><dt>Email</dt><dd><a href="mailto:info@cineharbor.space">info@cineharbor.space</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/LSCNM/" target="_blank" rel="noopener noreferrer">@LSCNM</a></dd></div>
+            <div><dt>WeChat</dt><dd><button class="contact-handle" type="button" data-copy-value="LScnm_" aria-label="Copy WeChat ID LScnm_">LScnm_</button><button class="contact-handle" type="button" data-copy-value="weiheng709823079" aria-label="Copy WeChat ID weiheng709823079">weiheng709823079</button></dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/447547141427" target="_blank" rel="noopener noreferrer">+44 7547 141427</a></dd></div>
+          </dl>
+          <p id="contact-copy-status" class="contact-feedback" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="enquiry-panel" aria-labelledby="enquiry-heading">
+          <h2 id="enquiry-heading">What do you have in mind?</h2>
+          <p class="enquiry-help">A few words are enough. We’ll work out the details together.</p>
+          <form id="enquiry-form">
+            <fieldset class="project-choice">
+              <legend>I’m looking for…</legend>
+              <div class="choice-options">
+                <label><input type="radio" name="projectType" value="Commercials"><span>Commercials</span></label>
+                <label><input type="radio" name="projectType" value="Films &amp; Shorts"><span>Films &amp; Shorts</span></label>
+                <label><input type="radio" name="projectType" value="Photography"><span>Photography</span></label>
+                <label><input type="radio" name="projectType" value="Let’s discuss" checked><span>Let’s discuss</span></label>
+              </div>
+            </fieldset>
+            <label class="enquiry-field" for="project-idea"><span>Tell us a little about it</span><textarea id="project-idea" name="idea" rows="4" maxlength="3000" required placeholder="For example: a campaign for your brand, a short film, event photography, or an idea you’d like to explore."></textarea></label>
+            <div class="enquiry-fields-two">
+              <label class="enquiry-field" for="client-name"><span>Your name</span><input id="client-name" name="name" autocomplete="name" maxlength="120" required></label>
+              <label class="enquiry-field" for="client-email"><span>Email</span><input id="client-email" name="email" type="email" autocomplete="email" maxlength="254" required></label>
+            </div>
+            <details class="enquiry-optional">
+              <summary>A few more details <span>(optional)</span></summary>
+              <div class="optional-fields">
+                <label class="enquiry-field" for="project-dates"><span>Dates</span><input id="project-dates" name="dates" maxlength="150" placeholder="If you have dates in mind"></label>
+                <label class="enquiry-field" for="project-location"><span>Location</span><input id="project-location" name="location" maxlength="150" placeholder="Where you’d like to shoot"></label>
+                <label class="enquiry-field" for="project-budget"><span>Budget</span><span class="budget-input"><span class="currency" aria-hidden="true">£</span><input id="project-budget" name="budget" maxlength="100" placeholder="A rough idea is fine" aria-label="Budget in pounds"></span></label>
+              </div>
+            </details>
+            <button class="enquiry-primary" type="submit">Prepare my email</button>
+            <p class="enquiry-note">You can review and edit it before sending.</p>
+          </form>
+
+          <section id="email-draft-panel" class="email-draft-panel" aria-labelledby="draft-heading" hidden>
+            <h3 id="draft-heading" tabindex="-1">Your email draft</h3>
+            <p class="draft-recipient">To: info@cineharbor.space</p>
+            <label class="enquiry-field" for="draft-subject"><span>Subject</span><input id="draft-subject" maxlength="200"></label>
+            <label class="enquiry-field" for="draft-body"><span>Message <span class="field-hint">· editable</span></span><textarea id="draft-body" rows="10" maxlength="6000"></textarea></label>
+            <div class="draft-actions"><a class="enquiry-primary" id="open-email" href="mailto:info@cineharbor.space">Open email app</a><button class="enquiry-secondary" id="copy-draft" type="button">Copy draft</button></div>
+            <p id="draft-status" class="contact-feedback" role="status" aria-live="polite"></p>
+            <p class="enquiry-note">This opens a draft in your email app. You send it when you’re ready.</p>
+          </section>
+          <noscript><p class="enquiry-note">To discuss your project, email <a href="mailto:info@cineharbor.space">info@cineharbor.space</a>.</p></noscript>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
