@@ -187,7 +187,7 @@ function initPortfolio() {
   // 整个 Work 主区域响应手势，包括分类栏、作品及两侧和下方空白。
   // 触屏滑动和鼠标拖动共用 Pointer Events；纵向滚动由浏览器处理。
   swipeArea.addEventListener('pointerdown', event => {
-    if (!event.isPrimary || event.button !== 0) return;
+    if (event.pointerType === 'touch' || !event.isPrimary || event.button !== 0) return;
     gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, dx: 0, dragging: false };
   });
   swipeArea.addEventListener('pointermove', event => {
@@ -225,6 +225,46 @@ function initPortfolio() {
   swipeArea.addEventListener('click', event => {
     if (performance.now() < suppressClickUntil) { event.preventDefault(); event.stopImmediatePropagation(); }
   }, true);
+
+  // Touch Events keep phone swipes independent of Pointer Events capture support.
+  let touchGesture = null;
+  swipeArea.addEventListener('touchstart', event => {
+    if (event.touches.length !== 1) { touchGesture = null; return; }
+    const touch = event.touches[0];
+    touchGesture = { id: touch.identifier, x: touch.clientX, y: touch.clientY, dx: 0, dragging: false };
+  }, { passive: true });
+  swipeArea.addEventListener('touchmove', event => {
+    if (!touchGesture) return;
+    if (event.touches.length !== 1) { finishTouch(true); return; }
+    const touch = [...event.touches].find(item => item.identifier === touchGesture.id);
+    if (!touch) return;
+    const dx = touch.clientX - touchGesture.x;
+    const dy = touch.clientY - touchGesture.y;
+    if (!touchGesture.dragging) {
+      if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) { touchGesture = null; return; }
+      if (Math.abs(dx) < 10 || Math.abs(dx) < Math.abs(dy) * 1.15) return;
+      touchGesture.dragging = true;
+      swipeArea.classList.add('is-dragging');
+    }
+    touchGesture.dx = dx;
+    if (event.cancelable) event.preventDefault();
+    const atEdge = (activeIndex === 0 && dx > 0) || (activeIndex === categories.length - 1 && dx < 0);
+    track.style.transform = `translateX(calc(-${activeIndex * 100}% + ${atEdge ? dx * .18 : dx}px))`;
+  }, { passive: false });
+  function finishTouch(cancelled = false) {
+    if (!touchGesture) return;
+    const { dragging, dx } = touchGesture;
+    touchGesture = null;
+    swipeArea.classList.remove('is-dragging');
+    if (!dragging) return;
+    suppressClickUntil = performance.now() + 350;
+    const direction = !cancelled && Math.abs(dx) > Math.min(60, viewport.clientWidth * .12) ? (dx < 0 ? 1 : -1) : 0;
+    setCategory(activeIndex + direction);
+  }
+  swipeArea.addEventListener('touchend', event => {
+    if (touchGesture && ![...event.touches].some(item => item.identifier === touchGesture.id)) finishTouch();
+  });
+  swipeArea.addEventListener('touchcancel', () => finishTouch(true));
 
   // 触控板横向滚动切换；普通纵向滚轮不拦截，惯性滚动不会连续跳页。
   let wheelDistance = 0;

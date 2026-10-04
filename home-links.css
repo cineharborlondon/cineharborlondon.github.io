@@ -2,13 +2,6 @@
 .work-stage-bottom { position: relative; z-index: 1; width: var(--page-width); max-width: 2280px; margin: 0 auto; display: flex; justify-content: flex-end; padding: 0 0 6px; }
 .stage-back-to-top { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 0 10px 16px; font-family: var(--heading-font); font-size: 12px; color: var(--muted); text-decoration: none; cursor: pointer; }
 .stage-back-to-top:hover { color: var(--ink); }
-.work-page .site-footer .footer-socials { display: flex; gap: 8px; align-items: center; }
-.work-page .footer-socials a { display: inline-flex; justify-content: center; align-items: center; width: 44px; height: 44px; padding: 10px; color: var(--ink); border-radius: 50%; transition: background-color .2s, color .2s; }
-.work-page .footer-socials a:hover { color: var(--accent); background: var(--highlight); }
-.footer-socials svg { display: block; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-@media (max-width: 640px) { .work-page .site-footer { gap: 10px; flex-wrap: nowrap; } .work-page .footer-socials { gap: 2px; } .work-page .footer-socials a { width: 40px; height: 44px; } .work-page .footer-logo { width: 62px; } .work-page .site-footer p { font-size: 10px; } }
 
-.work-page .footer-location { font-family: var(--heading-font); font-size: 11px; font-weight: 400; letter-spacing: .16em; line-height: 1.5; white-space: nowrap; }
 .preview-toggle .preview-icon { display: block; width: 18px; height: 18px; fill: currentColor; }
 .work-main.previews-paused .project-preview { opacity: 0; visibility: hidden; }
-@media (max-width: 640px) { .work-page .site-footer { flex-wrap: wrap; } .work-page .site-footer .footer-location { font-size: 10px; letter-spacing: .1em; } }
