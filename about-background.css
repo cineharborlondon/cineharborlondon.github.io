@@ -11,8 +11,9 @@
 .about-video-page .about-content { text-shadow: 0 1px 12px rgb(0 0 0 / 22%); }
 .about-video-page .skip-link { background: #20211f; }
 .about-video-page .page-return { justify-content: space-between; align-items: center; gap: 20px; }
-#about-background-toggle { min-height: 44px; padding: 8px 0; background: transparent; border: 0; color: var(--muted); font-family: var(--heading-font); font-size: 12px; cursor: pointer; }
-#about-background-toggle:hover { color: var(--ink); }
+/* Keep playback available to keyboard users without a visible footer control. */
+#about-background-toggle { position: fixed; top: 12px; left: 12px; z-index: 20; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+#about-background-toggle:focus-visible { width: auto; height: auto; min-height: 44px; padding: 10px 16px; clip-path: none; background: #20211f; color: var(--ink); font-family: var(--heading-font); font-size: 14px; cursor: pointer; outline: 2px solid var(--ink); outline-offset: 3px; }
 .about-video-page .page-return a:only-child { margin-left: auto; }
 @media (max-width: 760px) { .about-video-shade { background: rgb(12 14 13 / 60%); } .about-video-page .about-content { gap: 34px; } .about-video-page .about-page { padding: 38px 0 48px; } }
 @media (prefers-reduced-motion: reduce) { .about-video-backdrop iframe { transition: none; } }
