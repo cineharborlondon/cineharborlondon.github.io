@@ -6,3 +6,5 @@
 - Before publishing, compare the video IDs and complete repository tree with the previous main commit. Stop if any existing video or file disappears without explicit authorization.
 - Edit projects-data.json as the project source and regenerate projects.js and detail pages with node build-projects.mjs.
 - Preserve pinLast rules: Stride is last in Commercials; Imaginary Friends and What If Your Style Was Illegal? are last in Films.
+
+- Related videos are stored in relatedVideoGroups and rendered under the project introduction. Keep all existing related clips unless explicitly told to remove them.
