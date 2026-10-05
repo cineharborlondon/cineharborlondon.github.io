@@ -27,7 +27,7 @@ Each project supports:
 | `collection` | `films`, `commercials`, `photography`, or `social` |
 | `slug` / `url` | Stable project page address |
 | `kind` | `video` or `photo` |
-| `youtube` / `vimeo` | Original platform video ID |
+| `vimeo` | Vimeo video ID |
 | `vimeoHash` | Privacy hash for an unlisted Vimeo video, required for previews, the embedded player and the original-video link |
 | `cover` | Homepage thumbnail |
 | `aspectRatio` | Optional video width divided by height, including portrait videos |
@@ -48,3 +48,5 @@ python -m http.server 8000
 ```
 
 Open `http://localhost:8000`. Use a server rather than opening HTML files directly, because shared assets and navigation use paths relative to the website root.
+
+The legacy `/cineharbor/` pages redirect to the maintained root website. Edit and build the root project files.

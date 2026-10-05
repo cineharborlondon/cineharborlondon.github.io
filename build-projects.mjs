@@ -25,10 +25,11 @@ for (const project of projects) {
   const siblings = projects.filter(p => p.collection === project.collection);
   const next = siblings.length > 1 ? siblings[(siblings.indexOf(project) + 1) % siblings.length] : null;
   const ratio = Number(project.aspectRatio) || 16 / 9;
-  const provider = project.vimeo ? 'Vimeo' : 'YouTube';
+  if (!isPhoto && !/^\d+$/.test(project.vimeo || '')) throw new Error('A video project needs a Vimeo ID');
+  const provider = 'Vimeo';
   const hash = project.vimeoHash ? encodeURIComponent(project.vimeoHash) : '';
-  const external = project.vimeo ? `https://vimeo.com/${project.vimeo}${hash ? '/' + hash : ''}` : `https://www.youtube.com/watch?v=${project.youtube}`;
-  const embed = project.vimeo ? `https://player.vimeo.com/video/${project.vimeo}?${hash ? 'h=' + hash + '&' : ''}playsinline=1&title=0&byline=0&portrait=0&dnt=1` : `https://www.youtube-nocookie.com/embed/${project.youtube}?playsinline=1&rel=0`;
+  const external = `https://vimeo.com/${project.vimeo}${hash ? '/' + hash : ''}`;
+  const embed = `https://player.vimeo.com/video/${project.vimeo}?${hash ? 'h=' + hash + '&' : ''}playsinline=1&title=0&byline=0&portrait=0&dnt=1`;
   const hero = isPhoto ? (images[0] ? photo(images[0], 0, true) : '') : `<div class="detail-player${ratio < 1 ? ' detail-player-portrait' : ''}" style="--video-ratio:${ratio}"><iframe src="${esc(embed)}" title="${esc(project.title)} — ${provider} video player" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
   const description = project.description ? `<div class="project-description">${project.description.split('\n\n').map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   const credits = Array.isArray(project.credits) && project.credits.length ? `<dl class="project-credits">${project.credits.map(c => `<div><dt>${esc(c.role)}</dt><dd>${esc(c.name)}</dd></div>`).join('')}</dl>` : project.credit ? `<p class="project-credits">${esc(project.credit)}</p>` : '';

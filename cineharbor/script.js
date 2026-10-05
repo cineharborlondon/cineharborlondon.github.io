@@ -41,6 +41,27 @@ function initPortfolio() {
   const panels = [...track.querySelectorAll('[role="tabpanel"]')];
   const previous = document.querySelector('#previous-category');
   const next = document.querySelector('#next-category');
+  const filmMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const filmRails = [...swipeArea.querySelectorAll('.film-rail')];
+  const filmGlow = swipeArea.querySelector('.film-glow');
+
+  function moveFilm(direction) {
+    if (!direction || filmMotion.matches) return;
+    filmRails.forEach(rail => {
+      rail.getAnimations().forEach(animation => animation.cancel());
+      rail.animate([
+        { transform: 'translateX(0)' },
+        { transform: `translateX(${-direction * 114}px)` },
+      ], { duration: 900, easing: 'cubic-bezier(.22,.7,.28,1)' });
+    });
+    if (filmGlow) {
+      // Keep the ambient drift; replace only the previous switch pulse.
+      filmGlow.getAnimations().filter(animation => animation.id === 'film-switch').forEach(animation => animation.cancel());
+      const pulse = filmGlow.animate([{ opacity: .68 }, { opacity: .95, offset: .4 }, { opacity: .68 }], { duration: 1300, easing: 'ease-in-out' });
+      pulse.id = 'film-switch';
+    }
+  }
+
   let activeIndex = 0;
   let gesture = null;
   let suppressClickUntil = 0;
@@ -71,7 +92,7 @@ function initPortfolio() {
     img.loading = index < 3 ? 'eager' : 'lazy';
     img.decoding = 'async';
     img.draggable = false;
-    const covers = (isPhoto ? [project.cover, project.full] : project.youtube ? [project.cover, `https://i.ytimg.com/vi/${project.youtube}/maxresdefault.jpg`, `https://i.ytimg.com/vi/${project.youtube}/hqdefault.jpg`] : [project.cover]).filter(Boolean);
+    const covers = (isPhoto ? [project.cover, project.full] : [project.cover]).filter(Boolean);
     let coverIndex = 0;
     function nextCover() {
       if (++coverIndex < covers.length) img.src = covers[coverIndex];
@@ -88,7 +109,7 @@ function initPortfolio() {
     caption.append(title);
     button.append(visual, caption);
     article.append(button);
-    if (!isPhoto && (project.youtube || project.vimeo) && site.platformPreviews) previews.add(visual, project);
+    if (!isPhoto && project.vimeo && site.platformPreviews) previews.add(visual, project);
     return article;
   }
 
@@ -116,7 +137,9 @@ function initPortfolio() {
   function setCategory(index, focusTab = false, announce = true) {
     index = Math.max(0, Math.min(categories.length - 1, index));
     const focusWasInPanel = index !== activeIndex && panels[activeIndex].contains(document.activeElement);
+    const direction = Math.sign(index - activeIndex);
     activeIndex = index;
+    if (announce) moveFilm(direction);
     history.replaceState(null, '', '#' + categories[index].id);
     tabs.forEach((tab, i) => {
       tab.setAttribute('aria-selected', String(i === index));
@@ -164,7 +187,7 @@ function initPortfolio() {
   // 整个 Work 主区域响应手势，包括分类栏、作品及两侧和下方空白。
   // 触屏滑动和鼠标拖动共用 Pointer Events；纵向滚动由浏览器处理。
   swipeArea.addEventListener('pointerdown', event => {
-    if (!event.isPrimary || event.button !== 0) return;
+    if (event.pointerType === 'touch' || !event.isPrimary || event.button !== 0) return;
     gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, dx: 0, dragging: false };
   });
   swipeArea.addEventListener('pointermove', event => {
@@ -202,6 +225,46 @@ function initPortfolio() {
   swipeArea.addEventListener('click', event => {
     if (performance.now() < suppressClickUntil) { event.preventDefault(); event.stopImmediatePropagation(); }
   }, true);
+
+  // Touch Events keep phone swipes independent of Pointer Events capture support.
+  let touchGesture = null;
+  swipeArea.addEventListener('touchstart', event => {
+    if (event.touches.length !== 1) { touchGesture = null; return; }
+    const touch = event.touches[0];
+    touchGesture = { id: touch.identifier, x: touch.clientX, y: touch.clientY, dx: 0, dragging: false };
+  }, { passive: true });
+  swipeArea.addEventListener('touchmove', event => {
+    if (!touchGesture) return;
+    if (event.touches.length !== 1) { finishTouch(true); return; }
+    const touch = [...event.touches].find(item => item.identifier === touchGesture.id);
+    if (!touch) return;
+    const dx = touch.clientX - touchGesture.x;
+    const dy = touch.clientY - touchGesture.y;
+    if (!touchGesture.dragging) {
+      if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) { touchGesture = null; return; }
+      if (Math.abs(dx) < 10 || Math.abs(dx) < Math.abs(dy) * 1.15) return;
+      touchGesture.dragging = true;
+      swipeArea.classList.add('is-dragging');
+    }
+    touchGesture.dx = dx;
+    if (event.cancelable) event.preventDefault();
+    const atEdge = (activeIndex === 0 && dx > 0) || (activeIndex === categories.length - 1 && dx < 0);
+    track.style.transform = `translateX(calc(-${activeIndex * 100}% + ${atEdge ? dx * .18 : dx}px))`;
+  }, { passive: false });
+  function finishTouch(cancelled = false) {
+    if (!touchGesture) return;
+    const { dragging, dx } = touchGesture;
+    touchGesture = null;
+    swipeArea.classList.remove('is-dragging');
+    if (!dragging) return;
+    suppressClickUntil = performance.now() + 350;
+    const direction = !cancelled && Math.abs(dx) > Math.min(60, viewport.clientWidth * .12) ? (dx < 0 ? 1 : -1) : 0;
+    setCategory(activeIndex + direction);
+  }
+  swipeArea.addEventListener('touchend', event => {
+    if (touchGesture && ![...event.touches].some(item => item.identifier === touchGesture.id)) finishTouch();
+  });
+  swipeArea.addEventListener('touchcancel', () => finishTouch(true));
 
   // 触控板横向滚动切换；普通纵向滚轮不拦截，惯性滚动不会连续跳页。
   let wheelDistance = 0;
@@ -242,7 +305,6 @@ function createPreviews() {
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const entries = new Map();
   let enabled = !motion.matches;
-  let api;
   let vimeoAPI;
 
   function loadVimeoAPI() {
@@ -304,6 +366,7 @@ function createPreviews() {
       iframe.referrerPolicy = 'strict-origin-when-cross-origin';
       // 免费账户可能忽略 controls / vimeo_logo；保留原始画面，不遮挡标识。
       const params = new URLSearchParams({ autoplay: '0', muted: '1', loop: '1', autopause: '0', controls: '0', keyboard: '0', playsinline: '1', title: '0', byline: '0', portrait: '0', badge: '0', vimeo_logo: '0', dnt: '1' });
+      if (entry.project.vimeoHash) params.set('h', entry.project.vimeoHash);
       iframe.src = `https://player.vimeo.com/video/${entry.project.vimeo}?${params}`;
       entry.visual.append(iframe);
       const player = new Vimeo.Player(iframe);
@@ -332,112 +395,17 @@ function createPreviews() {
     } catch { failVimeoPreview(entry); }
   }
 
-  function loadAPI() {
-    if (window.YT?.Player) return Promise.resolve(window.YT);
-    if (!api) api = new Promise((resolve, reject) => {
-      const previousReady = window.onYouTubeIframeAPIReady;
-      window.onYouTubeIframeAPIReady = () => {
-        previousReady?.();
-        resolve(window.YT);
-      };
-      const script = document.createElement('script');
-      script.src = 'https://www.youtube.com/iframe_api';
-      script.onerror = () => { api = null; reject(new Error('Preview API unavailable')); };
-      document.head.append(script);
-    });
-    return api;
-  }
-
   function shouldPlay(entry) {
     return enabled && entry.visible && !entry.failed && !document.hidden &&
-      !entry.visual.closest('[inert]') && entry.visual.clientWidth >= 200 && entry.visual.clientHeight >= 200;
+      !entry.visual.closest('[inert]') && entry.visual.clientWidth > 0 && entry.visual.clientHeight > 0;
   }
 
-  function play(entry) {
-    // 首次加载和循环均使用限定片段，避免自动播到片尾推荐。
-    const start = Math.max(0, Number(entry.project.previewStart) || 35);
-    entry.player.mute();
-    entry.player.loadVideoById({ videoId: entry.project.youtube, startSeconds: start, endSeconds: start + 24 });
-  }
-
-  async function update(entry) {
-    if (entry.project.vimeo) { await updateVimeo(entry); return; }
-    const active = shouldPlay(entry);
-    if (entry.ready) {
-      if (active) {
-        entry.player.mute();
-        if (!entry.started) { entry.started = true; play(entry); }
-        else entry.player.playVideo();
-      } else {
-        entry.player.pauseVideo();
-        clearTimeout(entry.revealTimer);
-        entry.visual.classList.remove('preview-ready');
-        entry.visual.dataset.previewState = 'paused';
-      }
-      return;
-    }
-    if (!active || entry.loading || entry.failed) return;
-    entry.loading = true;
-    entry.visual.dataset.previewState = 'loading';
-    try {
-      const YT = await loadAPI();
-      // 用户可能已滚走、切换分类或打开弹层。
-      if (!shouldPlay(entry)) { entry.loading = false; entry.visual.dataset.previewState = 'idle'; return; }
-      const iframe = document.createElement('iframe');
-      iframe.className = 'project-preview';
-      // 只裁切首页的装饰性预览；弹层完整影片保留原始比例和播放器控件。
-      iframe.style.setProperty('--preview-scale', String(entry.project.previewScale || 1.6));
-      iframe.title = `${entry.project.title} — muted preview`;
-      iframe.tabIndex = -1;
-      iframe.setAttribute('aria-hidden', 'true');
-      iframe.allow = 'autoplay; encrypted-media';
-      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-      const params = new URLSearchParams({ enablejsapi: '1', autoplay: '0', mute: '1', controls: '0', playsinline: '1', rel: '0', disablekb: '1' });
-      if (/^https?:$/.test(location.protocol)) params.set('origin', location.origin);
-      iframe.src = `https://www.youtube-nocookie.com/embed/${entry.project.youtube}?${params}`;
-      entry.visual.append(iframe);
-      function fail() {
-        clearTimeout(entry.revealTimer);
-        entry.failed = true;
-        entry.ready = false;
-        entry.started = false;
-        entry.visual.dataset.previewState = 'unavailable';
-        entry.visual.classList.remove('preview-ready');
-        entry.player?.destroy();
-      }
-      entry.player = new YT.Player(iframe, { events: {
-        onReady: () => { entry.ready = true; update(entry); },
-        onStateChange: event => {
-          if (event.data === YT.PlayerState.PLAYING) {
-            entry.player.mute();
-            if (!shouldPlay(entry)) { update(entry); return; }
-            entry.visual.dataset.previewState = 'playing';
-            entry.visual.dataset.previewMuted = String(entry.player.isMuted());
-            clearTimeout(entry.revealTimer);
-            entry.revealTimer = setTimeout(() => {
-              if (shouldPlay(entry) && entry.player.getPlayerState() === YT.PlayerState.PLAYING) entry.visual.classList.add('preview-ready');
-            }, 900);
-          } else if ([YT.PlayerState.BUFFERING, YT.PlayerState.ENDED].includes(event.data)) {
-            clearTimeout(entry.revealTimer);
-            entry.visual.classList.remove('preview-ready');
-            if (event.data === YT.PlayerState.ENDED && shouldPlay(entry)) play(entry);
-          }
-        },
-        onError: fail,
-        onAutoplayBlocked: fail,
-      } });
-    } catch {
-      entry.failed = true;
-      entry.visual.dataset.previewState = 'unavailable';
-    }
-  }
-
-  function refresh() { entries.forEach(update); }
+  function refresh() { entries.forEach(updateVimeo); }
   const observer = 'IntersectionObserver' in window ? new IntersectionObserver(changes => {
     changes.forEach(change => {
       const entry = entries.get(change.target);
       entry.visible = change.isIntersecting && change.intersectionRatio >= .25;
-      update(entry);
+      updateVimeo(entry);
     });
   }, { threshold: [0, .25] }) : null;
 
@@ -445,12 +413,19 @@ function createPreviews() {
     toggle.setAttribute('aria-pressed', String(!enabled));
     toggle.setAttribute('aria-label', enabled ? 'Pause previews' : 'Play previews');
     toggle.title = enabled ? 'Pause previews' : 'Play previews';
-    toggle.querySelector('span').textContent = enabled ? 'Ⅱ' : '▷';
+    toggle.querySelector('span').innerHTML = enabled
+      ? '<svg viewBox="0 0 24 24" class="preview-icon"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>'
+      : '<svg viewBox="0 0 24 24" class="preview-icon"><path d="M7 4.5a.8.8 0 0 1 1.2-.7l12 7.5a.8.8 0 0 1 0 1.4l-12 7.5a.8.8 0 0 1-1.2-.7Z"/></svg>';
+    document.querySelector('#work-swipe-area').classList.toggle('previews-paused', !enabled);
+    if (!enabled) entries.forEach(entry => {
+      entry.visual.classList.remove('preview-ready');
+      entry.visual.dataset.previewState = 'paused';
+    });
   }
   toggle.addEventListener('click', () => {
     enabled = !enabled;
     // 手动重新开启时允许因浏览器自动播放限制失败的预览重试。
-    if (enabled) entries.forEach(entry => { if (entry.failed) { entry.failed = false; entry.loading = false; entry.ready = false; entry.started = false; } });
+    if (enabled) entries.forEach(entry => { if (entry.failed) { entry.failed = false; entry.loading = false; entry.ready = false; } });
     updateToggle();
     refresh();
   });
@@ -461,7 +436,7 @@ function createPreviews() {
   return {
     refresh,
     add(visual, project) {
-      const entry = { visual, project, visible: false, loading: false, ready: false, started: false, failed: false, player: null };
+      const entry = { visual, project, visible: false, loading: false, ready: false, failed: false, player: null };
       entries.set(visual, entry);
       visual.dataset.previewState = 'idle';
       observer?.observe(visual);
