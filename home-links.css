@@ -5,3 +5,49 @@
 
 .preview-toggle .preview-icon { display: block; width: 18px; height: 18px; fill: currentColor; }
 .work-main.previews-paused .project-preview { opacity: 0; visibility: hidden; }
+
+/* A continuous charcoal homepage, with three true widescreen cards per row. */
+.dark-work-page {
+  color-scheme: dark;
+  --page-width: 90%;
+  --ink: #eee4cf;
+  --body-ink: #eee4cf;
+  --muted: #b9aa92;
+  --accent: #d2b88c;
+  --line: rgb(210 184 140 / 20%);
+  --highlight: rgb(210 184 140 / 10%);
+  background: radial-gradient(ellipse 32% 400px at 100% 0, rgb(191 148 74 / 10%), transparent 80%), #20211f;
+  color: var(--ink);
+}
+.dark-work-page .work-page > .site-header,
+.dark-work-page .work-page > .site-footer,
+.dark-work-page .work-page .work-section,
+.dark-work-page .work-stage-bottom { max-width: 2280px; }
+.dark-work-page .site-header { padding: 24px 0; }
+.dark-work-page .site-logo { filter: brightness(0) invert(1) sepia(.18); }
+.dark-work-page .site-header nav a { color: var(--muted); }
+.dark-work-page .site-header nav a:hover,
+.dark-work-page .site-header nav a[aria-current] { color: var(--ink); }
+.dark-work-page .skip-link { background: #20211f; }
+.dark-work-page .work-main { background: transparent; }
+.dark-work-page .film-rail { opacity: .42; }
+.dark-work-page .film-glow { opacity: .45; }
+.dark-work-page .portfolio-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 24px; }
+.dark-work-page .project-image { aspect-ratio: 16 / 9; min-height: 0; border-radius: 6px; }
+.dark-work-page .project-image img { object-fit: cover; }
+.dark-work-page .project-image.portrait-source img { object-fit: contain; }
+.dark-work-page .project-caption { padding: 12px 2px 0; text-align: left; }
+.dark-work-page .project-title { font-size: clamp(15px, 1.05vw, 19px); line-height: 1.4; white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.dark-work-page .site-footer { color: var(--muted); }
+@media (max-width: 1000px) {
+  .dark-work-page { --page-width: calc(100% - var(--gutter) * 2); }
+  .dark-work-page .portfolio-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .dark-work-page .site-header { padding: 16px 0; }
+  .dark-work-page .portfolio-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .dark-work-page .project-image { min-height: 0; aspect-ratio: 16 / 9; }
+}
+@media (orientation: portrait) and (max-width: 1000px) {
+  .dark-work-page .portfolio-grid { grid-template-columns: minmax(0, 1fr); }
+}
