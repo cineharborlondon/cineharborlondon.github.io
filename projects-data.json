@@ -105,7 +105,38 @@
       },
       {
         "title": "Interview Excerpts",
-        "videos": []
+        "videos": [
+          {
+            "title": "Simon Reay — Interview Excerpt 1",
+            "vimeo": "1232914009",
+            "vimeoHash": "dc80efd6a1",
+            "aspectRatio": 0.5625
+          },
+          {
+            "title": "Simon Reay — Interview Excerpt 2",
+            "vimeo": "1232914189",
+            "vimeoHash": "a560ce55cc",
+            "aspectRatio": 0.5625
+          },
+          {
+            "title": "Simon Reay — Interview Excerpt 3",
+            "vimeo": "1232914264",
+            "vimeoHash": "18006996cd",
+            "aspectRatio": 0.5625
+          },
+          {
+            "title": "Simon Reay — Interview Excerpt 4",
+            "vimeo": "1232914338",
+            "vimeoHash": "5463ebcd8f",
+            "aspectRatio": 0.5625
+          },
+          {
+            "title": "Simon Reay — Interview Excerpt 5",
+            "vimeo": "1232914686",
+            "vimeoHash": "e5a7b3def7",
+            "aspectRatio": 0.5625
+          }
+        ]
       }
     ]
   },
