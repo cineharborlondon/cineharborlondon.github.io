@@ -84,7 +84,8 @@ const projects = [
     "slug": "un-current",
     "description": "",
     "images": [],
-    "url": "/films-un-current.html"
+    "url": "/films-un-current.html",
+    "displayCategory": "Fashion Film"
   },
   {
     "collection": "films",
@@ -105,7 +106,7 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "The Polyphony of Life",
+    "title": "Bvlgari × Modern Weekly — The Polyphony of Life",
     "vimeo": "1232822716",
     "vimeoHash": "325bac0003",
     "aspectRatio": 1.7777777777777777,
@@ -460,7 +461,8 @@ const projects = [
     "description": "",
     "images": [],
     "url": "/films-imaginary-friends.html",
-    "pinLast": true
+    "pinLast": true,
+    "displayCategory": "Fashion Film"
   },
   {
     "collection": "films",
@@ -477,7 +479,8 @@ const projects = [
     "description": "",
     "images": [],
     "url": "/films-well-done.html",
-    "pinLast": true
+    "pinLast": true,
+    "displayCategory": "Fashion Film"
   },
   {
     "collection": "commercials",
