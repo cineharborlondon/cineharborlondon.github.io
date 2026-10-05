@@ -342,3 +342,16 @@ h1, h2, h3, .project-title, .statement, .contact-title, .work-tabs, .eyebrow, na
 @media (max-width: 640px) {
   .page-shell > .site-header { padding: 16px 0; }
 }
+
+/* Fit every film format within the available first-screen space. */
+.detail-player,
+.detail-player-portrait {
+  --player-height: max(220px, calc(100svh - 290px));
+  width: min(100%, calc(var(--player-height) * var(--video-ratio, 1.7778)));
+  margin-inline: auto;
+}
+.detail-page .project-information { padding-top: 24px; }
+@media (max-width: 600px) {
+  .detail-player { --player-height: max(180px, calc(100svh - 275px)); }
+  .detail-page .project-information { padding-top: 20px; }
+}
