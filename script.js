@@ -367,6 +367,7 @@ function createPreviews() {
       iframe.referrerPolicy = 'strict-origin-when-cross-origin';
       // 免费账户可能忽略 controls / vimeo_logo；保留原始画面，不遮挡标识。
       const params = new URLSearchParams({ autoplay: '0', muted: '1', loop: '1', autopause: '0', controls: '0', keyboard: '0', playsinline: '1', title: '0', byline: '0', portrait: '0', badge: '0', vimeo_logo: '0', dnt: '1' });
+      if (entry.project.vimeoHash) params.set('h', entry.project.vimeoHash);
       iframe.src = `https://player.vimeo.com/video/${entry.project.vimeo}?${params}`;
       entry.visual.append(iframe);
       const player = new Vimeo.Player(iframe);

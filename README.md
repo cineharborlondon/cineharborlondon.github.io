@@ -28,6 +28,7 @@ Each project supports:
 | `slug` / `url` | Stable project page address |
 | `kind` | `video` or `photo` |
 | `youtube` / `vimeo` | Original platform video ID |
+| `vimeoHash` | Privacy hash for an unlisted Vimeo video, required for previews, the embedded player and the original-video link |
 | `cover` | Homepage thumbnail |
 | `aspectRatio` | Optional video width divided by height, including portrait videos |
 | `description` | Introduction; separate paragraphs with two newlines |
