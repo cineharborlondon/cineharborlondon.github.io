@@ -3,7 +3,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "NAVIMOW — Concept Video",
+    "title": "NAVIMOW Circle — Concept Video",
     "vimeo": "1232907668",
     "vimeoHash": "d0cdd67000",
     "aspectRatio": 1.7777777777777777,
@@ -12,14 +12,14 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "navimow-concept-video",
-    "description": "A concept film for NAVIMOW.\n\nPart of the NAVIMOW project series, alongside productions in France, Germany and the United States.",
+    "description": "Concept film for Navimow Circle.\n\nIntroducing the series of stories produced across France, Germany and the United States.",
     "images": [],
     "url": "/commercials-navimow-concept-video.html"
   },
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "NAVIMOW — A Garden for Rhythm and Quiet",
+    "title": "NAVIMOW — A Garden for Rhythm and Quiet | France",
     "vimeo": "1232908381",
     "vimeoHash": "410538f90c",
     "aspectRatio": 1.7777777777777777,
@@ -37,7 +37,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "NAVIMOW — A Garden to Grow Together",
+    "title": "NAVIMOW — A Garden to Grow Together | Germany",
     "vimeo": "1232908418",
     "vimeoHash": "fae21e3062",
     "aspectRatio": 1.7777777777777777,
@@ -55,7 +55,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "NAVIMOW — A Lawn to Come Home to",
+    "title": "NAVIMOW — A Lawn to Come Home to | USA",
     "vimeo": "1232908778",
     "vimeoHash": "45445dab2a",
     "aspectRatio": 1.7777777777777777,
