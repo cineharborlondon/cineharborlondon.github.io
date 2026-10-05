@@ -89,7 +89,7 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "Tim Yip × Hackets — London",
+    "title": "Tim Yip × Hackett London",
     "vimeo": "1232913015",
     "vimeoHash": "47c0914838",
     "aspectRatio": 1.7777777777777777,
@@ -465,7 +465,7 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "Well Done",
+    "title": "What If Your Style Was Illegal?",
     "vimeo": "1232915238",
     "vimeoHash": "d72ba3f93f",
     "aspectRatio": 1.7777777777777777,

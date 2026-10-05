@@ -36,7 +36,7 @@
 .beige-film-page .project-image { aspect-ratio: 16 / 9; min-height: 0; border-radius: 6px; }
 .beige-film-page .project-image img { object-fit: cover; }
 .beige-film-page .project-image.portrait-source img { object-fit: contain; }
-.beige-film-page .project-caption { padding: 12px 2px 0; text-align: left; }
+.beige-film-page .project-caption { padding: 12px 2px 0; text-align: center; }
 .beige-film-page .project-title { font-size: clamp(15px, 1.05vw, 19px); line-height: 1.4; white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
 .beige-film-page .site-footer { color: var(--muted); }
 @media (max-width: 1000px) {

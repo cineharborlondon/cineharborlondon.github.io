@@ -355,3 +355,21 @@ h1, h2, h3, .project-title, .statement, .contact-title, .work-tabs, .eyebrow, na
   .detail-player { --player-height: max(180px, calc(100svh - 275px)); }
   .detail-page .project-information { padding-top: 20px; }
 }
+
+/* Center project titles while retaining the desktop viewing link. */
+.project-caption, .project-caption .project-title { text-align: center; }
+.detail-page .project-title-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) minmax(0, 6fr) minmax(120px, 1fr);
+  align-items: baseline;
+  gap: 16px;
+}
+.detail-page .project-title-row h1 { grid-column: 2; text-align: center; }
+.detail-page .original-film { grid-column: 3; justify-self: end; }
+.detail-page .project-category { text-align: center; }
+@media (max-width: 600px) {
+  .detail-page .project-title-row { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .detail-page .project-title-row h1,
+  .detail-page .original-film { grid-column: 1; }
+  .detail-page .original-film { justify-self: center; }
+}
