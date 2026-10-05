@@ -192,7 +192,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "BioTwin — Branded Documentary",
+    "title": "BioTwin — Brand Film",
     "vimeo": "1232901814",
     "vimeoHash": "65cd2c86de",
     "aspectRatio": 1.7777777777777777,
@@ -201,7 +201,7 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "biotwin",
-    "description": "Interview-led brand film · Low-carbon innovation.",
+    "description": "An introduction to BioTwin and its approach to low-carbon innovation.",
     "images": [],
     "url": "/commercials-biotwin.html"
   },
