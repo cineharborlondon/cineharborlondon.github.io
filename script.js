@@ -113,7 +113,8 @@ function initPortfolio() {
     return article;
   }
 
-  const groups = categories.map(category => projects.filter(project => (project.collection || 'films') === category.id));
+  const groups = categories.map(category => projects.filter(project => (project.collection || 'films') === category.id)
+    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true)));
   panels.forEach((panel, index) => {
     const items = groups[index];
     if (items.length) {
