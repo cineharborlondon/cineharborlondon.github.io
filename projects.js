@@ -240,7 +240,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "Realme × Adam Valdez TVC | Realme 13 Pro",
+    "title": "Realme × Adam Valdez TVC | Realme 13 Pro Series",
     "vimeo": "1232903518",
     "vimeoHash": "6eec835827",
     "aspectRatio": 1.7777777777777777,
@@ -258,7 +258,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "Experience Unmatched Photo Clarity | Realme 13 Pro Series 5G",
+    "title": "Experience Unmatched Photo Clarity | Realme 13 Pro Series",
     "vimeo": "1232902324",
     "vimeoHash": "80ffe67db3",
     "aspectRatio": 1.7777777777777777,
@@ -267,7 +267,7 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "realme-photo-clarity",
-    "description": "Experience Unmatched Photo Clarity | Realme 13 Pro Series 5G.\n\nProduced in London, UK, alongside the Realme × Adam Valdez campaign.",
+    "description": "Experience Unmatched Photo Clarity | Realme 13 Pro Series.\n\nProduced in London, UK, alongside the Realme × Adam Valdez campaign.",
     "images": [],
     "url": "/commercials-realme-photo-clarity.html",
     "location": "London, UK",
