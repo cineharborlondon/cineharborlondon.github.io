@@ -325,3 +325,20 @@ h1, h2, h3, .project-title, .statement, .contact-title, .work-tabs, .eyebrow, na
   .site-footer .footer-location { font-size: 10px; letter-spacing: .08em; }
 }
 @media (max-width: 360px) { .site-footer > p:first-child { font-size: 8px; } .site-footer .footer-location { font-size: 9px; letter-spacing: .04em; } }
+
+/* Shared header coordinates, independent of each page's content width. */
+.page-shell > .site-header {
+  width: min(90vw, 2280px);
+  max-width: none;
+  margin-inline: 0;
+  align-self: center;
+  flex-shrink: 0;
+  padding: 24px 0;
+}
+.site-header > nav { line-height: 1.5; }
+@media (max-width: 1000px) {
+  .page-shell > .site-header { width: calc(100vw - var(--gutter) * 2); }
+}
+@media (max-width: 640px) {
+  .page-shell > .site-header { padding: 16px 0; }
+}

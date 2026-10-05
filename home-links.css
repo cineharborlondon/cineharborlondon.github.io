@@ -6,17 +6,17 @@
 .preview-toggle .preview-icon { display: block; width: 18px; height: 18px; fill: currentColor; }
 .work-main.previews-paused .project-preview { opacity: 0; visibility: hidden; }
 
-/* A continuous warm-silver homepage, with three true widescreen cards per row. */
+/* A continuous neutral-silver homepage, with three true widescreen cards per row. */
 .silver-work-page {
   color-scheme: light;
   --page-width: 90%;
-  --ink: #50524f;
-  --body-ink: #50524f;
-  --muted: #6b655b;
-  --accent: #8f795b;
-  --line: rgb(143 121 91 / 25%);
-  --highlight: rgb(143 121 91 / 10%);
-  background: radial-gradient(ellipse 32% 400px at 100% 0, rgb(255 250 235 / 38%), transparent 80%), #d6d4ce;
+  --ink: #444a50;
+  --body-ink: #444a50;
+  --muted: #656c73;
+  --accent: #727980;
+  --line: rgb(114 121 128 / 25%);
+  --highlight: rgb(114 121 128 / 10%);
+  background: radial-gradient(ellipse 32% 400px at 100% 0, rgb(255 255 255 / 50%), transparent 80%), #dadcde;
   color: var(--ink);
 }
 .silver-work-page .work-page > .site-header,
@@ -28,9 +28,9 @@
 .silver-work-page .site-header nav a { color: var(--muted); }
 .silver-work-page .site-header nav a:hover,
 .silver-work-page .site-header nav a[aria-current] { color: var(--ink); }
-.silver-work-page .skip-link { background: #d6d4ce; }
+.silver-work-page .skip-link { background: #dadcde; }
 .silver-work-page .work-main { background: transparent; }
-.silver-work-page .film-rail { opacity: .42; }
+.silver-work-page .film-rail { opacity: .32; filter: grayscale(1); }
 .silver-work-page .film-glow { opacity: .45; }
 .silver-work-page .portfolio-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 24px; }
 .silver-work-page .project-image { aspect-ratio: 16 / 9; min-height: 0; border-radius: 6px; }
@@ -53,6 +53,6 @@
 }
 
 /* The stage sets its own variables; keep these in the silver palette too. */
-.silver-work-page .work-main { --ink: #50524f; --muted: #6b655b; --accent: #8f795b; --line: rgb(143 121 91 / 25%); --highlight: rgb(143 121 91 / 10%); color: var(--ink); }
+.silver-work-page .work-main { --ink: #444a50; --muted: #656c73; --accent: #727980; --line: rgb(114 121 128 / 25%); --highlight: rgb(114 121 128 / 10%); color: var(--ink); }
 .silver-work-page .work-main .work-tabs button[aria-selected="true"], .silver-work-page .work-main .project-title { color: var(--ink); }
-.silver-work-page .film-glow { background: radial-gradient(ellipse 35% 38% at 0% 100%, rgb(199 175 128 / 20%), transparent 78%), radial-gradient(ellipse 28% 32% at 100% 0%, rgb(255 250 235 / 45%), transparent 80%); }
+.silver-work-page .film-glow { background: radial-gradient(ellipse 35% 38% at 0% 100%, rgb(181 191 201 / 20%), transparent 78%), radial-gradient(ellipse 28% 32% at 100% 0%, rgb(255 255 255 / 50%), transparent 80%); }
