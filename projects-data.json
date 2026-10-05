@@ -2,6 +2,22 @@
   {
     "collection": "commercials",
     "kind": "video",
+    "title": "NAVIMOW — Concept Video",
+    "vimeo": "1232907668",
+    "vimeoHash": "d0cdd67000",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208438422-631084e9b4316197d7a06d9ae48c43db2c37b6780203e04f7f09db2fe6c1b719-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "navimow-concept-video",
+    "description": "A concept film for NAVIMOW.\n\nPart of the NAVIMOW project series, alongside productions in France, Germany and the United States.",
+    "images": [],
+    "url": "/commercials-navimow-concept-video.html"
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
     "title": "NAVIMOW — A Garden for Rhythm and Quiet",
     "vimeo": "1232908381",
     "vimeoHash": "410538f90c",
@@ -83,7 +99,8 @@
     "slug": "imaginary-friends",
     "description": "",
     "images": [],
-    "url": "/films-imaginary-friends.html"
+    "url": "/films-imaginary-friends.html",
+    "pinLast": true
   },
   {
     "collection": "films",
@@ -115,7 +132,8 @@
     "slug": "well-done",
     "description": "",
     "images": [],
-    "url": "/films-well-done.html"
+    "url": "/films-well-done.html",
+    "pinLast": true
   },
   {
     "collection": "films",
@@ -255,7 +273,7 @@
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "realme × Adam Valdez TVC | realme 13 Pro",
+    "title": "Realme × Adam Valdez TVC | Realme 13 Pro",
     "vimeo": "1232903518",
     "vimeoHash": "6eec835827",
     "aspectRatio": 1.7777777777777777,
@@ -273,7 +291,7 @@
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "Experience Unmatched Photo Clarity | realme 13 Pro Series 5G",
+    "title": "Experience Unmatched Photo Clarity | Realme 13 Pro Series 5G",
     "vimeo": "1232902324",
     "vimeoHash": "80ffe67db3",
     "aspectRatio": 1.7777777777777777,
@@ -282,7 +300,7 @@
     "credit": "",
     "sample": false,
     "slug": "realme-photo-clarity",
-    "description": "Experience Unmatched Photo Clarity | realme 13 Pro Series 5G.\n\nProduced in London, UK, alongside the realme × Adam Valdez campaign.",
+    "description": "Experience Unmatched Photo Clarity | Realme 13 Pro Series 5G.\n\nProduced in London, UK, alongside the Realme × Adam Valdez campaign.",
     "images": [],
     "url": "/commercials-realme-photo-clarity.html",
     "location": "London, UK",
