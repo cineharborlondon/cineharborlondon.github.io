@@ -11,7 +11,8 @@ p, h1 { margin: 0; }
 .landing-shell { min-height: 100svh; display: flex; flex-direction: column; padding: calc(clamp(24px, 3.3vh, 48px) * 2 + 44px) var(--edge) 0; }
 .landing-main { display: flex; align-items: center; flex: 1; padding: 24px 0 34px; }
 .title-stage { position: relative; width: 100%; transform: translateY(clamp(-36px, -3vh, -18px)); }
-.image-title { font-family: "Josefin Sans", Arial, sans-serif; font-weight: 700; font-size: calc((100vw - var(--edge) * 2) * .222); line-height: .79; letter-spacing: -.065em; color: #745332; width: 100%; padding: .055em .035em .08em 0; background-position: center; background-size: cover; }
+/* Josefin capitals extend above the tight line box; keep the image mask clear of glyph edges. */
+.image-title { font-family: "Josefin Sans", Arial, sans-serif; font-weight: 700; font-size: calc((100vw - var(--edge) * 2) * .222); line-height: .79; letter-spacing: -.065em; color: #745332; width: 100%; padding: .24em .035em .16em 0; background-position: center; background-size: cover; }
 .image-title.has-frame { -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
 .title-cine, .title-harbor { display: block; text-align: left; }
 /* Compensate for H's wider side bearing so both lines share a visual left edge. */
@@ -23,7 +24,7 @@ p, h1 { margin: 0; }
   :root { --edge: 22px; }
   .landing-shell { padding-top: 92px; }
   .landing-main { padding: 24px 0 40px; }
-  .image-title { letter-spacing: -.07em; line-height: .83; padding-bottom: .08em; }
+  .image-title { letter-spacing: -.07em; line-height: .83; padding-top: .3em; padding-bottom: .16em; }
   .title-cine { font-size: 1.5em; line-height: .82; }
   .title-harbor { margin-top: .2em; text-indent: -.0035em; }
   .landing-footer { min-height: 90px; padding: 20px 0; }
