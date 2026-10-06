@@ -65,10 +65,15 @@
     return sequence;
   }
 
-  // Each entry is a still: { src, sourceGroup, position? }.
-  // Keep all 120 entries (about 22 seconds with an eased opening), with a fresh, film-spaced order per visit.
-  const frames = shuffleFrames((window.landingFrames || [])
-    .filter(frame => frame && typeof frame.src === 'string' && frame.src));
+  // Preserve the complete catalog; use verified caption-free stills for the opening only.
+  const sourceFrames = (window.landingFrames || [])
+    .filter(frame => frame && typeof frame.src === 'string' && frame.src);
+  const cleanFrames = shuffleFrames(sourceFrames.filter(frame => frame.openingSafe === true));
+  const openingFrames = cleanFrames.length
+    ? Array.from({ length: 18 }, (_, index) => cleanFrames[index % cleanFrames.length])
+    : [];
+  const frames = [...openingFrames, ...shuffleFrames(sourceFrames)];
+  const loopStart = openingFrames.length;
   const frameDuration = 180;
   const openingDurations = [320, 280, 240, 220, 200];
   let displayedFrames = 0;
@@ -124,11 +129,16 @@
     return ready;
   }
 
+  function advanceFrame(index, offset = 1) {
+    const next = index + offset;
+    return next < frames.length ? next : loopStart + (next - frames.length) % (frames.length - loopStart);
+  }
+
   function prepareFrames(index) {
     const keep = new Set([(index - 1 + frames.length) % frames.length]);
     // Decode a small rolling window, rather than retaining 120 full-resolution images.
     for (let offset = 0; offset <= Math.min(preloadCount, frames.length - 1); offset += 1) {
-      const candidate = (index + offset) % frames.length;
+      const candidate = advanceFrame(index, offset);
       keep.add(candidate);
       loadFrame(candidate).catch(() => {});
     }
@@ -142,14 +152,14 @@
     // Only swap after loading and decoding; keep the previous still while buffering.
     title.style.backgroundImage = `url(${JSON.stringify(frame.src)})`;
     title.style.backgroundPosition = frame.position || 'center';
-    if (openingFilm) {
+    if (openingFilm && frame.openingSafe === true) {
       openingFilm.style.backgroundImage = title.style.backgroundImage;
       openingFilm.style.backgroundPosition = frame.position || 'center';
     }
     title.classList.add('has-frame');
     if (!introStarted) {
       introStarted = true;
-      document.body.classList.add('intro-playing');
+      if (frame.openingSafe === true) document.body.classList.add('intro-playing');
     }
     activeFrame = index;
     displayedFrames += 1;
@@ -162,10 +172,10 @@
     if (!isPlaying()) return;
     const currentGeneration = generation;
     timer = setTimeout(async () => {
-      const nextIndex = (activeFrame + 1) % frames.length;
+      const nextIndex = advanceFrame(activeFrame);
       for (let attempt = 0; attempt < frames.length; attempt += 1) {
         if (currentGeneration !== generation || !isPlaying()) return;
-        const candidate = (nextIndex + attempt) % frames.length;
+        const candidate = advanceFrame(nextIndex, attempt);
         try {
           await loadFrame(candidate);
           if (currentGeneration !== generation || !isPlaying()) return;
