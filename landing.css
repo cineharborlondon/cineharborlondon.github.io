@@ -1,4 +1,6 @@
-:root { color-scheme: light; --paper: #eee7d9; --ink: #745332; --edge: clamp(24px, 3.5vw, 80px); font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Josefin+Slab:wght@500;600&display=swap");
+
+:root { color-scheme: light; --paper: #eee7d9; --ink: #745332; --edge: clamp(24px, 3.5vw, 80px); font-family: "Josefin Slab", Georgia, serif; color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
 * { box-sizing: border-box; }
 body { margin: 0; background: linear-gradient(110deg, #e9dfce, #f2eee5 55%, #eee7d9); }
 a { color: inherit; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
@@ -9,13 +11,13 @@ p, h1 { margin: 0; }
 .landing-shell { min-height: 100svh; display: flex; flex-direction: column; padding: calc(clamp(24px, 3.3vh, 48px) * 2 + 44px) var(--edge) 0; }
 .landing-main { display: flex; align-items: center; flex: 1; padding: 24px 0 34px; }
 .title-stage { position: relative; width: 100%; transform: translateY(clamp(-36px, -3vh, -18px)); }
-.image-title { font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif; font-weight: 900; font-size: calc((100vw - var(--edge) * 2) * .222); line-height: .79; letter-spacing: -.065em; color: #745332; width: 100%; padding: .055em .035em .08em 0; background-position: center; background-size: cover; }
+.image-title { font-family: "Josefin Sans", Arial, sans-serif; font-weight: 700; font-size: calc((100vw - var(--edge) * 2) * .222); line-height: .79; letter-spacing: -.065em; color: #745332; width: 100%; padding: .055em .035em .08em 0; background-position: center; background-size: cover; }
 .image-title.has-frame { -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
 .title-cine, .title-harbor { display: block; text-align: left; }
 /* Compensate for H's wider side bearing so both lines share a visual left edge. */
 .title-harbor { margin-top: .11em; text-indent: -.027em; }
 .landing-footer { min-height: 90px; padding: 22px 0 26px; display: flex; justify-content: center; align-items: center; }
-.slogan { font-size: 13px; text-align: center; }
+.slogan { font-family: "Josefin Slab", Georgia, serif; font-weight: 600; font-size: clamp(16px, 1.15vw, 20px); line-height: 1.5; letter-spacing: .025em; text-align: center; }
 @media (min-aspect-ratio: 2/1) and (min-width: 900px) { .image-title { font-size: min(21.45vw, 37vh); } }
 @media (max-width: 700px) {
   :root { --edge: 22px; }
