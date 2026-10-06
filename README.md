@@ -50,3 +50,11 @@ python -m http.server 8000
 Open `http://localhost:8000`. Use a server rather than opening HTML files directly, because shared assets and navigation use paths relative to the website root.
 
 The legacy `/cineharbor/` pages redirect to the maintained root website. Edit and build the root project files.
+
+## Landing page (October 2026)
+
+The landing page lives in `index.html`, `landing.css`, `landing.js`, and `landing-frames.js`. The existing portfolio is preserved in `work.html`. Old links such as `/#films`, `/#commercials`, and `/index.html#work` still open the matching Work view.
+
+The image-filled title plays 120 selected landscape stills. Each is held for 500 ms (a 60-second loop). Every page load shuffles the stills and separates frames from the same film. The entire landing page links to Work. There is no visible navigation or playback control; the Space key pauses or resumes the sequence, and hidden browser tabs pause automatically. Reduced-motion users start with a still image. Frame loading failures retain the preceding frame; a brown wordmark remains readable when no images load.
+
+To preview locally, serve this folder with `python3 -m http.server 8090 --bind 127.0.0.1` and open `http://127.0.0.1:8090/`. Only the selected compressed stills and minimal playback data are included in the website.

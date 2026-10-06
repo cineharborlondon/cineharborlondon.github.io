@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eee7d9">
+  <meta name="description" content="Cine Harbor — a London-based cinematography portfolio. Films, moving images, and creative collaborations.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Work — Cine Harbor</title>
+  <link rel="icon" href="assets/favicon.svg?v=845" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=centered-titles-20261005">
+  <link rel="stylesheet" href="home-links.css?v=centered-titles-20261005">
+  <script src="projects.js?v=simon-excerpts-20261005" defer></script>
+  <script src="script.js?v=pinned-last-20261005" defer></script>
+</head>
+<body id="top" class="beige-film-page">
+  <a class="skip-link" href="#work">Skip to selected work</a>
+  <div class="page-shell work-page">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Cine Harbor, home"><img class="site-logo" src="assets/logo-brown.svg?v=1" width="389" height="123" alt="Cine Harbor"></a>
+      <nav aria-label="Main navigation">
+        <a href="#work" aria-current="location">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="work-main" id="work-swipe-area" aria-label="Work — swipe left or right to change category">
+      <div class="film-atmosphere" aria-hidden="true">
+        <div class="film-glow"></div>
+        <div class="film-rail film-rail-top"></div>
+        <div class="film-rail film-rail-bottom"></div>
+      </div>
+      <section class="work-section" id="work" aria-labelledby="work-heading">
+        <h1 id="work-heading" class="visually-hidden">Work</h1>
+        <div class="section-heading work-heading">
+          <div class="work-tabs" role="tablist" aria-label="Work categories">
+            <button type="button" role="tab" id="tab-films" aria-controls="panel-films" aria-selected="true" tabindex="0">Films</button>
+            <button type="button" role="tab" id="tab-commercials" aria-controls="panel-commercials" aria-selected="false" tabindex="-1">Commercials</button>
+            <button type="button" role="tab" id="tab-photography" aria-controls="panel-photography" aria-selected="false" tabindex="-1">Photography</button>
+            <button type="button" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="false" tabindex="-1">Social Contents</button>
+          </div>
+          <div class="work-controls">
+            <span class="section-index" id="work-count" aria-hidden="true">01 — 04</span>
+            <button type="button" class="preview-toggle" id="toggle-previews" aria-label="Pause previews" aria-pressed="false" title="Pause previews"><span aria-hidden="true"><svg viewBox="0 0 24 24" class="preview-icon"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg></span></button>
+            <button type="button" class="category-arrow" id="previous-category" aria-label="Previous work category" disabled><span aria-hidden="true">‹</span></button>
+            <button type="button" class="category-arrow" id="next-category" aria-label="Next work category"><span aria-hidden="true">›</span></button>
+          </div>
+        </div>
+        <div class="work-viewport" id="work-viewport" aria-label="Swipe left or right to change work category">
+          <div class="work-track" id="work-track">
+            <div class="work-panel" id="panel-films" role="tabpanel" aria-labelledby="tab-films" tabindex="0"></div>
+            <div class="work-panel" id="panel-commercials" role="tabpanel" aria-labelledby="tab-commercials" tabindex="0" aria-hidden="true" inert></div>
+            <div class="work-panel" id="panel-photography" role="tabpanel" aria-labelledby="tab-photography" tabindex="0" aria-hidden="true" inert></div>
+            <div class="work-panel" id="panel-social" role="tabpanel" aria-labelledby="tab-social" tabindex="0" aria-hidden="true" inert></div>
+          </div>
+        </div>
+        <p class="visually-hidden" id="work-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p>Enable JavaScript to browse work categories and the video player. <a href="/films-un-current.html">View a film</a>.</p></noscript>
+      </section>
+
+      <div class="work-stage-bottom"><a class="stage-back-to-top" href="#top">Back to top ↑</a></div>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year">2026</span> Cine Harbor</p><p class="footer-location">LONDON <span aria-hidden="true">·</span> WORLDWIDE</p><nav class="footer-socials" aria-label="Contact Cine Harbor"><a href="mailto:info@cineharbor.space" aria-label="Email info@cineharbor.space" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></a></nav></footer>
+  </div>
+
+</body>
+</html>
