@@ -220,7 +220,7 @@
     wantsPlayback = false;
     refreshPlayback();
     document.body.classList.add('is-entering');
-    setTimeout(() => location.assign(entry.href), 440);
+    setTimeout(() => location.assign(entry.href), 540);
   });
   addEventListener('pageshow', () => {
     if (!entering) return;

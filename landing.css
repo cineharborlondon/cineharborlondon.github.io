@@ -44,15 +44,11 @@ body.intro-playing .slogan { animation: slogan-arrival 1.8s steps(1, end) both; 
   body.intro-playing .slogan { animation: none; }
 }
 
-/* A brief shutter close carries the visitor into Work without a bright flash. */
-body::before, body::after { content: ""; position: fixed; left: 0; width: 100%; height: 50svh; z-index: 3; background: #211f1b; pointer-events: none; transform: scaleY(0); transition: transform 420ms cubic-bezier(.65, 0, .35, 1); }
-body::before { top: 0; transform-origin: top; }
-body::after { bottom: 0; transform-origin: bottom; }
-.title-stage { transition: transform 420ms cubic-bezier(.65, 0, .35, 1); }
-body.is-entering::before, body.is-entering::after { transform: scaleY(1); }
-body.is-entering .title-stage { transform: scale(.985); }
+/* Move into the imagery rather than closing a shutter over it. */
+body.is-entering { overflow: hidden; }
+.title-stage { transform-origin: 50% 65%; transition: transform 520ms cubic-bezier(.55, .05, .3, 1); }
+body.is-entering .title-stage { transform: scale(2.3); }
+body.is-entering .title-solid { animation: none; opacity: 0; }
+body.is-entering .opening-film { animation: none; opacity: 0; }
 body.is-entering .enter-work { cursor: progress; }
-@media (prefers-reduced-motion: reduce) {
-  body::before, body::after { display: none; }
-  .title-stage { transition: none; }
-}
+@media (prefers-reduced-motion: reduce) { .title-stage { transition: none; } }
