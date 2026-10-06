@@ -195,7 +195,7 @@ const projects = [
     "displayCategory": "Fashion Film"
   },
   {
-    "collection": "films",
+    "collection": "commercials",
     "kind": "video",
     "title": "Tim Yip × Hackett London",
     "vimeo": "1232913015",
@@ -282,7 +282,7 @@ const projects = [
     "year": "2026"
   },
   {
-    "collection": "films",
+    "collection": "commercials",
     "kind": "video",
     "title": "How to Stay Chic and Warm in London",
     "vimeo": "1232909009",
