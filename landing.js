@@ -208,6 +208,28 @@
     status.textContent = 'Film stills are temporarily unavailable.';
   }
 
+  let entering = false;
+  let resumeAfterEntry = false;
+  entry.addEventListener('click', event => {
+    // Preserve native new-tab/download behavior and reduced-motion navigation.
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || motion.matches) return;
+    event.preventDefault();
+    if (entering) return;
+    entering = true;
+    resumeAfterEntry = wantsPlayback;
+    wantsPlayback = false;
+    refreshPlayback();
+    document.body.classList.add('is-entering');
+    setTimeout(() => location.assign(entry.href), 440);
+  });
+  addEventListener('pageshow', () => {
+    if (!entering) return;
+    entering = false;
+    document.body.classList.remove('is-entering');
+    wantsPlayback = resumeAfterEntry && !motion.matches;
+    refreshPlayback();
+  });
+
   if (frames.length) initializeFrames();
   document.addEventListener('keydown', event => {
     if (event.code !== 'Space' || event.repeat || event.altKey || event.ctrlKey || event.metaKey || activeFrame < 0) return;
