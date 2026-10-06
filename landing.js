@@ -64,10 +64,12 @@
   }
 
   // Each entry is a still: { src, sourceGroup, position? }.
-  // Keep all 120 entries (15 seconds at 4x speed), with a fresh, film-spaced order per visit.
+  // Keep all 120 entries (about 22 seconds with an eased opening), with a fresh, film-spaced order per visit.
   const frames = shuffleFrames((window.landingFrames || [])
     .filter(frame => frame && typeof frame.src === 'string' && frame.src));
-  const frameDuration = 125;
+  const frameDuration = 180;
+  const openingDurations = [320, 280, 240, 220, 200];
+  let displayedFrames = 0;
   const preloadCount = 6;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const cache = new Map();
@@ -140,6 +142,7 @@
     title.style.backgroundPosition = frame.position || 'center';
     title.classList.add('has-frame');
     activeFrame = index;
+    displayedFrames += 1;
     title.dataset.frame = String(index + 1);
     prepareFrames(index);
   }
@@ -161,7 +164,7 @@
         } catch { /* Retain the last good still and continue past an unavailable frame. */ }
       }
       if (currentGeneration === generation) scheduleFrame();
-    }, frameDuration);
+    }, openingDurations[displayedFrames - 1] ?? frameDuration);
   }
 
   function refreshPlayback() {
@@ -192,7 +195,7 @@
     event.preventDefault();
     wantsPlayback = !wantsPlayback;
     refreshPlayback();
-    // Announce user actions, not eight frame changes per second.
+    // Announce user actions, not about six frame changes per second.
     status.textContent = wantsPlayback
       ? 'Film still sequence playing.'
       : `Film still sequence paused. Frame ${activeFrame + 1} of ${frames.length}: Cine Harbor.`;
