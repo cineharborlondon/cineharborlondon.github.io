@@ -1,5 +1,7 @@
 (() => {
   const title = document.querySelector('#image-title');
+  const openingFilm = document.querySelector('.opening-film');
+  let introStarted = false;
   const entry = document.querySelector('.enter-work');
   const status = document.querySelector('#frame-status');
   function shuffleFrames(sourceFrames) {
@@ -140,7 +142,15 @@
     // Only swap after loading and decoding; keep the previous still while buffering.
     title.style.backgroundImage = `url(${JSON.stringify(frame.src)})`;
     title.style.backgroundPosition = frame.position || 'center';
+    if (openingFilm) {
+      openingFilm.style.backgroundImage = title.style.backgroundImage;
+      openingFilm.style.backgroundPosition = frame.position || 'center';
+    }
     title.classList.add('has-frame');
+    if (!introStarted) {
+      introStarted = true;
+      document.body.classList.add('intro-playing');
+    }
     activeFrame = index;
     displayedFrames += 1;
     title.dataset.frame = String(index + 1);

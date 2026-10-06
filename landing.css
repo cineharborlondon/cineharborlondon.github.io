@@ -30,3 +30,17 @@ p, h1 { margin: 0; }
   .landing-footer { min-height: 90px; padding: 20px 0; }
 }
 @media (forced-colors: active) { .image-title.has-frame { background: none !important; color: CanvasText; -webkit-text-fill-color: CanvasText; } }
+
+/* Reveal the film through the wordmark after a full-frame opening. */
+.opening-film { position: fixed; inset: 0; pointer-events: none; background-size: cover; background-position: center; opacity: 0; }
+.landing-shell { position: relative; }
+.title-solid { position: absolute; inset: 0; color: var(--paper); -webkit-text-fill-color: var(--paper); background: none; opacity: 0; pointer-events: none; }
+body.intro-playing .opening-film,
+body.intro-playing .title-solid { animation: film-to-wordmark 3.4s cubic-bezier(.4, 0, .2, 1) both; }
+body.intro-playing .slogan { animation: slogan-arrival 3.4s ease both; }
+@keyframes film-to-wordmark { 0%, 28% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes slogan-arrival { 0%, 28% { opacity: 0; } 100% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .opening-film, .title-solid { display: none; }
+  body.intro-playing .slogan { animation: none; }
+}
