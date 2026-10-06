@@ -492,7 +492,7 @@ const projects = [
     "aspectRatio": 1.3333333333333333,
     "previewStart": 8,
     "cover": "https://i.vimeocdn.com/video/2208431046-adc3039a1687c4094b1f246d8f94ffc7ad7daa678cb98d91c956c00ce3b8918a-d?f=webp&region=us",
-    "credit": "",
+    "credit": "Filming Support by Cine Harbor",
     "sample": false,
     "slug": "john-pawson-banlan-slips",
     "description": "John Pawson × Banlan CEO Talk.\n\nJohn Pawson × Banlan’s first outdoor furniture series — Slips (JIANDU).",
