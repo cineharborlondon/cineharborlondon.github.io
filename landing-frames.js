@@ -1,4 +1,4 @@
-// 120 selected landscape stills. Each frame is held for 250 ms (2x playback).
+// 120 selected landscape stills. Each frame is held for 125 ms (4x playback).
 // Source groups keep stills from the same film apart when shuffled.
 window.landingFrames = [
   {"src": "assets/landing-selected-stills/frame-001.webp", "sourceGroup": "group-08", "position": "center"},
