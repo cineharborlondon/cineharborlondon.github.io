@@ -74,9 +74,7 @@
     : [];
   const frames = [...openingFrames, ...shuffleFrames(sourceFrames)];
   const loopStart = openingFrames.length;
-  const frameDuration = 180;
-  const openingDurations = [320, 280, 240, 220, 200];
-  let displayedFrames = 0;
+  const frameDuration = 350;
   const preloadCount = 6;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const cache = new Map();
@@ -163,7 +161,6 @@
       if (frame.openingSafe === true) document.body.classList.add('intro-playing');
     }
     activeFrame = index;
-    displayedFrames += 1;
     title.dataset.frame = String(index + 1);
     prepareFrames(index);
   }
@@ -185,7 +182,7 @@
         } catch { /* Retain the last good still and continue past an unavailable frame. */ }
       }
       if (currentGeneration === generation) scheduleFrame();
-    }, openingDurations[displayedFrames - 1] ?? frameDuration);
+    }, frameDuration);
   }
 
   function refreshPlayback() {
@@ -217,7 +214,7 @@
     event.preventDefault();
     wantsPlayback = !wantsPlayback;
     refreshPlayback();
-    // Announce user actions, not about six frame changes per second.
+    // Announce user actions, not each frame change.
     status.textContent = wantsPlayback
       ? 'Film still sequence playing.'
       : `Film still sequence paused. Frame ${activeFrame + 1} of ${frames.length}: Cine Harbor.`;
