@@ -1433,7 +1433,7 @@ const projects = [
     "vimeo": "1233568698",
     "vimeoHash": "f266fa6397",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
+    "previewStart": 3293,
     "cover": "/assets/genshin-concert-2023-cover.jpg",
     "credit": "",
     "sample": false,
@@ -1450,10 +1450,6 @@ const projects = [
     ],
     "previewSegments": [
       {
-        "start": 8,
-        "duration": 4
-      },
-      {
         "start": 3293,
         "duration": 18
       }
@@ -1466,8 +1462,8 @@ const projects = [
     "vimeo": "1233749117",
     "vimeoHash": "23a0f50794",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 71,
-    "previewDuration": 24,
+    "previewStart": 60,
+    "previewDuration": 20,
     "cover": "https://i.vimeocdn.com/video/2209503582-56d06c42d7390aace0a0bd02a0b1065b0c310ad249718d54cf5efad4235e7021-d_1280",
     "credit": "",
     "sample": false,

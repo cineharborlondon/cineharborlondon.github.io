@@ -68,3 +68,5 @@ Summer Playlist Work title is Lina Zhang & Libby Bennett × W China × Burberry;
 Fashion landscape cards remain one per desktop row and centered, with video width capped by (100svh - 260px) × 16/9 so the complete picture and caption fit one screen. ALLSO uses the original Beauty Portrait smiling frame at 1s; COMMENSE uses Garden 01 white-outfit portrait at 3s. Preview sequences stay unchanged.
 
 NEODIKO — London Design Exhibition (London, 2026) belongs to the Content subsection immediately after Starry Mart; preserve Vimeo 1233827953 and its unlisted hash. COMMENSE is labelled Social Series (8 Films).
+
+Latest preview correction: PAINKILLER — DUCATI previews 60–80 seconds to avoid the flashing drawing shot around 1:26. Genshin Concert 2023 keeps its static title poster, then directly previews the UK performance at 54:53 for 18 seconds; loop only the performance and do not replay the title animation.
