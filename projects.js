@@ -859,11 +859,11 @@ const projects = [
         "alt": "2026 London Fashion Week — photograph 18"
       },
       {
-        "src": "/lfw-b031737.webp",
-        "small": "/lfw-b031737-960.webp",
+        "src": "/lfw-b031543.webp",
+        "small": "/lfw-b031543-960.webp",
         "width": 3600,
         "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 10"
+        "alt": "2026 London Fashion Week — photograph 04"
       },
       {
         "src": "/lfw-b031302.webp",
@@ -871,6 +871,13 @@ const projects = [
         "width": 2233,
         "height": 3350,
         "alt": "2026 London Fashion Week — photograph 01"
+      },
+      {
+        "src": "/lfw-b031737.webp",
+        "small": "/lfw-b031737-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 10"
       },
       {
         "src": "/lfw-b031611.webp",
@@ -899,13 +906,6 @@ const projects = [
         "width": 3600,
         "height": 5400,
         "alt": "2026 London Fashion Week — photograph 20"
-      },
-      {
-        "src": "/lfw-b031543.webp",
-        "small": "/lfw-b031543-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 04"
       },
       {
         "src": "/lfw-b031889.webp",
@@ -943,20 +943,6 @@ const projects = [
         "alt": "2026 London Fashion Week — photograph 02"
       },
       {
-        "src": "/lfw-b031537.webp",
-        "small": "/lfw-b031537-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 03"
-      },
-      {
-        "src": "/lfw-b031695.webp",
-        "small": "/lfw-b031695-960.webp",
-        "width": 3159,
-        "height": 4739,
-        "alt": "2026 London Fashion Week — photograph 09"
-      },
-      {
         "src": "/lfw-b031811.webp",
         "small": "/lfw-b031811-960.webp",
         "width": 3600,
@@ -992,7 +978,31 @@ const projects = [
         "alt": "2026 London Fashion Week — photograph 16"
       }
     ],
-    "contentOrder": 4
+    "contentOrder": 4,
+    "photoGroups": [
+      {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    ]
   },
   {
     "collection": "social",
