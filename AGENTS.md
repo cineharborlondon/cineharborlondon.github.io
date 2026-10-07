@@ -31,3 +31,8 @@
 - Dahua keeps the product cover and previews the complete 26-second film on loop.
 
 - OPPO launch is labelled Live Broadcast; retain its original opening preview at 8–25.5 seconds, replacing only the female speaker close-up with the product-stage wide shot at 1100–1106.5 seconds.
+
+- Starry Mart is a Store Opening Films series with London Dock, Southside and Fulham in that order; retain the original London Dock Work cover and preview.
+- Hanshow Retail Technology Show photography follows the 13-photo Instagram carousel order, then the five additional Drive photos, retaining native picture proportions.
+
+Mobile portrait work cards must be horizontally centered, with their original compact size and native ratio preserved. Starry Mart groups London Dock, Southside and Fulham openings while preserving its existing preview. Photography selections: Hanshow 18, Heathrow Express 25, SUNCUN LFW 20 in Instagram order, Pei Feng Su 11. PAINKILLER — Ducati follows VOGUE films and uses fast vehicle tracking shots. New Savills, ZUKER and Oxford Content events appear near the end.

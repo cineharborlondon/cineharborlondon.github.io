@@ -72,6 +72,7 @@
 }
 @media (max-width: 640px), (orientation: portrait) and (max-width: 1000px) {
   .beige-film-page .mixed-format-grid .project:not(.portrait-project) { width: 100%; }
+  .beige-film-page .mixed-format-grid .portrait-project { margin-inline: auto; }
 }
 .beige-film-page .film-glow { background: radial-gradient(ellipse 35% 38% at 0% 100%, rgb(192 132 55 / 24%), transparent 78%), radial-gradient(ellipse 28% 32% at 100% 0%, rgb(191 148 74 / 18%), transparent 80%); }
 
