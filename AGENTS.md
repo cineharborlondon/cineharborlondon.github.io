@@ -54,3 +54,5 @@ Latest user update: Adam gallery is deduplicated to seven retouched photographs;
 LFW latest selection: remove repeated white male runway shot B031537 and crossed-out B031695. First row is B031924, B031543, B031302 (white female model moved up), with 18 photographs remaining. Keep a continuous unlabeled grid so this requested first row is stable.
 
 Desktop Content closing portraits SUXINDAI, The Capston, Knight Frank Rockwell and Stride occupy a dedicated final row, retaining compact native proportions and existing order. Mobile cards remain centered.
+
+User correction: Zhang Jingyi and Xin Zhilei films are for V Magazine (not VOGUE CHINA); keep this credit in titles and descriptions. Zhang Jingyi uses the original film brown-outfit portrait as its cover.

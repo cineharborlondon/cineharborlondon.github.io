@@ -314,24 +314,24 @@
   {
     "collection": "films",
     "kind": "video",
-    "title": "VOGUE CHINA × Zhang Jingyi",
+    "title": "V Magazine × Zhang Jingyi",
     "vimeo": "1233565950",
     "vimeoHash": "c41fc88772",
     "aspectRatio": 1.3333333333333333,
     "previewStart": 8,
-    "cover": "/assets/zhang-jingyi-vogue-cover.jpg",
+    "cover": "/assets/zhang-jingyi-v-magazine-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "zhang-jingyi",
-    "description": "A VOGUE CHINA fashion film starring Zhang Jingyi.",
+    "description": "A V Magazine fashion film starring Zhang Jingyi.",
     "images": [],
     "url": "/films-zhang-jingyi.html",
-    "coverPosition": "50% 15%"
+    "coverPosition": "50% 50%"
   },
   {
     "collection": "films",
     "kind": "video",
-    "title": "VOGUE CHINA × Xin Zhilei",
+    "title": "V Magazine × Xin Zhilei",
     "vimeo": "1233565690",
     "vimeoHash": "df4ef66c45",
     "aspectRatio": 1.3333333333333333,
@@ -340,7 +340,7 @@
     "credit": "",
     "sample": false,
     "slug": "xin-zhilei",
-    "description": "A VOGUE CHINA fashion film starring Xin Zhilei.",
+    "description": "A V Magazine fashion film starring Xin Zhilei.",
     "images": [],
     "url": "/films-xin-zhilei.html",
     "coverPosition": "50% 15%"
