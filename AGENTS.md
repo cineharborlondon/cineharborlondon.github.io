@@ -5,7 +5,7 @@
 - Before editing, read the latest remote main branch; preserve concurrent changes.
 - Before publishing, compare the video IDs and complete repository tree with the previous main commit. Stop if any existing video or file disappears without explicit authorization.
 - Edit projects-data.json as the project source and regenerate projects.js and detail pages with node build-projects.mjs.
-- Preserve pinLast rules: Dahua is last in Commercials; Event Highlights is immediately before Stride at the end of Content; Stride is last in Content; Threshold of Bloom, Starberry Fields Forever, Imaginary Friends and What If Your Style Was Illegal? are the last four in Films, in that order. New Films go before this closing group; preserve pinLast and pinLastOrder.
+- Preserve pinLast rules: Dahua is followed by Yingjia Design (China, 2018) at the end of Commercials; Event Highlights is immediately before Stride at the end of Content; Stride is last in Content; Threshold of Bloom, Starberry Fields Forever, Imaginary Friends and What If Your Style Was Illegal? are the last four in Films, in that order. New Films go before this closing group; preserve pinLast and pinLastOrder.
 
 - Related videos are stored in relatedVideoGroups and rendered under the project introduction. Keep all existing related clips unless explicitly told to remove them.
 
@@ -36,3 +36,5 @@
 - Hanshow Retail Technology Show photography follows the 13-photo Instagram carousel order, then the five additional Drive photos, retaining native picture proportions.
 
 Mobile portrait work cards must be horizontally centered, with their original compact size and native ratio preserved. Starry Mart groups London Dock, Southside and Fulham openings while preserving its existing preview. Photography selections: Hanshow 18, Heathrow Express 25, SUNCUN LFW 20 in Instagram order, Pei Feng Su 11. PAINKILLER — Ducati follows VOGUE films and uses fast vehicle tracking shots. New Savills, ZUKER and Oxford Content events appear near the end.
+
+Yingjia Design — Brand Film is the last Commercials project, filmed in China in 2018.

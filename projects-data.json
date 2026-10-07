@@ -1930,5 +1930,25 @@
         "alt": "Pei Feng Su — executive and environmental portrait 11"
       }
     ]
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "Yingjia Design — Brand Film",
+    "vimeo": "1233760055",
+    "vimeoHash": "c79bdbc236",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209518776-40f35747010b042bbccc6f6877e3656b62d4ab86ddbc4822cf10f76b4ebd2019-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "yingjia-design-brand-film",
+    "description": "A brand film for Yingjia Design, produced in China in 2018.",
+    "location": "China",
+    "year": "2018",
+    "images": [],
+    "url": "/commercials-yingjia-design-brand-film.html",
+    "pinLast": true,
+    "pinLastOrder": 2
   }
 ]
