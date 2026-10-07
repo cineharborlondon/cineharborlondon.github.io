@@ -44,12 +44,3 @@ body.intro-playing .slogan { animation: slogan-arrival 1.8s steps(1, end) both; 
   body.intro-playing .slogan { animation: none; }
 }
 
-/* Move into the imagery rather than closing a shutter over it. */
-body.is-entering { overflow: hidden; }
-.title-stage { transform-origin: 50% 65%; }
-body.is-entering .title-stage { animation: entry-push 12s linear both; }
-@keyframes entry-push { from { transform: scale(1); } to { transform: scale(40); } }
-body.is-entering .title-solid { animation: none; opacity: 0; }
-body.is-entering .opening-film { animation: none; opacity: 0; }
-body.is-entering .enter-work { cursor: progress; }
-@media (prefers-reduced-motion: reduce) { body.is-entering .title-stage { animation: none; } }
