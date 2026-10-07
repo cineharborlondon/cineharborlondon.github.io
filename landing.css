@@ -44,3 +44,15 @@ body.intro-playing .slogan { animation: slogan-arrival 1.8s steps(1, end) both; 
   body.intro-playing .slogan { animation: none; }
 }
 
+
+/* Home is a removable cover over a Work page loaded from the first visit. */
+html, body { height: 100%; overflow: hidden; }
+.work-underlay { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; z-index: 0; pointer-events: none; background: var(--paper); }
+.landing-cover { position: fixed; inset: 0; z-index: 2; background: linear-gradient(110deg, #e9dfce, #f2eee5 55%, #eee7d9); }
+.sand-air { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
+body.work-open .work-underlay { pointer-events: auto; }
+@property --sand-edge { syntax: "<percentage>"; inherits: false; initial-value: -18%; }
+.landing-cover.sand-lifting { animation: sand-lift 760ms cubic-bezier(.25, .1, .4, 1) both; -webkit-mask-image: linear-gradient(100deg, transparent calc(var(--sand-edge) - 4%), #000 calc(var(--sand-edge) + 4%)); mask-image: linear-gradient(100deg, transparent calc(var(--sand-edge) - 4%), #000 calc(var(--sand-edge) + 4%)); }
+@keyframes sand-lift { from { --sand-edge: -18%; } to { --sand-edge: 118%; } }
+.landing-cover[hidden], .sand-air[hidden] { display: none; }
+@media (prefers-reduced-motion: reduce) { .landing-cover.sand-lifting { animation: none; } }

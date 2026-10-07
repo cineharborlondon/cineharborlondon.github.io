@@ -85,9 +85,10 @@
   let wantsPlayback = !motion.matches;
   let timer;
   let generation = 0;
+  let coverVisible = true;
 
   function isPlaying() {
-    return wantsPlayback && !document.hidden && activeFrame >= 0 && frames.length > 1;
+    return coverVisible && wantsPlayback && !document.hidden && activeFrame >= 0 && frames.length > 1;
   }
 
   function updateControl() {
@@ -220,6 +221,10 @@
     status.textContent = wantsPlayback
       ? 'Film still sequence playing.'
       : `Film still sequence paused. Frame ${activeFrame + 1} of ${frames.length}: Cine Harbor.`;
+  });
+  addEventListener('cine:cover-state', event => {
+    coverVisible = event.detail.visible;
+    refreshPlayback();
   });
   document.addEventListener('visibilitychange', refreshPlayback);
   motion.addEventListener('change', event => {

@@ -7,11 +7,11 @@
   <meta name="description" content="Cine Harbor is a London-based creative production studio working across film, commercial, social content and photography. A feeling. A frame. A story.">
   <title>Cine Harbor — A feeling. A frame. A story.</title>
   <link rel="icon" href="assets/favicon.svg?v=845" type="image/svg+xml">
-  <link rel="stylesheet" href="landing.css?v=direct-entry-20261007">
-  <link rel="prefetch" href="work.html" as="document">
+  <link rel="stylesheet" href="landing.css?v=sand-cover-20261007">
   <script>
     // Keep existing project return links and bookmarked Work categories working.
     function openLegacyWork() {
+      if (document.body?.classList.contains('work-open')) return;
       if (/^#(work|films|commercials|photography|social)$/.test(location.hash)) {
         location.replace('work.html' + location.search + location.hash);
       }
@@ -20,9 +20,12 @@
     addEventListener('hashchange', openLegacyWork);
   </script>
   <script src="landing-frames.js?v=viewport-clean-intro-20261007" defer></script>
-  <script src="landing.js?v=direct-entry-20261007" defer></script>
+  <script src="landing.js?v=sand-cover-20261007" defer></script>
+  <script src="landing-cover.js?v=sand-cover-20261007" defer></script>
 </head>
 <body>
+  <iframe class="work-underlay" id="work-underlay" src="work.html" title="Cine Harbor selected work" loading="eager" allow="autoplay; fullscreen" aria-hidden="true" inert></iframe>
+  <div class="landing-cover" id="landing-cover">
   <div class="opening-film" aria-hidden="true"></div>
   <a class="enter-work" href="work.html" aria-label="Enter Work" aria-describedby="entry-help"></a>
   <span class="visually-hidden" id="entry-help">Press Enter to explore our work. Press Space to pause or resume the background.</span>
@@ -38,5 +41,7 @@
       <p class="slogan">A feeling. A frame. A story.</p>
     </footer>
   </div>
+  </div>
+  <canvas class="sand-air" id="sand-air" aria-hidden="true" hidden></canvas>
 </body>
 </html>
