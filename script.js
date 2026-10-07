@@ -78,7 +78,7 @@ function initPortfolio() {
   function projectCard(project, index) {
     const isPhoto = project.kind === 'photo';
     const article = element('article', 'project');
-    article.classList.toggle('portrait-project', !isPhoto && Number(project.aspectRatio) > 0 && (Number(project.aspectRatio) < 1 || project.fashionPriority));
+    article.classList.toggle('portrait-project', !isPhoto && Number(project.aspectRatio) > 0 && (Number(project.aspectRatio) < 1 || Boolean(project.fashionPriority)));
     article.classList.toggle('fashion-project', Boolean(project.fashionPriority));
     const button = element('a', 'project-button');
     button.href = project.url;
