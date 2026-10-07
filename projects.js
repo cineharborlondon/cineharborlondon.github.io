@@ -276,25 +276,6 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "The Capston — Lunar New Year Art Exhibition",
-    "vimeo": "1233725018",
-    "vimeoHash": "4c4e8eb988",
-    "aspectRatio": 0.5625,
-    "previewStart": 8,
-    "previewDuration": 12,
-    "cover": "https://i.vimeocdn.com/video/2209470606-b23ae4d5985c7cf3f36887c3a1d8171b2f6a6a094432bc5ce745e432e4daded7-d_1280",
-    "credit": "",
-    "sample": false,
-    "slug": "lunar-new-year-art-exhibition-london",
-    "description": "An event film from a Lunar New Year art exhibition in London, featuring emerging Chinese artists.",
-    "images": [],
-    "url": "/social-lunar-new-year-art-exhibition-london.html",
-    "location": "London, UK",
-    "contentOrder": 1.5
-  },
-  {
-    "collection": "social",
-    "kind": "video",
     "title": "Knight Frank — The OWO Residences",
     "vimeo": "1232901833",
     "vimeoHash": "51f3668da2",
@@ -331,21 +312,42 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "Ceramics Exhibition — Copenhagen",
+    "title": "Blanc de Chine — Dehua Porcelain International Tour",
     "vimeo": "1233724357",
     "vimeoHash": "b85c75a951",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
     "previewDuration": 12,
-    "cover": "https://i.vimeocdn.com/video/2209469760-c194df2aa578592941e80b1638500aab7d86bbeb17f444c0644bf0b79b7dbb9a-d_1280",
+    "cover": "/assets/dehua-international-tour-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "ceramics-exhibition-copenhagen",
-    "description": "A ceramics exhibition in Copenhagen, Denmark.",
+    "description": "An international exhibition tour celebrating Blanc de Chine porcelain from Dehua, filmed in Copenhagen and Brussels.",
     "images": [],
     "url": "/social-ceramics-exhibition-copenhagen.html",
-    "location": "Copenhagen, Denmark",
-    "contentOrder": 4
+    "location": "Copenhagen, Denmark · Brussels, Belgium",
+    "contentOrder": 4,
+    "groupedVideoLayout": true,
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "International Tour",
+        "videos": [
+          {
+            "title": "Copenhagen",
+            "vimeo": "1233724357",
+            "vimeoHash": "b85c75a951",
+            "aspectRatio": 1.7777777777777777
+          },
+          {
+            "title": "Brussels",
+            "vimeo": "1233724356",
+            "vimeoHash": "b09a62623b",
+            "aspectRatio": 1.7777777777777777
+          }
+        ]
+      }
+    ]
   },
   {
     "collection": "social",
@@ -364,7 +366,8 @@ const projects = [
     "images": [],
     "url": "/social-ceramics-exhibition-brussels.html",
     "location": "Brussels, Belgium",
-    "contentOrder": 5
+    "contentOrder": 5,
+    "listed": false
   },
   {
     "collection": "commercials",
@@ -583,8 +586,8 @@ const projects = [
     "vimeo": "1232902324",
     "vimeoHash": "80ffe67db3",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208432478-5e99b09cfadb561788b9ec0b988ae145cf1da0b3b79c991f72555d9e00b6789d-d?f=webp&region=us",
+    "previewStart": 12.3,
+    "cover": "/assets/realme-photo-clarity-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "realme-photo-clarity",
@@ -702,7 +705,7 @@ const projects = [
     "vimeoHash": "325bac0003",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "/assets/bvlgari-title-cover.svg",
+    "cover": "/assets/bvlgari-modern-weekly-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "bvlgari-nowness-venice-biennale",
@@ -752,8 +755,8 @@ const projects = [
     "vimeo": "1232904239",
     "vimeoHash": "561a77dbee",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208433695-5e63951444772a30c92077780d99ae4bb02d81cdaa66a5f02bb155e8359dcab5-d_1280?region=us",
+    "previewStart": 60,
+    "cover": "/assets/china-telecom-office-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "china-telecom-global",
@@ -1125,7 +1128,7 @@ const projects = [
   {
     "collection": "branded-content",
     "kind": "video",
-    "title": "TCL × Qinwen — IFA Deep Dive",
+    "title": "TCL × Qinwen — IFA Deep Dive | 42-Minute Documentary",
     "vimeo": "1233712586",
     "vimeoHash": "8044223874",
     "aspectRatio": 1.7777777777777777,
@@ -1236,6 +1239,26 @@ const projects = [
         ]
       }
     ]
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "The Capston — Lunar New Year Art Exhibition",
+    "vimeo": "1233725018",
+    "vimeoHash": "4c4e8eb988",
+    "aspectRatio": 0.5625,
+    "previewStart": 8,
+    "previewDuration": 12,
+    "cover": "https://i.vimeocdn.com/video/2209470606-b23ae4d5985c7cf3f36887c3a1d8171b2f6a6a094432bc5ce745e432e4daded7-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "lunar-new-year-art-exhibition-london",
+    "description": "An event film from a Lunar New Year art exhibition in London, featuring emerging Chinese artists.",
+    "images": [],
+    "url": "/social-lunar-new-year-art-exhibition-london.html",
+    "location": "London, UK",
+    "pinLast": true,
+    "pinLastOrder": 0
   },
   {
     "collection": "films",
