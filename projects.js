@@ -1071,7 +1071,7 @@ const projects = [
   {
     "collection": "fashion",
     "kind": "video",
-    "title": "How to Stay Chic and Warm in London",
+    "title": "Lina Zhang × W China × Burberry",
     "vimeo": "1232909009",
     "vimeoHash": "f8548ff0c2",
     "aspectRatio": 1.3333333333333333,
@@ -1080,7 +1080,7 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "how-to-stay-chic-and-warm-in-london",
-    "description": "",
+    "description": "How to Stay Chic and Warm in London",
     "images": [],
     "url": "/commercials-how-to-stay-chic-and-warm-in-london.html",
     "fashionOrder": 5
