@@ -407,6 +407,10 @@ function createPreviews() {
       try {
         if (active) {
           await player.play();
+          if (shouldPlay(entry)) {
+            entry.visual.dataset.previewState = 'playing';
+            entry.visual.classList.add('preview-ready');
+          }
           // 切换分类或打开弹层期间，未完成的播放请求不得重新启动预览。
           if (!shouldPlay(entry)) { await player.pause(); hideVimeoPreview(entry); }
         } else {
@@ -441,7 +445,7 @@ function createPreviews() {
       const player = new Vimeo.Player(iframe);
       entry.player = player;
       player.on('playing', () => {
-        if (entry.player !== player) return;
+        if (entry.player !== player || !entry.ready) return;
         if (!shouldPlay(entry)) { updateVimeo(entry); return; }
         entry.visual.dataset.previewState = 'playing';
         entry.visual.classList.add('preview-ready');
@@ -451,6 +455,8 @@ function createPreviews() {
       await player.ready();
       await player.setMuted(true);
       entry.visual.dataset.previewMuted = 'true';
+      // Vimeo may defer loading until play; keep this priming playback behind the poster.
+      await player.play();
       const segments = (entry.project.previewSegments || [{ start: entry.project.previewStart || 0, duration: entry.project.previewDuration || 24 }])
         .filter(segment => Number.isFinite(Number(segment.start)) && Number(segment.start) >= 0 && Number(segment.duration) > 0);
       if (!segments.length) segments.push({ start: 0, duration: 24 });
