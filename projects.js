@@ -230,7 +230,7 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "Libby Bennett — Once Upon a Time",
+    "title": "Libby Bennett × W China × Burberry",
     "vimeo": "1232822734",
     "vimeoHash": "b6da57b644",
     "aspectRatio": 1,
@@ -239,11 +239,31 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "interview-01",
-    "description": "Burberry × W Magazine China × Libby Bennett.\n\nOnce Upon a Time — a conversation with Libby Bennett.",
+    "description": "Two films with Libby Bennett for W China and Burberry.",
     "images": [],
     "url": "/commercials-interview-01.html",
     "location": "London, UK",
-    "year": "2026"
+    "year": "2026",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Once Upon a Time",
+            "vimeo": "1232822734",
+            "vimeoHash": "b6da57b644",
+            "aspectRatio": 1
+          },
+          {
+            "title": "OMG! Libby’s Hidden Talent",
+            "vimeo": "1232822735",
+            "vimeoHash": "1b1f1b8afd",
+            "aspectRatio": 0.75
+          }
+        ]
+      }
+    ]
   },
   {
     "collection": "social",
@@ -261,7 +281,8 @@ const projects = [
     "images": [],
     "url": "/commercials-interview-02.html",
     "location": "London, UK",
-    "year": "2026"
+    "year": "2026",
+    "listed": false
   },
   {
     "collection": "social",
@@ -695,6 +716,106 @@ const projects = [
             "title": "Tennis — 02",
             "vimeo": "1232913132",
             "vimeoHash": "5914d37278",
+            "aspectRatio": 0.562390158172232
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Zhang Youhao × Another Man — London Fashion Week 2025",
+    "vimeo": "1232912614",
+    "vimeoHash": "f9b79a517a",
+    "aspectRatio": 1.3333333333333333,
+    "previewStart": 2,
+    "cover": "https://i.vimeocdn.com/video/2208443170-69534c3a4da2eacd7d636c159d9aff707a0ae565e282a8a0b294619420936120-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "zhang-youhao-another-man-lfw-2025",
+    "description": "Three films with Zhang Youhao for Another Man at London Fashion Week 2025.",
+    "images": [],
+    "url": "/social-zhang-youhao-another-man-lfw-2025.html",
+    "location": "London, UK",
+    "year": "2025",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Vlog 01",
+            "vimeo": "1232912614",
+            "vimeoHash": "f9b79a517a",
+            "aspectRatio": 1.3333333333333333
+          },
+          {
+            "title": "Vlog 02",
+            "vimeo": "1232912612",
+            "vimeoHash": "517fe939fb",
+            "aspectRatio": 1.3333333333333333
+          },
+          {
+            "title": "Vlog 03",
+            "vimeo": "1232912613",
+            "vimeoHash": "5e0c666edb",
+            "aspectRatio": 1.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Paris Haute Couture Week 2026",
+    "vimeo": "1232912231",
+    "vimeoHash": "3076051a50",
+    "aspectRatio": 0.7498535442296427,
+    "previewStart": 2,
+    "cover": "https://i.vimeocdn.com/video/2208442118-7bcef5659db22e0f928b70e7856577e3bc253b2a28ca6922e6e3be3194fca47b-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "paris-haute-couture-week-2026",
+    "description": "Five films for VOGUE from Paris Haute Couture Week 2026.",
+    "images": [],
+    "url": "/social-paris-haute-couture-week-2026.html",
+    "location": "Paris, France",
+    "year": "2026",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "VOGUE × Armani — Li Bingbing",
+            "vimeo": "1232912231",
+            "vimeoHash": "3076051a50",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE × Balenciaga — Ma Sichun",
+            "vimeo": "1232912239",
+            "vimeoHash": "b7d77c0811",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE × Chanel — Shan Yichun",
+            "vimeo": "1232912257",
+            "vimeoHash": "01c96ed91a",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE × Chanel — William Chan",
+            "vimeo": "1232912269",
+            "vimeoHash": "c5122d816d",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE — Charlize",
+            "vimeo": "1232912732",
+            "vimeoHash": "74ec246b45",
             "aspectRatio": 0.562390158172232
           }
         ]

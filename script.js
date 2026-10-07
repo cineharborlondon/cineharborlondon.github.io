@@ -113,7 +113,7 @@ function initPortfolio() {
     return article;
   }
 
-  const groups = categories.map(category => projects.filter(project => (project.collection || 'films') === category.id)
+  const groups = categories.map(category => projects.filter(project => project.listed !== false && (project.collection || 'films') === category.id)
     .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : 0)));
   panels.forEach((panel, index) => {
     const items = groups[index];

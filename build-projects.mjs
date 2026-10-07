@@ -32,7 +32,8 @@ for (const project of projects) {
   const isPhoto = project.kind === 'photo';
   const label = labels[project.collection];
   const back = '/#' + project.collection;
-  const siblings = projects.filter(p => p.collection === project.collection);
+  // Retain merged project routes, but show one entry in Work and project navigation.
+  const siblings = projects.filter(p => p.listed !== false && p.collection === project.collection);
   const next = siblings.length > 1 ? siblings[(siblings.indexOf(project) + 1) % siblings.length] : null;
   const ratio = Number(project.aspectRatio) || 16 / 9;
   if (!isPhoto && !/^\d+$/.test(project.vimeo || '')) throw new Error('A video project needs a Vimeo ID');
