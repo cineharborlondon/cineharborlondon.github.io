@@ -1483,12 +1483,32 @@
   {
     "collection": "social",
     "kind": "video",
+    "title": "Hanchu ESS — Solar & Storage Live UK 2026",
+    "vimeo": "1233790591",
+    "vimeoHash": "e9346db20e",
+    "aspectRatio": 1.5,
+    "previewStart": 8,
+    "previewDuration": 24,
+    "cover": "/assets/hanchu-event-cover.jpg",
+    "credit": "",
+    "sample": false,
+    "slug": "hanchu-ess-solar-storage-live-uk-2026",
+    "description": "Exhibition highlights for Hanchu ESS at Solar & Storage Live UK 2026, filmed at the NEC in Birmingham.",
+    "images": [],
+    "url": "/social-hanchu-ess-solar-storage-live-uk-2026.html",
+    "location": "Birmingham, UK",
+    "year": "2026",
+    "contentOrder": 3.5
+  },
+  {
+    "collection": "social",
+    "kind": "video",
     "title": "Knight Frank × Rockwell — Event",
     "vimeo": "1232915674",
     "vimeoHash": "da6ca0ee20",
     "aspectRatio": 0.5625,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208446094-1fe2b0dc48c5e4a3c38388ed80653a30ef548836d2dc7202068bdf294d961cc9-d_1280",
+    "cover": "/assets/rockwell-event-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "event-20250710",
@@ -2084,46 +2104,18 @@
         "alt": "Realme × Adam Valdez — Campaign Photography — photograph 5"
       },
       {
-        "src": "https://lh3.googleusercontent.com/d/1GuEYomNJ6G7vYoQBrVEMYB7wYE9aFhLX=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1GuEYomNJ6G7vYoQBrVEMYB7wYE9aFhLX=w960",
-        "width": 960,
-        "height": 721,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 6"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1b4LMTepr7lbRFgIXKvHVSvlwK0OPeb98=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1b4LMTepr7lbRFgIXKvHVSvlwK0OPeb98=w960",
-        "width": 960,
-        "height": 1279,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 7"
-      },
-      {
         "src": "https://lh3.googleusercontent.com/d/1XYTtzGbESU5WsvbqcYRA3UCZ0Ilwp9oQ=w2400",
         "small": "https://lh3.googleusercontent.com/d/1XYTtzGbESU5WsvbqcYRA3UCZ0Ilwp9oQ=w960",
         "width": 960,
         "height": 1279,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 8"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1lHOJB6tAOy_Hzi9kGoXKknK6oXm4QKaK=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1lHOJB6tAOy_Hzi9kGoXKknK6oXm4QKaK=w960",
-        "width": 960,
-        "height": 1279,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 9"
+        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 6"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1HtZpLCRoJJLzIZFpSVju0REmuuSf7dRv=w2400",
         "small": "https://lh3.googleusercontent.com/d/1HtZpLCRoJJLzIZFpSVju0REmuuSf7dRv=w960",
         "width": 960,
         "height": 1226,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 10"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/11u6BeT9gJFdbVhCYe4uQnfTLHud_rr9i=w2400",
-        "small": "https://lh3.googleusercontent.com/d/11u6BeT9gJFdbVhCYe4uQnfTLHud_rr9i=w960",
-        "width": 960,
-        "height": 1226,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 11"
+        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 7"
       }
     ],
     "contentOrder": 2,
@@ -2306,7 +2298,6 @@
     "contentOrder": 1,
     "photoGroups": [
       {
-        "title": "Gardens & Lawns",
         "indices": [
           0,
           1,
@@ -2318,21 +2309,11 @@
           7,
           8,
           9,
-          10
-        ]
-      },
-      {
-        "title": "Coastal Life",
-        "indices": [
+          10,
           11,
           12,
           13,
-          14
-        ]
-      },
-      {
-        "title": "Family & Home",
-        "indices": [
+          14,
           15,
           16,
           17,

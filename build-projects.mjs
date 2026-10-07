@@ -48,7 +48,7 @@ for (const project of projects) {
   if (isPhoto && project.photoGroups?.length) {
     const indices = project.photoGroups.flatMap(group => group.indices);
     if (indices.length !== images.length || new Set(indices).size !== images.length || indices.some(i => !images[i])) throw new Error('Photo groups must include every image exactly once');
-    gallery = `<div class="photo-sections">${project.photoGroups.map((group, i) => `<section class="photo-group" aria-labelledby="photo-group-${i}"><h2 id="photo-group-${i}">${esc(group.title)}</h2><div class="project-gallery">${group.indices.map(index => photo(images[index], index)).join('\n')}</div></section>`).join('\n')}</div>`;
+    gallery = `<div class="photo-sections">${project.photoGroups.map((group, i) => `<section class="photo-group" ${group.title ? `aria-labelledby="photo-group-${i}"` : 'aria-label="Photography"'}>${group.title ? `<h2 id="photo-group-${i}">${esc(group.title)}</h2>` : ''}<div class="project-gallery">${group.indices.map(index => photo(images[index], index)).join('\n')}</div></section>`).join('\n')}</div>`;
   }
   const relatedVideos = (project.relatedVideoGroups || []).flatMap(group => group.videos || []);
   if (project.groupedVideoLayout && !relatedVideos.some(video => video.vimeo === project.vimeo)) throw new Error('A grouped project must include its primary video in a group');
