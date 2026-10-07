@@ -35,3 +35,6 @@
   .work-wordmark { font-size: 22px; }
   .work-header nav { gap: 22px; font-size: 14px; }
 }
+
+/* The About video backdrop keeps its original light wordmark. */
+.about-video-page .work-wordmark { color: var(--ink); }
