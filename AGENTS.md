@@ -12,3 +12,5 @@
 - Shared page headers use work-header.css: brown (#8f6334) wordmark on the left and Work / About / Contact together on the right. The About video page retains its original light wordmark.
 - Category display order is FILMS, COMMERCIALS, EDITORIAL, CONTENT, PHOTOGRAPHY; retain branded-content and social IDs for existing links.
 - Content fashion, W/Vogue and celebrity interview projects go first regardless of orientation (fashionPriority). Otherwise show landscape/square projects before portrait projects within each category; closing pinned projects keep their specified order. Landscape Work cards stay 16:9. Portrait cards retain their native ratio at a compact height that fits within the viewport.
+
+- All visible website project titles, video titles and labels must be in English, including nested related videos.

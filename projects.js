@@ -159,43 +159,43 @@ const projects = [
         "title": "The Films",
         "videos": [
           {
-            "title": "VOGUE — 杨幂",
+            "title": "VOGUE — Yang Mi",
             "vimeo": "1233567606",
             "vimeoHash": "b2f650af82",
             "aspectRatio": 0.7448275862068966
           },
           {
-            "title": "VOGUE — 欧阳娜娜",
+            "title": "VOGUE — Ouyang Nana",
             "vimeo": "1233567755",
             "vimeoHash": "b6962307e3",
             "aspectRatio": 0.7448275862068966
           },
           {
-            "title": "VOGUE — 欧阳娜娜（彩蛋）",
+            "title": "VOGUE — Ouyang Nana — Bonus",
             "vimeo": "1233567714",
             "vimeoHash": "25264cf838",
             "aspectRatio": 0.7448275862068966
           },
           {
-            "title": "VOGUE — 周冬雨",
+            "title": "VOGUE — Zhou Dongyu",
             "vimeo": "1233567428",
             "vimeoHash": "b0212cdc71",
             "aspectRatio": 0.7448275862068966
           },
           {
-            "title": "VOGUE — 林熙蕾",
+            "title": "VOGUE — Kelly Lin",
             "vimeo": "1233567658",
             "vimeoHash": "9cf1c344b7",
             "aspectRatio": 0.7448275862068966
           },
           {
-            "title": "VOGUE — 胡一天",
+            "title": "VOGUE — Hu Yitian",
             "vimeo": "1233567793",
             "vimeoHash": "f8064ecdec",
             "aspectRatio": 0.7448275862068966
           },
           {
-            "title": "VOGUE — 宋茜",
+            "title": "VOGUE — Victoria Song",
             "vimeo": "1233567501",
             "vimeoHash": "0f5b6bd92a",
             "aspectRatio": 0.7448275862068966
@@ -228,25 +228,25 @@ const projects = [
         "title": "The Films",
         "videos": [
           {
-            "title": "VOGUE — 汤唯",
+            "title": "VOGUE — Tang Wei",
             "vimeo": "1232912858",
             "vimeoHash": "fdd8f3d7c0",
             "aspectRatio": 0.7453416149068323
           },
           {
-            "title": "VOGUE — 张婧仪",
+            "title": "VOGUE — Zhang Jingyi",
             "vimeo": "1232912789",
             "vimeoHash": "55fc227f3b",
             "aspectRatio": 0.7453416149068323
           },
           {
-            "title": "VOGUE — 米卡",
+            "title": "VOGUE — Mika",
             "vimeo": "1232912788",
             "vimeoHash": "900b9d809c",
             "aspectRatio": 0.7453416149068323
           },
           {
-            "title": "VOGUE — Fil小白",
+            "title": "VOGUE — Fil Xiaobai",
             "vimeo": "1232912790",
             "vimeoHash": "4df426acb1",
             "aspectRatio": 0.7448275862068966
@@ -1177,7 +1177,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "大华智能锁 TVC 广告",
+    "title": "Dahua Smart Lock — TVC",
     "vimeo": "1232915774",
     "vimeoHash": "4ee734b1db",
     "aspectRatio": 1.7777777777777777,
@@ -1186,7 +1186,7 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "dahua-split-tvc",
-    "description": "Dahua Smart Lock TVC — 劈叉篇.",
+    "description": "Dahua Smart Lock TVC — The Split.",
     "images": [],
     "url": "/commercials-dahua-split-tvc.html",
     "pinLast": true,
