@@ -62,7 +62,7 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "Burberry × W Magazine — Summer 26 Playlist",
+    "title": "Burberry × W China — Summer 26 Playlist",
     "vimeo": "1221238820",
     "vimeoHash": "24f45adce5",
     "aspectRatio": 0.75,
@@ -76,7 +76,8 @@ const projects = [
     "url": "/commercials-w-magazine-summer-26.html",
     "location": "London, UK",
     "year": "2026",
-    "fashionPriority": true
+    "fashionPriority": true,
+    "singleLineTitle": true
   },
   {
     "collection": "social",
@@ -258,7 +259,7 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "Starry Mart — Store Opening Films",
+    "title": "Starry Mart — Store Opening Series (3 Films)",
     "vimeo": "1232915723",
     "vimeoHash": "e516679215",
     "aspectRatio": 1.7777777777777777,
@@ -303,20 +304,42 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "Knight Frank — The OWO Residences",
-    "vimeo": "1232901833",
-    "vimeoHash": "51f3668da2",
+    "title": "Blanc de Chine — Dehua Porcelain International Tour",
+    "vimeo": "1233724357",
+    "vimeoHash": "b85c75a951",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208433608-7261d8f5a0a8e6e6fc300a5fc8808304165216c387abbb5b8226910f58cb7135-d_1280?region=us",
+    "previewDuration": 12,
+    "cover": "/assets/dehua-international-tour-cover.jpg",
     "credit": "",
     "sample": false,
-    "slug": "knight-frank-owo-residences",
-    "description": "A property tour of The OWO Residences for Knight Frank, filmed in London.",
+    "slug": "ceramics-exhibition-copenhagen",
+    "description": "An international exhibition tour celebrating Blanc de Chine porcelain from Dehua, filmed in Copenhagen and Brussels.",
     "images": [],
-    "url": "/social-knight-frank-owo-residences.html",
-    "location": "London, UK",
-    "contentOrder": 2
+    "url": "/social-ceramics-exhibition-copenhagen.html",
+    "location": "Copenhagen, Denmark · Brussels, Belgium",
+    "contentOrder": 2,
+    "groupedVideoLayout": true,
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "International Tour",
+        "videos": [
+          {
+            "title": "Copenhagen",
+            "vimeo": "1233724357",
+            "vimeoHash": "b85c75a951",
+            "aspectRatio": 1.7777777777777777
+          },
+          {
+            "title": "Brussels",
+            "vimeo": "1233724356",
+            "vimeoHash": "b09a62623b",
+            "aspectRatio": 1.7777777777777777
+          }
+        ]
+      }
+    ]
   },
   {
     "collection": "social",
@@ -339,42 +362,20 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "Blanc de Chine — Dehua Porcelain International Tour",
-    "vimeo": "1233724357",
-    "vimeoHash": "b85c75a951",
+    "title": "Knight Frank — The OWO Residences",
+    "vimeo": "1232901833",
+    "vimeoHash": "51f3668da2",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "previewDuration": 12,
-    "cover": "/assets/dehua-international-tour-cover.jpg",
+    "cover": "https://i.vimeocdn.com/video/2208433608-7261d8f5a0a8e6e6fc300a5fc8808304165216c387abbb5b8226910f58cb7135-d_1280?region=us",
     "credit": "",
     "sample": false,
-    "slug": "ceramics-exhibition-copenhagen",
-    "description": "An international exhibition tour celebrating Blanc de Chine porcelain from Dehua, filmed in Copenhagen and Brussels.",
+    "slug": "knight-frank-owo-residences",
+    "description": "A property tour of The OWO Residences for Knight Frank, filmed in London.",
     "images": [],
-    "url": "/social-ceramics-exhibition-copenhagen.html",
-    "location": "Copenhagen, Denmark · Brussels, Belgium",
-    "contentOrder": 4,
-    "groupedVideoLayout": true,
-    "showVideoTitles": true,
-    "relatedVideoGroups": [
-      {
-        "title": "International Tour",
-        "videos": [
-          {
-            "title": "Copenhagen",
-            "vimeo": "1233724357",
-            "vimeoHash": "b85c75a951",
-            "aspectRatio": 1.7777777777777777
-          },
-          {
-            "title": "Brussels",
-            "vimeo": "1233724356",
-            "vimeoHash": "b09a62623b",
-            "aspectRatio": 1.7777777777777777
-          }
-        ]
-      }
-    ]
+    "url": "/social-knight-frank-owo-residences.html",
+    "location": "London, UK",
+    "contentOrder": 4
   },
   {
     "collection": "social",
@@ -423,7 +424,7 @@ const projects = [
     "vimeoHash": "8169051e92",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209508910-d6bbef680df7b7c877e76885195b0c3ab88f348a77beb6a1754fe8b4baa46857-d_1280",
+    "cover": "/assets/zuker-sign-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "zuker-10th-anniversary",
@@ -1253,146 +1254,6 @@ const projects = [
   {
     "collection": "photography",
     "kind": "photo",
-    "title": "Hanshow — Retail Technology Show",
-    "slug": "hanshow-retail-technology-show",
-    "url": "/photography-hanshow-retail-technology-show.html",
-    "cover": "https://lh3.googleusercontent.com/d/1xezlM1TEfH7YFUUu2YgOKw9yO3pkslBw=w960",
-    "description": "Exhibition photography at the Retail Technology Show, ExCeL London. Capturing electronic shelf label products, the team, customer interactions and the activity around the Hanshow stand.",
-    "credit": "",
-    "location": "ExCeL London, UK",
-    "year": "2026",
-    "images": [
-      {
-        "src": "https://lh3.googleusercontent.com/d/1xezlM1TEfH7YFUUu2YgOKw9yO3pkslBw=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1xezlM1TEfH7YFUUu2YgOKw9yO3pkslBw=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 1"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/17e-kYHJ6qx20G8ZG49rMgYBhxiQOP5a6=w2400",
-        "small": "https://lh3.googleusercontent.com/d/17e-kYHJ6qx20G8ZG49rMgYBhxiQOP5a6=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 2"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1SdEGIKu-TTU-XmdZydap70l-Z7fTHssY=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1SdEGIKu-TTU-XmdZydap70l-Z7fTHssY=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 3"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1whgwxxoJdSm6JgVhLOn01Q3XywehIOPP=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1whgwxxoJdSm6JgVhLOn01Q3XywehIOPP=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 4"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1MQB1wuumma_4fFS8YopC-aCt8LGkfHmT=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1MQB1wuumma_4fFS8YopC-aCt8LGkfHmT=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 5"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1eU9qhpm1TXPYeNbuodNbkESHYO7j-aEG=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1eU9qhpm1TXPYeNbuodNbkESHYO7j-aEG=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 6"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1D9hjRHsN97wn0HW_u47zmwK2mquG0zOZ=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1D9hjRHsN97wn0HW_u47zmwK2mquG0zOZ=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 7"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/18wBnYrjPfIk_jndS9KKSOPCpmlqYhuxW=w2400",
-        "small": "https://lh3.googleusercontent.com/d/18wBnYrjPfIk_jndS9KKSOPCpmlqYhuxW=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 8"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1qzSde7HdtDoS5cN2LW39bxveWAv_twrG=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1qzSde7HdtDoS5cN2LW39bxveWAv_twrG=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 9"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1g2Quzcgu_esKLb9Hgs0WlmvzoqD_vNaL=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1g2Quzcgu_esKLb9Hgs0WlmvzoqD_vNaL=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 10"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1XZ-EeIubeKxrHldosAEOKkQgtuvhscRr=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1XZ-EeIubeKxrHldosAEOKkQgtuvhscRr=w960",
-        "width": 2400,
-        "height": 3600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 11"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1yp1PLoyQrQe4Zuz6IwY43VoJMFe6rwl3=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1yp1PLoyQrQe4Zuz6IwY43VoJMFe6rwl3=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 12"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1zjA7NxvAZ7zbWZXLaW-xkWrbcjIERboT=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1zjA7NxvAZ7zbWZXLaW-xkWrbcjIERboT=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 13"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1_S_DPp_Z_AuQ_qsf_Lv-xMbw-9QPjI-p=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1_S_DPp_Z_AuQ_qsf_Lv-xMbw-9QPjI-p=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 14"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/16dvP9Omkyj7CHdowjMaapRVH0RqFOfhG=w2400",
-        "small": "https://lh3.googleusercontent.com/d/16dvP9Omkyj7CHdowjMaapRVH0RqFOfhG=w960",
-        "width": 2400,
-        "height": 3600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 15"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1RQnrgRCCsonVJ3X7oSge20ZxbFD-kWQm=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1RQnrgRCCsonVJ3X7oSge20ZxbFD-kWQm=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 16"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1pcA9TAIlIq1hy8lbDRE6MYwTaiEgqLGS=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1pcA9TAIlIq1hy8lbDRE6MYwTaiEgqLGS=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 17"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1-Im6pMcDYKG3fA6IO5f4ru0wrm2uvHVa=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1-Im6pMcDYKG3fA6IO5f4ru0wrm2uvHVa=w960",
-        "width": 2400,
-        "height": 3600,
-        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 18"
-      }
-    ]
-  },
-  {
-    "collection": "photography",
-    "kind": "photo",
     "title": "Heathrow Express — Campaign Photography",
     "slug": "heathrow-express-campaign-photography",
     "url": "/photography-heathrow-express-campaign.html",
@@ -1771,6 +1632,46 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
+    "title": "SUXINDAI — Vertical Ad Series (2 Films)",
+    "vimeo": "1233762162",
+    "vimeoHash": "3c80235b7d",
+    "aspectRatio": 0.5625,
+    "previewStart": 5,
+    "previewDuration": 24,
+    "cover": "https://i.vimeocdn.com/video/2209521824-7f2b975dce450e96ef197eb5227058ed24e0f4570e69bd81187239dd3e3dc272-d_960",
+    "credit": "",
+    "sample": false,
+    "slug": "suxindai-vertical-ad-series",
+    "description": "Two vertical advertisements for SUXINDAI.",
+    "images": [],
+    "url": "/social-suxindai-vertical-ad-series.html",
+    "groupedVideoLayout": true,
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Treasure Hunt",
+            "vimeo": "1233762162",
+            "vimeoHash": "3c80235b7d",
+            "aspectRatio": 0.5625,
+            "cover": "https://i.vimeocdn.com/video/2209521870-099a97ca0dac70c653249d56818bf6e16f2aa7ad50ca88301ac75e6e0e8011ef-d_960"
+          },
+          {
+            "title": "One Drop",
+            "vimeo": "1233762160",
+            "vimeoHash": "cc3547ac0a",
+            "aspectRatio": 0.5625,
+            "cover": "https://i.vimeocdn.com/video/2209521824-7f2b975dce450e96ef197eb5227058ed24e0f4570e69bd81187239dd3e3dc272-d_960"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "social",
+    "kind": "video",
     "title": "The Capston — Lunar New Year Art Exhibition",
     "vimeo": "1233725018",
     "vimeoHash": "4c4e8eb988",
@@ -1847,6 +1748,148 @@ const projects = [
     "pinLastOrder": 1
   },
   {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "Hanshow — Retail Technology Show",
+    "slug": "hanshow-retail-technology-show",
+    "url": "/photography-hanshow-retail-technology-show.html",
+    "cover": "https://lh3.googleusercontent.com/d/1xezlM1TEfH7YFUUu2YgOKw9yO3pkslBw=w960",
+    "description": "Exhibition photography at the Retail Technology Show, ExCeL London. Capturing electronic shelf label products, the team, customer interactions and the activity around the Hanshow stand.",
+    "credit": "",
+    "location": "ExCeL London, UK",
+    "year": "2026",
+    "images": [
+      {
+        "src": "https://lh3.googleusercontent.com/d/1xezlM1TEfH7YFUUu2YgOKw9yO3pkslBw=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1xezlM1TEfH7YFUUu2YgOKw9yO3pkslBw=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 1"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/17e-kYHJ6qx20G8ZG49rMgYBhxiQOP5a6=w2400",
+        "small": "https://lh3.googleusercontent.com/d/17e-kYHJ6qx20G8ZG49rMgYBhxiQOP5a6=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 2"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1SdEGIKu-TTU-XmdZydap70l-Z7fTHssY=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1SdEGIKu-TTU-XmdZydap70l-Z7fTHssY=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1whgwxxoJdSm6JgVhLOn01Q3XywehIOPP=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1whgwxxoJdSm6JgVhLOn01Q3XywehIOPP=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 4"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1MQB1wuumma_4fFS8YopC-aCt8LGkfHmT=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1MQB1wuumma_4fFS8YopC-aCt8LGkfHmT=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 5"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1eU9qhpm1TXPYeNbuodNbkESHYO7j-aEG=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1eU9qhpm1TXPYeNbuodNbkESHYO7j-aEG=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 6"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1D9hjRHsN97wn0HW_u47zmwK2mquG0zOZ=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1D9hjRHsN97wn0HW_u47zmwK2mquG0zOZ=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 7"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/18wBnYrjPfIk_jndS9KKSOPCpmlqYhuxW=w2400",
+        "small": "https://lh3.googleusercontent.com/d/18wBnYrjPfIk_jndS9KKSOPCpmlqYhuxW=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 8"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1qzSde7HdtDoS5cN2LW39bxveWAv_twrG=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1qzSde7HdtDoS5cN2LW39bxveWAv_twrG=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 9"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1g2Quzcgu_esKLb9Hgs0WlmvzoqD_vNaL=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1g2Quzcgu_esKLb9Hgs0WlmvzoqD_vNaL=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 10"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1XZ-EeIubeKxrHldosAEOKkQgtuvhscRr=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1XZ-EeIubeKxrHldosAEOKkQgtuvhscRr=w960",
+        "width": 2400,
+        "height": 3600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 11"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1yp1PLoyQrQe4Zuz6IwY43VoJMFe6rwl3=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1yp1PLoyQrQe4Zuz6IwY43VoJMFe6rwl3=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 12"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1zjA7NxvAZ7zbWZXLaW-xkWrbcjIERboT=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1zjA7NxvAZ7zbWZXLaW-xkWrbcjIERboT=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 13"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1_S_DPp_Z_AuQ_qsf_Lv-xMbw-9QPjI-p=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1_S_DPp_Z_AuQ_qsf_Lv-xMbw-9QPjI-p=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 14"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/16dvP9Omkyj7CHdowjMaapRVH0RqFOfhG=w2400",
+        "small": "https://lh3.googleusercontent.com/d/16dvP9Omkyj7CHdowjMaapRVH0RqFOfhG=w960",
+        "width": 2400,
+        "height": 3600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 15"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1RQnrgRCCsonVJ3X7oSge20ZxbFD-kWQm=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1RQnrgRCCsonVJ3X7oSge20ZxbFD-kWQm=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 16"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1pcA9TAIlIq1hy8lbDRE6MYwTaiEgqLGS=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1pcA9TAIlIq1hy8lbDRE6MYwTaiEgqLGS=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 17"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1-Im6pMcDYKG3fA6IO5f4ru0wrm2uvHVa=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1-Im6pMcDYKG3fA6IO5f4ru0wrm2uvHVa=w960",
+        "width": 2400,
+        "height": 3600,
+        "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 18"
+      }
+    ],
+    "pinLast": true,
+    "pinLastOrder": 1
+  },
+  {
     "collection": "films",
     "kind": "video",
     "title": "Starberry Fields Forever",
@@ -1891,8 +1934,8 @@ const projects = [
     "vimeo": "1233760055",
     "vimeoHash": "c79bdbc236",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209518776-40f35747010b042bbccc6f6877e3656b62d4ab86ddbc4822cf10f76b4ebd2019-d_1280",
+    "previewStart": 11,
+    "cover": "/assets/yingjia-thread-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "yingjia-design-brand-film",
@@ -1902,7 +1945,8 @@ const projects = [
     "images": [],
     "url": "/commercials-yingjia-design-brand-film.html",
     "pinLast": true,
-    "pinLastOrder": 2
+    "pinLastOrder": 2,
+    "previewDuration": 24
   },
   {
     "collection": "films",

@@ -16,7 +16,7 @@
 - All visible website project titles, video titles and labels must be in English, including nested related videos.
 
 - Custom video posters must not disable automatic previews. All Vimeo Work cards should retain muted previews with bounded retry after temporary failures.
-- Desktop Content begins with the five W/Vogue fashion projects in one compact row; the square Libby card uses its native ratio. Starry Mart starts the next row ahead of Knight Frank OWO and DALTON.
+- Desktop Content begins with the five W/Vogue fashion projects in one compact row; the square Libby card uses its native ratio. Starry Mart starts the next row ahead of Dehua Porcelain International Tour and DALTON; Knight Frank OWO follows in the next row.
 
 - Use well-exposed, readable scenes for posters and automatic previews; avoid dark introductions or fades.
 
@@ -38,3 +38,9 @@
 Mobile portrait work cards must be horizontally centered, with their original compact size and native ratio preserved. Starry Mart groups London Dock, Southside and Fulham openings while preserving its existing preview. Photography selections: Hanshow 18, Heathrow Express 25, SUNCUN LFW 20 in Instagram order, Pei Feng Su 11. PAINKILLER — DUCATI follows VOGUE films; its Work preview starts at 1:11 and continues through the following sequence (24 seconds). New Savills, ZUKER and Oxford Content events appear near the end.
 
 Yingjia Design — Brand Film is the last Commercials project, filmed in China in 2018.
+
+Photography portrait covers retain their native complete ratio with a compact viewport-limited height and centered card. Hanshow is pinned last in Photography. ZUKER cover uses its original film storefront at 00:05.
+
+Burberry × W China — Summer 26 Playlist uses W China and a single-line Work title.
+
+Yingjia Design previews from 00:11 and uses the original yellow thread-spool shot at 00:25.5 as its cover. SUXINDAI groups two vertical ads as one Content project, with both original Vimeo IDs preserved.

@@ -516,7 +516,7 @@
   {
     "collection": "social",
     "kind": "video",
-    "title": "Burberry × W Magazine — Summer 26 Playlist",
+    "title": "Burberry × W China — Summer 26 Playlist",
     "vimeo": "1221238820",
     "vimeoHash": "24f45adce5",
     "aspectRatio": 0.75,
@@ -530,7 +530,8 @@
     "url": "/commercials-w-magazine-summer-26.html",
     "location": "London, UK",
     "year": "2026",
-    "fashionPriority": true
+    "fashionPriority": true,
+    "singleLineTitle": true
   },
   {
     "collection": "branded-content",
@@ -858,12 +859,12 @@
     "images": [],
     "url": "/social-knight-frank-owo-residences.html",
     "location": "London, UK",
-    "contentOrder": 2
+    "contentOrder": 4
   },
   {
     "collection": "social",
     "kind": "video",
-    "title": "Starry Mart — Store Opening Films",
+    "title": "Starry Mart — Store Opening Series (3 Films)",
     "vimeo": "1232915723",
     "vimeoHash": "e516679215",
     "aspectRatio": 1.7777777777777777,
@@ -1366,7 +1367,7 @@
     "images": [],
     "url": "/social-ceramics-exhibition-copenhagen.html",
     "location": "Copenhagen, Denmark · Brussels, Belgium",
-    "contentOrder": 4,
+    "contentOrder": 2,
     "groupedVideoLayout": true,
     "showVideoTitles": true,
     "relatedVideoGroups": [
@@ -1585,7 +1586,9 @@
         "height": 3600,
         "alt": "Hanshow at the Retail Technology Show, ExCeL London — photograph 18"
       }
-    ]
+    ],
+    "pinLast": true,
+    "pinLastOrder": 1
   },
   {
     "collection": "photography",
@@ -1803,7 +1806,7 @@
     "vimeoHash": "8169051e92",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209508910-d6bbef680df7b7c877e76885195b0c3ab88f348a77beb6a1754fe8b4baa46857-d_1280",
+    "cover": "/assets/zuker-sign-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "zuker-10th-anniversary",
@@ -1928,8 +1931,8 @@
     "vimeo": "1233760055",
     "vimeoHash": "c79bdbc236",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209518776-40f35747010b042bbccc6f6877e3656b62d4ab86ddbc4822cf10f76b4ebd2019-d_1280",
+    "previewStart": 11,
+    "cover": "/assets/yingjia-thread-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "yingjia-design-brand-film",
@@ -1939,6 +1942,47 @@
     "images": [],
     "url": "/commercials-yingjia-design-brand-film.html",
     "pinLast": true,
-    "pinLastOrder": 2
+    "pinLastOrder": 2,
+    "previewDuration": 24
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "SUXINDAI — Vertical Ad Series (2 Films)",
+    "vimeo": "1233762162",
+    "vimeoHash": "3c80235b7d",
+    "aspectRatio": 0.5625,
+    "previewStart": 5,
+    "previewDuration": 24,
+    "cover": "https://i.vimeocdn.com/video/2209521824-7f2b975dce450e96ef197eb5227058ed24e0f4570e69bd81187239dd3e3dc272-d_960",
+    "credit": "",
+    "sample": false,
+    "slug": "suxindai-vertical-ad-series",
+    "description": "Two vertical advertisements for SUXINDAI.",
+    "images": [],
+    "url": "/social-suxindai-vertical-ad-series.html",
+    "groupedVideoLayout": true,
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Treasure Hunt",
+            "vimeo": "1233762162",
+            "vimeoHash": "3c80235b7d",
+            "aspectRatio": 0.5625,
+            "cover": "https://i.vimeocdn.com/video/2209521870-099a97ca0dac70c653249d56818bf6e16f2aa7ad50ca88301ac75e6e0e8011ef-d_960"
+          },
+          {
+            "title": "One Drop",
+            "vimeo": "1233762160",
+            "vimeoHash": "cc3547ac0a",
+            "aspectRatio": 0.5625,
+            "cover": "https://i.vimeocdn.com/video/2209521824-7f2b975dce450e96ef197eb5227058ed24e0f4570e69bd81187239dd3e3dc272-d_960"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -85,3 +85,11 @@
     width: min(calc(var(--portrait-height) * var(--card-ratio)), calc((100% - var(--fashion-gaps)) * var(--card-ratio) / var(--fashion-ratio-sum)));
   }
 }
+
+/* Keep tall photography covers complete and within one viewport. */
+.beige-film-page .portrait-photo-project { width: min(100%, calc(min(500px, calc(100svh - 260px)) * var(--photo-ratio))); justify-self: center; }
+@media (max-width: 640px), (orientation: portrait) and (max-width: 1000px) {
+  .beige-film-page .portrait-photo-project { width: min(100%, calc(min(420px, calc(100svh - 230px)) * var(--photo-ratio))); }
+}
+
+.beige-film-page .single-line-title .project-title { display: block; white-space: nowrap; font-size: clamp(12px, .85vw, 16px); }

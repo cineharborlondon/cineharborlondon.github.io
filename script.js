@@ -80,11 +80,20 @@ function initPortfolio() {
     const article = element('article', 'project');
     article.classList.toggle('portrait-project', !isPhoto && Number(project.aspectRatio) > 0 && (Number(project.aspectRatio) < 1 || Boolean(project.fashionPriority)));
     article.classList.toggle('fashion-project', Boolean(project.fashionPriority));
+    article.classList.toggle('single-line-title', Boolean(project.singleLineTitle));
     const button = element('a', 'project-button');
     button.href = project.url;
     button.setAttribute('aria-label', `View ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);
     const visual = element('span', 'project-image');
     visual.classList.toggle('photo-source', isPhoto);
+    if (isPhoto) {
+      const coverPhoto = project.images?.find(photo => photo.small === project.cover || photo.src === project.cover) || project.images?.[0];
+      const ratio = Number(coverPhoto?.width) / Number(coverPhoto?.height);
+      if (ratio > 0 && ratio < 1) {
+        article.classList.add('portrait-photo-project');
+        article.style.setProperty('--photo-ratio', ratio);
+      }
+    }
     if (!isPhoto && Number(project.aspectRatio) > 0) {
       visual.style.setProperty('--card-ratio', Number(project.aspectRatio));
       article.style.setProperty('--card-ratio', Number(project.aspectRatio));
