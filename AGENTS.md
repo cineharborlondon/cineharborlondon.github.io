@@ -41,7 +41,7 @@ Yingjia Design — Brand Film is the last Commercials project, filmed in China i
 
 Photography portrait covers retain their native complete ratio with a compact viewport-limited height and centered card. Hanshow is pinned last in Photography. ZUKER cover uses its original film storefront at 00:05.
 
-Burberry × W China — Summer 26 Playlist uses W China and a single-line Work title.
+Burberry × W China — Summer Playlist uses W China and a single-line Work title.
 
 Yingjia Design previews from 00:11 and uses the original yellow thread-spool shot at 00:25.5 as its cover. SUXINDAI groups two vertical ads as one Content project, with both original Vimeo IDs preserved.
 
