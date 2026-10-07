@@ -33,3 +33,28 @@
   .related-video-grid-labelled { grid-template-columns: 1fr; gap: 32px; }
   .related-video-title { font-size: 18px; }
 }
+
+/* Grouped portrait series, with a heading for each story. */
+.video-series-group + .video-series-group { margin-top: 56px; }
+.video-series-heading {
+  margin: 0 0 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 26px;
+  font-weight: 500;
+}
+.related-video-grid-grouped {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px 28px;
+}
+.related-video-grid-grouped .related-video { margin-bottom: 0; }
+.related-video-grid-grouped .related-video-portrait .related-video-player {
+  width: min(100%, calc(560px * var(--video-ratio)));
+  margin-inline: auto;
+}
+@media (max-width: 600px) {
+  .related-video-grid-grouped { grid-template-columns: 1fr; }
+  .video-series-group + .video-series-group { margin-top: 40px; }
+  .video-series-heading { font-size: 23px; }
+}

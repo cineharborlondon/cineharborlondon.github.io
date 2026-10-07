@@ -620,6 +620,88 @@ const projects = [
     ]
   },
   {
+    "collection": "social",
+    "kind": "video",
+    "title": "COMMENSE",
+    "vimeo": "1232913226",
+    "vimeoHash": "1b76f85dd5",
+    "aspectRatio": 0.562390158172232,
+    "previewStart": 2,
+    "cover": "https://i.vimeocdn.com/video/2208443189-1fc44078de393b927568b61e35f6aae2db0bbeeb05b0f8a9fdb1f4a4af423b40-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "commense",
+    "description": "Eight social films for COMMENSE, told across three stories: Yacht, Garden and Tennis.",
+    "images": [],
+    "url": "/social-commense.html",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "Yacht",
+        "videos": [
+          {
+            "title": "Yacht — 01",
+            "vimeo": "1232913226",
+            "vimeoHash": "1b76f85dd5",
+            "aspectRatio": 0.562390158172232
+          },
+          {
+            "title": "Yacht — 02",
+            "vimeo": "1232913210",
+            "vimeoHash": "16a010df76",
+            "aspectRatio": 0.562390158172232
+          },
+          {
+            "title": "Yacht — 03",
+            "vimeo": "1232913209",
+            "vimeoHash": "61638dcc47",
+            "aspectRatio": 0.562390158172232
+          }
+        ]
+      },
+      {
+        "title": "Garden",
+        "videos": [
+          {
+            "title": "Garden — 01",
+            "vimeo": "1232913169",
+            "vimeoHash": "431cf28656",
+            "aspectRatio": 0.562390158172232
+          },
+          {
+            "title": "Garden — 02",
+            "vimeo": "1232913176",
+            "vimeoHash": "f8792cc064",
+            "aspectRatio": 0.562390158172232
+          },
+          {
+            "title": "Garden — 03",
+            "vimeo": "1232913170",
+            "vimeoHash": "f111073b63",
+            "aspectRatio": 0.562390158172232
+          }
+        ]
+      },
+      {
+        "title": "Tennis",
+        "videos": [
+          {
+            "title": "Tennis — 01",
+            "vimeo": "1232913118",
+            "vimeoHash": "3668c42054",
+            "aspectRatio": 0.562390158172232
+          },
+          {
+            "title": "Tennis — 02",
+            "vimeo": "1232913132",
+            "vimeoHash": "5914d37278",
+            "aspectRatio": 0.562390158172232
+          }
+        ]
+      }
+    ]
+  },
+  {
     "collection": "commercials",
     "kind": "video",
     "title": "The Fruit Wave of Stride 2021",

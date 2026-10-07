@@ -18,12 +18,12 @@ function photo(image, index, hero = false) {
   </button>`;
 }
 
-function relatedVideo(video, showTitle = false) {
+function relatedVideo(video, showTitle = false, headingLevel = 2) {
   if (!/^\d+$/.test(video.vimeo || '')) throw new Error('A related video needs a Vimeo ID');
   const hash = video.vimeoHash ? 'h=' + encodeURIComponent(video.vimeoHash) + '&' : '';
   const embed = `https://player.vimeo.com/video/${video.vimeo}?${hash}playsinline=1&title=0&byline=0&portrait=0&dnt=1`;
   const portrait = showTitle && Number(video.aspectRatio) < 1;
-  return `<article class="related-video${portrait ? ' related-video-portrait' : ''}"><div class="related-video-player" style="--video-ratio:${Number(video.aspectRatio) || 16 / 9}"><iframe src="${esc(embed)}" title="${esc(video.title)} — Vimeo video player" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${showTitle ? `<h2 class="related-video-title">${esc(video.title)}</h2>` : ''}</article>`;
+  return `<article class="related-video${portrait ? ' related-video-portrait' : ''}"><div class="related-video-player" style="--video-ratio:${Number(video.aspectRatio) || 16 / 9}"><iframe src="${esc(embed)}" title="${esc(video.title)} — Vimeo video player" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${showTitle ? `<h${headingLevel} class="related-video-title">${esc(video.title)}</h${headingLevel}>` : ''}</article>`;
 }
 
 for (const project of projects) {
@@ -39,14 +39,17 @@ for (const project of projects) {
   const provider = 'Vimeo';
   const hash = project.vimeoHash ? encodeURIComponent(project.vimeoHash) : '';
   const embed = `https://player.vimeo.com/video/${project.vimeo}?${hash ? 'h=' + hash + '&' : ''}playsinline=1&title=0&byline=0&portrait=0&dnt=1`;
-  const hero = isPhoto ? (images[0] ? photo(images[0], 0, true) : '') : `<div class="detail-player${ratio < 1 ? ' detail-player-portrait' : ''}" style="--video-ratio:${ratio}"><iframe src="${esc(embed)}" title="${esc(project.title)} — ${provider} video player" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
+  const hero = project.groupedVideoLayout ? '' : isPhoto ? (images[0] ? photo(images[0], 0, true) : '') : `<div class="detail-player${ratio < 1 ? ' detail-player-portrait' : ''}" style="--video-ratio:${ratio}"><iframe src="${esc(embed)}" title="${esc(project.title)} — ${provider} video player" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
   const description = project.description ? `<div class="project-description">${project.description.split('\n\n').map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   const credits = Array.isArray(project.credits) && project.credits.length ? `<dl class="project-credits">${project.credits.map(c => `<div><dt>${esc(c.role)}</dt><dd>${esc(c.name)}</dd></div>`).join('')}</dl>` : project.credit ? `<p class="project-credits">${esc(project.credit)}</p>` : '';
   const galleryImages = isPhoto ? images.slice(1) : images;
   const gallery = galleryImages.length ? `<section class="project-gallery" aria-label="${isPhoto ? 'Photography' : 'Project stills'}">${galleryImages.map((im, i) => photo(im, i + (isPhoto ? 1 : 0))).join('\n')}</section>` : '';
   const relatedVideos = (project.relatedVideoGroups || []).flatMap(group => group.videos || []);
-  const related = relatedVideos.length ? `<section class="related-videos" aria-label="${project.showVideoTitles ? 'More films in this series' : 'Related videos'}"><div class="related-video-grid${project.showVideoTitles ? ' related-video-grid-labelled' : ''}">${relatedVideos.map(video => relatedVideo(video, project.showVideoTitles === true)).join('\n')}</div></section>` : '';
-  const seriesStyles = project.showVideoTitles ? '<link rel="stylesheet" href="/project-series.css?v=huawei-20261007">' : '';
+  if (project.groupedVideoLayout && !relatedVideos.some(video => video.vimeo === project.vimeo)) throw new Error('A grouped project must include its primary video in a group');
+  const related = project.groupedVideoLayout
+    ? `<section class="related-videos video-series" aria-label="Film series">${(project.relatedVideoGroups || []).filter(group => group.videos?.length).map((group, index) => `<section class="video-series-group" aria-labelledby="video-group-${index}"><h2 class="video-series-heading" id="video-group-${index}">${esc(group.title)}</h2><div class="related-video-grid-grouped">${group.videos.map(video => relatedVideo(video, true, 3)).join('\n')}</div></section>`).join('\n')}</section>`
+    : relatedVideos.length ? `<section class="related-videos" aria-label="${project.showVideoTitles ? 'More films in this series' : 'Related videos'}"><div class="related-video-grid${project.showVideoTitles ? ' related-video-grid-labelled' : ''}">${relatedVideos.map(video => relatedVideo(video, project.showVideoTitles === true)).join('\n')}</div></section>` : '';
+  const seriesStyles = project.showVideoTitles || project.groupedVideoLayout ? `<link rel="stylesheet" href="/project-series.css?v=${project.groupedVideoLayout ? 'commense-20261007' : 'huawei-20261007'}">` : '';
   const videoCaption = project.videoTitle ? `<p class="detail-video-caption">${esc(project.videoTitle)}</p>` : '';
   const lightbox = images.length ? `<dialog class="photo-dialog" aria-label="Photograph viewer"><div class="photo-viewer"><div class="photo-toolbar"><p id="photo-counter" aria-live="polite"></p><button type="button" class="close-button" id="close-photo" autofocus>Close <span aria-hidden="true">×</span></button></div><img id="full-photo" alt=""><div class="photo-navigation"><button type="button" id="previous-photo" class="close-button">Previous</button><button type="button" id="next-photo" class="close-button">Next</button></div></div></dialog><script id="gallery-data" type="application/json">${JSON.stringify(images).replace(/</g, '\\u003c')}</script><script src="/project.js?v=${version}" defer></script>` : '';
   const html = `<!doctype html>
