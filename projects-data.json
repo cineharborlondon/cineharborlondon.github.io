@@ -2547,5 +2547,25 @@
       }
     ],
     "cover": "https://lh3.googleusercontent.com/d/1lKf4qqq8DOaGiK4JKMng6UUA6wuC0kP8=w960"
+  },
+  {
+    "collection": "content",
+    "kind": "video",
+    "title": "NEODIKO — London Design Exhibition",
+    "slug": "neodiko-london-design-exhibition",
+    "url": "/social-neodiko-london-design-exhibition.html",
+    "vimeo": "1233827953",
+    "vimeoHash": "b7ee3a6a09",
+    "aspectRatio": 1.7777777777777777,
+    "cover": "https://i.vimeocdn.com/video/2209617539-e25c254c522556a9d9377cd35b96af52781d835f41fde15bbaadac461c0d5c0e-d_1280",
+    "previewStart": 5,
+    "previewDuration": 24,
+    "contentOrder": 1.5,
+    "location": "London, UK",
+    "year": 2026,
+    "displayCategory": "Exhibition Film",
+    "description": "An event film for NEODIKO at an exhibition of Chinese intangible cultural heritage and contemporary design in London.\n\nTraditional craftsmanship meets contemporary living, bringing Eastern aesthetics into a global design conversation.",
+    "images": [],
+    "credit": ""
   }
 ]

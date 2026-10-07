@@ -66,3 +66,5 @@ W China London fashion film Work title is Lina Zhang × W China × Burberry; kee
 Summer Playlist Work title is Lina Zhang & Libby Bennett × W China × Burberry; Summer Playlist appears inside its detail page.
 
 Fashion landscape cards remain one per desktop row and centered, with video width capped by (100svh - 260px) × 16/9 so the complete picture and caption fit one screen. ALLSO uses the original Beauty Portrait smiling frame at 1s; COMMENSE uses Garden 01 white-outfit portrait at 3s. Preview sequences stay unchanged.
+
+NEODIKO — London Design Exhibition (London, 2026) belongs to the Content subsection immediately after Starry Mart; preserve Vimeo 1233827953 and its unlisted hash. COMMENSE is labelled Social Series (8 Films).
