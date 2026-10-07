@@ -120,3 +120,12 @@
 @media (min-width: 1001px) {
   .beige-film-page .fashion-grid .project:not(.portrait-project) { width: 100%; }
 }
+
+/* Keep a complete Fashion landscape card and its title within a desktop screen. */
+@media (min-width: 1001px) {
+  .beige-film-page .fashion-grid .project:not(.portrait-project) .project-button {
+    display: block;
+    width: min(100%, calc((100svh - 260px) * 16 / 9));
+    margin-inline: auto;
+  }
+}
