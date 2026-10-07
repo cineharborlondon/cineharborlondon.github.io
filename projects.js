@@ -1306,7 +1306,9 @@ const projects = [
     "url": "/commercials-dahua-split-tvc.html",
     "pinLast": true,
     "pinLastOrder": 1,
-    "previewDuration": 26
+    "previewDuration": 26,
+    "location": "China",
+    "year": "2018"
   },
   {
     "collection": "social",
