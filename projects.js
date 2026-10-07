@@ -1028,14 +1028,15 @@ const projects = [
     "vimeo": "1233570186",
     "vimeoHash": "dd2a634e17",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209276541-fe58fffad6d51f0568dc8e294838e9f3bccb7c27e978fc9a9bbeebd33d0695a7-d_1280",
+    "previewStart": 58,
+    "cover": "/assets/genesis-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "genesis",
     "description": "",
     "images": [],
-    "url": "/editorial-genesis.html"
+    "url": "/editorial-genesis.html",
+    "previewDuration": 12
   },
   {
     "collection": "branded-content",
