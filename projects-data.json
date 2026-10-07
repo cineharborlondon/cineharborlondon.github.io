@@ -228,7 +228,7 @@
     "year": "2024"
   },
   {
-    "collection": "fashion",
+    "collection": "films",
     "kind": "video",
     "title": "「UN」CURRENT",
     "vimeo": "1232902271",
@@ -242,8 +242,7 @@
     "description": "",
     "images": [],
     "url": "/films-un-current.html",
-    "displayCategory": "Fashion Film",
-    "fashionOrder": 1
+    "displayCategory": "Fashion Film"
   },
   {
     "collection": "fashion",
@@ -260,7 +259,7 @@
     "description": "",
     "images": [],
     "url": "/films-the-ballroom.html",
-    "fashionOrder": 2
+    "fashionOrder": 3
   },
   {
     "collection": "films",
@@ -311,7 +310,8 @@
     "images": [],
     "url": "/films-starberry-fields-forever.html",
     "pinLast": true,
-    "pinLastOrder": 2
+    "pinLastOrder": 2,
+    "listed": false
   },
   {
     "collection": "fashion",
@@ -329,7 +329,7 @@
     "images": [],
     "url": "/films-zhang-jingyi.html",
     "coverPosition": "50% 50%",
-    "fashionOrder": 3
+    "fashionOrder": 2
   },
   {
     "collection": "fashion",
@@ -347,7 +347,7 @@
     "images": [],
     "url": "/films-xin-zhilei.html",
     "coverPosition": "50% 15%",
-    "fashionOrder": 4
+    "fashionOrder": 1
   },
   {
     "collection": "films",
@@ -403,7 +403,8 @@
     "pinLast": true,
     "displayCategory": "Fashion Film",
     "pinLastOrder": 3,
-    "fashionOrder": 6
+    "fashionOrder": 6,
+    "listed": false
   },
   {
     "collection": "branded-content",
@@ -440,7 +441,8 @@
     "pinLast": true,
     "displayCategory": "Fashion Film",
     "pinLastOrder": 4,
-    "fashionOrder": 7
+    "fashionOrder": 7,
+    "listed": false
   },
   {
     "collection": "branded-content",

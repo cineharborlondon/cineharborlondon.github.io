@@ -1018,37 +1018,20 @@ const projects = [
   {
     "collection": "fashion",
     "kind": "video",
-    "title": "「UN」CURRENT",
-    "vimeo": "1232902271",
-    "vimeoHash": "f68d54dd9d",
-    "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208438224-7e7c3ef92e51e6141bc5ee49a69e276aad6850c9b0cd00c67a8b723439dff3df-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "un-current",
-    "description": "",
-    "images": [],
-    "url": "/films-un-current.html",
-    "displayCategory": "Fashion Film",
-    "fashionOrder": 1
-  },
-  {
-    "collection": "fashion",
-    "kind": "video",
-    "title": "The Ballroom",
-    "vimeo": "1233569215",
-    "vimeoHash": "91cff1abb3",
+    "title": "V Magazine × Xin Zhilei",
+    "vimeo": "1233565690",
+    "vimeoHash": "df4ef66c45",
     "aspectRatio": 1.3333333333333333,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209274616-a9d94bf2db6c2073d52796ab9c8127960ec563f9fa4f82f7ea0e2f3df96dc0a0-d_1280?region=us",
+    "previewStart": 0,
+    "cover": "/assets/xin-zhilei-vogue-cover.jpg",
     "credit": "",
     "sample": false,
-    "slug": "the-ballroom",
-    "description": "",
+    "slug": "xin-zhilei",
+    "description": "A V Magazine fashion film starring Xin Zhilei.",
     "images": [],
-    "url": "/films-the-ballroom.html",
-    "fashionOrder": 2
+    "url": "/films-xin-zhilei.html",
+    "coverPosition": "50% 15%",
+    "fashionOrder": 1
   },
   {
     "collection": "fashion",
@@ -1066,25 +1049,24 @@ const projects = [
     "images": [],
     "url": "/films-zhang-jingyi.html",
     "coverPosition": "50% 50%",
-    "fashionOrder": 3
+    "fashionOrder": 2
   },
   {
     "collection": "fashion",
     "kind": "video",
-    "title": "V Magazine × Xin Zhilei",
-    "vimeo": "1233565690",
-    "vimeoHash": "df4ef66c45",
+    "title": "The Ballroom",
+    "vimeo": "1233569215",
+    "vimeoHash": "91cff1abb3",
     "aspectRatio": 1.3333333333333333,
-    "previewStart": 0,
-    "cover": "/assets/xin-zhilei-vogue-cover.jpg",
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209274616-a9d94bf2db6c2073d52796ab9c8127960ec563f9fa4f82f7ea0e2f3df96dc0a0-d_1280?region=us",
     "credit": "",
     "sample": false,
-    "slug": "xin-zhilei",
-    "description": "A V Magazine fashion film starring Xin Zhilei.",
+    "slug": "the-ballroom",
+    "description": "",
     "images": [],
-    "url": "/films-xin-zhilei.html",
-    "coverPosition": "50% 15%",
-    "fashionOrder": 4
+    "url": "/films-the-ballroom.html",
+    "fashionOrder": 3
   },
   {
     "collection": "fashion",
@@ -1121,7 +1103,8 @@ const projects = [
     "pinLast": true,
     "displayCategory": "Fashion Film",
     "pinLastOrder": 3,
-    "fashionOrder": 6
+    "fashionOrder": 6,
+    "listed": false
   },
   {
     "collection": "fashion",
@@ -1141,7 +1124,8 @@ const projects = [
     "pinLast": true,
     "displayCategory": "Fashion Film",
     "pinLastOrder": 4,
-    "fashionOrder": 7
+    "fashionOrder": 7,
+    "listed": false
   },
   {
     "collection": "fashion",
@@ -1408,6 +1392,23 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
+    "title": "「UN」CURRENT",
+    "vimeo": "1232902271",
+    "vimeoHash": "f68d54dd9d",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208438224-7e7c3ef92e51e6141bc5ee49a69e276aad6850c9b0cd00c67a8b723439dff3df-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "un-current",
+    "description": "",
+    "images": [],
+    "url": "/films-un-current.html",
+    "displayCategory": "Fashion Film"
+  },
+  {
+    "collection": "films",
+    "kind": "video",
     "title": "Genshin Concert 2023",
     "vimeo": "1233568698",
     "vimeoHash": "f266fa6397",
@@ -1490,7 +1491,8 @@ const projects = [
     "images": [],
     "url": "/films-starberry-fields-forever.html",
     "pinLast": true,
-    "pinLastOrder": 2
+    "pinLastOrder": 2,
+    "listed": false
   },
   {
     "collection": "photography",
