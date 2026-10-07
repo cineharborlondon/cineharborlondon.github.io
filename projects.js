@@ -55,6 +55,22 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
+    "title": "Dyson Hair Oil Official Launch Video",
+    "vimeo": "1233560693",
+    "vimeoHash": "707c5c9d6f",
+    "aspectRatio": 0.562390158172232,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209262960-640e4c6b1a78a3c3f8683610fc385486cbe77173bbcbb5e390044b68e31c1d99-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "dyson-hair-oil-official-launch",
+    "description": "",
+    "images": [],
+    "url": "/commercials-dyson-hair-oil-official-launch.html"
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
     "title": "NAVIMOW — A Lawn to Come Home to | USA",
     "vimeo": "1232908778",
     "vimeoHash": "45445dab2a",
@@ -855,23 +871,7 @@ const projects = [
     "url": "/commercials-graff.html"
   },
   {
-    "collection": "commercials",
-    "kind": "video",
-    "title": "Dyson Hair Oil Official Launch Video",
-    "vimeo": "1233560693",
-    "vimeoHash": "707c5c9d6f",
-    "aspectRatio": 0.562390158172232,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209262960-640e4c6b1a78a3c3f8683610fc385486cbe77173bbcbb5e390044b68e31c1d99-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "dyson-hair-oil-official-launch",
-    "description": "",
-    "images": [],
-    "url": "/commercials-dyson-hair-oil-official-launch.html"
-  },
-  {
-    "collection": "commercials",
+    "collection": "social",
     "kind": "video",
     "title": "The Fruit Wave of Stride 2021",
     "vimeo": "748230681",
