@@ -55,4 +55,8 @@
 /* Warm, readable typography within the darker film stage. */
 .beige-film-page .work-main { --ink: #eee4cf; --muted: #cbbda6; --accent: #d2b88c; --line: rgb(210 184 140 / 25%); --highlight: rgb(210 184 140 / 10%); color: var(--ink); }
 .beige-film-page .work-main .work-tabs button[aria-selected="true"], .beige-film-page .work-main .project-title { color: var(--ink); }
+.beige-film-page .native-format-grid { grid-auto-rows: 8px; row-gap: 24px; align-items: start; }
+.beige-film-page .native-format-grid + .native-format-grid { margin-top: 36px; }
+.beige-film-page .native-format-grid .project-image { aspect-ratio: var(--card-ratio, 16 / 9); }
+.beige-film-page .native-format-grid .project-image img { object-fit: contain; }
 .beige-film-page .film-glow { background: radial-gradient(ellipse 35% 38% at 0% 100%, rgb(192 132 55 / 24%), transparent 78%), radial-gradient(ellipse 28% 32% at 100% 0%, rgb(191 148 74 / 18%), transparent 80%); }

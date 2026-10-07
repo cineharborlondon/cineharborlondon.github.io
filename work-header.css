@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
-/* Equal outer columns keep the wordmark centered regardless of navigation width. */
-.beige-film-page .work-header {
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+/* Shared brown wordmark on the left, with all navigation together on the right. */
+.page-shell > .work-header {
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 24px;
 }
 .work-header-left { justify-self: start; }
 .work-header-right { justify-self: end; }
+.work-header > .work-wordmark { grid-column: 1; grid-row: 1; justify-self: start; }
+.work-header > .work-header-right { grid-column: 2; grid-row: 1; }
 .work-header nav { align-items: center; white-space: nowrap; }
 .work-header nav a { display: inline-flex; align-items: center; min-height: 44px; }
 .work-wordmark {
   justify-self: center;
   padding: .14em .035em .12em 0;
-  color: var(--ink);
+  color: #8f6334;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -26,8 +28,10 @@
 /* Match C's .039em left bearing to H's .083em bearing in Montserrat 700. */
 .work-wordmark span + span { margin-top: .11em; text-indent: -.044em; }
 
-@media (max-width: 640px) {
-  .beige-film-page .work-header { gap: 8px; }
+@media (max-width: 760px) {
+  .page-shell > .work-header { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
+  .work-header > .work-wordmark { grid-column: 1; grid-row: 1; }
+  .work-header > .work-header-right { grid-column: 2; grid-row: 1; justify-self: end; }
   .work-wordmark { font-size: 22px; }
-  .work-header nav { gap: 10px; font-size: 12px; }
+  .work-header nav { gap: 22px; font-size: 14px; }
 }

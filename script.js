@@ -28,11 +28,11 @@ if (document.querySelector('#work-viewport')) initPortfolio();
 
 function initPortfolio() {
   const categories = [
-    { id: 'films', label: 'Films' },
-    { id: 'commercials', label: 'Commercials' },
-    { id: 'branded-content', label: 'Branded Content' },
-    { id: 'social', label: 'Social' },
-    { id: 'photography', label: 'Photography' },
+    { id: 'films', label: 'FILMS' },
+    { id: 'commercials', label: 'COMMERCIALS' },
+    { id: 'branded-content', label: 'EDITORIAL' },
+    { id: 'social', label: 'CONTENT' },
+    { id: 'photography', label: 'PHOTOGRAPHY' },
   ];
   const viewport = document.querySelector('#work-viewport');
   const swipeArea = document.querySelector('#work-swipe-area');
@@ -82,6 +82,7 @@ function initPortfolio() {
     button.href = project.url;
     button.setAttribute('aria-label', `View ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);
     const visual = element('span', 'project-image');
+    if (!isPhoto && Number(project.aspectRatio) > 0) visual.style.setProperty('--card-ratio', Number(project.aspectRatio));
     visual.classList.toggle('portrait-source', Number(project.aspectRatio) > 0 && Number(project.aspectRatio) < 1);
     const fallback = element('span', 'image-fallback', project.title);
     fallback.setAttribute('aria-hidden', 'true');
@@ -115,13 +116,23 @@ function initPortfolio() {
   }
 
   const groups = categories.map(category => projects.filter(project => project.listed !== false && (project.collection || 'films') === category.id)
-    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : 0)));
+    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1))));
   panels.forEach((panel, index) => {
     const items = groups[index];
     if (items.length) {
-      const grid = element('div', 'portfolio-grid');
-      items.forEach((project, projectIndex) => grid.append(projectCard(project, projectIndex)));
-      panel.append(grid);
+      // Separate format groups keep every landscape film above the portrait series.
+      let grid;
+      let lastFormat;
+      items.forEach((project, projectIndex) => {
+        const format = Number(project.aspectRatio) > 0 && Number(project.aspectRatio) < 1 ? 'portrait' : 'landscape';
+        if (format !== lastFormat) {
+          grid = element('div', 'portfolio-grid native-format-grid');
+          grid.classList.toggle('portrait-grid', format === 'portrait');
+          panel.append(grid);
+          lastFormat = format;
+        }
+        grid.append(projectCard(project, projectIndex));
+      });
       if (items.some(project => project.sample)) {
         panel.append(element('p', 'sample-note', index === 0 ? 'Preview selection — sample films by Blender, shown for demonstration. These are not Cine Harbor productions.' : 'Preview selection — sample work shown for demonstration. These are not Cine Harbor productions.'));
       }
@@ -131,6 +142,30 @@ function initPortfolio() {
       panel.append(empty);
     }
   });
+
+  let layoutFrame;
+  function layoutCards() {
+    cancelAnimationFrame(layoutFrame);
+    layoutFrame = requestAnimationFrame(() => {
+      document.querySelectorAll('.native-format-grid').forEach(grid => {
+        const style = getComputedStyle(grid);
+        const row = parseFloat(style.gridAutoRows);
+        const gap = parseFloat(style.rowGap);
+        if (!row || !Number.isFinite(gap)) return;
+        grid.querySelectorAll('.project').forEach(card => {
+          const height = card.querySelector('.project-button').getBoundingClientRect().height;
+          card.style.gridRowEnd = `span ${Math.max(1, Math.ceil((height + gap) / (row + gap)))}`;
+        });
+      });
+      fitHeight();
+    });
+  }
+  if ('ResizeObserver' in window) {
+    const cardObserver = new ResizeObserver(layoutCards);
+    document.querySelectorAll('.native-format-grid .project-button').forEach(card => cardObserver.observe(card));
+  } else window.addEventListener('resize', layoutCards);
+  document.fonts?.ready.then(layoutCards);
+  layoutCards();
 
   function fitHeight() {
     viewport.style.height = `${panels[activeIndex].offsetHeight}px`;

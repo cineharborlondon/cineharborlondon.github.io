@@ -55,22 +55,6 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "Dyson Hair Oil Official Launch Video",
-    "vimeo": "1233560693",
-    "vimeoHash": "707c5c9d6f",
-    "aspectRatio": 0.562390158172232,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209262960-640e4c6b1a78a3c3f8683610fc385486cbe77173bbcbb5e390044b68e31c1d99-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "dyson-hair-oil-official-launch",
-    "description": "",
-    "images": [],
-    "url": "/commercials-dyson-hair-oil-official-launch.html"
-  },
-  {
-    "collection": "commercials",
-    "kind": "video",
     "title": "NAVIMOW — A Lawn to Come Home to | USA",
     "vimeo": "1232908778",
     "vimeoHash": "45445dab2a",
@@ -87,7 +71,7 @@ const projects = [
     "year": "2025"
   },
   {
-    "collection": "commercials",
+    "collection": "branded-content",
     "kind": "video",
     "title": "SmallRig × Simon Reay — Interview",
     "vimeo": "1232913765",
@@ -227,7 +211,7 @@ const projects = [
     "url": "/films-the-ballroom.html"
   },
   {
-    "collection": "commercials",
+    "collection": "branded-content",
     "kind": "video",
     "title": "Tim Yip × Hackett London",
     "vimeo": "1232913015",
@@ -243,7 +227,7 @@ const projects = [
     "url": "/films-tim-yip-hackets-london.html"
   },
   {
-    "collection": "films",
+    "collection": "branded-content",
     "kind": "video",
     "title": "Bvlgari × Modern Weekly — The Polyphony of Life",
     "vimeo": "1232822716",
@@ -298,44 +282,7 @@ const projects = [
     ]
   },
   {
-    "collection": "social",
-    "kind": "video",
-    "title": "Libby Bennett — OMG! Libby’s Hidden Talent",
-    "vimeo": "1232822735",
-    "vimeoHash": "1b1f1b8afd",
-    "aspectRatio": 0.75,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208339440-bab324780e7b6a73ae654fe3f75bde64f75f6c6896f1b5c75ce432a8b924d24e-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "interview-02",
-    "description": "Burberry × W Magazine China × Libby Bennett.\n\nOMG! Libby’s Hidden Talent.",
-    "images": [],
-    "url": "/commercials-interview-02.html",
-    "location": "London, UK",
-    "year": "2026",
-    "listed": false
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "Burberry × W Magazine — Summer 26 Playlist",
-    "vimeo": "1221238820",
-    "vimeoHash": "24f45adce5",
-    "aspectRatio": 0.75,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2193888416-d9ac19311a8443b7d27899387bea52010076979bcb33cf9b5f0b9efe6e72c32b-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "w-magazine-summer-26",
-    "description": "Burberry × W Magazine China × Lina Zhang × Libby Bennett.\n\nMusic Showroom: Summer 26 Playlist.",
-    "images": [],
-    "url": "/commercials-w-magazine-summer-26.html",
-    "location": "London, UK",
-    "year": "2026"
-  },
-  {
-    "collection": "commercials",
+    "collection": "branded-content",
     "kind": "video",
     "title": "How to Stay Chic and Warm in London",
     "vimeo": "1232909009",
@@ -537,7 +484,7 @@ const projects = [
     ]
   },
   {
-    "collection": "films",
+    "collection": "branded-content",
     "kind": "video",
     "title": "John Pawson × Banlan — Slips (JIANDU)",
     "vimeo": "1232901778",
@@ -606,7 +553,7 @@ const projects = [
     "location": "Germany"
   },
   {
-    "collection": "social",
+    "collection": "branded-content",
     "kind": "video",
     "title": "Qin Wen × Leif Lindner — IFA Interview",
     "vimeo": "1232909413",
@@ -622,7 +569,7 @@ const projects = [
     "url": "/social-qin-wen-leif-lindner-ifa.html"
   },
   {
-    "collection": "social",
+    "collection": "commercials",
     "kind": "video",
     "title": "HUAWEI MWC 2026",
     "vimeo": "1232904708",
@@ -673,7 +620,120 @@ const projects = [
     ]
   },
   {
+    "collection": "branded-content",
+    "kind": "video",
+    "title": "Zhang Youhao × Another Man — London Fashion Week 2025",
+    "vimeo": "1232912614",
+    "vimeoHash": "f9b79a517a",
+    "aspectRatio": 1.3333333333333333,
+    "previewStart": 2,
+    "cover": "https://i.vimeocdn.com/video/2208443170-69534c3a4da2eacd7d636c159d9aff707a0ae565e282a8a0b294619420936120-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "zhang-youhao-another-man-lfw-2025",
+    "description": "Three films with Zhang Youhao for Another Man at London Fashion Week 2025.",
+    "images": [],
+    "url": "/social-zhang-youhao-another-man-lfw-2025.html",
+    "location": "London, UK",
+    "year": "2025",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Vlog 01",
+            "vimeo": "1232912614",
+            "vimeoHash": "f9b79a517a",
+            "aspectRatio": 1.3333333333333333
+          },
+          {
+            "title": "Vlog 02",
+            "vimeo": "1232912612",
+            "vimeoHash": "517fe939fb",
+            "aspectRatio": 1.3333333333333333
+          },
+          {
+            "title": "Vlog 03",
+            "vimeo": "1232912613",
+            "vimeoHash": "5e0c666edb",
+            "aspectRatio": 1.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "GRAFF",
+    "vimeo": "1233569217",
+    "vimeoHash": "ed4eb51274",
+    "aspectRatio": 2.3315118397085612,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209274619-9efa2a784ea1522a020a3d05d2967bf5eed0a56ec54802c062eb7dab395517e7-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "graff-commercial",
+    "description": "",
+    "images": [],
+    "url": "/commercials-graff.html"
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "Dyson Hair Oil Official Launch Video",
+    "vimeo": "1233560693",
+    "vimeoHash": "707c5c9d6f",
+    "aspectRatio": 0.562390158172232,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209262960-640e4c6b1a78a3c3f8683610fc385486cbe77173bbcbb5e390044b68e31c1d99-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "dyson-hair-oil-official-launch",
+    "description": "",
+    "images": [],
+    "url": "/commercials-dyson-hair-oil-official-launch.html"
+  },
+  {
     "collection": "social",
+    "kind": "video",
+    "title": "Libby Bennett — OMG! Libby’s Hidden Talent",
+    "vimeo": "1232822735",
+    "vimeoHash": "1b1f1b8afd",
+    "aspectRatio": 0.75,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208339440-bab324780e7b6a73ae654fe3f75bde64f75f6c6896f1b5c75ce432a8b924d24e-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "interview-02",
+    "description": "Burberry × W Magazine China × Libby Bennett.\n\nOMG! Libby’s Hidden Talent.",
+    "images": [],
+    "url": "/commercials-interview-02.html",
+    "location": "London, UK",
+    "year": "2026",
+    "listed": false
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Burberry × W Magazine — Summer 26 Playlist",
+    "vimeo": "1221238820",
+    "vimeoHash": "24f45adce5",
+    "aspectRatio": 0.75,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2193888416-d9ac19311a8443b7d27899387bea52010076979bcb33cf9b5f0b9efe6e72c32b-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "w-magazine-summer-26",
+    "description": "Burberry × W Magazine China × Lina Zhang × Libby Bennett.\n\nMusic Showroom: Summer 26 Playlist.",
+    "images": [],
+    "url": "/commercials-w-magazine-summer-26.html",
+    "location": "London, UK",
+    "year": "2026"
+  },
+  {
+    "collection": "commercials",
     "kind": "video",
     "title": "COMMENSE",
     "vimeo": "1232913226",
@@ -757,50 +817,6 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "Zhang Youhao × Another Man — London Fashion Week 2025",
-    "vimeo": "1232912614",
-    "vimeoHash": "f9b79a517a",
-    "aspectRatio": 1.3333333333333333,
-    "previewStart": 2,
-    "cover": "https://i.vimeocdn.com/video/2208443170-69534c3a4da2eacd7d636c159d9aff707a0ae565e282a8a0b294619420936120-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "zhang-youhao-another-man-lfw-2025",
-    "description": "Three films with Zhang Youhao for Another Man at London Fashion Week 2025.",
-    "images": [],
-    "url": "/social-zhang-youhao-another-man-lfw-2025.html",
-    "location": "London, UK",
-    "year": "2025",
-    "groupedVideoLayout": true,
-    "relatedVideoGroups": [
-      {
-        "title": "The Films",
-        "videos": [
-          {
-            "title": "Vlog 01",
-            "vimeo": "1232912614",
-            "vimeoHash": "f9b79a517a",
-            "aspectRatio": 1.3333333333333333
-          },
-          {
-            "title": "Vlog 02",
-            "vimeo": "1232912612",
-            "vimeoHash": "517fe939fb",
-            "aspectRatio": 1.3333333333333333
-          },
-          {
-            "title": "Vlog 03",
-            "vimeo": "1232912613",
-            "vimeoHash": "5e0c666edb",
-            "aspectRatio": 1.3333333333333333
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "collection": "social",
-    "kind": "video",
     "title": "Paris Haute Couture Week 2026",
     "vimeo": "1232912231",
     "vimeoHash": "3076051a50",
@@ -857,22 +873,6 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "GRAFF",
-    "vimeo": "1233569217",
-    "vimeoHash": "ed4eb51274",
-    "aspectRatio": 2.3315118397085612,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209274619-9efa2a784ea1522a020a3d05d2967bf5eed0a56ec54802c062eb7dab395517e7-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "graff-commercial",
-    "description": "",
-    "images": [],
-    "url": "/commercials-graff.html"
-  },
-  {
-    "collection": "social",
-    "kind": "video",
     "title": "The Fruit Wave of Stride 2021",
     "vimeo": "748230681",
     "vimeoHash": "b2d74e4e74",
@@ -892,12 +892,12 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "Threshold of Bloom 2026",
+    "title": "Threshold of Bloom",
     "vimeo": "1232912873",
     "vimeoHash": "5a2c1627ad",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208442913-4ab87169fbc9560d87d384f723a756e934b474f54eb73fab8161c2aaef508b69-d_1280?region=us",
+    "previewStart": 70,
+    "cover": "/assets/threshold-of-bloom-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "threshold-of-bloom-2026",

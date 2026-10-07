@@ -12,7 +12,7 @@
     // Keep existing project return links and bookmarked Work categories working.
     function openLegacyWork() {
       if (document.body?.classList.contains('work-open')) return;
-      if (/^#(work|films|commercials|photography|social)$/.test(location.hash)) {
+      if (/^#(work|films|commercials|branded-content|photography|social)$/.test(location.hash)) {
         location.replace('work.html' + location.search + location.hash);
       }
     }

@@ -86,7 +86,7 @@
     "year": "2025"
   },
   {
-    "collection": "commercials",
+    "collection": "branded-content",
     "kind": "video",
     "title": "SmallRig × Simon Reay — Interview",
     "vimeo": "1232913765",
@@ -228,12 +228,12 @@
   {
     "collection": "films",
     "kind": "video",
-    "title": "Threshold of Bloom 2026",
+    "title": "Threshold of Bloom",
     "vimeo": "1232912873",
     "vimeoHash": "5a2c1627ad",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208442913-4ab87169fbc9560d87d384f723a756e934b474f54eb73fab8161c2aaef508b69-d_1280?region=us",
+    "previewStart": 70,
+    "cover": "/assets/threshold-of-bloom-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "threshold-of-bloom-2026",
@@ -263,7 +263,7 @@
     "pinLastOrder": 2
   },
   {
-    "collection": "commercials",
+    "collection": "branded-content",
     "kind": "video",
     "title": "Tim Yip × Hackett London",
     "vimeo": "1232913015",
@@ -298,7 +298,7 @@
     "pinLastOrder": 3
   },
   {
-    "collection": "films",
+    "collection": "branded-content",
     "kind": "video",
     "title": "Bvlgari × Modern Weekly — The Polyphony of Life",
     "vimeo": "1232822716",
@@ -390,7 +390,7 @@
     "year": "2026"
   },
   {
-    "collection": "commercials",
+    "collection": "branded-content",
     "kind": "video",
     "title": "How to Stay Chic and Warm in London",
     "vimeo": "1232909009",
@@ -592,7 +592,7 @@
     ]
   },
   {
-    "collection": "films",
+    "collection": "branded-content",
     "kind": "video",
     "title": "John Pawson × Banlan — Slips (JIANDU)",
     "vimeo": "1232901778",
@@ -610,7 +610,7 @@
     "year": "2026"
   },
   {
-    "collection": "social",
+    "collection": "commercials",
     "kind": "video",
     "title": "The Fruit Wave of Stride 2021",
     "vimeo": "748230681",
@@ -680,7 +680,7 @@
     "location": "Germany"
   },
   {
-    "collection": "social",
+    "collection": "branded-content",
     "kind": "video",
     "title": "Qin Wen × Leif Lindner — IFA Interview",
     "vimeo": "1232909413",
@@ -696,7 +696,7 @@
     "url": "/social-qin-wen-leif-lindner-ifa.html"
   },
   {
-    "collection": "social",
+    "collection": "commercials",
     "kind": "video",
     "title": "HUAWEI MWC 2026",
     "vimeo": "1232904708",
@@ -747,7 +747,7 @@
     ]
   },
   {
-    "collection": "social",
+    "collection": "commercials",
     "kind": "video",
     "title": "COMMENSE",
     "vimeo": "1232913226",
@@ -829,7 +829,7 @@
     ]
   },
   {
-    "collection": "social",
+    "collection": "branded-content",
     "kind": "video",
     "title": "Zhang Youhao × Another Man — London Fashion Week 2025",
     "vimeo": "1232912614",
