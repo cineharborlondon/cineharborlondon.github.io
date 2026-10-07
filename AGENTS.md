@@ -23,7 +23,9 @@
 - TCL × Qinwen — IFA Deep Dive belongs in Editorial immediately after Qin Wen × Leif Lindner — IFA Interview; preserve its existing social project route. Its cover headline is English; the original Chinese creator logo may remain.
 - Genshin preview shows its title briefly, then jumps to the UK performance at 54:53.
 
-- MOUSSAIEFF and GRAFF covers use black backgrounds and white brand titles; BVLGARI uses its original picture cover.
+- MOUSSAIEFF and GRAFF covers must be frames of the original brand title cards from their actual films; never recreate the typography or background. BVLGARI uses its original picture cover.
 - The Capston vertical event film goes toward the end of Content, immediately before Knight Frank × Rockwell — Event (the portrait Knight Frank project). BVLGARI retains its original picture cover; MOUSSAIEFF and GRAFF retain title covers.
 
 - The Dehua international tour is one listed Content project with Copenhagen and Brussels videos side by side; preserve both original routes.
+
+- Dahua keeps the product cover and previews the complete 26-second film on loop.

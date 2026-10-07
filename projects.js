@@ -958,7 +958,7 @@ const projects = [
     "vimeoHash": "ed4eb51274",
     "aspectRatio": 2.3315118397085612,
     "previewStart": 8,
-    "cover": "/assets/graff-title-cover.svg",
+    "cover": "/assets/graff-original-title-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "graff-commercial",
@@ -974,7 +974,7 @@ const projects = [
     "vimeoHash": "ce0d8eaa79",
     "aspectRatio": 1,
     "previewStart": 0,
-    "cover": "/assets/moussaieff-title-cover.svg",
+    "cover": "/assets/moussaieff-original-title-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "moussaieff",
@@ -1277,7 +1277,7 @@ const projects = [
     "url": "/films-threshold-of-bloom-2026.html",
     "pinLast": true,
     "pinLastOrder": 1,
-    "previewDuration": 8
+    "previewDuration": 60
   },
   {
     "collection": "commercials",
@@ -1286,7 +1286,7 @@ const projects = [
     "vimeo": "1232915774",
     "vimeoHash": "4ee734b1db",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 16.5,
+    "previewStart": 0,
     "cover": "/assets/dahua-smart-lock-cover.jpg",
     "credit": "",
     "sample": false,
@@ -1296,7 +1296,7 @@ const projects = [
     "url": "/commercials-dahua-split-tvc.html",
     "pinLast": true,
     "pinLastOrder": 1,
-    "previewDuration": 3
+    "previewDuration": 26
   },
   {
     "collection": "social",
