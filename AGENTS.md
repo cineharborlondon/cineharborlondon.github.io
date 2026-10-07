@@ -35,6 +35,6 @@
 - Starry Mart is a Store Opening Films series with London Dock, Southside and Fulham in that order; retain the original London Dock Work cover and preview.
 - Hanshow Retail Technology Show photography follows the 13-photo Instagram carousel order, then the five additional Drive photos, retaining native picture proportions.
 
-Mobile portrait work cards must be horizontally centered, with their original compact size and native ratio preserved. Starry Mart groups London Dock, Southside and Fulham openings while preserving its existing preview. Photography selections: Hanshow 18, Heathrow Express 25, SUNCUN LFW 20 in Instagram order, Pei Feng Su 11. PAINKILLER — Ducati follows VOGUE films and uses fast vehicle tracking shots. New Savills, ZUKER and Oxford Content events appear near the end.
+Mobile portrait work cards must be horizontally centered, with their original compact size and native ratio preserved. Starry Mart groups London Dock, Southside and Fulham openings while preserving its existing preview. Photography selections: Hanshow 18, Heathrow Express 25, SUNCUN LFW 20 in Instagram order, Pei Feng Su 11. PAINKILLER — DUCATI follows VOGUE films; its Work preview starts at 1:11 and continues through the following sequence (24 seconds). New Savills, ZUKER and Oxford Content events appear near the end.
 
 Yingjia Design — Brand Film is the last Commercials project, filmed in China in 2018.

@@ -781,27 +781,17 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "PAINKILLER — Ducati",
+    "title": "PAINKILLER — DUCATI",
     "vimeo": "1233749117",
     "vimeoHash": "23a0f50794",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 133,
-    "previewDuration": 6.5,
-    "previewSegments": [
-      {
-        "start": 122.2,
-        "duration": 1.8
-      },
-      {
-        "start": 133,
-        "duration": 6.5
-      }
-    ],
+    "previewStart": 71,
+    "previewDuration": 24,
     "cover": "https://i.vimeocdn.com/video/2209503582-56d06c42d7390aace0a0bd02a0b1065b0c310ad249718d54cf5efad4235e7021-d_1280",
     "credit": "",
     "sample": false,
     "slug": "painkiller-ducati",
-    "description": "PAINKILLER — a Ducati film.",
+    "description": "PAINKILLER — a DUCATI film.",
     "images": [],
     "url": "/films-painkiller-ducati.html"
   },
