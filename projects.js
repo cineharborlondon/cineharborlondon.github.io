@@ -257,161 +257,6 @@ const projects = [
     ]
   },
   {
-    "collection": "photography",
-    "kind": "photo",
-    "title": "2026 London Fashion Week",
-    "slug": "2026-london-fashion-week",
-    "url": "/photography-2026-london-fashion-week.html",
-    "cover": "/lfw-b031924-960.webp",
-    "description": "Selected runway photography for SUNCUN on the official London Fashion Week stage. The gallery follows the Instagram selection, with additional looks and details.",
-    "credit": "",
-    "location": "London, UK",
-    "year": "2026",
-    "images": [
-      {
-        "src": "/lfw-b031924.webp",
-        "small": "/lfw-b031924-960.webp",
-        "width": 3519,
-        "height": 5278,
-        "alt": "2026 London Fashion Week — photograph 18"
-      },
-      {
-        "src": "/lfw-b031737.webp",
-        "small": "/lfw-b031737-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 10"
-      },
-      {
-        "src": "/lfw-b031302.webp",
-        "small": "/lfw-b031302-960.webp",
-        "width": 2233,
-        "height": 3350,
-        "alt": "2026 London Fashion Week — photograph 01"
-      },
-      {
-        "src": "/lfw-b031611.webp",
-        "small": "/lfw-b031611-960.webp",
-        "width": 3435,
-        "height": 5152,
-        "alt": "2026 London Fashion Week — photograph 07"
-      },
-      {
-        "src": "/lfw-b031565.webp",
-        "small": "/lfw-b031565-960.webp",
-        "width": 5072,
-        "height": 3382,
-        "alt": "2026 London Fashion Week — photograph 06"
-      },
-      {
-        "src": "/lfw-b031614.webp",
-        "small": "/lfw-b031614-960.webp",
-        "width": 5400,
-        "height": 3600,
-        "alt": "2026 London Fashion Week — photograph 08"
-      },
-      {
-        "src": "/lfw-b032000.webp",
-        "small": "/lfw-b032000-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 20"
-      },
-      {
-        "src": "/lfw-b031543.webp",
-        "small": "/lfw-b031543-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 04"
-      },
-      {
-        "src": "/lfw-b031889.webp",
-        "small": "/lfw-b031889-960.webp",
-        "width": 4746,
-        "height": 3164,
-        "alt": "2026 London Fashion Week — photograph 17"
-      },
-      {
-        "src": "/lfw-b031980.webp",
-        "small": "/lfw-b031980-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 19"
-      },
-      {
-        "src": "/lfw-b031562.webp",
-        "small": "/lfw-b031562-960.webp",
-        "width": 3393,
-        "height": 5090,
-        "alt": "2026 London Fashion Week — photograph 05"
-      },
-      {
-        "src": "/lfw-b031784.webp",
-        "small": "/lfw-b031784-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 11"
-      },
-      {
-        "src": "/lfw-b031536.webp",
-        "small": "/lfw-b031536-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 02"
-      },
-      {
-        "src": "/lfw-b031537.webp",
-        "small": "/lfw-b031537-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 03"
-      },
-      {
-        "src": "/lfw-b031695.webp",
-        "small": "/lfw-b031695-960.webp",
-        "width": 3159,
-        "height": 4739,
-        "alt": "2026 London Fashion Week — photograph 09"
-      },
-      {
-        "src": "/lfw-b031811.webp",
-        "small": "/lfw-b031811-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 12"
-      },
-      {
-        "src": "/lfw-b031837.webp",
-        "small": "/lfw-b031837-960.webp",
-        "width": 3369,
-        "height": 5053,
-        "alt": "2026 London Fashion Week — photograph 13"
-      },
-      {
-        "src": "/lfw-b031866.webp",
-        "small": "/lfw-b031866-960.webp",
-        "width": 3101,
-        "height": 4652,
-        "alt": "2026 London Fashion Week — photograph 14"
-      },
-      {
-        "src": "/lfw-b031869.webp",
-        "small": "/lfw-b031869-960.webp",
-        "width": 4730,
-        "height": 3153,
-        "alt": "2026 London Fashion Week — photograph 15"
-      },
-      {
-        "src": "/lfw-b031888.webp",
-        "small": "/lfw-b031888-960.webp",
-        "width": 3122,
-        "height": 4684,
-        "alt": "2026 London Fashion Week — photograph 16"
-      }
-    ],
-    "contentOrder": 1
-  },
-  {
     "collection": "social",
     "kind": "video",
     "title": "Starry Mart — Store Opening Series (3 Films)",
@@ -455,6 +300,140 @@ const projects = [
         ]
       }
     ]
+  },
+  {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "Segway Navimow — Campaign Photography",
+    "slug": "navimow-campaign-photography",
+    "url": "/photography-navimow-campaign.html",
+    "cover": "https://lh3.googleusercontent.com/d/1lFaBjbm1dzwNd7D0LrMoYMuQX5nbcaZL=w960",
+    "description": "Selected campaign photography for Segway Navimow, photographed across France, Germany and the USA.",
+    "location": "France · Germany · USA",
+    "year": "2025",
+    "credit": "",
+    "images": [
+      {
+        "src": "https://lh3.googleusercontent.com/d/1lFaBjbm1dzwNd7D0LrMoYMuQX5nbcaZL=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1lFaBjbm1dzwNd7D0LrMoYMuQX5nbcaZL=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 1"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1NkpdkfshXjH-6814ccZXET0D3Q1qWlYa=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1NkpdkfshXjH-6814ccZXET0D3Q1qWlYa=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 2"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Z6EWxqBe1crbIpVxKQqe8yOVP-ms4Ru7=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Z6EWxqBe1crbIpVxKQqe8yOVP-ms4Ru7=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/109ZKvwfJMtpADb5u5k4jfTp6DX4XLIuW=w2400",
+        "small": "https://lh3.googleusercontent.com/d/109ZKvwfJMtpADb5u5k4jfTp6DX4XLIuW=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 4"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1wLiE1nV-yGZk0JhzCWqBKpQ977Dpsskm=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1wLiE1nV-yGZk0JhzCWqBKpQ977Dpsskm=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Segway Navimow — campaign photograph 5"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1BWoYybFY7BV2QKiPkCwoxwjOHuMplzTu=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1BWoYybFY7BV2QKiPkCwoxwjOHuMplzTu=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Segway Navimow — campaign photograph 6"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1BfvuHqoLmRyRqBOHaVYljqRwGttm5ypS=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1BfvuHqoLmRyRqBOHaVYljqRwGttm5ypS=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 7"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1XMZ2NPrsQCJ5RePdjT35Psf4l2fVK5JC=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1XMZ2NPrsQCJ5RePdjT35Psf4l2fVK5JC=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 8"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/11IVq9OtVN3YgvxR8Cg0AyTZZxDzQshRQ=w2400",
+        "small": "https://lh3.googleusercontent.com/d/11IVq9OtVN3YgvxR8Cg0AyTZZxDzQshRQ=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 9"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1vxQzycoFzcT4SiuBG8z9sKDvXI2AdHj-=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1vxQzycoFzcT4SiuBG8z9sKDvXI2AdHj-=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Segway Navimow — campaign photograph 10"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1D-CFwrFc87HjCK0CqSRMCBUv9uTczn4z=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1D-CFwrFc87HjCK0CqSRMCBUv9uTczn4z=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Segway Navimow — campaign photograph 11"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1ZvOaT_Jj66_6rq-aMD6CbbbEkNd3m8lK=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1ZvOaT_Jj66_6rq-aMD6CbbbEkNd3m8lK=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Segway Navimow — campaign photograph 12"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1UTMo1Fc7tnOFEFv5lQYTGav3qGILplDT=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1UTMo1Fc7tnOFEFv5lQYTGav3qGILplDT=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 13"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1BYggdNN7rVxesuFpONc3jqOYdSZvyLN6=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1BYggdNN7rVxesuFpONc3jqOYdSZvyLN6=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — campaign photograph 14"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1IhVa9U5XuLVlGCMPV_81myU0N3xOqzrx=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1IhVa9U5XuLVlGCMPV_81myU0N3xOqzrx=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Segway Navimow — campaign photograph 15"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1wupUN7kVZSdxuOdMYrECgleJL4Y6hiFs=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1wupUN7kVZSdxuOdMYrECgleJL4Y6hiFs=w960",
+        "width": 1728,
+        "height": 972,
+        "alt": "Segway Navimow — campaign photograph 16"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/15DdoNBP4mGXP89kQ7PYYkThZoCa1O9dM=w2400",
+        "small": "https://lh3.googleusercontent.com/d/15DdoNBP4mGXP89kQ7PYYkThZoCa1O9dM=w960",
+        "width": 1536,
+        "height": 1024,
+        "alt": "Segway Navimow — campaign photograph 17"
+      }
+    ],
+    "contentOrder": 1
   },
   {
     "collection": "social",
@@ -1081,6 +1060,160 @@ const projects = [
     "description": "An introduction to BioTwin and its approach to low-carbon innovation.",
     "images": [],
     "url": "/commercials-biotwin.html"
+  },
+  {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "2026 London Fashion Week",
+    "slug": "2026-london-fashion-week",
+    "url": "/photography-2026-london-fashion-week.html",
+    "cover": "/lfw-b031924-960.webp",
+    "description": "Selected runway photography for SUNCUN on the official London Fashion Week stage. The gallery follows the Instagram selection, with additional looks and details.",
+    "credit": "",
+    "location": "London, UK",
+    "year": "2026",
+    "images": [
+      {
+        "src": "/lfw-b031924.webp",
+        "small": "/lfw-b031924-960.webp",
+        "width": 3519,
+        "height": 5278,
+        "alt": "2026 London Fashion Week — photograph 18"
+      },
+      {
+        "src": "/lfw-b031737.webp",
+        "small": "/lfw-b031737-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 10"
+      },
+      {
+        "src": "/lfw-b031302.webp",
+        "small": "/lfw-b031302-960.webp",
+        "width": 2233,
+        "height": 3350,
+        "alt": "2026 London Fashion Week — photograph 01"
+      },
+      {
+        "src": "/lfw-b031611.webp",
+        "small": "/lfw-b031611-960.webp",
+        "width": 3435,
+        "height": 5152,
+        "alt": "2026 London Fashion Week — photograph 07"
+      },
+      {
+        "src": "/lfw-b031565.webp",
+        "small": "/lfw-b031565-960.webp",
+        "width": 5072,
+        "height": 3382,
+        "alt": "2026 London Fashion Week — photograph 06"
+      },
+      {
+        "src": "/lfw-b031614.webp",
+        "small": "/lfw-b031614-960.webp",
+        "width": 5400,
+        "height": 3600,
+        "alt": "2026 London Fashion Week — photograph 08"
+      },
+      {
+        "src": "/lfw-b032000.webp",
+        "small": "/lfw-b032000-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 20"
+      },
+      {
+        "src": "/lfw-b031543.webp",
+        "small": "/lfw-b031543-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 04"
+      },
+      {
+        "src": "/lfw-b031889.webp",
+        "small": "/lfw-b031889-960.webp",
+        "width": 4746,
+        "height": 3164,
+        "alt": "2026 London Fashion Week — photograph 17"
+      },
+      {
+        "src": "/lfw-b031980.webp",
+        "small": "/lfw-b031980-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 19"
+      },
+      {
+        "src": "/lfw-b031562.webp",
+        "small": "/lfw-b031562-960.webp",
+        "width": 3393,
+        "height": 5090,
+        "alt": "2026 London Fashion Week — photograph 05"
+      },
+      {
+        "src": "/lfw-b031784.webp",
+        "small": "/lfw-b031784-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 11"
+      },
+      {
+        "src": "/lfw-b031536.webp",
+        "small": "/lfw-b031536-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 02"
+      },
+      {
+        "src": "/lfw-b031537.webp",
+        "small": "/lfw-b031537-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 03"
+      },
+      {
+        "src": "/lfw-b031695.webp",
+        "small": "/lfw-b031695-960.webp",
+        "width": 3159,
+        "height": 4739,
+        "alt": "2026 London Fashion Week — photograph 09"
+      },
+      {
+        "src": "/lfw-b031811.webp",
+        "small": "/lfw-b031811-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 12"
+      },
+      {
+        "src": "/lfw-b031837.webp",
+        "small": "/lfw-b031837-960.webp",
+        "width": 3369,
+        "height": 5053,
+        "alt": "2026 London Fashion Week — photograph 13"
+      },
+      {
+        "src": "/lfw-b031866.webp",
+        "small": "/lfw-b031866-960.webp",
+        "width": 3101,
+        "height": 4652,
+        "alt": "2026 London Fashion Week — photograph 14"
+      },
+      {
+        "src": "/lfw-b031869.webp",
+        "small": "/lfw-b031869-960.webp",
+        "width": 4730,
+        "height": 3153,
+        "alt": "2026 London Fashion Week — photograph 15"
+      },
+      {
+        "src": "/lfw-b031888.webp",
+        "small": "/lfw-b031888-960.webp",
+        "width": 3122,
+        "height": 4684,
+        "alt": "2026 London Fashion Week — photograph 16"
+      }
+    ]
   },
   {
     "collection": "branded-content",
