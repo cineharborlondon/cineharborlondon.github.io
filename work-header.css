@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+/* Equal outer columns keep the wordmark centered regardless of navigation width. */
+.beige-film-page .work-header {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 24px;
+}
+.work-header-left { justify-self: start; }
+.work-header-right { justify-self: end; }
+.work-header nav { align-items: center; white-space: nowrap; }
+.work-header nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.work-wordmark {
+  justify-self: center;
+  padding: .14em .035em .12em 0;
+  color: var(--ink);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: .79;
+  letter-spacing: -.065em;
+  text-align: left;
+}
+.work-wordmark span { display: block; }
+.work-wordmark span + span { margin-top: .11em; text-indent: -.027em; }
+
+@media (max-width: 640px) {
+  .beige-film-page .work-header { gap: 8px; }
+  .work-wordmark { font-size: 22px; }
+  .work-header nav { gap: 10px; font-size: 12px; }
+}
