@@ -78,3 +78,9 @@
 /* Photography follows the original image rather than the video frame. */
 .beige-film-page .project-image.photo-source { aspect-ratio: auto; background: transparent; }
 .beige-film-page .project-image.photo-source img { position: relative; display: block; width: 100%; height: auto; object-fit: contain; }
+
+@media (min-width: 1001px) {
+  .beige-film-page .mixed-format-grid .fashion-project {
+    width: min(calc(var(--portrait-height) * var(--card-ratio)), calc((100% - var(--fashion-gaps)) * var(--card-ratio) / var(--fashion-ratio-sum)));
+  }
+}

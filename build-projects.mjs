@@ -6,7 +6,7 @@ import path from 'node:path';
 const root = path.dirname(fileURLToPath(import.meta.url));
 // Keep designated closing projects last, even when new entries are appended.
 const projects = JSON.parse(readFileSync(path.join(root, 'projects-data.json'), 'utf8'))
-  .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1)));
+  .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(a.contentOrder || 99) - Number(b.contentOrder || 99) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1)));
 const labels = { films: 'Films', commercials: 'Commercials', 'branded-content': 'Editorial', social: 'Content', photography: 'Photography' };
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const version = 'film-stage-4';

@@ -78,7 +78,8 @@ function initPortfolio() {
   function projectCard(project, index) {
     const isPhoto = project.kind === 'photo';
     const article = element('article', 'project');
-    article.classList.toggle('portrait-project', !isPhoto && Number(project.aspectRatio) > 0 && Number(project.aspectRatio) < 1);
+    article.classList.toggle('portrait-project', !isPhoto && Number(project.aspectRatio) > 0 && (Number(project.aspectRatio) < 1 || project.fashionPriority));
+    article.classList.toggle('fashion-project', Boolean(project.fashionPriority));
     const button = element('a', 'project-button');
     button.href = project.url;
     button.setAttribute('aria-label', `View ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);
@@ -117,16 +118,21 @@ function initPortfolio() {
     caption.append(title);
     button.append(visual, caption);
     article.append(button);
-    if (!isPhoto && project.vimeo && !project.staticCover && site.platformPreviews) previews.add(visual, project);
+    if (!isPhoto && project.vimeo && site.platformPreviews) previews.add(visual, project);
     return article;
   }
 
   const groups = categories.map(category => projects.filter(project => project.listed !== false && (project.collection || 'films') === category.id)
-    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1))));
+    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(a.contentOrder || 99) - Number(b.contentOrder || 99) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1))));
   panels.forEach((panel, index) => {
     const items = groups[index];
     if (items.length) {
       const grid = element('div', categories[index].id === 'photography' ? 'portfolio-grid' : 'portfolio-grid mixed-format-grid');
+      const fashion = items.filter(project => project.fashionPriority);
+      if (fashion.length) {
+        grid.style.setProperty('--fashion-ratio-sum', fashion.reduce((sum, project) => sum + Number(project.aspectRatio), 0));
+        grid.style.setProperty('--fashion-gaps', `${(fashion.length - 1) * 24 + 2}px`);
+      }
       items.forEach((project, projectIndex) => grid.append(projectCard(project, projectIndex)));
       panel.append(grid);
       if (items.some(project => project.sample)) {
@@ -342,12 +348,20 @@ function createPreviews() {
     entry.visual.dataset.previewState = 'unavailable';
     entry.player?.destroy().catch(() => {});
     entry.player = null;
+    clearTimeout(entry.retryTimer);
+    if (entry.retries < 2) entry.retryTimer = setTimeout(() => {
+      entry.retries += 1;
+      entry.failed = false;
+      updateVimeo(entry);
+    }, 1800 * (entry.retries + 1));
   }
 
   async function updateVimeo(entry) {
     const active = shouldPlay(entry);
     if (entry.ready) {
       const player = entry.player;
+      if (entry.updating) return;
+      entry.updating = true;
       try {
         if (active) {
           await player.play();
@@ -358,6 +372,10 @@ function createPreviews() {
           await player.pause();
         }
       } catch { if (shouldPlay(entry)) failVimeoPreview(entry); }
+      finally {
+        entry.updating = false;
+        if (entry.ready && active !== shouldPlay(entry)) updateVimeo(entry);
+      }
       return;
     }
     if (!active || entry.loading || entry.failed) return;
@@ -374,24 +392,25 @@ function createPreviews() {
       iframe.allow = 'autoplay; encrypted-media';
       iframe.referrerPolicy = 'strict-origin-when-cross-origin';
       // 免费账户可能忽略 controls / vimeo_logo；保留原始画面，不遮挡标识。
-      const params = new URLSearchParams({ autoplay: '0', muted: '1', loop: '1', autopause: '0', controls: '0', keyboard: '0', playsinline: '1', title: '0', byline: '0', portrait: '0', badge: '0', vimeo_logo: '0', dnt: '1' });
+      const params = new URLSearchParams({ autoplay: '1', muted: '1', loop: '1', autopause: '0', controls: '0', keyboard: '0', playsinline: '1', title: '0', byline: '0', portrait: '0', badge: '0', vimeo_logo: '0', dnt: '1' });
       if (entry.project.vimeoHash) params.set('h', entry.project.vimeoHash);
       iframe.src = `https://player.vimeo.com/video/${entry.project.vimeo}?${params}`;
       entry.visual.append(iframe);
       const player = new Vimeo.Player(iframe);
       entry.player = player;
       player.on('playing', () => {
+        if (entry.player !== player) return;
         if (!shouldPlay(entry)) { updateVimeo(entry); return; }
         entry.visual.dataset.previewState = 'playing';
         entry.visual.classList.add('preview-ready');
       });
-      player.on('pause', () => hideVimeoPreview(entry));
-      player.on('error', () => failVimeoPreview(entry));
+      player.on('pause', () => { if (entry.player === player) hideVimeoPreview(entry); });
+      player.on('error', () => { if (entry.player === player) failVimeoPreview(entry); });
       await player.ready();
       await player.setMuted(true);
-      entry.visual.dataset.previewMuted = String(await player.getMuted());
+      entry.visual.dataset.previewMuted = 'true';
       const start = Math.max(0, Number(entry.project.previewStart) || 0);
-      if (start) await player.setCurrentTime(start);
+      if (start) await player.setCurrentTime(start).catch(() => {});
       let seeking = false;
       player.on('timeupdate', ({ seconds }) => {
         if (seconds < start + (Number(entry.project.previewDuration) || 24) || seeking || !shouldPlay(entry)) return;
@@ -434,7 +453,7 @@ function createPreviews() {
   toggle.addEventListener('click', () => {
     enabled = !enabled;
     // 手动重新开启时允许因浏览器自动播放限制失败的预览重试。
-    if (enabled) entries.forEach(entry => { if (entry.failed) { entry.failed = false; entry.loading = false; entry.ready = false; } });
+    if (enabled) entries.forEach(entry => { if (entry.failed) { clearTimeout(entry.retryTimer); entry.retries = 0; entry.failed = false; entry.loading = false; entry.ready = false; } });
     updateToggle();
     refresh();
   });
@@ -445,10 +464,11 @@ function createPreviews() {
   return {
     refresh,
     add(visual, project) {
-      const entry = { visual, project, visible: false, loading: false, ready: false, failed: false, player: null };
+      const entry = { visual, project, visible: false, loading: false, ready: false, failed: false, retries: 0, retryTimer: null, updating: false, player: null };
       entries.set(visual, entry);
       visual.dataset.previewState = 'idle';
-      observer?.observe(visual);
+      if (observer) observer.observe(visual);
+      else { entry.visible = true; updateVimeo(entry); }
     },
   };
 }

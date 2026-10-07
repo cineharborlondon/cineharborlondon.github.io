@@ -14,3 +14,6 @@
 - Content fashion, W/Vogue and celebrity interview projects go first regardless of orientation (fashionPriority). Otherwise show landscape/square projects before portrait projects within each category; closing pinned projects keep their specified order. Landscape Work cards stay 16:9. Portrait cards retain their native ratio at a compact height that fits within the viewport.
 
 - All visible website project titles, video titles and labels must be in English, including nested related videos.
+
+- Custom video posters must not disable automatic previews. All Vimeo Work cards should retain muted previews with bounded retry after temporary failures.
+- Desktop Content begins with the five W/Vogue fashion projects in one compact row; the square Libby card uses its native ratio. Starry Mart starts the next row ahead of Knight Frank OWO and DALTON.

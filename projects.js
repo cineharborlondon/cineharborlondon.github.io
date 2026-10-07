@@ -256,6 +256,60 @@ const projects = [
     ]
   },
   {
+    "collection": "social",
+    "kind": "video",
+    "title": "Starry Mart — London Dock Opening",
+    "vimeo": "1232915723",
+    "vimeoHash": "e516679215",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208446214-75d6c8c3fb513e9c3f9c4aabef6c6001547ee331c2f3270e46e7d959eacdbca9-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "starry-mart-london-dock-opening",
+    "description": "An opening-event film for Starry Mart at London Dock.",
+    "images": [],
+    "url": "/social-starry-mart-london-dock-opening.html",
+    "location": "London, UK",
+    "contentOrder": 1
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Knight Frank — The OWO Residences",
+    "vimeo": "1232901833",
+    "vimeoHash": "51f3668da2",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208433608-7261d8f5a0a8e6e6fc300a5fc8808304165216c387abbb5b8226910f58cb7135-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "knight-frank-owo-residences",
+    "description": "A property tour of The OWO Residences for Knight Frank, filmed in London.",
+    "images": [],
+    "url": "/social-knight-frank-owo-residences.html",
+    "location": "London, UK",
+    "contentOrder": 2
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "DALTON — German Origins",
+    "vimeo": "1232915040",
+    "vimeoHash": "e7e1ee47b9",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208445557-defbea8f4224694485666e7053301d1b05951d7b64759691d9b0652ee69e3d42-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "dalton-german-origins",
+    "description": "A journey to the German origins of DALTON (德海顿).",
+    "images": [],
+    "url": "/social-dalton-german-origins.html",
+    "location": "Germany",
+    "contentOrder": 3
+  },
+  {
     "collection": "commercials",
     "kind": "video",
     "title": "NAVIMOW Circle — Concept Video",
@@ -445,8 +499,7 @@ const projects = [
           }
         ]
       }
-    ],
-    "staticCover": true
+    ]
   },
   {
     "collection": "commercials",
@@ -538,8 +591,7 @@ const projects = [
         "role": "UK Filming Support",
         "name": "Cine Harbor"
       }
-    ],
-    "staticCover": true
+    ]
   },
   {
     "collection": "films",
@@ -556,7 +608,6 @@ const projects = [
     "description": "A VOGUE CHINA fashion film starring Zhang Jingyi.",
     "images": [],
     "url": "/films-zhang-jingyi.html",
-    "staticCover": true,
     "coverPosition": "50% 15%"
   },
   {
@@ -574,7 +625,6 @@ const projects = [
     "description": "A VOGUE CHINA fashion film starring Xin Zhilei.",
     "images": [],
     "url": "/films-xin-zhilei.html",
-    "staticCover": true,
     "coverPosition": "50% 15%"
   },
   {
@@ -592,8 +642,7 @@ const projects = [
     "description": "Bvlgari × Modern Weekly: CEO Dialogue.\n\nThe Polyphony of Life — filmed in Venice.",
     "images": [],
     "url": "/commercials-bvlgari-nowness-venice-biennale.html",
-    "location": "Venice, Italy",
-    "staticCover": true
+    "location": "Venice, Italy"
   },
   {
     "collection": "branded-content",
@@ -611,8 +660,7 @@ const projects = [
     "images": [],
     "url": "/films-john-pawson-banlan-slips.html",
     "location": "Cotswolds, UK",
-    "year": "2026",
-    "staticCover": true
+    "year": "2026"
   },
   {
     "collection": "branded-content",
@@ -914,57 +962,6 @@ const projects = [
     "displayCategory": "Commercials · Live Broadcast"
   },
   {
-    "collection": "social",
-    "kind": "video",
-    "title": "Knight Frank — The OWO Residences",
-    "vimeo": "1232901833",
-    "vimeoHash": "51f3668da2",
-    "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208433608-7261d8f5a0a8e6e6fc300a5fc8808304165216c387abbb5b8226910f58cb7135-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "knight-frank-owo-residences",
-    "description": "A property tour of The OWO Residences for Knight Frank, filmed in London.",
-    "images": [],
-    "url": "/social-knight-frank-owo-residences.html",
-    "location": "London, UK"
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "Starry Mart — London Dock Opening",
-    "vimeo": "1232915723",
-    "vimeoHash": "e516679215",
-    "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208446214-75d6c8c3fb513e9c3f9c4aabef6c6001547ee331c2f3270e46e7d959eacdbca9-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "starry-mart-london-dock-opening",
-    "description": "An opening-event film for Starry Mart at London Dock.",
-    "images": [],
-    "url": "/social-starry-mart-london-dock-opening.html",
-    "location": "London, UK"
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "DALTON — German Origins",
-    "vimeo": "1232915040",
-    "vimeoHash": "e7e1ee47b9",
-    "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208445557-defbea8f4224694485666e7053301d1b05951d7b64759691d9b0652ee69e3d42-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "dalton-german-origins",
-    "description": "A journey to the German origins of DALTON (德海顿).",
-    "images": [],
-    "url": "/social-dalton-german-origins.html",
-    "location": "Germany"
-  },
-  {
     "collection": "branded-content",
     "kind": "video",
     "title": "Zhang Youhao × Another Man — London Fashion Week 2025",
@@ -1006,8 +1003,7 @@ const projects = [
           }
         ]
       }
-    ],
-    "staticCover": true
+    ]
   },
   {
     "collection": "branded-content",
@@ -1217,7 +1213,7 @@ const projects = [
     "vimeo": "1233562383",
     "vimeoHash": "fa1a712354",
     "aspectRatio": 1.8962962962962964,
-    "previewStart": 8,
+    "previewStart": 3240,
     "cover": "/assets/starberry-fields-forever-cover.jpg",
     "credit": "",
     "sample": false,
@@ -1225,7 +1221,6 @@ const projects = [
     "description": "",
     "images": [],
     "url": "/films-starberry-fields-forever.html",
-    "staticCover": true,
     "pinLast": true,
     "pinLastOrder": 2
   },
@@ -1266,8 +1261,7 @@ const projects = [
     "url": "/films-imaginary-friends.html",
     "pinLast": true,
     "displayCategory": "Fashion Film",
-    "pinLastOrder": 3,
-    "staticCover": true
+    "pinLastOrder": 3
   },
   {
     "collection": "films",
