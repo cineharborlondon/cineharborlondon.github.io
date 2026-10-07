@@ -17,3 +17,5 @@
 
 - Custom video posters must not disable automatic previews. All Vimeo Work cards should retain muted previews with bounded retry after temporary failures.
 - Desktop Content begins with the five W/Vogue fashion projects in one compact row; the square Libby card uses its native ratio. Starry Mart starts the next row ahead of Knight Frank OWO and DALTON.
+
+- Use well-exposed, readable scenes for posters and automatic previews; avoid dark introductions or fades.

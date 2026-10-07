@@ -310,6 +310,24 @@ const projects = [
     "contentOrder": 3
   },
   {
+    "collection": "social",
+    "kind": "video",
+    "title": "TCL × Qinwen — IFA Deep Dive",
+    "vimeo": "1233712586",
+    "vimeoHash": "8044223874",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 2384,
+    "previewDuration": 8,
+    "cover": "/assets/tcl-qinwen-ifa-cover.jpg",
+    "credit": "",
+    "sample": false,
+    "slug": "tcl-qinwen-ifa-deep-dive",
+    "description": "An in-depth exploration of TCL at IFA with creator Qinwen, looking at its technology, products and international presence.",
+    "images": [],
+    "url": "/social-tcl-qinwen-ifa-deep-dive.html",
+    "contentOrder": 4
+  },
+  {
     "collection": "commercials",
     "kind": "video",
     "title": "NAVIMOW Circle — Concept Video",
