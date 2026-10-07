@@ -45,7 +45,7 @@
 }
 .related-video-grid-grouped {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
   gap: 32px 28px;
 }
 .related-video-grid-grouped .related-video { margin-bottom: 0; }
