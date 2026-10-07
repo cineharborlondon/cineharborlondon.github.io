@@ -569,6 +569,57 @@ const projects = [
     "url": "/social-qin-wen-leif-lindner-ifa.html"
   },
   {
+    "collection": "social",
+    "kind": "video",
+    "title": "HUAWEI MWC 2026",
+    "vimeo": "1232904708",
+    "vimeoHash": "35726533cb",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208436511-df4ceab611ac09f1fd4f7355bfd6eb494320efb9832fcb5fa952261a6bce7f4e-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "huawei-mwc-2026",
+    "description": "A five-part video series for HUAWEI at MWC 2026, filmed in Barcelona.\n\nHealthcare, AI across industries, education, retail and ISP solutions.",
+    "images": [],
+    "url": "/social-huawei-mwc-2026.html",
+    "location": "Barcelona, Spain",
+    "year": "2026",
+    "videoTitle": "Healthcare",
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "MWC 2026 Series",
+        "videos": [
+          {
+            "title": "AI Across Industries",
+            "vimeo": "1232906877",
+            "vimeoHash": "cf136ff55e",
+            "aspectRatio": 1.7777777777777777
+          },
+          {
+            "title": "Education",
+            "vimeo": "1232906839",
+            "vimeoHash": "7a2dd6869e",
+            "aspectRatio": 1.7777777777777777
+          },
+          {
+            "title": "Retail",
+            "vimeo": "1232904666",
+            "vimeoHash": "0d9d71cfb4",
+            "aspectRatio": 0.562390158172232
+          },
+          {
+            "title": "ISP",
+            "vimeo": "1232904601",
+            "vimeoHash": "f40bd16a23",
+            "aspectRatio": 0.562390158172232
+          }
+        ]
+      }
+    ]
+  },
+  {
     "collection": "commercials",
     "kind": "video",
     "title": "The Fruit Wave of Stride 2021",
