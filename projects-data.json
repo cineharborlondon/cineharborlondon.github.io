@@ -196,6 +196,24 @@
   {
     "collection": "films",
     "kind": "video",
+    "title": "Threshold of Bloom 2026",
+    "vimeo": "1232912873",
+    "vimeoHash": "5a2c1627ad",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208442913-4ab87169fbc9560d87d384f723a756e934b474f54eb73fab8161c2aaef508b69-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "threshold-of-bloom-2026",
+    "description": "",
+    "images": [],
+    "url": "/films-threshold-of-bloom-2026.html",
+    "pinLast": true,
+    "pinLastOrder": 1
+  },
+  {
+    "collection": "films",
+    "kind": "video",
     "title": "Imaginary Friends",
     "vimeo": "1232822781",
     "vimeoHash": "59ca00941d",
@@ -209,7 +227,8 @@
     "images": [],
     "url": "/films-imaginary-friends.html",
     "pinLast": true,
-    "displayCategory": "Fashion Film"
+    "displayCategory": "Fashion Film",
+    "pinLastOrder": 2
   },
   {
     "collection": "commercials",
@@ -243,7 +262,8 @@
     "images": [],
     "url": "/films-well-done.html",
     "pinLast": true,
-    "displayCategory": "Fashion Film"
+    "displayCategory": "Fashion Film",
+    "pinLastOrder": 3
   },
   {
     "collection": "films",
