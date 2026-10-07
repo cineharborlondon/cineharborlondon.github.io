@@ -1170,7 +1170,7 @@ const projects = [
   {
     "collection": "fashion",
     "kind": "video",
-    "title": "Burberry × W China — Summer Playlist",
+    "title": "Lina Zhang & Libby Bennett × W China × Burberry",
     "vimeo": "1221238820",
     "vimeoHash": "24f45adce5",
     "aspectRatio": 0.75,
@@ -1179,7 +1179,7 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "w-magazine-summer-26",
-    "description": "Burberry × W Magazine China × Lina Zhang × Libby Bennett.\n\nMusic Showroom: Summer 26 Playlist.",
+    "description": "Summer Playlist",
     "images": [],
     "url": "/commercials-w-magazine-summer-26.html",
     "location": "London, UK",

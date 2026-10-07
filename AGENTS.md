@@ -62,3 +62,5 @@ Latest category reorganization overrides earlier category ordering and Content t
 Latest user correction: Hide Starberry Fields Forever, Imaginary Friends and What If Your Style Was Illegal? from Work and project navigation. UN CURRENT belongs in Films. Fashion begins with V Magazine × Xin Zhilei, then V Magazine × Zhang Jingyi, then The Ballroom.
 
 W China London fashion film Work title is Lina Zhang × W China × Burberry; keep How to Stay Chic and Warm in London inside the detail page.
+
+Summer Playlist Work title is Lina Zhang & Libby Bennett × W China × Burberry; Summer Playlist appears inside its detail page.
