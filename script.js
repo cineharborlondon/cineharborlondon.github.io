@@ -434,7 +434,7 @@ function createPreviews() {
       iframe.allow = 'autoplay; encrypted-media';
       iframe.referrerPolicy = 'strict-origin-when-cross-origin';
       // 免费账户可能忽略 controls / vimeo_logo；保留原始画面，不遮挡标识。
-      const params = new URLSearchParams({ autoplay: '1', muted: '1', loop: '1', autopause: '0', controls: '0', keyboard: '0', playsinline: '1', title: '0', byline: '0', portrait: '0', badge: '0', vimeo_logo: '0', dnt: '1' });
+      const params = new URLSearchParams({ autoplay: '0', muted: '1', loop: '0', autopause: '0', controls: '0', keyboard: '0', playsinline: '1', title: '0', byline: '0', portrait: '0', badge: '0', vimeo_logo: '0', dnt: '1' });
       if (entry.project.vimeoHash) params.set('h', entry.project.vimeoHash);
       iframe.src = `https://player.vimeo.com/video/${entry.project.vimeo}?${params}`;
       entry.visual.append(iframe);
@@ -456,14 +456,28 @@ function createPreviews() {
       if (!segments.length) segments.push({ start: 0, duration: 24 });
       let segmentIndex = 0;
       const start = Number(segments[0].start);
-      if (start) await player.setCurrentTime(start).catch(() => {});
+      await player.setCurrentTime(start);
       let seeking = false;
       player.on('timeupdate', ({ seconds }) => {
         const segment = segments[segmentIndex];
-        if (seconds < Number(segment.start) + Number(segment.duration) || seeking || !shouldPlay(entry)) return;
+        if (seeking || !shouldPlay(entry)) return;
+        const beforeStart = seconds < Number(segment.start) - 0.5;
+        if (!beforeStart && seconds < Number(segment.start) + Number(segment.duration)) return;
+        seeking = true;
+        if (!beforeStart) segmentIndex = (segmentIndex + 1) % segments.length;
+        player.setCurrentTime(Number(segments[segmentIndex].start))
+          .catch(() => failVimeoPreview(entry))
+          .finally(() => { seeking = false; });
+      });
+      // Clips shorter than the preview window still loop inside their selected segment.
+      player.on('ended', () => {
+        if (seeking || !shouldPlay(entry)) return;
         seeking = true;
         segmentIndex = (segmentIndex + 1) % segments.length;
-        player.setCurrentTime(Number(segments[segmentIndex].start)).catch(() => {}).finally(() => { seeking = false; });
+        player.setCurrentTime(Number(segments[segmentIndex].start))
+          .then(() => shouldPlay(entry) ? player.play() : undefined)
+          .catch(() => failVimeoPreview(entry))
+          .finally(() => { seeking = false; });
       });
       entry.ready = true;
       entry.loading = false;

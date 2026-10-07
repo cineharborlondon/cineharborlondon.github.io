@@ -70,3 +70,5 @@ Fashion landscape cards remain one per desktop row and centered, with video widt
 NEODIKO — London Design Exhibition (London, 2026) belongs to the Content subsection immediately after Starry Mart; preserve Vimeo 1233827953 and its unlisted hash. COMMENSE is labelled Social Series (8 Films).
 
 Latest preview correction: PAINKILLER — DUCATI previews 60–80 seconds to avoid the flashing drawing shot around 1:26. Genshin Concert 2023 keeps its static title poster, then directly previews the UK performance at 54:53 for 18 seconds; loop only the performance and do not replay the title animation.
+
+Latest poster/preview update: Yingjia Design previews only 12.5–32.5 seconds (fabric/craft shots), excluding the animated butterflies. Its poster is the original focused yellow-thread spool at 26.8 seconds. ALLSO uses the original Contour Palette makeup-application portrait at 5.1 seconds; COMMENSE uses the Garden 01 white-outfit full-body frame at 4.8 seconds. Preview players must initialize without autoplay/native looping, show moving frames only after the requested initial seek succeeds, enforce segment bounds and keep the poster with bounded retries if a seek fails.

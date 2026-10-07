@@ -538,7 +538,7 @@ const projects = [
     "vimeo": "1233773301",
     "vimeoHash": "764c84bd64",
     "aspectRatio": 0.5625,
-    "cover": "/assets/allso-portrait-cover.jpg",
+    "cover": "/assets/allso-makeup-portrait-cover.jpg",
     "previewStart": 1,
     "previewDuration": 24,
     "description": "Four beauty shorts for ALLSO, featuring blush, lip colour and contour.",
@@ -586,7 +586,7 @@ const projects = [
     "vimeoHash": "1b76f85dd5",
     "aspectRatio": 0.562390158172232,
     "previewStart": 2,
-    "cover": "/assets/commense-portrait-cover.jpg",
+    "cover": "/assets/commense-garden-full-portrait-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "commense",
@@ -688,8 +688,8 @@ const projects = [
     "vimeo": "1233760055",
     "vimeoHash": "c79bdbc236",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 11,
-    "cover": "/assets/yingjia-thread-cover.jpg",
+    "previewStart": 12.5,
+    "cover": "/assets/yingjia-focused-thread-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "yingjia-design-brand-film",
@@ -700,7 +700,7 @@ const projects = [
     "url": "/commercials-yingjia-design-brand-film.html",
     "pinLast": true,
     "pinLastOrder": 2,
-    "previewDuration": 24
+    "previewDuration": 20
   },
   {
     "collection": "content",
