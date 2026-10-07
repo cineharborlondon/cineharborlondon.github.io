@@ -52,3 +52,5 @@ Adam Photography uses only the 11 retouched images from Drive folder 1Ao3aabSYyi
 Latest user update: Adam gallery is deduplicated to seven retouched photographs; retain only one of each near-identical portrait, phone close-up, behind-the-scenes portrait and three-panel image. Navimow has no visible scene category headings: all 23 photos remain in one continuous grid in existing scene order. Hanchu ESS — Solar & Storage Live UK 2026 belongs in Content immediately before Knight Frank OWO; Rockwell event uses the clear original-film group portrait at 29.4 seconds as its poster.
 
 LFW latest selection: remove repeated white male runway shot B031537 and crossed-out B031695. First row is B031924, B031543, B031302 (white female model moved up), with 18 photographs remaining. Keep a continuous unlabeled grid so this requested first row is stable.
+
+Desktop Content closing portraits SUXINDAI, The Capston, Knight Frank Rockwell and Stride occupy a dedicated final row, retaining compact native proportions and existing order. Mobile cards remain centered.

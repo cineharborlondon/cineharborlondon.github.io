@@ -99,3 +99,18 @@
   .beige-film-page .uniform-photo-cover .project-image.photo-source { aspect-ratio: 3 / 2; }
   .beige-film-page .uniform-photo-cover .project-image.photo-source img { width: 100%; height: 100%; object-fit: cover; }
 }
+
+/* Keep the closing Content portrait films together on desktop. */
+.portrait-closing-row { display: contents; }
+@media (min-width: 1001px) {
+  .beige-film-page .mixed-format-grid .portrait-closing-row {
+    display: flex;
+    flex: 0 0 100%;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .beige-film-page .mixed-format-grid .portrait-closing-row .portrait-project {
+    width: min(calc(var(--portrait-height) * var(--card-ratio)), calc((100% - (var(--closing-count) - 1) * 24px) / var(--closing-count)));
+    flex-shrink: 0;
+  }
+}

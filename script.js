@@ -143,7 +143,16 @@ function initPortfolio() {
         grid.style.setProperty('--fashion-ratio-sum', fashion.reduce((sum, project) => sum + Number(project.aspectRatio), 0));
         grid.style.setProperty('--fashion-gaps', `${(fashion.length - 1) * 24 + 2}px`);
       }
-      items.forEach((project, projectIndex) => grid.append(projectCard(project, projectIndex)));
+      let closingStart = items.length;
+      if (categories[index].id === 'social') {
+        while (closingStart > 0 && Number(items[closingStart - 1].aspectRatio) < 1 && !items[closingStart - 1].fashionPriority) closingStart--;
+      }
+      const closingRow = closingStart < items.length ? element('div', 'portrait-closing-row') : null;
+      if (closingRow) closingRow.style.setProperty('--closing-count', items.length - closingStart);
+      items.forEach((project, projectIndex) => {
+        if (closingRow && projectIndex === closingStart) grid.append(closingRow);
+        (closingRow && projectIndex >= closingStart ? closingRow : grid).append(projectCard(project, projectIndex));
+      });
       panel.append(grid);
       if (items.some(project => project.sample)) {
         panel.append(element('p', 'sample-note', index === 0 ? 'Preview selection — sample films by Blender, shown for demonstration. These are not Cine Harbor productions.' : 'Preview selection — sample work shown for demonstration. These are not Cine Harbor productions.'));
