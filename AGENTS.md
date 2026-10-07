@@ -45,4 +45,4 @@ Burberry × W China — Summer Playlist uses W China and a single-line Work titl
 
 Yingjia Design previews from 00:11 and uses the original yellow thread-spool shot at 00:25.5 as its cover. SUXINDAI groups two vertical ads as one Content project, with both original Vimeo IDs preserved.
 
-Photography begins with Segway Navimow — Campaign Photography (17 selected images, France · Germany · USA, 2025), then Realme × Adam Valdez — Campaign Photography (five selected images). Hanshow remains last. Preserve this order when adding new photography.
+Photography begins with Segway Navimow — Campaign Photography (23 images, France · Germany · USA, 2025), then Realme × Adam Valdez — Campaign Photography, then Heathrow Express, London Fashion Week and Pei Feng Su. Hanshow remains last. The first three desktop Photography covers share a 3:2 display size; detail photos retain native proportions. Photography details open with the title followed by the full gallery. Navimow scenes are grouped into Gardens & Lawns, Coastal Life, and Family & Home, with both aerials near the beginning.

@@ -81,6 +81,7 @@ function initPortfolio() {
     article.classList.toggle('portrait-project', !isPhoto && Number(project.aspectRatio) > 0 && (Number(project.aspectRatio) < 1 || Boolean(project.fashionPriority)));
     article.classList.toggle('fashion-project', Boolean(project.fashionPriority));
     article.classList.toggle('single-line-title', Boolean(project.singleLineTitle));
+    article.classList.toggle('uniform-photo-cover', Boolean(project.uniformPhotoCover));
     const button = element('a', 'project-button');
     button.href = project.url;
     button.setAttribute('aria-label', `View ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);

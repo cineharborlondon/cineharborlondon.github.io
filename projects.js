@@ -314,126 +314,209 @@ const projects = [
     "credit": "",
     "images": [
       {
-        "src": "https://lh3.googleusercontent.com/d/1lFaBjbm1dzwNd7D0LrMoYMuQX5nbcaZL=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1lFaBjbm1dzwNd7D0LrMoYMuQX5nbcaZL=w960",
+        "src": "https://lh3.googleusercontent.com/d/10kVT-TKC9h4cE9rRuIie2VdCdviNpCyr=w2400",
+        "small": "https://lh3.googleusercontent.com/d/10kVT-TKC9h4cE9rRuIie2VdCdviNpCyr=w960",
         "width": 2400,
         "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 1"
+        "alt": "Segway Navimow — gardens & lawns photograph 22"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1lFaBjbm1dzwNd7D0LrMoYMuQX5nbcaZL=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1lFaBjbm1dzwNd7D0LrMoYMuQX5nbcaZL=w960",
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — gardens & lawns photograph 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1_DQoE0qvsQuGztOvL5aHTaI-dV5IwySp=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1_DQoE0qvsQuGztOvL5aHTaI-dV5IwySp=w960",
+        "width": 2400,
+        "height": 1600,
+        "alt": "Segway Navimow — gardens & lawns photograph 23"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1NkpdkfshXjH-6814ccZXET0D3Q1qWlYa=w2400",
         "small": "https://lh3.googleusercontent.com/d/1NkpdkfshXjH-6814ccZXET0D3Q1qWlYa=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 2"
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — gardens & lawns photograph 2"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1Z6EWxqBe1crbIpVxKQqe8yOVP-ms4Ru7=w2400",
         "small": "https://lh3.googleusercontent.com/d/1Z6EWxqBe1crbIpVxKQqe8yOVP-ms4Ru7=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 3"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/109ZKvwfJMtpADb5u5k4jfTp6DX4XLIuW=w2400",
-        "small": "https://lh3.googleusercontent.com/d/109ZKvwfJMtpADb5u5k4jfTp6DX4XLIuW=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 4"
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — gardens & lawns photograph 10"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1wLiE1nV-yGZk0JhzCWqBKpQ977Dpsskm=w2400",
         "small": "https://lh3.googleusercontent.com/d/1wLiE1nV-yGZk0JhzCWqBKpQ977Dpsskm=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Segway Navimow — campaign photograph 5"
+        "width": 800,
+        "height": 600,
+        "alt": "Segway Navimow — gardens & lawns photograph 5"
       },
       {
-        "src": "https://lh3.googleusercontent.com/d/1BWoYybFY7BV2QKiPkCwoxwjOHuMplzTu=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1BWoYybFY7BV2QKiPkCwoxwjOHuMplzTu=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Segway Navimow — campaign photograph 6"
+        "src": "https://lh3.googleusercontent.com/d/109ZKvwfJMtpADb5u5k4jfTp6DX4XLIuW=w2400",
+        "small": "https://lh3.googleusercontent.com/d/109ZKvwfJMtpADb5u5k4jfTp6DX4XLIuW=w960",
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — gardens & lawns photograph 8"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1BfvuHqoLmRyRqBOHaVYljqRwGttm5ypS=w2400",
         "small": "https://lh3.googleusercontent.com/d/1BfvuHqoLmRyRqBOHaVYljqRwGttm5ypS=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 7"
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — gardens & lawns photograph 1"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1ruD3V9QpEEqOpoYZyP9qxDNPT-ZVlRRd=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1ruD3V9QpEEqOpoYZyP9qxDNPT-ZVlRRd=w960",
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — gardens & lawns photograph 4"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1F-Rr6J5rEgCLxJQfpbniopPec-vG5SyC=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1F-Rr6J5rEgCLxJQfpbniopPec-vG5SyC=w960",
+        "width": 800,
+        "height": 600,
+        "alt": "Segway Navimow — gardens & lawns photograph 7"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1kw0dFBST2Xc85CPVRfgJuL5lGJScAPsb=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1kw0dFBST2Xc85CPVRfgJuL5lGJScAPsb=w960",
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — gardens & lawns photograph 9"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1XMZ2NPrsQCJ5RePdjT35Psf4l2fVK5JC=w2400",
         "small": "https://lh3.googleusercontent.com/d/1XMZ2NPrsQCJ5RePdjT35Psf4l2fVK5JC=w960",
+        "width": 800,
+        "height": 534,
+        "alt": "Segway Navimow — coastal life photograph 14"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1SKJE3Dd4zi2rNx7oH2YP295JO-P0zsqR=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1SKJE3Dd4zi2rNx7oH2YP295JO-P0zsqR=w960",
         "width": 2400,
         "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 8"
+        "alt": "Segway Navimow — coastal life photograph 21"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/11IVq9OtVN3YgvxR8Cg0AyTZZxDzQshRQ=w2400",
         "small": "https://lh3.googleusercontent.com/d/11IVq9OtVN3YgvxR8Cg0AyTZZxDzQshRQ=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 9"
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — coastal life photograph 13"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1vxQzycoFzcT4SiuBG8z9sKDvXI2AdHj-=w2400",
         "small": "https://lh3.googleusercontent.com/d/1vxQzycoFzcT4SiuBG8z9sKDvXI2AdHj-=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Segway Navimow — campaign photograph 10"
+        "width": 800,
+        "height": 600,
+        "alt": "Segway Navimow — coastal life photograph 15"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1D-CFwrFc87HjCK0CqSRMCBUv9uTczn4z=w2400",
         "small": "https://lh3.googleusercontent.com/d/1D-CFwrFc87HjCK0CqSRMCBUv9uTczn4z=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Segway Navimow — campaign photograph 11"
+        "width": 800,
+        "height": 600,
+        "alt": "Segway Navimow — family & home photograph 18"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1ZvOaT_Jj66_6rq-aMD6CbbbEkNd3m8lK=w2400",
         "small": "https://lh3.googleusercontent.com/d/1ZvOaT_Jj66_6rq-aMD6CbbbEkNd3m8lK=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Segway Navimow — campaign photograph 12"
+        "width": 800,
+        "height": 600,
+        "alt": "Segway Navimow — family & home photograph 17"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1UTMo1Fc7tnOFEFv5lQYTGav3qGILplDT=w2400",
         "small": "https://lh3.googleusercontent.com/d/1UTMo1Fc7tnOFEFv5lQYTGav3qGILplDT=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 13"
+        "width": 800,
+        "height": 534,
+        "alt": "Segway Navimow — family & home photograph 11"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1BYggdNN7rVxesuFpONc3jqOYdSZvyLN6=w2400",
         "small": "https://lh3.googleusercontent.com/d/1BYggdNN7rVxesuFpONc3jqOYdSZvyLN6=w960",
-        "width": 2400,
-        "height": 1600,
-        "alt": "Segway Navimow — campaign photograph 14"
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — family & home photograph 12"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1IhVa9U5XuLVlGCMPV_81myU0N3xOqzrx=w2400",
         "small": "https://lh3.googleusercontent.com/d/1IhVa9U5XuLVlGCMPV_81myU0N3xOqzrx=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Segway Navimow — campaign photograph 15"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1wupUN7kVZSdxuOdMYrECgleJL4Y6hiFs=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1wupUN7kVZSdxuOdMYrECgleJL4Y6hiFs=w960",
-        "width": 1728,
-        "height": 972,
-        "alt": "Segway Navimow — campaign photograph 16"
+        "width": 800,
+        "height": 600,
+        "alt": "Segway Navimow — family & home photograph 16"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/15DdoNBP4mGXP89kQ7PYYkThZoCa1O9dM=w2400",
         "small": "https://lh3.googleusercontent.com/d/15DdoNBP4mGXP89kQ7PYYkThZoCa1O9dM=w960",
-        "width": 1536,
-        "height": 1024,
-        "alt": "Segway Navimow — campaign photograph 17"
+        "width": 800,
+        "height": 533,
+        "alt": "Segway Navimow — family & home photograph 20"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1wupUN7kVZSdxuOdMYrECgleJL4Y6hiFs=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1wupUN7kVZSdxuOdMYrECgleJL4Y6hiFs=w960",
+        "width": 800,
+        "height": 450,
+        "alt": "Segway Navimow — family & home photograph 19"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1BWoYybFY7BV2QKiPkCwoxwjOHuMplzTu=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1BWoYybFY7BV2QKiPkCwoxwjOHuMplzTu=w960",
+        "width": 800,
+        "height": 600,
+        "alt": "Segway Navimow — family & home photograph 6"
       }
     ],
-    "contentOrder": 1
+    "contentOrder": 1,
+    "photoGroups": [
+      {
+        "title": "Gardens & Lawns",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "title": "Coastal Life",
+        "indices": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "title": "Family & Home",
+        "indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ],
+    "uniformPhotoCover": true
   },
   {
     "collection": "social",
@@ -486,42 +569,148 @@ const projects = [
     "credit": "",
     "images": [
       {
-        "src": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w2400",
-        "small": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w960",
+        "src": "https://lh3.googleusercontent.com/d/12KYt2UikUjP6IUWy8N-qSua9QzP3uknz=w2400",
+        "small": "https://lh3.googleusercontent.com/d/12KYt2UikUjP6IUWy8N-qSua9QzP3uknz=w960",
+        "width": 2400,
+        "height": 3197,
+        "alt": "Realme × Adam Valdez — campaign photograph 149"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1D5KSpZxj2TTMP-ly_DEUzL6_-i06Ymn4=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1D5KSpZxj2TTMP-ly_DEUzL6_-i06Ymn4=w960",
         "width": 2400,
         "height": 1802,
-        "alt": "Realme × Adam Valdez — campaign photograph 1"
+        "alt": "Realme × Adam Valdez — campaign photograph 128"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1FCyCEnQAzZ2aj8uk9O4aued1loM_0FX2=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1FCyCEnQAzZ2aj8uk9O4aued1loM_0FX2=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 120"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1NKe9BvuxXVq2etynCMCLCpkUkj2yoxEp=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1NKe9BvuxXVq2etynCMCLCpkUkj2yoxEp=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 50"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1J0JnYU8pLjN35-ZMFIn2V1jqvAlWJkE9=w2400",
         "small": "https://lh3.googleusercontent.com/d/1J0JnYU8pLjN35-ZMFIn2V1jqvAlWJkE9=w960",
         "width": 2400,
         "height": 1802,
-        "alt": "Realme × Adam Valdez — campaign photograph 2"
+        "alt": "Realme × Adam Valdez — campaign photograph 34"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w2400",
+        "small": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 21"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1CLoGxmXDkTYWe_8blxW3tIU4QhVRAyIR=w2400",
         "small": "https://lh3.googleusercontent.com/d/1CLoGxmXDkTYWe_8blxW3tIU4QhVRAyIR=w960",
         "width": 2400,
         "height": 1802,
-        "alt": "Realme × Adam Valdez — campaign photograph 3"
+        "alt": "Realme × Adam Valdez — campaign photograph 25"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/10PboJ1UlxuntyZhBrAUHsVK7_BHZjbgE=w2400",
         "small": "https://lh3.googleusercontent.com/d/10PboJ1UlxuntyZhBrAUHsVK7_BHZjbgE=w960",
         "width": 2400,
         "height": 1802,
-        "alt": "Realme × Adam Valdez — campaign photograph 4"
+        "alt": "Realme × Adam Valdez — campaign photograph 43"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1-g61xj4KHvO_eSc6ZZ-ghAgt-OWerlRY=w2400",
         "small": "https://lh3.googleusercontent.com/d/1-g61xj4KHvO_eSc6ZZ-ghAgt-OWerlRY=w960",
         "width": 2400,
         "height": 1802,
-        "alt": "Realme × Adam Valdez — campaign photograph 5"
+        "alt": "Realme × Adam Valdez — campaign photograph 28"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/19UmpTawoCXxN_kdBP9GZr5eXv5JcgVae=w2400",
+        "small": "https://lh3.googleusercontent.com/d/19UmpTawoCXxN_kdBP9GZr5eXv5JcgVae=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 98"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1-LdMQFD3z1avzfusuaVoKP1XIu9lj0sU=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1-LdMQFD3z1avzfusuaVoKP1XIu9lj0sU=w960",
+        "width": 2400,
+        "height": 3197,
+        "alt": "Realme × Adam Valdez — campaign photograph 104"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1kKXYVm9h-8HSwf5e_77Z1WS43h9OzwNc=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1kKXYVm9h-8HSwf5e_77Z1WS43h9OzwNc=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 132"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1g1gx3vXwwdX8x0s6uXsOgvDPTBnLK5IW=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1g1gx3vXwwdX8x0s6uXsOgvDPTBnLK5IW=w960",
+        "width": 2400,
+        "height": 3197,
+        "alt": "Realme × Adam Valdez — campaign photograph 156"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1lXXuYrC-fdOvOMziNnSS6iolrHeI30xI=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1lXXuYrC-fdOvOMziNnSS6iolrHeI30xI=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 169"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1aup4GmMoE7BoJF-L30dhqDIj8Sxnv-zQ=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1aup4GmMoE7BoJF-L30dhqDIj8Sxnv-zQ=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 176"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Kc_Wfh-LgRmNfy1yJEhhDvz90GpsAgu5=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Kc_Wfh-LgRmNfy1yJEhhDvz90GpsAgu5=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 193"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1gtflvx75Ia8ONmozsHY2NOMgC816ctGS=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1gtflvx75Ia8ONmozsHY2NOMgC816ctGS=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 20"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1ew3RSwDc56Vhy7ivwWS_PhJE8sDSHR18=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1ew3RSwDc56Vhy7ivwWS_PhJE8sDSHR18=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 41"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1nvOcaOlWvJnjSvao9preyZ9iuTmQo4Ow=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1nvOcaOlWvJnjSvao9preyZ9iuTmQo4Ow=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 115"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Dow0Pji6on_3kdrm6gDa-q7Ioin8nn9H=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Dow0Pji6on_3kdrm6gDa-q7Ioin8nn9H=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 17"
       }
     ],
-    "contentOrder": 2
+    "contentOrder": 2,
+    "uniformPhotoCover": true
   },
   {
     "collection": "social",
@@ -540,6 +729,352 @@ const projects = [
     "url": "/social-dalton-german-origins.html",
     "location": "Germany",
     "contentOrder": 3
+  },
+  {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "Heathrow Express — Campaign Photography",
+    "slug": "heathrow-express-campaign-photography",
+    "url": "/photography-heathrow-express-campaign.html",
+    "cover": "https://lh3.googleusercontent.com/d/18GdzpK3yMPB5H3j5_3wT3TQmDRTOW4b3=w960",
+    "description": "Campaign photography for Heathrow Express, featuring business and leisure travellers, Paddington Station and train interiors.",
+    "location": "London, UK",
+    "year": "2025",
+    "credit": "",
+    "images": [
+      {
+        "src": "https://lh3.googleusercontent.com/d/18GdzpK3yMPB5H3j5_3wT3TQmDRTOW4b3=w2400",
+        "small": "https://lh3.googleusercontent.com/d/18GdzpK3yMPB5H3j5_3wT3TQmDRTOW4b3=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Heathrow Express campaign photography — people photograph 1"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Eqoz6jNTmnaOUYtPemWnC6qd6NiRObLk=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Eqoz6jNTmnaOUYtPemWnC6qd6NiRObLk=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Heathrow Express campaign photography — details photograph 2"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1cWnQJUdSO3vwtHeviyxBYM8VLz9BCeBC=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1cWnQJUdSO3vwtHeviyxBYM8VLz9BCeBC=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Heathrow Express campaign photography — people photograph 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1T-Hq8OTZX_lyxNjR2dD56ikpBJV6IJnl=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1T-Hq8OTZX_lyxNjR2dD56ikpBJV6IJnl=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Heathrow Express campaign photography — business photograph 4"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1puPJOp9XzSFgYbuc_fj7ggsycFcw-3KD=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1puPJOp9XzSFgYbuc_fj7ggsycFcw-3KD=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Heathrow Express campaign photography — business photograph 5"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1L4a0Nogm2QgecjoePYx1oZQcVVZ6Tuxc=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1L4a0Nogm2QgecjoePYx1oZQcVVZ6Tuxc=w960",
+        "width": 2400,
+        "height": 1599,
+        "alt": "Heathrow Express campaign photography — business photograph 6"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1thj7NV-9W0knshruokkB8CdGJ9iyh9nY=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1thj7NV-9W0knshruokkB8CdGJ9iyh9nY=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Heathrow Express campaign photography — business photograph 7"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1MkCxA0FZpklgP8EN9PURZqUN4k-VPLh-=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1MkCxA0FZpklgP8EN9PURZqUN4k-VPLh-=w960",
+        "width": 2400,
+        "height": 1599,
+        "alt": "Heathrow Express campaign photography — people photograph 8"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1sqkfCxFvambLnIAHr93yBU7JL6c5tgRW=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1sqkfCxFvambLnIAHr93yBU7JL6c5tgRW=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — people photograph 9"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1xcpfjM51IUISoLTLAX-rOUKokkNjSPen=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1xcpfjM51IUISoLTLAX-rOUKokkNjSPen=w960",
+        "width": 2400,
+        "height": 1599,
+        "alt": "Heathrow Express campaign photography — people photograph 10"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1aRbtzQLUZ9YJCbnt4CI43j_D7OSFI4c5=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1aRbtzQLUZ9YJCbnt4CI43j_D7OSFI4c5=w960",
+        "width": 2400,
+        "height": 1599,
+        "alt": "Heathrow Express campaign photography — people photograph 11"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1QfrI4pGm5jeE1-J75t3wa8KYezMExV8q=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1QfrI4pGm5jeE1-J75t3wa8KYezMExV8q=w960",
+        "width": 2400,
+        "height": 1599,
+        "alt": "Heathrow Express campaign photography — business photograph 12"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/17c0vwNHNc3UNELnBNvly6Riipx5A5iWM=w2400",
+        "small": "https://lh3.googleusercontent.com/d/17c0vwNHNc3UNELnBNvly6Riipx5A5iWM=w960",
+        "width": 2400,
+        "height": 1599,
+        "alt": "Heathrow Express campaign photography — people photograph 13"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1cQmDHwOAYNtX2Cw2LBJexFk5ChM0WBqb=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1cQmDHwOAYNtX2Cw2LBJexFk5ChM0WBqb=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — people photograph 14"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Oh-lLfGCwBRUwhJXbgDWW4bg55gatpGq=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Oh-lLfGCwBRUwhJXbgDWW4bg55gatpGq=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — people photograph 15"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1DQf6u7LJwT4z2WYhaOofIxMdsQPqRLjN=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1DQf6u7LJwT4z2WYhaOofIxMdsQPqRLjN=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Heathrow Express campaign photography — people photograph 16"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1UoATWyC34it9P33HAcPE9QQ3U0W_sO6U=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1UoATWyC34it9P33HAcPE9QQ3U0W_sO6U=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — details photograph 17"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1i8kjCtmx7uqFAmr2djHUHFP-uZ4KwuOO=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1i8kjCtmx7uqFAmr2djHUHFP-uZ4KwuOO=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — details photograph 18"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1mQmLaJqBCtXVxmqtN_6a_DkOCjloBLGy=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1mQmLaJqBCtXVxmqtN_6a_DkOCjloBLGy=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — details photograph 19"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Q5enwWlGdeo8YB86a6Dw1lKkOVqNM4FQ=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Q5enwWlGdeo8YB86a6Dw1lKkOVqNM4FQ=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — details photograph 20"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1z8XXHFHL1_i2ee0NYQPYeS9jhCutN9VI=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1z8XXHFHL1_i2ee0NYQPYeS9jhCutN9VI=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — details photograph 21"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Iz-lBg5uAZyUDALlEaWNTFTrhGS56qV8=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Iz-lBg5uAZyUDALlEaWNTFTrhGS56qV8=w960",
+        "width": 2400,
+        "height": 1554,
+        "alt": "Heathrow Express campaign photography — details photograph 22"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1TDBCSqIoNQmftgg-dXL303RrIKW7T1MI=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1TDBCSqIoNQmftgg-dXL303RrIKW7T1MI=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — details photograph 23"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1M1afCFUZegLM6HjkgBTmwX1m5ZZlqi3n=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1M1afCFUZegLM6HjkgBTmwX1m5ZZlqi3n=w960",
+        "width": 2400,
+        "height": 1602,
+        "alt": "Heathrow Express campaign photography — details photograph 24"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1oqaB0NrkDEbTAKOJASunousY1q0gzWuM=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1oqaB0NrkDEbTAKOJASunousY1q0gzWuM=w960",
+        "width": 2400,
+        "height": 1599,
+        "alt": "Heathrow Express campaign photography — details photograph 25"
+      }
+    ],
+    "contentOrder": 3,
+    "uniformPhotoCover": true
+  },
+  {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "2026 London Fashion Week",
+    "slug": "2026-london-fashion-week",
+    "url": "/photography-2026-london-fashion-week.html",
+    "cover": "/lfw-b031924-960.webp",
+    "description": "Selected runway photography for SUNCUN on the official London Fashion Week stage. The gallery follows the Instagram selection, with additional looks and details.",
+    "credit": "",
+    "location": "London, UK",
+    "year": "2026",
+    "images": [
+      {
+        "src": "/lfw-b031924.webp",
+        "small": "/lfw-b031924-960.webp",
+        "width": 3519,
+        "height": 5278,
+        "alt": "2026 London Fashion Week — photograph 18"
+      },
+      {
+        "src": "/lfw-b031737.webp",
+        "small": "/lfw-b031737-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 10"
+      },
+      {
+        "src": "/lfw-b031302.webp",
+        "small": "/lfw-b031302-960.webp",
+        "width": 2233,
+        "height": 3350,
+        "alt": "2026 London Fashion Week — photograph 01"
+      },
+      {
+        "src": "/lfw-b031611.webp",
+        "small": "/lfw-b031611-960.webp",
+        "width": 3435,
+        "height": 5152,
+        "alt": "2026 London Fashion Week — photograph 07"
+      },
+      {
+        "src": "/lfw-b031565.webp",
+        "small": "/lfw-b031565-960.webp",
+        "width": 5072,
+        "height": 3382,
+        "alt": "2026 London Fashion Week — photograph 06"
+      },
+      {
+        "src": "/lfw-b031614.webp",
+        "small": "/lfw-b031614-960.webp",
+        "width": 5400,
+        "height": 3600,
+        "alt": "2026 London Fashion Week — photograph 08"
+      },
+      {
+        "src": "/lfw-b032000.webp",
+        "small": "/lfw-b032000-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 20"
+      },
+      {
+        "src": "/lfw-b031543.webp",
+        "small": "/lfw-b031543-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 04"
+      },
+      {
+        "src": "/lfw-b031889.webp",
+        "small": "/lfw-b031889-960.webp",
+        "width": 4746,
+        "height": 3164,
+        "alt": "2026 London Fashion Week — photograph 17"
+      },
+      {
+        "src": "/lfw-b031980.webp",
+        "small": "/lfw-b031980-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 19"
+      },
+      {
+        "src": "/lfw-b031562.webp",
+        "small": "/lfw-b031562-960.webp",
+        "width": 3393,
+        "height": 5090,
+        "alt": "2026 London Fashion Week — photograph 05"
+      },
+      {
+        "src": "/lfw-b031784.webp",
+        "small": "/lfw-b031784-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 11"
+      },
+      {
+        "src": "/lfw-b031536.webp",
+        "small": "/lfw-b031536-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 02"
+      },
+      {
+        "src": "/lfw-b031537.webp",
+        "small": "/lfw-b031537-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 03"
+      },
+      {
+        "src": "/lfw-b031695.webp",
+        "small": "/lfw-b031695-960.webp",
+        "width": 3159,
+        "height": 4739,
+        "alt": "2026 London Fashion Week — photograph 09"
+      },
+      {
+        "src": "/lfw-b031811.webp",
+        "small": "/lfw-b031811-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 12"
+      },
+      {
+        "src": "/lfw-b031837.webp",
+        "small": "/lfw-b031837-960.webp",
+        "width": 3369,
+        "height": 5053,
+        "alt": "2026 London Fashion Week — photograph 13"
+      },
+      {
+        "src": "/lfw-b031866.webp",
+        "small": "/lfw-b031866-960.webp",
+        "width": 3101,
+        "height": 4652,
+        "alt": "2026 London Fashion Week — photograph 14"
+      },
+      {
+        "src": "/lfw-b031869.webp",
+        "small": "/lfw-b031869-960.webp",
+        "width": 4730,
+        "height": 3153,
+        "alt": "2026 London Fashion Week — photograph 15"
+      },
+      {
+        "src": "/lfw-b031888.webp",
+        "small": "/lfw-b031888-960.webp",
+        "width": 3122,
+        "height": 4684,
+        "alt": "2026 London Fashion Week — photograph 16"
+      }
+    ],
+    "contentOrder": 4
   },
   {
     "collection": "social",
@@ -578,6 +1113,148 @@ const projects = [
     "location": "Brussels, Belgium",
     "contentOrder": 5,
     "listed": false
+  },
+  {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "Pei Feng Su — Executive & Environmental Portraits",
+    "slug": "pei-feng-su-portraits",
+    "url": "/photography-pei-feng-su-portraits.html",
+    "cover": "https://lh3.googleusercontent.com/d/1ZlNumVUoYB5LnJSGh1oFhtpu6KG8XRim=w960",
+    "description": "Executive and environmental portraits of Pei Feng Su, Founder and CEO of ACTAsia.",
+    "location": "London, UK",
+    "year": "2025",
+    "credit": "",
+    "images": [
+      {
+        "src": "https://lh3.googleusercontent.com/d/1ZlNumVUoYB5LnJSGh1oFhtpu6KG8XRim=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1ZlNumVUoYB5LnJSGh1oFhtpu6KG8XRim=w960",
+        "width": 1801,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 1"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1WZaPvX4E67JEqqK18AgrL63NeR9kqjuu=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1WZaPvX4E67JEqqK18AgrL63NeR9kqjuu=w960",
+        "width": 1801,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 2"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Q6ilTBQcWx9LhXGhv4H2aR_nIKwoXAzO=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Q6ilTBQcWx9LhXGhv4H2aR_nIKwoXAzO=w960",
+        "width": 1801,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1F9LRbE3rLN_l0bY3Y5aaCekBc_zfVpnL=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1F9LRbE3rLN_l0bY3Y5aaCekBc_zfVpnL=w960",
+        "width": 1801,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 4"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1hD4_UHoCT2qY-yqOyiek_9jlv_TXqaeH=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1hD4_UHoCT2qY-yqOyiek_9jlv_TXqaeH=w960",
+        "width": 1799,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 5"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1F1UvY-aaAr4aeWPCa2IvEQOKjP9YIkSl=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1F1UvY-aaAr4aeWPCa2IvEQOKjP9YIkSl=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Pei Feng Su — executive and environmental portrait 6"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1yl74D4vklfAOhcgysFdQcUBBYHv1xN_8=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1yl74D4vklfAOhcgysFdQcUBBYHv1xN_8=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Pei Feng Su — executive and environmental portrait 7"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1XQwj5cPWkfxcvZRWf6mugkOh2iB7l07S=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1XQwj5cPWkfxcvZRWf6mugkOh2iB7l07S=w960",
+        "width": 2400,
+        "height": 1800,
+        "alt": "Pei Feng Su — executive and environmental portrait 8"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1NzZ8IyDKujLlOqPtWkYQsHTQ5O9Gn9Y1=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1NzZ8IyDKujLlOqPtWkYQsHTQ5O9Gn9Y1=w960",
+        "width": 1799,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 9"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1iRzAPljnRtiOBha_S3O4B0UyZ2Z3l2vG=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1iRzAPljnRtiOBha_S3O4B0UyZ2Z3l2vG=w960",
+        "width": 1799,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 10"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1Er6dUrPzvixb4x0XnFrhhi_tFB8pj7RN=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1Er6dUrPzvixb4x0XnFrhhi_tFB8pj7RN=w960",
+        "width": 1799,
+        "height": 2400,
+        "alt": "Pei Feng Su — executive and environmental portrait 11"
+      }
+    ],
+    "contentOrder": 5
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "ALLSO — Beauty Social Series (4 Films)",
+    "slug": "allso-beauty-social-series",
+    "url": "/social-allso-beauty-social-series.html",
+    "vimeo": "1233773301",
+    "vimeoHash": "764c84bd64",
+    "aspectRatio": 0.5625,
+    "cover": "https://i.vimeocdn.com/video/2209536581-baa52ebd400dcd229c87aefcb690ad45e5e3264cfe62271fe1fee0e9dcfa81ce-d_1280",
+    "previewStart": 1,
+    "previewDuration": 24,
+    "description": "Four beauty shorts for ALLSO, featuring blush, lip colour and contour.",
+    "images": [],
+    "credit": "",
+    "contentOrder": 5,
+    "groupedVideoLayout": true,
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Blush — Two Shades",
+            "vimeo": "1233773301",
+            "vimeoHash": "764c84bd64",
+            "aspectRatio": 0.5625
+          },
+          {
+            "title": "Beauty Portrait",
+            "vimeo": "1233773300",
+            "vimeoHash": "0f93429cfd",
+            "aspectRatio": 0.5625
+          },
+          {
+            "title": "Lip Combo",
+            "vimeo": "1233773302",
+            "vimeoHash": "1edee37065",
+            "aspectRatio": 0.5625
+          },
+          {
+            "title": "Contour Palette",
+            "vimeo": "1233773299",
+            "vimeoHash": "ba4a8c3c2b",
+            "aspectRatio": 0.5625
+          }
+        ]
+      }
+    ]
   },
   {
     "collection": "social",
@@ -1062,160 +1739,6 @@ const projects = [
     "url": "/commercials-biotwin.html"
   },
   {
-    "collection": "photography",
-    "kind": "photo",
-    "title": "2026 London Fashion Week",
-    "slug": "2026-london-fashion-week",
-    "url": "/photography-2026-london-fashion-week.html",
-    "cover": "/lfw-b031924-960.webp",
-    "description": "Selected runway photography for SUNCUN on the official London Fashion Week stage. The gallery follows the Instagram selection, with additional looks and details.",
-    "credit": "",
-    "location": "London, UK",
-    "year": "2026",
-    "images": [
-      {
-        "src": "/lfw-b031924.webp",
-        "small": "/lfw-b031924-960.webp",
-        "width": 3519,
-        "height": 5278,
-        "alt": "2026 London Fashion Week — photograph 18"
-      },
-      {
-        "src": "/lfw-b031737.webp",
-        "small": "/lfw-b031737-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 10"
-      },
-      {
-        "src": "/lfw-b031302.webp",
-        "small": "/lfw-b031302-960.webp",
-        "width": 2233,
-        "height": 3350,
-        "alt": "2026 London Fashion Week — photograph 01"
-      },
-      {
-        "src": "/lfw-b031611.webp",
-        "small": "/lfw-b031611-960.webp",
-        "width": 3435,
-        "height": 5152,
-        "alt": "2026 London Fashion Week — photograph 07"
-      },
-      {
-        "src": "/lfw-b031565.webp",
-        "small": "/lfw-b031565-960.webp",
-        "width": 5072,
-        "height": 3382,
-        "alt": "2026 London Fashion Week — photograph 06"
-      },
-      {
-        "src": "/lfw-b031614.webp",
-        "small": "/lfw-b031614-960.webp",
-        "width": 5400,
-        "height": 3600,
-        "alt": "2026 London Fashion Week — photograph 08"
-      },
-      {
-        "src": "/lfw-b032000.webp",
-        "small": "/lfw-b032000-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 20"
-      },
-      {
-        "src": "/lfw-b031543.webp",
-        "small": "/lfw-b031543-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 04"
-      },
-      {
-        "src": "/lfw-b031889.webp",
-        "small": "/lfw-b031889-960.webp",
-        "width": 4746,
-        "height": 3164,
-        "alt": "2026 London Fashion Week — photograph 17"
-      },
-      {
-        "src": "/lfw-b031980.webp",
-        "small": "/lfw-b031980-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 19"
-      },
-      {
-        "src": "/lfw-b031562.webp",
-        "small": "/lfw-b031562-960.webp",
-        "width": 3393,
-        "height": 5090,
-        "alt": "2026 London Fashion Week — photograph 05"
-      },
-      {
-        "src": "/lfw-b031784.webp",
-        "small": "/lfw-b031784-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 11"
-      },
-      {
-        "src": "/lfw-b031536.webp",
-        "small": "/lfw-b031536-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 02"
-      },
-      {
-        "src": "/lfw-b031537.webp",
-        "small": "/lfw-b031537-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 03"
-      },
-      {
-        "src": "/lfw-b031695.webp",
-        "small": "/lfw-b031695-960.webp",
-        "width": 3159,
-        "height": 4739,
-        "alt": "2026 London Fashion Week — photograph 09"
-      },
-      {
-        "src": "/lfw-b031811.webp",
-        "small": "/lfw-b031811-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 12"
-      },
-      {
-        "src": "/lfw-b031837.webp",
-        "small": "/lfw-b031837-960.webp",
-        "width": 3369,
-        "height": 5053,
-        "alt": "2026 London Fashion Week — photograph 13"
-      },
-      {
-        "src": "/lfw-b031866.webp",
-        "small": "/lfw-b031866-960.webp",
-        "width": 3101,
-        "height": 4652,
-        "alt": "2026 London Fashion Week — photograph 14"
-      },
-      {
-        "src": "/lfw-b031869.webp",
-        "small": "/lfw-b031869-960.webp",
-        "width": 4730,
-        "height": 3153,
-        "alt": "2026 London Fashion Week — photograph 15"
-      },
-      {
-        "src": "/lfw-b031888.webp",
-        "small": "/lfw-b031888-960.webp",
-        "width": 3122,
-        "height": 4684,
-        "alt": "2026 London Fashion Week — photograph 16"
-      }
-    ]
-  },
-  {
     "collection": "branded-content",
     "kind": "video",
     "title": "How to Stay Chic and Warm in London",
@@ -1432,286 +1955,6 @@ const projects = [
     "description": "An in-depth exploration of TCL at IFA with creator Qinwen, looking at its technology, products and international presence.",
     "images": [],
     "url": "/social-tcl-qinwen-ifa-deep-dive.html"
-  },
-  {
-    "collection": "photography",
-    "kind": "photo",
-    "title": "Heathrow Express — Campaign Photography",
-    "slug": "heathrow-express-campaign-photography",
-    "url": "/photography-heathrow-express-campaign.html",
-    "cover": "https://lh3.googleusercontent.com/d/18GdzpK3yMPB5H3j5_3wT3TQmDRTOW4b3=w960",
-    "description": "Campaign photography for Heathrow Express, featuring business and leisure travellers, Paddington Station and train interiors.",
-    "location": "London, UK",
-    "year": "2025",
-    "credit": "",
-    "images": [
-      {
-        "src": "https://lh3.googleusercontent.com/d/18GdzpK3yMPB5H3j5_3wT3TQmDRTOW4b3=w2400",
-        "small": "https://lh3.googleusercontent.com/d/18GdzpK3yMPB5H3j5_3wT3TQmDRTOW4b3=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Heathrow Express campaign photography — people photograph 1"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1Eqoz6jNTmnaOUYtPemWnC6qd6NiRObLk=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1Eqoz6jNTmnaOUYtPemWnC6qd6NiRObLk=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Heathrow Express campaign photography — details photograph 2"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1cWnQJUdSO3vwtHeviyxBYM8VLz9BCeBC=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1cWnQJUdSO3vwtHeviyxBYM8VLz9BCeBC=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Heathrow Express campaign photography — people photograph 3"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1T-Hq8OTZX_lyxNjR2dD56ikpBJV6IJnl=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1T-Hq8OTZX_lyxNjR2dD56ikpBJV6IJnl=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Heathrow Express campaign photography — business photograph 4"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1puPJOp9XzSFgYbuc_fj7ggsycFcw-3KD=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1puPJOp9XzSFgYbuc_fj7ggsycFcw-3KD=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Heathrow Express campaign photography — business photograph 5"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1L4a0Nogm2QgecjoePYx1oZQcVVZ6Tuxc=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1L4a0Nogm2QgecjoePYx1oZQcVVZ6Tuxc=w960",
-        "width": 2400,
-        "height": 1599,
-        "alt": "Heathrow Express campaign photography — business photograph 6"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1thj7NV-9W0knshruokkB8CdGJ9iyh9nY=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1thj7NV-9W0knshruokkB8CdGJ9iyh9nY=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Heathrow Express campaign photography — business photograph 7"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1MkCxA0FZpklgP8EN9PURZqUN4k-VPLh-=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1MkCxA0FZpklgP8EN9PURZqUN4k-VPLh-=w960",
-        "width": 2400,
-        "height": 1599,
-        "alt": "Heathrow Express campaign photography — people photograph 8"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1sqkfCxFvambLnIAHr93yBU7JL6c5tgRW=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1sqkfCxFvambLnIAHr93yBU7JL6c5tgRW=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — people photograph 9"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1xcpfjM51IUISoLTLAX-rOUKokkNjSPen=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1xcpfjM51IUISoLTLAX-rOUKokkNjSPen=w960",
-        "width": 2400,
-        "height": 1599,
-        "alt": "Heathrow Express campaign photography — people photograph 10"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1aRbtzQLUZ9YJCbnt4CI43j_D7OSFI4c5=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1aRbtzQLUZ9YJCbnt4CI43j_D7OSFI4c5=w960",
-        "width": 2400,
-        "height": 1599,
-        "alt": "Heathrow Express campaign photography — people photograph 11"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1QfrI4pGm5jeE1-J75t3wa8KYezMExV8q=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1QfrI4pGm5jeE1-J75t3wa8KYezMExV8q=w960",
-        "width": 2400,
-        "height": 1599,
-        "alt": "Heathrow Express campaign photography — business photograph 12"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/17c0vwNHNc3UNELnBNvly6Riipx5A5iWM=w2400",
-        "small": "https://lh3.googleusercontent.com/d/17c0vwNHNc3UNELnBNvly6Riipx5A5iWM=w960",
-        "width": 2400,
-        "height": 1599,
-        "alt": "Heathrow Express campaign photography — people photograph 13"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1cQmDHwOAYNtX2Cw2LBJexFk5ChM0WBqb=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1cQmDHwOAYNtX2Cw2LBJexFk5ChM0WBqb=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — people photograph 14"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1Oh-lLfGCwBRUwhJXbgDWW4bg55gatpGq=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1Oh-lLfGCwBRUwhJXbgDWW4bg55gatpGq=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — people photograph 15"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1DQf6u7LJwT4z2WYhaOofIxMdsQPqRLjN=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1DQf6u7LJwT4z2WYhaOofIxMdsQPqRLjN=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Heathrow Express campaign photography — people photograph 16"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1UoATWyC34it9P33HAcPE9QQ3U0W_sO6U=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1UoATWyC34it9P33HAcPE9QQ3U0W_sO6U=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — details photograph 17"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1i8kjCtmx7uqFAmr2djHUHFP-uZ4KwuOO=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1i8kjCtmx7uqFAmr2djHUHFP-uZ4KwuOO=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — details photograph 18"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1mQmLaJqBCtXVxmqtN_6a_DkOCjloBLGy=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1mQmLaJqBCtXVxmqtN_6a_DkOCjloBLGy=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — details photograph 19"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1Q5enwWlGdeo8YB86a6Dw1lKkOVqNM4FQ=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1Q5enwWlGdeo8YB86a6Dw1lKkOVqNM4FQ=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — details photograph 20"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1z8XXHFHL1_i2ee0NYQPYeS9jhCutN9VI=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1z8XXHFHL1_i2ee0NYQPYeS9jhCutN9VI=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — details photograph 21"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1Iz-lBg5uAZyUDALlEaWNTFTrhGS56qV8=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1Iz-lBg5uAZyUDALlEaWNTFTrhGS56qV8=w960",
-        "width": 2400,
-        "height": 1554,
-        "alt": "Heathrow Express campaign photography — details photograph 22"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1TDBCSqIoNQmftgg-dXL303RrIKW7T1MI=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1TDBCSqIoNQmftgg-dXL303RrIKW7T1MI=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — details photograph 23"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1M1afCFUZegLM6HjkgBTmwX1m5ZZlqi3n=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1M1afCFUZegLM6HjkgBTmwX1m5ZZlqi3n=w960",
-        "width": 2400,
-        "height": 1602,
-        "alt": "Heathrow Express campaign photography — details photograph 24"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1oqaB0NrkDEbTAKOJASunousY1q0gzWuM=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1oqaB0NrkDEbTAKOJASunousY1q0gzWuM=w960",
-        "width": 2400,
-        "height": 1599,
-        "alt": "Heathrow Express campaign photography — details photograph 25"
-      }
-    ]
-  },
-  {
-    "collection": "photography",
-    "kind": "photo",
-    "title": "Pei Feng Su — Executive & Environmental Portraits",
-    "slug": "pei-feng-su-portraits",
-    "url": "/photography-pei-feng-su-portraits.html",
-    "cover": "https://lh3.googleusercontent.com/d/1ZlNumVUoYB5LnJSGh1oFhtpu6KG8XRim=w960",
-    "description": "Executive and environmental portraits of Pei Feng Su, Founder and CEO of ACTAsia.",
-    "location": "London, UK",
-    "year": "2025",
-    "credit": "",
-    "images": [
-      {
-        "src": "https://lh3.googleusercontent.com/d/1ZlNumVUoYB5LnJSGh1oFhtpu6KG8XRim=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1ZlNumVUoYB5LnJSGh1oFhtpu6KG8XRim=w960",
-        "width": 1801,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 1"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1WZaPvX4E67JEqqK18AgrL63NeR9kqjuu=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1WZaPvX4E67JEqqK18AgrL63NeR9kqjuu=w960",
-        "width": 1801,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 2"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1Q6ilTBQcWx9LhXGhv4H2aR_nIKwoXAzO=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1Q6ilTBQcWx9LhXGhv4H2aR_nIKwoXAzO=w960",
-        "width": 1801,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 3"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1F9LRbE3rLN_l0bY3Y5aaCekBc_zfVpnL=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1F9LRbE3rLN_l0bY3Y5aaCekBc_zfVpnL=w960",
-        "width": 1801,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 4"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1hD4_UHoCT2qY-yqOyiek_9jlv_TXqaeH=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1hD4_UHoCT2qY-yqOyiek_9jlv_TXqaeH=w960",
-        "width": 1799,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 5"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1F1UvY-aaAr4aeWPCa2IvEQOKjP9YIkSl=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1F1UvY-aaAr4aeWPCa2IvEQOKjP9YIkSl=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Pei Feng Su — executive and environmental portrait 6"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1yl74D4vklfAOhcgysFdQcUBBYHv1xN_8=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1yl74D4vklfAOhcgysFdQcUBBYHv1xN_8=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Pei Feng Su — executive and environmental portrait 7"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1XQwj5cPWkfxcvZRWf6mugkOh2iB7l07S=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1XQwj5cPWkfxcvZRWf6mugkOh2iB7l07S=w960",
-        "width": 2400,
-        "height": 1800,
-        "alt": "Pei Feng Su — executive and environmental portrait 8"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1NzZ8IyDKujLlOqPtWkYQsHTQ5O9Gn9Y1=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1NzZ8IyDKujLlOqPtWkYQsHTQ5O9Gn9Y1=w960",
-        "width": 1799,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 9"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1iRzAPljnRtiOBha_S3O4B0UyZ2Z3l2vG=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1iRzAPljnRtiOBha_S3O4B0UyZ2Z3l2vG=w960",
-        "width": 1799,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 10"
-      },
-      {
-        "src": "https://lh3.googleusercontent.com/d/1Er6dUrPzvixb4x0XnFrhhi_tFB8pj7RN=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1Er6dUrPzvixb4x0XnFrhhi_tFB8pj7RN=w960",
-        "width": 1799,
-        "height": 2400,
-        "alt": "Pei Feng Su — executive and environmental portrait 11"
-      }
-    ]
   },
   {
     "collection": "commercials",

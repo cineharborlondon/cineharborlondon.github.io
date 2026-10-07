@@ -93,3 +93,9 @@
 }
 
 .beige-film-page .single-line-title .project-title { display: block; white-space: nowrap; font-size: clamp(12px, .85vw, 16px); }
+
+/* Match the first three Photography cards on desktop without changing galleries. */
+@media (min-width: 1001px) {
+  .beige-film-page .uniform-photo-cover .project-image.photo-source { aspect-ratio: 3 / 2; }
+  .beige-film-page .uniform-photo-cover .project-image.photo-source img { width: 100%; height: 100%; object-fit: cover; }
+}

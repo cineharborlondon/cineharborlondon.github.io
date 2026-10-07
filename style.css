@@ -373,3 +373,13 @@ h1, h2, h3, .project-title, .statement, .contact-title, .work-tabs, .eyebrow, na
 @media (max-width: 600px) {
   .related-video-grid { columns: 1; }
 }
+
+/* Photography opens with its title and flows directly into the full gallery. */
+.photography-detail .project-information { padding: 8px 0 26px; row-gap: 12px; }
+.photography-detail .project-description { grid-column: 1 / -1; font-size: 14px; }
+.photo-group + .photo-group { margin-top: 36px; }
+.photo-group h2 { font-size: 18px; font-weight: 400; margin: 0 0 18px; }
+.photo-group .project-gallery { columns: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
+.photo-group .gallery-photo { margin: 0; }
+@media (max-width: 900px) { .photo-group .project-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .photo-group .project-gallery { grid-template-columns: minmax(0, 1fr); } }
