@@ -53,9 +53,9 @@ for (const project of projects) {
   const relatedVideos = (project.relatedVideoGroups || []).flatMap(group => group.videos || []);
   if (project.groupedVideoLayout && !relatedVideos.some(video => video.vimeo === project.vimeo)) throw new Error('A grouped project must include its primary video in a group');
   const related = project.groupedVideoLayout
-    ? `<section class="related-videos video-series" aria-label="Film series">${(project.relatedVideoGroups || []).filter(group => group.videos?.length).map((group, index) => `<section class="video-series-group" aria-labelledby="video-group-${index}"><h2 class="video-series-heading" id="video-group-${index}">${esc(group.title)}</h2><div class="related-video-grid-grouped">${group.videos.map(video => relatedVideo(video, true, 3)).join('\n')}</div></section>`).join('\n')}</section>`
+    ? `<section class="related-videos video-series" aria-label="Film series">${(project.relatedVideoGroups || []).filter(group => group.videos?.length).map((group, index) => `<section class="video-series-group" aria-labelledby="video-group-${index}"><h2 class="video-series-heading" id="video-group-${index}">${esc(group.title)}</h2><div class="related-video-grid-grouped${group.videos.length === 4 && group.videos.every(video => Number(video.aspectRatio) < 1) ? ' portrait-pair-grid' : ''}">${group.videos.map(video => relatedVideo(video, true, 3)).join('\n')}</div></section>`).join('\n')}</section>`
     : relatedVideos.length ? `<section class="related-videos" aria-label="${project.showVideoTitles ? 'More films in this series' : 'Related videos'}"><div class="related-video-grid${project.showVideoTitles ? ' related-video-grid-labelled' : ''}">${relatedVideos.map(video => relatedVideo(video, project.showVideoTitles === true)).join('\n')}</div></section>` : '';
-  const seriesStyles = project.showVideoTitles || project.groupedVideoLayout ? `<link rel="stylesheet" href="/project-series.css?v=${project.groupedVideoLayout ? 'commense-20261007' : 'huawei-20261007'}">` : '';
+  const seriesStyles = project.showVideoTitles || project.groupedVideoLayout || (!isPhoto && ratio < 1) ? `<link rel="stylesheet" href="/project-series.css?v=large-portrait-20261008">` : '';
   const videoCaption = project.videoTitle ? `<p class="detail-video-caption">${esc(project.videoTitle)}</p>` : '';
   const lightbox = images.length ? `<dialog class="photo-dialog" aria-label="Photograph viewer"><div class="photo-viewer"><div class="photo-toolbar"><p id="photo-counter" aria-live="polite"></p><button type="button" class="close-button" id="close-photo" autofocus>Close <span aria-hidden="true">×</span></button></div><img id="full-photo" alt=""><div class="photo-navigation"><button type="button" id="previous-photo" class="close-button">Previous</button><button type="button" id="next-photo" class="close-button">Next</button></div></div></dialog><script id="gallery-data" type="application/json">${JSON.stringify(images).replace(/</g, '\\u003c')}</script><script src="/project.js?v=${version}" defer></script>` : '';
   const html = `<!doctype html>
@@ -69,3 +69,4 @@ ${gallery}${related}<nav class="project-pagination" aria-label="Project navigati
   writeFileSync(path.join(root, project.url.slice(1)), html);
 }
 console.log(`Generated ${projects.length} project pages and homepage data.`);
+

@@ -74,3 +74,6 @@ Latest preview correction: PAINKILLER — DUCATI previews 60–80 seconds to avo
 Latest poster/preview update: Yingjia Design previews only 12.5–32.5 seconds (fabric/craft shots), excluding the animated butterflies. Its poster is the original focused yellow-thread spool at 26.8 seconds. ALLSO uses the original Contour Palette makeup-application portrait at 5.1 seconds; COMMENSE uses the Garden 01 white-outfit full-body frame at 4.8 seconds. Preview players must initialize without autoplay/native looping, show moving frames only after the requested initial seek succeeds, enforce segment bounds and keep the poster with bounded retries if a seek fails.
 
 Preview initialization primes the muted player behind its poster before seeking, because some Vimeo players defer video loading until play. Never reveal this priming playback; only show the preview after the requested seek succeeds.
+
+
+Latest user override: ALLSO Work poster is the original Lip Combo gloss/product frame around 1 second; COMMENSE is the Yacht 02 yellow-dress frame. Portrait detail and grouped-series films use larger inline players at native aspect ratio, with no popup player. Grouped players fill their grid columns; Work card sizes and all videos remain unchanged.
