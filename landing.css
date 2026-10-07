@@ -15,6 +15,8 @@ p, h1 { margin: 0; }
 .image-title { font-family: "Montserrat", Arial, sans-serif; font-weight: 700; font-size: min(calc((100vw - var(--edge) * 2) * .222), calc((100svh - 130px) / 2.1)); line-height: .79; letter-spacing: -.065em; color: #745332; width: 100%; padding: .24em .035em .16em 0; background-position: center; background-size: cover; }
 .image-title.has-frame { -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
 .title-cine, .title-harbor { display: block; text-align: left; }
+/* Optical overhang compensates for C's curved edge, at each line's own font size. */
+.title-cine { text-indent: -.035em; }
 /* Montserrat 700: C starts at .039em, H at .083em; align the visible glyph edges. */
 .title-harbor { margin-top: .11em; text-indent: -.044em; }
 .landing-footer { flex: 0 0 72px; min-height: 72px; padding: 16px 0; display: flex; justify-content: center; align-items: center; }

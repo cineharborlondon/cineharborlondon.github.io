@@ -21,6 +21,8 @@
   text-align: left;
 }
 .work-wordmark span { display: block; }
+/* Give the curved C a small optical overhang while keeping the wordmark centered. */
+.work-wordmark span:first-child { text-indent: -.035em; }
 /* Match C's .039em left bearing to H's .083em bearing in Montserrat 700. */
 .work-wordmark span + span { margin-top: .11em; text-indent: -.044em; }
 
