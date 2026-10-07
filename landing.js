@@ -209,24 +209,20 @@
   }
 
   let entering = false;
-  let resumeAfterEntry = false;
   entry.addEventListener('click', event => {
     // Preserve native new-tab/download behavior and reduced-motion navigation.
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || motion.matches) return;
     event.preventDefault();
     if (entering) return;
     entering = true;
-    resumeAfterEntry = wantsPlayback;
-    wantsPlayback = false;
-    refreshPlayback();
     document.body.classList.add('is-entering');
-    setTimeout(() => location.assign(entry.href), 540);
+    // Start loading Work while the push is still moving, instead of waiting at a final zoom frame.
+    setTimeout(() => location.assign(entry.href), 140);
   });
   addEventListener('pageshow', () => {
     if (!entering) return;
     entering = false;
     document.body.classList.remove('is-entering');
-    wantsPlayback = resumeAfterEntry && !motion.matches;
     refreshPlayback();
   });
 
