@@ -120,7 +120,7 @@ function initPortfolio() {
   }
 
   const groups = categories.map(category => projects.filter(project => project.listed !== false && (project.collection || 'films') === category.id)
-    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1))));
+    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1))));
   panels.forEach((panel, index) => {
     const items = groups[index];
     if (items.length) {

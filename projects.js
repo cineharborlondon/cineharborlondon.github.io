@@ -1,6 +1,141 @@
 // Generated from projects-data.json by build-projects.mjs.
 const projects = [
   {
+    "collection": "social",
+    "kind": "video",
+    "title": "Libby Bennett × W China × Burberry",
+    "vimeo": "1232822734",
+    "vimeoHash": "b6da57b644",
+    "aspectRatio": 1,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208339549-09d6b1bb55cff237373b838b5318203b3cf2e17dca433107e87d0322aa1a11ed-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "interview-01",
+    "description": "Two films with Libby Bennett for W China and Burberry.",
+    "images": [],
+    "url": "/commercials-interview-01.html",
+    "location": "London, UK",
+    "year": "2026",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Once Upon a Time",
+            "vimeo": "1232822734",
+            "vimeoHash": "b6da57b644",
+            "aspectRatio": 1
+          },
+          {
+            "title": "OMG! Libby’s Hidden Talent",
+            "vimeo": "1232822735",
+            "vimeoHash": "1b1f1b8afd",
+            "aspectRatio": 0.75
+          }
+        ]
+      }
+    ],
+    "fashionPriority": true
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Libby Bennett — OMG! Libby’s Hidden Talent",
+    "vimeo": "1232822735",
+    "vimeoHash": "1b1f1b8afd",
+    "aspectRatio": 0.75,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208339440-bab324780e7b6a73ae654fe3f75bde64f75f6c6896f1b5c75ce432a8b924d24e-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "interview-02",
+    "description": "Burberry × W Magazine China × Libby Bennett.\n\nOMG! Libby’s Hidden Talent.",
+    "images": [],
+    "url": "/commercials-interview-02.html",
+    "location": "London, UK",
+    "year": "2026",
+    "listed": false,
+    "fashionPriority": true
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Burberry × W Magazine — Summer 26 Playlist",
+    "vimeo": "1221238820",
+    "vimeoHash": "24f45adce5",
+    "aspectRatio": 0.75,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2193888416-d9ac19311a8443b7d27899387bea52010076979bcb33cf9b5f0b9efe6e72c32b-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "w-magazine-summer-26",
+    "description": "Burberry × W Magazine China × Lina Zhang × Libby Bennett.\n\nMusic Showroom: Summer 26 Playlist.",
+    "images": [],
+    "url": "/commercials-w-magazine-summer-26.html",
+    "location": "London, UK",
+    "year": "2026",
+    "fashionPriority": true
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Paris Haute Couture Week 2026",
+    "vimeo": "1232912231",
+    "vimeoHash": "3076051a50",
+    "aspectRatio": 0.7498535442296427,
+    "previewStart": 2,
+    "cover": "https://i.vimeocdn.com/video/2208442118-7bcef5659db22e0f928b70e7856577e3bc253b2a28ca6922e6e3be3194fca47b-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "paris-haute-couture-week-2026",
+    "description": "Five films for VOGUE from Paris Haute Couture Week 2026.",
+    "images": [],
+    "url": "/social-paris-haute-couture-week-2026.html",
+    "location": "Paris, France",
+    "year": "2026",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "VOGUE × Armani — Li Bingbing",
+            "vimeo": "1232912231",
+            "vimeoHash": "3076051a50",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE × Balenciaga — Ma Sichun",
+            "vimeo": "1232912239",
+            "vimeoHash": "b7d77c0811",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE × Chanel — Shan Yichun",
+            "vimeo": "1232912257",
+            "vimeoHash": "01c96ed91a",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE × Chanel — William Chan",
+            "vimeo": "1232912269",
+            "vimeoHash": "c5122d816d",
+            "aspectRatio": 0.7498535442296427
+          },
+          {
+            "title": "VOGUE — Charlize",
+            "vimeo": "1232912732",
+            "vimeoHash": "74ec246b45",
+            "aspectRatio": 0.562390158172232
+          }
+        ]
+      }
+    ],
+    "fashionPriority": true
+  },
+  {
     "collection": "commercials",
     "kind": "video",
     "title": "NAVIMOW Circle — Concept Video",
@@ -328,44 +463,6 @@ const projects = [
     "url": "/films-john-pawson-banlan-slips.html",
     "location": "Cotswolds, UK",
     "year": "2026"
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "Libby Bennett × W China × Burberry",
-    "vimeo": "1232822734",
-    "vimeoHash": "b6da57b644",
-    "aspectRatio": 1,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208339549-09d6b1bb55cff237373b838b5318203b3cf2e17dca433107e87d0322aa1a11ed-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "interview-01",
-    "description": "Two films with Libby Bennett for W China and Burberry.",
-    "images": [],
-    "url": "/commercials-interview-01.html",
-    "location": "London, UK",
-    "year": "2026",
-    "groupedVideoLayout": true,
-    "relatedVideoGroups": [
-      {
-        "title": "The Films",
-        "videos": [
-          {
-            "title": "Once Upon a Time",
-            "vimeo": "1232822734",
-            "vimeoHash": "b6da57b644",
-            "aspectRatio": 1
-          },
-          {
-            "title": "OMG! Libby’s Hidden Talent",
-            "vimeo": "1232822735",
-            "vimeoHash": "1b1f1b8afd",
-            "aspectRatio": 0.75
-          }
-        ]
-      }
-    ]
   },
   {
     "collection": "branded-content",
@@ -778,43 +875,6 @@ const projects = [
     "url": "/social-qin-wen-leif-lindner-ifa.html"
   },
   {
-    "collection": "social",
-    "kind": "video",
-    "title": "Libby Bennett — OMG! Libby’s Hidden Talent",
-    "vimeo": "1232822735",
-    "vimeoHash": "1b1f1b8afd",
-    "aspectRatio": 0.75,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208339440-bab324780e7b6a73ae654fe3f75bde64f75f6c6896f1b5c75ce432a8b924d24e-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "interview-02",
-    "description": "Burberry × W Magazine China × Libby Bennett.\n\nOMG! Libby’s Hidden Talent.",
-    "images": [],
-    "url": "/commercials-interview-02.html",
-    "location": "London, UK",
-    "year": "2026",
-    "listed": false
-  },
-  {
-    "collection": "social",
-    "kind": "video",
-    "title": "Burberry × W Magazine — Summer 26 Playlist",
-    "vimeo": "1221238820",
-    "vimeoHash": "24f45adce5",
-    "aspectRatio": 0.75,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2193888416-d9ac19311a8443b7d27899387bea52010076979bcb33cf9b5f0b9efe6e72c32b-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "w-magazine-summer-26",
-    "description": "Burberry × W Magazine China × Lina Zhang × Libby Bennett.\n\nMusic Showroom: Summer 26 Playlist.",
-    "images": [],
-    "url": "/commercials-w-magazine-summer-26.html",
-    "location": "London, UK",
-    "year": "2026"
-  },
-  {
     "collection": "commercials",
     "kind": "video",
     "title": "Dyson Hair Oil Official Launch Video",
@@ -914,62 +974,6 @@ const projects = [
   },
   {
     "collection": "social",
-    "kind": "video",
-    "title": "Paris Haute Couture Week 2026",
-    "vimeo": "1232912231",
-    "vimeoHash": "3076051a50",
-    "aspectRatio": 0.7498535442296427,
-    "previewStart": 2,
-    "cover": "https://i.vimeocdn.com/video/2208442118-7bcef5659db22e0f928b70e7856577e3bc253b2a28ca6922e6e3be3194fca47b-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "paris-haute-couture-week-2026",
-    "description": "Five films for VOGUE from Paris Haute Couture Week 2026.",
-    "images": [],
-    "url": "/social-paris-haute-couture-week-2026.html",
-    "location": "Paris, France",
-    "year": "2026",
-    "groupedVideoLayout": true,
-    "relatedVideoGroups": [
-      {
-        "title": "The Films",
-        "videos": [
-          {
-            "title": "VOGUE × Armani — Li Bingbing",
-            "vimeo": "1232912231",
-            "vimeoHash": "3076051a50",
-            "aspectRatio": 0.7498535442296427
-          },
-          {
-            "title": "VOGUE × Balenciaga — Ma Sichun",
-            "vimeo": "1232912239",
-            "vimeoHash": "b7d77c0811",
-            "aspectRatio": 0.7498535442296427
-          },
-          {
-            "title": "VOGUE × Chanel — Shan Yichun",
-            "vimeo": "1232912257",
-            "vimeoHash": "01c96ed91a",
-            "aspectRatio": 0.7498535442296427
-          },
-          {
-            "title": "VOGUE × Chanel — William Chan",
-            "vimeo": "1232912269",
-            "vimeoHash": "c5122d816d",
-            "aspectRatio": 0.7498535442296427
-          },
-          {
-            "title": "VOGUE — Charlize",
-            "vimeo": "1232912732",
-            "vimeoHash": "74ec246b45",
-            "aspectRatio": 0.562390158172232
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "collection": "commercials",
     "kind": "video",
     "title": "The Fruit Wave of Stride 2021",
     "vimeo": "748230681",

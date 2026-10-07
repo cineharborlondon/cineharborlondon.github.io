@@ -421,7 +421,8 @@
           }
         ]
       }
-    ]
+    ],
+    "fashionPriority": true
   },
   {
     "collection": "social",
@@ -440,7 +441,8 @@
     "url": "/commercials-interview-02.html",
     "location": "London, UK",
     "year": "2026",
-    "listed": false
+    "listed": false,
+    "fashionPriority": true
   },
   {
     "collection": "social",
@@ -458,7 +460,8 @@
     "images": [],
     "url": "/commercials-w-magazine-summer-26.html",
     "location": "London, UK",
-    "year": "2026"
+    "year": "2026",
+    "fashionPriority": true
   },
   {
     "collection": "branded-content",
@@ -1022,10 +1025,11 @@
           }
         ]
       }
-    ]
+    ],
+    "fashionPriority": true
   },
   {
-    "collection": "commercials",
+    "collection": "social",
     "kind": "video",
     "title": "The Fruit Wave of Stride 2021",
     "vimeo": "748230681",
