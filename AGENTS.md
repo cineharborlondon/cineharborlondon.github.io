@@ -44,3 +44,5 @@ Photography portrait covers retain their native complete ratio with a compact vi
 Burberry × W China — Summer 26 Playlist uses W China and a single-line Work title.
 
 Yingjia Design previews from 00:11 and uses the original yellow thread-spool shot at 00:25.5 as its cover. SUXINDAI groups two vertical ads as one Content project, with both original Vimeo IDs preserved.
+
+Realme × Adam Valdez photography is second in Photography, with five selected campaign images. Navimow campaign photography is intended first (France · Germany · USA, 2025), but its Drive folder currently requires login and cannot be added until readable. The LFW contentOrder:1 is temporary to keep Adam second; when Navimow is added with contentOrder:1, remove LFW contentOrder so the required order becomes Navimow, Adam, existing photography, Hanshow last.

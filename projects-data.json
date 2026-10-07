@@ -733,7 +733,8 @@
         "height": 4684,
         "alt": "2026 London Fashion Week — photograph 16"
       }
-    ]
+    ],
+    "contentOrder": 1
   },
   {
     "collection": "branded-content",
@@ -1984,5 +1985,53 @@
         ]
       }
     ]
+  },
+  {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "Realme × Adam Valdez — Campaign Photography",
+    "slug": "realme-adam-valdez-photography",
+    "url": "/photography-realme-adam-valdez.html",
+    "cover": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w960",
+    "description": "Selected campaign photography for Realme × Adam Valdez.",
+    "credit": "",
+    "images": [
+      {
+        "src": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w2400",
+        "small": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 1"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1J0JnYU8pLjN35-ZMFIn2V1jqvAlWJkE9=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1J0JnYU8pLjN35-ZMFIn2V1jqvAlWJkE9=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 2"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1CLoGxmXDkTYWe_8blxW3tIU4QhVRAyIR=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1CLoGxmXDkTYWe_8blxW3tIU4QhVRAyIR=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/10PboJ1UlxuntyZhBrAUHsVK7_BHZjbgE=w2400",
+        "small": "https://lh3.googleusercontent.com/d/10PboJ1UlxuntyZhBrAUHsVK7_BHZjbgE=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 4"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1-g61xj4KHvO_eSc6ZZ-ghAgt-OWerlRY=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1-g61xj4KHvO_eSc6ZZ-ghAgt-OWerlRY=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 5"
+      }
+    ],
+    "contentOrder": 2
   }
 ]

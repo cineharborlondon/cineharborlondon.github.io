@@ -257,6 +257,161 @@ const projects = [
     ]
   },
   {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "2026 London Fashion Week",
+    "slug": "2026-london-fashion-week",
+    "url": "/photography-2026-london-fashion-week.html",
+    "cover": "/lfw-b031924-960.webp",
+    "description": "Selected runway photography for SUNCUN on the official London Fashion Week stage. The gallery follows the Instagram selection, with additional looks and details.",
+    "credit": "",
+    "location": "London, UK",
+    "year": "2026",
+    "images": [
+      {
+        "src": "/lfw-b031924.webp",
+        "small": "/lfw-b031924-960.webp",
+        "width": 3519,
+        "height": 5278,
+        "alt": "2026 London Fashion Week — photograph 18"
+      },
+      {
+        "src": "/lfw-b031737.webp",
+        "small": "/lfw-b031737-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 10"
+      },
+      {
+        "src": "/lfw-b031302.webp",
+        "small": "/lfw-b031302-960.webp",
+        "width": 2233,
+        "height": 3350,
+        "alt": "2026 London Fashion Week — photograph 01"
+      },
+      {
+        "src": "/lfw-b031611.webp",
+        "small": "/lfw-b031611-960.webp",
+        "width": 3435,
+        "height": 5152,
+        "alt": "2026 London Fashion Week — photograph 07"
+      },
+      {
+        "src": "/lfw-b031565.webp",
+        "small": "/lfw-b031565-960.webp",
+        "width": 5072,
+        "height": 3382,
+        "alt": "2026 London Fashion Week — photograph 06"
+      },
+      {
+        "src": "/lfw-b031614.webp",
+        "small": "/lfw-b031614-960.webp",
+        "width": 5400,
+        "height": 3600,
+        "alt": "2026 London Fashion Week — photograph 08"
+      },
+      {
+        "src": "/lfw-b032000.webp",
+        "small": "/lfw-b032000-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 20"
+      },
+      {
+        "src": "/lfw-b031543.webp",
+        "small": "/lfw-b031543-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 04"
+      },
+      {
+        "src": "/lfw-b031889.webp",
+        "small": "/lfw-b031889-960.webp",
+        "width": 4746,
+        "height": 3164,
+        "alt": "2026 London Fashion Week — photograph 17"
+      },
+      {
+        "src": "/lfw-b031980.webp",
+        "small": "/lfw-b031980-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 19"
+      },
+      {
+        "src": "/lfw-b031562.webp",
+        "small": "/lfw-b031562-960.webp",
+        "width": 3393,
+        "height": 5090,
+        "alt": "2026 London Fashion Week — photograph 05"
+      },
+      {
+        "src": "/lfw-b031784.webp",
+        "small": "/lfw-b031784-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 11"
+      },
+      {
+        "src": "/lfw-b031536.webp",
+        "small": "/lfw-b031536-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 02"
+      },
+      {
+        "src": "/lfw-b031537.webp",
+        "small": "/lfw-b031537-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 03"
+      },
+      {
+        "src": "/lfw-b031695.webp",
+        "small": "/lfw-b031695-960.webp",
+        "width": 3159,
+        "height": 4739,
+        "alt": "2026 London Fashion Week — photograph 09"
+      },
+      {
+        "src": "/lfw-b031811.webp",
+        "small": "/lfw-b031811-960.webp",
+        "width": 3600,
+        "height": 5400,
+        "alt": "2026 London Fashion Week — photograph 12"
+      },
+      {
+        "src": "/lfw-b031837.webp",
+        "small": "/lfw-b031837-960.webp",
+        "width": 3369,
+        "height": 5053,
+        "alt": "2026 London Fashion Week — photograph 13"
+      },
+      {
+        "src": "/lfw-b031866.webp",
+        "small": "/lfw-b031866-960.webp",
+        "width": 3101,
+        "height": 4652,
+        "alt": "2026 London Fashion Week — photograph 14"
+      },
+      {
+        "src": "/lfw-b031869.webp",
+        "small": "/lfw-b031869-960.webp",
+        "width": 4730,
+        "height": 3153,
+        "alt": "2026 London Fashion Week — photograph 15"
+      },
+      {
+        "src": "/lfw-b031888.webp",
+        "small": "/lfw-b031888-960.webp",
+        "width": 3122,
+        "height": 4684,
+        "alt": "2026 London Fashion Week — photograph 16"
+      }
+    ],
+    "contentOrder": 1
+  },
+  {
     "collection": "social",
     "kind": "video",
     "title": "Starry Mart — Store Opening Series (3 Films)",
@@ -340,6 +495,54 @@ const projects = [
         ]
       }
     ]
+  },
+  {
+    "collection": "photography",
+    "kind": "photo",
+    "title": "Realme × Adam Valdez — Campaign Photography",
+    "slug": "realme-adam-valdez-photography",
+    "url": "/photography-realme-adam-valdez.html",
+    "cover": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w960",
+    "description": "Selected campaign photography for Realme × Adam Valdez.",
+    "credit": "",
+    "images": [
+      {
+        "src": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w2400",
+        "small": "https://lh3.googleusercontent.com/d/102gKVVeMG1Qd_toJz9YFyLvvsD6wA00C=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 1"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1J0JnYU8pLjN35-ZMFIn2V1jqvAlWJkE9=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1J0JnYU8pLjN35-ZMFIn2V1jqvAlWJkE9=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 2"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1CLoGxmXDkTYWe_8blxW3tIU4QhVRAyIR=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1CLoGxmXDkTYWe_8blxW3tIU4QhVRAyIR=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 3"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/10PboJ1UlxuntyZhBrAUHsVK7_BHZjbgE=w2400",
+        "small": "https://lh3.googleusercontent.com/d/10PboJ1UlxuntyZhBrAUHsVK7_BHZjbgE=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 4"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1-g61xj4KHvO_eSc6ZZ-ghAgt-OWerlRY=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1-g61xj4KHvO_eSc6ZZ-ghAgt-OWerlRY=w960",
+        "width": 2400,
+        "height": 1802,
+        "alt": "Realme × Adam Valdez — campaign photograph 5"
+      }
+    ],
+    "contentOrder": 2
   },
   {
     "collection": "social",
@@ -878,160 +1081,6 @@ const projects = [
     "description": "An introduction to BioTwin and its approach to low-carbon innovation.",
     "images": [],
     "url": "/commercials-biotwin.html"
-  },
-  {
-    "collection": "photography",
-    "kind": "photo",
-    "title": "2026 London Fashion Week",
-    "slug": "2026-london-fashion-week",
-    "url": "/photography-2026-london-fashion-week.html",
-    "cover": "/lfw-b031924-960.webp",
-    "description": "Selected runway photography for SUNCUN on the official London Fashion Week stage. The gallery follows the Instagram selection, with additional looks and details.",
-    "credit": "",
-    "location": "London, UK",
-    "year": "2026",
-    "images": [
-      {
-        "src": "/lfw-b031924.webp",
-        "small": "/lfw-b031924-960.webp",
-        "width": 3519,
-        "height": 5278,
-        "alt": "2026 London Fashion Week — photograph 18"
-      },
-      {
-        "src": "/lfw-b031737.webp",
-        "small": "/lfw-b031737-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 10"
-      },
-      {
-        "src": "/lfw-b031302.webp",
-        "small": "/lfw-b031302-960.webp",
-        "width": 2233,
-        "height": 3350,
-        "alt": "2026 London Fashion Week — photograph 01"
-      },
-      {
-        "src": "/lfw-b031611.webp",
-        "small": "/lfw-b031611-960.webp",
-        "width": 3435,
-        "height": 5152,
-        "alt": "2026 London Fashion Week — photograph 07"
-      },
-      {
-        "src": "/lfw-b031565.webp",
-        "small": "/lfw-b031565-960.webp",
-        "width": 5072,
-        "height": 3382,
-        "alt": "2026 London Fashion Week — photograph 06"
-      },
-      {
-        "src": "/lfw-b031614.webp",
-        "small": "/lfw-b031614-960.webp",
-        "width": 5400,
-        "height": 3600,
-        "alt": "2026 London Fashion Week — photograph 08"
-      },
-      {
-        "src": "/lfw-b032000.webp",
-        "small": "/lfw-b032000-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 20"
-      },
-      {
-        "src": "/lfw-b031543.webp",
-        "small": "/lfw-b031543-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 04"
-      },
-      {
-        "src": "/lfw-b031889.webp",
-        "small": "/lfw-b031889-960.webp",
-        "width": 4746,
-        "height": 3164,
-        "alt": "2026 London Fashion Week — photograph 17"
-      },
-      {
-        "src": "/lfw-b031980.webp",
-        "small": "/lfw-b031980-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 19"
-      },
-      {
-        "src": "/lfw-b031562.webp",
-        "small": "/lfw-b031562-960.webp",
-        "width": 3393,
-        "height": 5090,
-        "alt": "2026 London Fashion Week — photograph 05"
-      },
-      {
-        "src": "/lfw-b031784.webp",
-        "small": "/lfw-b031784-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 11"
-      },
-      {
-        "src": "/lfw-b031536.webp",
-        "small": "/lfw-b031536-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 02"
-      },
-      {
-        "src": "/lfw-b031537.webp",
-        "small": "/lfw-b031537-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 03"
-      },
-      {
-        "src": "/lfw-b031695.webp",
-        "small": "/lfw-b031695-960.webp",
-        "width": 3159,
-        "height": 4739,
-        "alt": "2026 London Fashion Week — photograph 09"
-      },
-      {
-        "src": "/lfw-b031811.webp",
-        "small": "/lfw-b031811-960.webp",
-        "width": 3600,
-        "height": 5400,
-        "alt": "2026 London Fashion Week — photograph 12"
-      },
-      {
-        "src": "/lfw-b031837.webp",
-        "small": "/lfw-b031837-960.webp",
-        "width": 3369,
-        "height": 5053,
-        "alt": "2026 London Fashion Week — photograph 13"
-      },
-      {
-        "src": "/lfw-b031866.webp",
-        "small": "/lfw-b031866-960.webp",
-        "width": 3101,
-        "height": 4652,
-        "alt": "2026 London Fashion Week — photograph 14"
-      },
-      {
-        "src": "/lfw-b031869.webp",
-        "small": "/lfw-b031869-960.webp",
-        "width": 4730,
-        "height": 3153,
-        "alt": "2026 London Fashion Week — photograph 15"
-      },
-      {
-        "src": "/lfw-b031888.webp",
-        "small": "/lfw-b031888-960.webp",
-        "width": 3122,
-        "height": 4684,
-        "alt": "2026 London Fashion Week — photograph 16"
-      }
-    ]
   },
   {
     "collection": "branded-content",
