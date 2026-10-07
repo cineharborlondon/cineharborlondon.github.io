@@ -21,7 +21,8 @@
   text-align: left;
 }
 .work-wordmark span { display: block; }
-.work-wordmark span + span { margin-top: .11em; text-indent: -.027em; }
+/* Match C's .039em left bearing to H's .083em bearing in Montserrat 700. */
+.work-wordmark span + span { margin-top: .11em; text-indent: -.044em; }
 
 @media (max-width: 640px) {
   .beige-film-page .work-header { gap: 8px; }
