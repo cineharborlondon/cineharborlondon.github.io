@@ -29,3 +29,5 @@
 - The Dehua international tour is one listed Content project with Copenhagen and Brussels videos side by side; preserve both original routes.
 
 - Dahua keeps the product cover and previews the complete 26-second film on loop.
+
+- OPPO launch is labelled Live Broadcast; retain its original opening preview at 8–25.5 seconds, replacing only the female speaker close-up with the product-stage wide shot at 1100–1106.5 seconds.

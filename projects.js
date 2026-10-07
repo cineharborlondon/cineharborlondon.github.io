@@ -1017,11 +1017,11 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "OPPO — Find X9 Series & ColorOS 16 Global Launch",
+    "title": "OPPO — Find X9 Series & ColorOS 16 Global Launch | Live Broadcast",
     "vimeo": "1233570001",
     "vimeoHash": "96810d44de",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 1100,
+    "previewStart": 8,
     "cover": "/assets/oppo-live-stage-cover.jpg",
     "credit": "",
     "sample": false,
@@ -1030,7 +1030,17 @@ const projects = [
     "images": [],
     "url": "/commercials-oppo-find-x9-global-launch.html",
     "displayCategory": "Commercials · Live Broadcast",
-    "previewDuration": 8
+    "previewDuration": 24,
+    "previewSegments": [
+      {
+        "start": 8,
+        "duration": 17.5
+      },
+      {
+        "start": 1100,
+        "duration": 6.5
+      }
+    ]
   },
   {
     "collection": "branded-content",
