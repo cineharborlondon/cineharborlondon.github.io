@@ -1681,7 +1681,7 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "Zhang Jingyi",
+    "title": "VOGUE CHINA × Zhang Jingyi",
     "vimeo": "1233565950",
     "vimeoHash": "c41fc88772",
     "aspectRatio": 1.3333333333333333,
@@ -1698,7 +1698,7 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "Xin Zhilei",
+    "title": "VOGUE CHINA × Xin Zhilei",
     "vimeo": "1233565690",
     "vimeoHash": "df4ef66c45",
     "aspectRatio": 1.3333333333333333,
