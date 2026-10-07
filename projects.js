@@ -136,6 +136,126 @@ const projects = [
     "fashionPriority": true
   },
   {
+    "collection": "social",
+    "kind": "video",
+    "title": "Paris Fashion Week 2025",
+    "vimeo": "1233567606",
+    "vimeoHash": "b2f650af82",
+    "aspectRatio": 0.7448275862068966,
+    "previewStart": 2,
+    "cover": "https://i.vimeocdn.com/video/2209272508-877743bc0641cf01927f7ae21a05e22eebffdcfa6a42737b24704e4d764adb51-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "paris-fashion-week-2025",
+    "description": "7 VOGUE films from Paris Fashion Week 2025.",
+    "images": [],
+    "url": "/social-paris-fashion-week-2025.html",
+    "location": "Paris, France",
+    "year": "2025",
+    "fashionPriority": true,
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "VOGUE — 杨幂",
+            "vimeo": "1233567606",
+            "vimeoHash": "b2f650af82",
+            "aspectRatio": 0.7448275862068966
+          },
+          {
+            "title": "VOGUE — 欧阳娜娜",
+            "vimeo": "1233567755",
+            "vimeoHash": "b6962307e3",
+            "aspectRatio": 0.7448275862068966
+          },
+          {
+            "title": "VOGUE — 欧阳娜娜（彩蛋）",
+            "vimeo": "1233567714",
+            "vimeoHash": "25264cf838",
+            "aspectRatio": 0.7448275862068966
+          },
+          {
+            "title": "VOGUE — 周冬雨",
+            "vimeo": "1233567428",
+            "vimeoHash": "b0212cdc71",
+            "aspectRatio": 0.7448275862068966
+          },
+          {
+            "title": "VOGUE — 林熙蕾",
+            "vimeo": "1233567658",
+            "vimeoHash": "9cf1c344b7",
+            "aspectRatio": 0.7448275862068966
+          },
+          {
+            "title": "VOGUE — 胡一天",
+            "vimeo": "1233567793",
+            "vimeoHash": "f8064ecdec",
+            "aspectRatio": 0.7448275862068966
+          },
+          {
+            "title": "VOGUE — 宋茜",
+            "vimeo": "1233567501",
+            "vimeoHash": "0f5b6bd92a",
+            "aspectRatio": 0.7448275862068966
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "London Fashion Week 2025",
+    "vimeo": "1232912858",
+    "vimeoHash": "fdd8f3d7c0",
+    "aspectRatio": 0.7453416149068323,
+    "previewStart": 2,
+    "cover": "https://i.vimeocdn.com/video/2208442763-c86d33cc4d150f0e6ed08926ef2e4e8c963e0103f29fcc7e1f82a3a1d64cf38b-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "london-fashion-week-2025",
+    "description": "4 VOGUE films from London Fashion Week 2025.",
+    "images": [],
+    "url": "/social-london-fashion-week-2025.html",
+    "location": "London, UK",
+    "year": "2025",
+    "fashionPriority": true,
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "VOGUE — 汤唯",
+            "vimeo": "1232912858",
+            "vimeoHash": "fdd8f3d7c0",
+            "aspectRatio": 0.7453416149068323
+          },
+          {
+            "title": "VOGUE — 张婧仪",
+            "vimeo": "1232912789",
+            "vimeoHash": "55fc227f3b",
+            "aspectRatio": 0.7453416149068323
+          },
+          {
+            "title": "VOGUE — 米卡",
+            "vimeo": "1232912788",
+            "vimeoHash": "900b9d809c",
+            "aspectRatio": 0.7453416149068323
+          },
+          {
+            "title": "VOGUE — Fil小白",
+            "vimeo": "1232912790",
+            "vimeoHash": "4df426acb1",
+            "aspectRatio": 0.7448275862068966
+          }
+        ]
+      }
+    ]
+  },
+  {
     "collection": "commercials",
     "kind": "video",
     "title": "NAVIMOW Circle — Concept Video",
@@ -405,61 +525,57 @@ const projects = [
     "vimeoHash": "f266fa6397",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209274130-745414cdc5f1a6f53c2e1808884326442ab07590b84d3538f8b5a2445ed1c2dc-d_1280",
+    "cover": "/assets/genshin-concert-2023-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "genshin-concert-2023",
-    "description": "",
+    "description": "A concert project filmed across locations worldwide. Cine Harbor supported filming for the UK segment.",
     "images": [],
-    "url": "/films-genshin-concert-2023.html"
-  },
-  {
-    "collection": "films",
-    "kind": "video",
-    "title": "Starberry Fields Forever",
-    "vimeo": "1233562383",
-    "vimeoHash": "fa1a712354",
-    "aspectRatio": 1.8962962962962964,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209272285-15e274db14d58b90e05d5cb3719b689454b91aee8441d5f02f24a284c86e22c4-d_1280",
-    "credit": "",
-    "sample": false,
-    "slug": "starberry-fields-forever",
-    "description": "",
-    "images": [],
-    "url": "/films-starberry-fields-forever.html"
+    "url": "/films-genshin-concert-2023.html",
+    "location": "Worldwide",
+    "credits": [
+      {
+        "role": "UK Filming Support",
+        "name": "Cine Harbor"
+      }
+    ],
+    "staticCover": true
   },
   {
     "collection": "films",
     "kind": "video",
     "title": "Zhang Jingyi",
-    "vimeo": "1233565690",
-    "vimeoHash": "df4ef66c45",
+    "vimeo": "1233565950",
+    "vimeoHash": "c41fc88772",
     "aspectRatio": 1.3333333333333333,
-    "previewStart": 0,
-    "cover": "https://i.vimeocdn.com/video/2209269600-4f3c6de3e55f1fc938af4f83b0d7f50f9503b936075dc1c196c289042b8ef2fa-d_1280",
+    "previewStart": 8,
+    "cover": "/assets/zhang-jingyi-vogue-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "zhang-jingyi",
-    "description": "",
+    "description": "A VOGUE CHINA fashion film starring Zhang Jingyi.",
     "images": [],
-    "url": "/films-zhang-jingyi.html"
+    "url": "/films-zhang-jingyi.html",
+    "staticCover": true,
+    "coverPosition": "50% 15%"
   },
   {
     "collection": "films",
     "kind": "video",
     "title": "Xin Zhilei",
-    "vimeo": "1233565950",
-    "vimeoHash": "c41fc88772",
+    "vimeo": "1233565690",
+    "vimeoHash": "df4ef66c45",
     "aspectRatio": 1.3333333333333333,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209273259-3b76826e20fea183ae90a8f87d3e78aa104a6f18942cf28f033efc39788a41e0-d_1280",
+    "previewStart": 0,
+    "cover": "/assets/xin-zhilei-vogue-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "xin-zhilei",
-    "description": "",
+    "description": "A VOGUE CHINA fashion film starring Xin Zhilei.",
     "images": [],
-    "url": "/films-xin-zhilei.html"
+    "url": "/films-xin-zhilei.html",
+    "staticCover": true,
+    "coverPosition": "50% 15%"
   },
   {
     "collection": "branded-content",
@@ -469,14 +585,15 @@ const projects = [
     "vimeoHash": "325bac0003",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208339752-cef828cbd0e81304907db5fdebffe61d5f63900e981af1489e923155beea2cde-d_1280?region=us",
+    "cover": "/assets/bvlgari-modern-weekly-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "bvlgari-nowness-venice-biennale",
     "description": "Bvlgari × Modern Weekly: CEO Dialogue.\n\nThe Polyphony of Life — filmed in Venice.",
     "images": [],
     "url": "/commercials-bvlgari-nowness-venice-biennale.html",
-    "location": "Venice, Italy"
+    "location": "Venice, Italy",
+    "staticCover": true
   },
   {
     "collection": "branded-content",
@@ -486,7 +603,7 @@ const projects = [
     "vimeoHash": "b9fd5ed6b5",
     "aspectRatio": 1.3333333333333333,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208431046-adc3039a1687c4094b1f246d8f94ffc7ad7daa678cb98d91c956c00ce3b8918a-d?f=webp&region=us",
+    "cover": "/assets/john-pawson-banlan-cover.jpg",
     "credit": "Filming Support by Cine Harbor",
     "sample": false,
     "slug": "john-pawson-banlan-slips",
@@ -494,7 +611,8 @@ const projects = [
     "images": [],
     "url": "/films-john-pawson-banlan-slips.html",
     "location": "Cotswolds, UK",
-    "year": "2026"
+    "year": "2026",
+    "staticCover": true
   },
   {
     "collection": "branded-content",
@@ -790,9 +908,10 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "oppo-find-x9-global-launch",
-    "description": "",
+    "description": "Multi-camera live broadcast of the OPPO Find X9 Series and ColorOS 16 global launch event.",
     "images": [],
-    "url": "/commercials-oppo-find-x9-global-launch.html"
+    "url": "/commercials-oppo-find-x9-global-launch.html",
+    "displayCategory": "Commercials · Live Broadcast"
   },
   {
     "collection": "social",
@@ -1026,7 +1145,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "Dahua — 劈叉篇",
+    "title": "大华智能锁 TVC 广告",
     "vimeo": "1232915774",
     "vimeoHash": "4ee734b1db",
     "aspectRatio": 1.7777777777777777,
@@ -1035,7 +1154,7 @@ const projects = [
     "credit": "",
     "sample": false,
     "slug": "dahua-split-tvc",
-    "description": "",
+    "description": "Dahua Smart Lock TVC — 劈叉篇.",
     "images": [],
     "url": "/commercials-dahua-split-tvc.html",
     "pinLast": true,
@@ -1062,20 +1181,20 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
-    "title": "Imaginary Friends",
-    "vimeo": "1232822781",
-    "vimeoHash": "59ca00941d",
-    "aspectRatio": 1.7777777777777777,
+    "title": "Starberry Fields Forever",
+    "vimeo": "1233562383",
+    "vimeoHash": "fa1a712354",
+    "aspectRatio": 1.8962962962962964,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208339691-2dab840cb04081e929ad8dfd5efec11f088843bc7343aa046ac784a7a33459a9-d_1280?region=us",
+    "cover": "/assets/starberry-fields-forever-cover.jpg",
     "credit": "",
     "sample": false,
-    "slug": "imaginary-friends",
+    "slug": "starberry-fields-forever",
     "description": "",
     "images": [],
-    "url": "/films-imaginary-friends.html",
+    "url": "/films-starberry-fields-forever.html",
+    "staticCover": true,
     "pinLast": true,
-    "displayCategory": "Fashion Film",
     "pinLastOrder": 2
   },
   {
@@ -1101,6 +1220,26 @@ const projects = [
   {
     "collection": "films",
     "kind": "video",
+    "title": "Imaginary Friends",
+    "vimeo": "1232822781",
+    "vimeoHash": "59ca00941d",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "/assets/imaginary-friends-cover.jpg",
+    "credit": "",
+    "sample": false,
+    "slug": "imaginary-friends",
+    "description": "",
+    "images": [],
+    "url": "/films-imaginary-friends.html",
+    "pinLast": true,
+    "displayCategory": "Fashion Film",
+    "pinLastOrder": 3,
+    "staticCover": true
+  },
+  {
+    "collection": "films",
+    "kind": "video",
     "title": "What If Your Style Was Illegal?",
     "vimeo": "1232915238",
     "vimeoHash": "d72ba3f93f",
@@ -1115,6 +1254,6 @@ const projects = [
     "url": "/films-well-done.html",
     "pinLast": true,
     "displayCategory": "Fashion Film",
-    "pinLastOrder": 3
+    "pinLastOrder": 4
   }
 ];

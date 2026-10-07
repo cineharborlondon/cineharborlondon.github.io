@@ -55,21 +55,23 @@
 /* Warm, readable typography within the darker film stage. */
 .beige-film-page .work-main { --ink: #eee4cf; --muted: #cbbda6; --accent: #d2b88c; --line: rgb(210 184 140 / 25%); --highlight: rgb(210 184 140 / 10%); color: var(--ink); }
 .beige-film-page .work-main .work-tabs button[aria-selected="true"], .beige-film-page .work-main .project-title { color: var(--ink); }
-/* Landscape cards stay 16:9; portrait films use smaller native-ratio cards. */
-.beige-film-page .native-format-grid { align-items: start; }
-.beige-film-page .native-format-grid + .native-format-grid { margin-top: 36px; }
-.beige-film-page .portrait-grid {
+/* Compact portrait cards share rows with the remaining widescreen films. */
+.beige-film-page .mixed-format-grid {
   --portrait-height: min(500px, 33vw, calc(100svh - 230px));
   display: flex;
   flex-wrap: wrap;
-  gap: 36px 24px;
   align-items: flex-start;
 }
-.beige-film-page .portrait-grid .project { width: calc(var(--portrait-height) * var(--card-ratio)); max-width: 100%; }
-.beige-film-page .portrait-grid .project-image { aspect-ratio: var(--card-ratio); }
-.beige-film-page .portrait-grid .project-image img { object-fit: contain; }
+.beige-film-page .mixed-format-grid .project { width: calc((100% - 48px) / 3); }
+.beige-film-page .mixed-format-grid .portrait-project { width: calc(var(--portrait-height) * var(--card-ratio)); max-width: 100%; }
+.beige-film-page .mixed-format-grid .portrait-project .project-image { aspect-ratio: var(--card-ratio); }
+.beige-film-page .mixed-format-grid .portrait-project .project-image img { object-fit: contain; }
 @media (max-width: 1000px) {
-  .beige-film-page .portrait-grid { --portrait-height: min(420px, calc(100svh - 210px)); }
+  .beige-film-page .mixed-format-grid { --portrait-height: min(420px, calc(100svh - 210px)); }
+  .beige-film-page .mixed-format-grid .project:not(.portrait-project) { width: calc((100% - 24px) / 2); }
+}
+@media (max-width: 640px), (orientation: portrait) and (max-width: 1000px) {
+  .beige-film-page .mixed-format-grid .project:not(.portrait-project) { width: 100%; }
 }
 .beige-film-page .film-glow { background: radial-gradient(ellipse 35% 38% at 0% 100%, rgb(192 132 55 / 24%), transparent 78%), radial-gradient(ellipse 28% 32% at 100% 0%, rgb(191 148 74 / 18%), transparent 80%); }
 

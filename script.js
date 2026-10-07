@@ -78,6 +78,7 @@ function initPortfolio() {
   function projectCard(project, index) {
     const isPhoto = project.kind === 'photo';
     const article = element('article', 'project');
+    article.classList.toggle('portrait-project', !isPhoto && Number(project.aspectRatio) > 0 && Number(project.aspectRatio) < 1);
     const button = element('a', 'project-button');
     button.href = project.url;
     button.setAttribute('aria-label', `View ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);
@@ -98,6 +99,7 @@ function initPortfolio() {
     img.loading = index < 3 ? 'eager' : 'lazy';
     img.decoding = 'async';
     img.draggable = false;
+    if (project.coverPosition) img.style.objectPosition = project.coverPosition;
     const covers = (isPhoto ? [project.cover, project.full] : [project.cover]).filter(Boolean);
     let coverIndex = 0;
     function nextCover() {
@@ -124,19 +126,9 @@ function initPortfolio() {
   panels.forEach((panel, index) => {
     const items = groups[index];
     if (items.length) {
-      // Separate format groups keep every landscape film above the portrait series.
-      let grid;
-      let lastFormat;
-      items.forEach((project, projectIndex) => {
-        const format = Number(project.aspectRatio) > 0 && Number(project.aspectRatio) < 1 ? 'portrait' : 'landscape';
-        if (format !== lastFormat) {
-          grid = element('div', 'portfolio-grid native-format-grid');
-          grid.classList.toggle('portrait-grid', format === 'portrait');
-          panel.append(grid);
-          lastFormat = format;
-        }
-        grid.append(projectCard(project, projectIndex));
-      });
+      const grid = element('div', categories[index].id === 'photography' ? 'portfolio-grid' : 'portfolio-grid mixed-format-grid');
+      items.forEach((project, projectIndex) => grid.append(projectCard(project, projectIndex)));
+      panel.append(grid);
       if (items.some(project => project.sample)) {
         panel.append(element('p', 'sample-note', index === 0 ? 'Preview selection — sample films by Blender, shown for demonstration. These are not Cine Harbor productions.' : 'Preview selection — sample work shown for demonstration. These are not Cine Harbor productions.'));
       }
