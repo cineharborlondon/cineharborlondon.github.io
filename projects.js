@@ -581,7 +581,7 @@ const projects = [
   {
     "collection": "commercials",
     "kind": "video",
-    "title": "COMMENSE",
+    "title": "COMMENSE — Social Series (8 Films)",
     "vimeo": "1232913226",
     "vimeoHash": "1b76f85dd5",
     "aspectRatio": 0.562390158172232,
