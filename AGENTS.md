@@ -11,4 +11,4 @@
 
 - Shared page headers use work-header.css: brown (#8f6334) wordmark on the left and Work / About / Contact together on the right.
 - Category display order is FILMS, COMMERCIALS, EDITORIAL, CONTENT, PHOTOGRAPHY; retain branded-content and social IDs for existing links.
-- Show landscape/square projects before portrait projects within each category; closing pinned projects keep their specified order. Work cards display each video at its native aspect ratio.
+- Show landscape/square projects before portrait projects within each category; closing pinned projects keep their specified order. Landscape Work cards stay 16:9. Portrait cards retain their native ratio at a compact height that fits within the viewport.

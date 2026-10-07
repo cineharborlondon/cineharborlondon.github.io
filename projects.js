@@ -71,6 +71,57 @@ const projects = [
     "year": "2025"
   },
   {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "HUAWEI MWC 2026",
+    "vimeo": "1232904708",
+    "vimeoHash": "35726533cb",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208436511-df4ceab611ac09f1fd4f7355bfd6eb494320efb9832fcb5fa952261a6bce7f4e-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "huawei-mwc-2026",
+    "description": "A five-part video series for HUAWEI at MWC 2026, filmed in Barcelona.\n\nHealthcare, AI across industries, education, retail and ISP solutions.",
+    "images": [],
+    "url": "/social-huawei-mwc-2026.html",
+    "location": "Barcelona, Spain",
+    "year": "2026",
+    "videoTitle": "Healthcare",
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "MWC 2026 Series",
+        "videos": [
+          {
+            "title": "AI Across Industries",
+            "vimeo": "1232906877",
+            "vimeoHash": "cf136ff55e",
+            "aspectRatio": 1.7777777777777777
+          },
+          {
+            "title": "Education",
+            "vimeo": "1232906839",
+            "vimeoHash": "7a2dd6869e",
+            "aspectRatio": 1.7777777777777777
+          },
+          {
+            "title": "Retail",
+            "vimeo": "1232904666",
+            "vimeoHash": "0d9d71cfb4",
+            "aspectRatio": 0.562390158172232
+          },
+          {
+            "title": "ISP",
+            "vimeo": "1232904601",
+            "vimeoHash": "f40bd16a23",
+            "aspectRatio": 0.562390158172232
+          }
+        ]
+      }
+    ]
+  },
+  {
     "collection": "branded-content",
     "kind": "video",
     "title": "SmallRig × Simon Reay — Interview",
@@ -78,7 +129,7 @@ const projects = [
     "vimeoHash": "ad09c9621d",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208446294-31662daa39aafb529b14d408c5955cff7a688ea2875d6d849c83a1ab4bfc07fa-d_1280?region=us",
+    "cover": "/assets/simon-reay-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "6-15",
@@ -139,7 +190,8 @@ const projects = [
           }
         ]
       }
-    ]
+    ],
+    "staticCover": true
   },
   {
     "collection": "commercials",
@@ -211,20 +263,36 @@ const projects = [
     "url": "/films-the-ballroom.html"
   },
   {
-    "collection": "branded-content",
+    "collection": "films",
     "kind": "video",
-    "title": "Tim Yip × Hackett London",
-    "vimeo": "1232913015",
-    "vimeoHash": "47c0914838",
+    "title": "Genshin Concert 2023",
+    "vimeo": "1233568698",
+    "vimeoHash": "f266fa6397",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208443233-e744ae6202c95d6412ef1dbc6eab1426418dc04f20799520ba89ad33e86da98d-d_1280?region=us",
+    "cover": "https://i.vimeocdn.com/video/2209274130-745414cdc5f1a6f53c2e1808884326442ab07590b84d3538f8b5a2445ed1c2dc-d_1280",
     "credit": "",
     "sample": false,
-    "slug": "tim-yip-hackets-london",
+    "slug": "genshin-concert-2023",
     "description": "",
     "images": [],
-    "url": "/films-tim-yip-hackets-london.html"
+    "url": "/films-genshin-concert-2023.html"
+  },
+  {
+    "collection": "films",
+    "kind": "video",
+    "title": "Starberry Fields Forever",
+    "vimeo": "1233562383",
+    "vimeoHash": "fa1a712354",
+    "aspectRatio": 1.8962962962962964,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209272285-15e274db14d58b90e05d5cb3719b689454b91aee8441d5f02f24a284c86e22c4-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "starberry-fields-forever",
+    "description": "",
+    "images": [],
+    "url": "/films-starberry-fields-forever.html"
   },
   {
     "collection": "branded-content",
@@ -242,6 +310,24 @@ const projects = [
     "images": [],
     "url": "/commercials-bvlgari-nowness-venice-biennale.html",
     "location": "Venice, Italy"
+  },
+  {
+    "collection": "branded-content",
+    "kind": "video",
+    "title": "John Pawson × Banlan — Slips (JIANDU)",
+    "vimeo": "1232901778",
+    "vimeoHash": "b9fd5ed6b5",
+    "aspectRatio": 1.3333333333333333,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208431046-adc3039a1687c4094b1f246d8f94ffc7ad7daa678cb98d91c956c00ce3b8918a-d?f=webp&region=us",
+    "credit": "Filming Support by Cine Harbor",
+    "sample": false,
+    "slug": "john-pawson-banlan-slips",
+    "description": "John Pawson × Banlan CEO Talk.\n\nJohn Pawson × Banlan’s first outdoor furniture series — Slips (JIANDU).",
+    "images": [],
+    "url": "/films-john-pawson-banlan-slips.html",
+    "location": "Cotswolds, UK",
+    "year": "2026"
   },
   {
     "collection": "social",
@@ -284,34 +370,18 @@ const projects = [
   {
     "collection": "branded-content",
     "kind": "video",
-    "title": "How to Stay Chic and Warm in London",
-    "vimeo": "1232909009",
-    "vimeoHash": "f8548ff0c2",
-    "aspectRatio": 1.3333333333333333,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208438492-f6641d7b3bcc19ae59da2a795a3050d3419935a11e75a48e053a8d117f517c5b-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "how-to-stay-chic-and-warm-in-london",
-    "description": "",
-    "images": [],
-    "url": "/commercials-how-to-stay-chic-and-warm-in-london.html"
-  },
-  {
-    "collection": "commercials",
-    "kind": "video",
-    "title": "BioTwin — Brand Film",
-    "vimeo": "1232901814",
-    "vimeoHash": "65cd2c86de",
+    "title": "Tim Yip × Hackett London",
+    "vimeo": "1232913015",
+    "vimeoHash": "47c0914838",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208433272-0bd8724161903288d65129f2fefe37a7487ce50f4e74d3991bc3ec8e503c1875-d_1280?region=us",
+    "cover": "https://i.vimeocdn.com/video/2208443233-e744ae6202c95d6412ef1dbc6eab1426418dc04f20799520ba89ad33e86da98d-d_1280?region=us",
     "credit": "",
     "sample": false,
-    "slug": "biotwin",
-    "description": "An introduction to BioTwin and its approach to low-carbon innovation.",
+    "slug": "tim-yip-hackets-london",
+    "description": "",
     "images": [],
-    "url": "/commercials-biotwin.html"
+    "url": "/films-tim-yip-hackets-london.html"
   },
   {
     "collection": "commercials",
@@ -328,6 +398,22 @@ const projects = [
     "description": "",
     "images": [],
     "url": "/commercials-china-telecom-global.html"
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "BioTwin — Brand Film",
+    "vimeo": "1232901814",
+    "vimeoHash": "65cd2c86de",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2208433272-0bd8724161903288d65129f2fefe37a7487ce50f4e74d3991bc3ec8e503c1875-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "biotwin",
+    "description": "An introduction to BioTwin and its approach to low-carbon innovation.",
+    "images": [],
+    "url": "/commercials-biotwin.html"
   },
   {
     "collection": "photography",
@@ -486,20 +572,98 @@ const projects = [
   {
     "collection": "branded-content",
     "kind": "video",
-    "title": "John Pawson × Banlan — Slips (JIANDU)",
-    "vimeo": "1232901778",
-    "vimeoHash": "b9fd5ed6b5",
+    "title": "How to Stay Chic and Warm in London",
+    "vimeo": "1232909009",
+    "vimeoHash": "f8548ff0c2",
     "aspectRatio": 1.3333333333333333,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208431046-adc3039a1687c4094b1f246d8f94ffc7ad7daa678cb98d91c956c00ce3b8918a-d?f=webp&region=us",
-    "credit": "Filming Support by Cine Harbor",
+    "cover": "https://i.vimeocdn.com/video/2208438492-f6641d7b3bcc19ae59da2a795a3050d3419935a11e75a48e053a8d117f517c5b-d_1280?region=us",
+    "credit": "",
     "sample": false,
-    "slug": "john-pawson-banlan-slips",
-    "description": "John Pawson × Banlan CEO Talk.\n\nJohn Pawson × Banlan’s first outdoor furniture series — Slips (JIANDU).",
+    "slug": "how-to-stay-chic-and-warm-in-london",
+    "description": "",
     "images": [],
-    "url": "/films-john-pawson-banlan-slips.html",
-    "location": "Cotswolds, UK",
-    "year": "2026"
+    "url": "/commercials-how-to-stay-chic-and-warm-in-london.html"
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "GRAFF",
+    "vimeo": "1233569217",
+    "vimeoHash": "ed4eb51274",
+    "aspectRatio": 2.3315118397085612,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209274619-9efa2a784ea1522a020a3d05d2967bf5eed0a56ec54802c062eb7dab395517e7-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "graff-commercial",
+    "description": "",
+    "images": [],
+    "url": "/commercials-graff.html"
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "Moussaieff",
+    "vimeo": "1233562160",
+    "vimeoHash": "ce0d8eaa79",
+    "aspectRatio": 1,
+    "previewStart": 0,
+    "cover": "https://i.vimeocdn.com/video/2209265047-dd722f5716d3bdb501eb80c2118b6e1749fefbbb02e237442ab350f9d9fcf0f2-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "moussaieff",
+    "description": "",
+    "images": [],
+    "url": "/commercials-moussaieff.html",
+    "groupedVideoLayout": true,
+    "relatedVideoGroups": [
+      {
+        "title": "The Films",
+        "videos": [
+          {
+            "title": "Film 01",
+            "vimeo": "1233562160",
+            "vimeoHash": "ce0d8eaa79",
+            "aspectRatio": 1
+          },
+          {
+            "title": "Film 02",
+            "vimeo": "1233562161",
+            "vimeoHash": "a563f9d77b",
+            "aspectRatio": 1
+          },
+          {
+            "title": "Film 03",
+            "vimeo": "1233562158",
+            "vimeoHash": "8e2ae2a413",
+            "aspectRatio": 1
+          },
+          {
+            "title": "Film 04",
+            "vimeo": "1233562159",
+            "vimeoHash": "07cbb535b6",
+            "aspectRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "OPPO — Find X9 Series & ColorOS 16 Global Launch",
+    "vimeo": "1233570001",
+    "vimeoHash": "96810d44de",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209275820-898262958000322d3e7b5651c168d7aec418a28ce471e1214184c0fd1fefadee-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "oppo-find-x9-global-launch",
+    "description": "",
+    "images": [],
+    "url": "/commercials-oppo-find-x9-global-launch.html"
   },
   {
     "collection": "social",
@@ -555,79 +719,12 @@ const projects = [
   {
     "collection": "branded-content",
     "kind": "video",
-    "title": "Qin Wen × Leif Lindner — IFA Interview",
-    "vimeo": "1232909413",
-    "vimeoHash": "fa5debb860",
-    "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208444649-d6afd188d856ebd82c9484122b86f588d64c981c32b23aab4bd0957c1371f88c-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "qin-wen-leif-lindner-ifa",
-    "description": "Qin Wen in conversation with Leif Lindner on the new China era in global consumer electronics.",
-    "images": [],
-    "url": "/social-qin-wen-leif-lindner-ifa.html"
-  },
-  {
-    "collection": "commercials",
-    "kind": "video",
-    "title": "HUAWEI MWC 2026",
-    "vimeo": "1232904708",
-    "vimeoHash": "35726533cb",
-    "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2208436511-df4ceab611ac09f1fd4f7355bfd6eb494320efb9832fcb5fa952261a6bce7f4e-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "huawei-mwc-2026",
-    "description": "A five-part video series for HUAWEI at MWC 2026, filmed in Barcelona.\n\nHealthcare, AI across industries, education, retail and ISP solutions.",
-    "images": [],
-    "url": "/social-huawei-mwc-2026.html",
-    "location": "Barcelona, Spain",
-    "year": "2026",
-    "videoTitle": "Healthcare",
-    "showVideoTitles": true,
-    "relatedVideoGroups": [
-      {
-        "title": "MWC 2026 Series",
-        "videos": [
-          {
-            "title": "AI Across Industries",
-            "vimeo": "1232906877",
-            "vimeoHash": "cf136ff55e",
-            "aspectRatio": 1.7777777777777777
-          },
-          {
-            "title": "Education",
-            "vimeo": "1232906839",
-            "vimeoHash": "7a2dd6869e",
-            "aspectRatio": 1.7777777777777777
-          },
-          {
-            "title": "Retail",
-            "vimeo": "1232904666",
-            "vimeoHash": "0d9d71cfb4",
-            "aspectRatio": 0.562390158172232
-          },
-          {
-            "title": "ISP",
-            "vimeo": "1232904601",
-            "vimeoHash": "f40bd16a23",
-            "aspectRatio": 0.562390158172232
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "collection": "branded-content",
-    "kind": "video",
     "title": "Zhang Youhao × Another Man — London Fashion Week 2025",
     "vimeo": "1232912614",
     "vimeoHash": "f9b79a517a",
     "aspectRatio": 1.3333333333333333,
     "previewStart": 2,
-    "cover": "https://i.vimeocdn.com/video/2208443170-69534c3a4da2eacd7d636c159d9aff707a0ae565e282a8a0b294619420936120-d_1280?region=us",
+    "cover": "/assets/zhang-youhao-vlog-01-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "zhang-youhao-another-man-lfw-2025",
@@ -661,39 +758,24 @@ const projects = [
           }
         ]
       }
-    ]
+    ],
+    "staticCover": true
   },
   {
-    "collection": "commercials",
+    "collection": "branded-content",
     "kind": "video",
-    "title": "GRAFF",
-    "vimeo": "1233569217",
-    "vimeoHash": "ed4eb51274",
-    "aspectRatio": 2.3315118397085612,
+    "title": "Qin Wen × Leif Lindner — IFA Interview",
+    "vimeo": "1232909413",
+    "vimeoHash": "fa5debb860",
+    "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209274619-9efa2a784ea1522a020a3d05d2967bf5eed0a56ec54802c062eb7dab395517e7-d_1280?region=us",
+    "cover": "https://i.vimeocdn.com/video/2208444649-d6afd188d856ebd82c9484122b86f588d64c981c32b23aab4bd0957c1371f88c-d_1280?region=us",
     "credit": "",
     "sample": false,
-    "slug": "graff-commercial",
-    "description": "",
+    "slug": "qin-wen-leif-lindner-ifa",
+    "description": "Qin Wen in conversation with Leif Lindner on the new China era in global consumer electronics.",
     "images": [],
-    "url": "/commercials-graff.html"
-  },
-  {
-    "collection": "commercials",
-    "kind": "video",
-    "title": "Dyson Hair Oil Official Launch Video",
-    "vimeo": "1233560693",
-    "vimeoHash": "707c5c9d6f",
-    "aspectRatio": 0.562390158172232,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209262960-640e4c6b1a78a3c3f8683610fc385486cbe77173bbcbb5e390044b68e31c1d99-d_1280?region=us",
-    "credit": "",
-    "sample": false,
-    "slug": "dyson-hair-oil-official-launch",
-    "description": "",
-    "images": [],
-    "url": "/commercials-dyson-hair-oil-official-launch.html"
+    "url": "/social-qin-wen-leif-lindner-ifa.html"
   },
   {
     "collection": "social",
@@ -731,6 +813,22 @@ const projects = [
     "url": "/commercials-w-magazine-summer-26.html",
     "location": "London, UK",
     "year": "2026"
+  },
+  {
+    "collection": "commercials",
+    "kind": "video",
+    "title": "Dyson Hair Oil Official Launch Video",
+    "vimeo": "1233560693",
+    "vimeoHash": "707c5c9d6f",
+    "aspectRatio": 0.562390158172232,
+    "previewStart": 8,
+    "cover": "https://i.vimeocdn.com/video/2209262960-640e4c6b1a78a3c3f8683610fc385486cbe77173bbcbb5e390044b68e31c1d99-d_1280?region=us",
+    "credit": "",
+    "sample": false,
+    "slug": "dyson-hair-oil-official-launch",
+    "description": "",
+    "images": [],
+    "url": "/commercials-dyson-hair-oil-official-launch.html"
   },
   {
     "collection": "commercials",
@@ -896,7 +994,7 @@ const projects = [
     "vimeo": "1232912873",
     "vimeoHash": "5a2c1627ad",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 70,
+    "previewStart": 375,
     "cover": "/assets/threshold-of-bloom-cover.jpg",
     "credit": "",
     "sample": false,
@@ -905,7 +1003,8 @@ const projects = [
     "images": [],
     "url": "/films-threshold-of-bloom-2026.html",
     "pinLast": true,
-    "pinLastOrder": 1
+    "pinLastOrder": 1,
+    "previewDuration": 12
   },
   {
     "collection": "films",

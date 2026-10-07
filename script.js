@@ -82,15 +82,19 @@ function initPortfolio() {
     button.href = project.url;
     button.setAttribute('aria-label', `View ${project.title}${project.sample ? (isPhoto ? ' (sample photograph)' : ' (sample film)') : ''}`);
     const visual = element('span', 'project-image');
-    if (!isPhoto && Number(project.aspectRatio) > 0) visual.style.setProperty('--card-ratio', Number(project.aspectRatio));
+    visual.classList.toggle('photo-source', isPhoto);
+    if (!isPhoto && Number(project.aspectRatio) > 0) {
+      visual.style.setProperty('--card-ratio', Number(project.aspectRatio));
+      article.style.setProperty('--card-ratio', Number(project.aspectRatio));
+    }
     visual.classList.toggle('portrait-source', Number(project.aspectRatio) > 0 && Number(project.aspectRatio) < 1);
     const fallback = element('span', 'image-fallback', project.title);
     fallback.setAttribute('aria-hidden', 'true');
     fallback.append(element('small', '', isPhoto ? 'View photographs' : 'View project'));
     const img = document.createElement('img');
     img.alt = '';
-    img.width = 1280;
-    img.height = 720;
+    img.width = isPhoto ? (project.images?.[0]?.width || 1280) : 1280;
+    img.height = isPhoto ? (project.images?.[0]?.height || 720) : 720;
     img.loading = index < 3 ? 'eager' : 'lazy';
     img.decoding = 'async';
     img.draggable = false;
@@ -111,7 +115,7 @@ function initPortfolio() {
     caption.append(title);
     button.append(visual, caption);
     article.append(button);
-    if (!isPhoto && project.vimeo && site.platformPreviews) previews.add(visual, project);
+    if (!isPhoto && project.vimeo && !project.staticCover && site.platformPreviews) previews.add(visual, project);
     return article;
   }
 
@@ -142,30 +146,6 @@ function initPortfolio() {
       panel.append(empty);
     }
   });
-
-  let layoutFrame;
-  function layoutCards() {
-    cancelAnimationFrame(layoutFrame);
-    layoutFrame = requestAnimationFrame(() => {
-      document.querySelectorAll('.native-format-grid').forEach(grid => {
-        const style = getComputedStyle(grid);
-        const row = parseFloat(style.gridAutoRows);
-        const gap = parseFloat(style.rowGap);
-        if (!row || !Number.isFinite(gap)) return;
-        grid.querySelectorAll('.project').forEach(card => {
-          const height = card.querySelector('.project-button').getBoundingClientRect().height;
-          card.style.gridRowEnd = `span ${Math.max(1, Math.ceil((height + gap) / (row + gap)))}`;
-        });
-      });
-      fitHeight();
-    });
-  }
-  if ('ResizeObserver' in window) {
-    const cardObserver = new ResizeObserver(layoutCards);
-    document.querySelectorAll('.native-format-grid .project-button').forEach(card => cardObserver.observe(card));
-  } else window.addEventListener('resize', layoutCards);
-  document.fonts?.ready.then(layoutCards);
-  layoutCards();
 
   function fitHeight() {
     viewport.style.height = `${panels[activeIndex].offsetHeight}px`;
@@ -422,7 +402,7 @@ function createPreviews() {
       if (start) await player.setCurrentTime(start);
       let seeking = false;
       player.on('timeupdate', ({ seconds }) => {
-        if (seconds < start + 24 || seeking || !shouldPlay(entry)) return;
+        if (seconds < start + (Number(entry.project.previewDuration) || 24) || seeking || !shouldPlay(entry)) return;
         seeking = true;
         player.setCurrentTime(start).catch(() => {}).finally(() => { seeking = false; });
       });
