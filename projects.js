@@ -576,45 +576,45 @@ const projects = [
         "alt": "Realme × Adam Valdez — Campaign Photography — photograph 1"
       },
       {
-        "src": "https://lh3.googleusercontent.com/d/1b4LMTepr7lbRFgIXKvHVSvlwK0OPeb98=w2400",
-        "small": "https://lh3.googleusercontent.com/d/1b4LMTepr7lbRFgIXKvHVSvlwK0OPeb98=w960",
-        "width": 960,
-        "height": 1279,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 2"
-      },
-      {
         "src": "https://lh3.googleusercontent.com/d/1S7nOl2bSWhO9By6NdKW4Z1IQ6EzFc5JL=w2400",
         "small": "https://lh3.googleusercontent.com/d/1S7nOl2bSWhO9By6NdKW4Z1IQ6EzFc5JL=w960",
         "width": 960,
         "height": 721,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 3"
+        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 2"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1gPbTdwXbv8pU3Zq9Z9YbUtvFDOHC6UG8=w2400",
         "small": "https://lh3.googleusercontent.com/d/1gPbTdwXbv8pU3Zq9Z9YbUtvFDOHC6UG8=w960",
         "width": 960,
         "height": 721,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 4"
+        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 3"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1XYdqC7TSziLQRZMyJOCcjzlviBBHLPai=w2400",
         "small": "https://lh3.googleusercontent.com/d/1XYdqC7TSziLQRZMyJOCcjzlviBBHLPai=w960",
         "width": 960,
         "height": 721,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 5"
+        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 4"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1Ja-nD99GAhyDLO32FVPaBT1Dd4Sfy0X-=w2400",
         "small": "https://lh3.googleusercontent.com/d/1Ja-nD99GAhyDLO32FVPaBT1Dd4Sfy0X-=w960",
         "width": 960,
         "height": 721,
-        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 6"
+        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 5"
       },
       {
         "src": "https://lh3.googleusercontent.com/d/1GuEYomNJ6G7vYoQBrVEMYB7wYE9aFhLX=w2400",
         "small": "https://lh3.googleusercontent.com/d/1GuEYomNJ6G7vYoQBrVEMYB7wYE9aFhLX=w960",
         "width": 960,
         "height": 721,
+        "alt": "Realme × Adam Valdez — Campaign Photography — photograph 6"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/d/1b4LMTepr7lbRFgIXKvHVSvlwK0OPeb98=w2400",
+        "small": "https://lh3.googleusercontent.com/d/1b4LMTepr7lbRFgIXKvHVSvlwK0OPeb98=w960",
+        "width": 960,
+        "height": 1279,
         "alt": "Realme × Adam Valdez — Campaign Photography — photograph 7"
       },
       {
