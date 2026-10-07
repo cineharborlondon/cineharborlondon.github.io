@@ -28,10 +28,10 @@ if (document.querySelector('#work-viewport')) initPortfolio();
 
 function initPortfolio() {
   const categories = [
+    { id: 'fashion', label: 'FASHION' },
     { id: 'films', label: 'FILMS' },
     { id: 'commercials', label: 'COMMERCIALS' },
     { id: 'branded-content', label: 'EDITORIAL' },
-    { id: 'social', label: 'CONTENT' },
     { id: 'photography', label: 'PHOTOGRAPHY' },
   ];
   const viewport = document.querySelector('#work-viewport');
@@ -132,28 +132,47 @@ function initPortfolio() {
     return article;
   }
 
-  const groups = categories.map(category => projects.filter(project => project.listed !== false && (project.collection || 'films') === category.id)
-    .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(a.contentOrder || 99) - Number(b.contentOrder || 99) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1))));
+  function compareProjects(a, b) {
+    if (a.collection === 'fashion' && b.collection === 'fashion') return Number(a.fashionOrder || 99) - Number(b.fashionOrder || 99);
+    return Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(a.contentOrder || 99) - Number(b.contentOrder || 99) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1));
+  }
+  const groups = categories.map(category => projects.filter(project => project.listed !== false && ((project.collection || 'films') === category.id || (category.id === 'commercials' && project.collection === 'content')))
+    .sort((a, b) => Number(a.collection === 'content') - Number(b.collection === 'content') || compareProjects(a, b)));
+
   panels.forEach((panel, index) => {
     const items = groups[index];
     if (items.length) {
-      const grid = element('div', categories[index].id === 'photography' ? 'portfolio-grid' : 'portfolio-grid mixed-format-grid');
-      const fashion = items.filter(project => project.fashionPriority);
-      if (fashion.length) {
-        grid.style.setProperty('--fashion-ratio-sum', fashion.reduce((sum, project) => sum + Number(project.aspectRatio), 0));
-        grid.style.setProperty('--fashion-gaps', `${(fashion.length - 1) * 24 + 2}px`);
+      function renderGrid(entries, className = '') {
+        const grid = element('div', categories[index].id === 'photography' ? 'portfolio-grid' : `portfolio-grid mixed-format-grid ${className}`);
+        const fashion = entries.filter(project => project.fashionPriority);
+        if (fashion.length) {
+          grid.style.setProperty('--fashion-ratio-sum', fashion.reduce((sum, project) => sum + Number(project.aspectRatio), 0));
+          grid.style.setProperty('--fashion-gaps', `${(fashion.length - 1) * 24 + 2}px`);
+        }
+        let closingStart = entries.length;
+        if (entries.every(project => project.collection === 'content')) {
+          while (closingStart > 0 && Number(entries[closingStart - 1].aspectRatio) < 1 && !entries[closingStart - 1].fashionPriority) closingStart--;
+        }
+        const closingRow = closingStart < entries.length ? element('div', 'portrait-closing-row') : null;
+        if (closingRow) closingRow.style.setProperty('--closing-count', entries.length - closingStart);
+        entries.forEach(project => {
+          if (closingRow && project === entries[closingStart]) grid.append(closingRow);
+          (closingRow && entries.indexOf(project) >= closingStart ? closingRow : grid).append(projectCard(project, items.indexOf(project)));
+        });
+        return grid;
       }
-      let closingStart = items.length;
-      if (categories[index].id === 'social') {
-        while (closingStart > 0 && Number(items[closingStart - 1].aspectRatio) < 1 && !items[closingStart - 1].fashionPriority) closingStart--;
+      const mainItems = items.filter(project => project.collection !== 'content');
+      panel.append(renderGrid(mainItems, categories[index].id === 'fashion' ? 'fashion-grid' : ''));
+      const contentItems = items.filter(project => project.collection === 'content');
+      if (contentItems.length) {
+        const section = element('section', 'commercial-content-section');
+        section.id = 'commercial-content';
+        section.setAttribute('aria-labelledby', 'commercial-content-heading');
+        const heading = element('h2', 'commercial-content-heading', 'Content');
+        heading.id = 'commercial-content-heading';
+        section.append(heading, renderGrid(contentItems));
+        panel.append(section);
       }
-      const closingRow = closingStart < items.length ? element('div', 'portrait-closing-row') : null;
-      if (closingRow) closingRow.style.setProperty('--closing-count', items.length - closingStart);
-      items.forEach((project, projectIndex) => {
-        if (closingRow && projectIndex === closingStart) grid.append(closingRow);
-        (closingRow && projectIndex >= closingStart ? closingRow : grid).append(projectCard(project, projectIndex));
-      });
-      panel.append(grid);
       if (items.some(project => project.sample)) {
         panel.append(element('p', 'sample-note', index === 0 ? 'Preview selection — sample films by Blender, shown for demonstration. These are not Cine Harbor productions.' : 'Preview selection — sample work shown for demonstration. These are not Cine Harbor productions.'));
       }
@@ -324,10 +343,14 @@ function initPortfolio() {
     const observer = new ResizeObserver(fitHeight);
     panels.forEach(panel => observer.observe(panel));
   } else window.addEventListener('resize', fitHeight);
-  const initialCategory = categories.findIndex(category => '#' + category.id === location.hash);
+  function categoryFromHash() {
+    const hash = location.hash === '#social' ? '#fashion' : location.hash === '#content' ? '#commercials' : location.hash;
+    return categories.findIndex(category => '#' + category.id === hash);
+  }
+  const initialCategory = categoryFromHash();
   setCategory(Math.max(0, initialCategory), false, false);
   window.addEventListener('hashchange', () => {
-    const index = categories.findIndex(category => '#' + category.id === location.hash);
+    const index = categoryFromHash();
     if (index >= 0) setCategory(index, false, false);
   });
 }

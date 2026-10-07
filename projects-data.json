@@ -228,7 +228,7 @@
     "year": "2024"
   },
   {
-    "collection": "films",
+    "collection": "fashion",
     "kind": "video",
     "title": "「UN」CURRENT",
     "vimeo": "1232902271",
@@ -242,10 +242,11 @@
     "description": "",
     "images": [],
     "url": "/films-un-current.html",
-    "displayCategory": "Fashion Film"
+    "displayCategory": "Fashion Film",
+    "fashionOrder": 1
   },
   {
-    "collection": "films",
+    "collection": "fashion",
     "kind": "video",
     "title": "The Ballroom",
     "vimeo": "1233569215",
@@ -258,7 +259,8 @@
     "slug": "the-ballroom",
     "description": "",
     "images": [],
-    "url": "/films-the-ballroom.html"
+    "url": "/films-the-ballroom.html",
+    "fashionOrder": 2
   },
   {
     "collection": "films",
@@ -312,7 +314,7 @@
     "pinLastOrder": 2
   },
   {
-    "collection": "films",
+    "collection": "fashion",
     "kind": "video",
     "title": "V Magazine × Zhang Jingyi",
     "vimeo": "1233565950",
@@ -326,10 +328,11 @@
     "description": "A V Magazine fashion film starring Zhang Jingyi.",
     "images": [],
     "url": "/films-zhang-jingyi.html",
-    "coverPosition": "50% 50%"
+    "coverPosition": "50% 50%",
+    "fashionOrder": 3
   },
   {
-    "collection": "films",
+    "collection": "fashion",
     "kind": "video",
     "title": "V Magazine × Xin Zhilei",
     "vimeo": "1233565690",
@@ -343,7 +346,8 @@
     "description": "A V Magazine fashion film starring Xin Zhilei.",
     "images": [],
     "url": "/films-xin-zhilei.html",
-    "coverPosition": "50% 15%"
+    "coverPosition": "50% 15%",
+    "fashionOrder": 4
   },
   {
     "collection": "films",
@@ -382,7 +386,7 @@
     "previewDuration": 60
   },
   {
-    "collection": "films",
+    "collection": "fashion",
     "kind": "video",
     "title": "Imaginary Friends",
     "vimeo": "1232822781",
@@ -398,7 +402,8 @@
     "url": "/films-imaginary-friends.html",
     "pinLast": true,
     "displayCategory": "Fashion Film",
-    "pinLastOrder": 3
+    "pinLastOrder": 3,
+    "fashionOrder": 6
   },
   {
     "collection": "branded-content",
@@ -418,7 +423,7 @@
     "location": "Venice, Italy"
   },
   {
-    "collection": "films",
+    "collection": "fashion",
     "kind": "video",
     "title": "What If Your Style Was Illegal?",
     "vimeo": "1232915238",
@@ -434,7 +439,8 @@
     "url": "/films-well-done.html",
     "pinLast": true,
     "displayCategory": "Fashion Film",
-    "pinLastOrder": 4
+    "pinLastOrder": 4,
+    "fashionOrder": 7
   },
   {
     "collection": "branded-content",
@@ -455,7 +461,7 @@
     "year": "2026"
   },
   {
-    "collection": "social",
+    "collection": "fashion",
     "kind": "video",
     "title": "Libby Bennett × W China × Burberry",
     "vimeo": "1232822734",
@@ -491,10 +497,11 @@
         ]
       }
     ],
-    "fashionPriority": true
+    "fashionPriority": true,
+    "fashionOrder": 8
   },
   {
-    "collection": "social",
+    "collection": "fashion",
     "kind": "video",
     "title": "Libby Bennett — OMG! Libby’s Hidden Talent",
     "vimeo": "1232822735",
@@ -511,10 +518,11 @@
     "location": "London, UK",
     "year": "2026",
     "listed": false,
-    "fashionPriority": true
+    "fashionPriority": true,
+    "fashionOrder": 13
   },
   {
-    "collection": "social",
+    "collection": "fashion",
     "kind": "video",
     "title": "Burberry × W China — Summer Playlist",
     "vimeo": "1221238820",
@@ -531,7 +539,8 @@
     "location": "London, UK",
     "year": "2026",
     "fashionPriority": true,
-    "singleLineTitle": true
+    "singleLineTitle": true,
+    "fashionOrder": 9
   },
   {
     "collection": "branded-content",
@@ -747,7 +756,7 @@
     ]
   },
   {
-    "collection": "branded-content",
+    "collection": "fashion",
     "kind": "video",
     "title": "How to Stay Chic and Warm in London",
     "vimeo": "1232909009",
@@ -760,7 +769,8 @@
     "slug": "how-to-stay-chic-and-warm-in-london",
     "description": "",
     "images": [],
-    "url": "/commercials-how-to-stay-chic-and-warm-in-london.html"
+    "url": "/commercials-how-to-stay-chic-and-warm-in-london.html",
+    "fashionOrder": 5
   },
   {
     "collection": "commercials",
@@ -855,7 +865,7 @@
     ]
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Knight Frank — The OWO Residences",
     "vimeo": "1232901833",
@@ -873,7 +883,7 @@
     "contentOrder": 4
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Starry Mart — Store Opening Series (3 Films)",
     "vimeo": "1232915723",
@@ -918,7 +928,7 @@
     ]
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "DALTON — German Origins",
     "vimeo": "1232915040",
@@ -1193,7 +1203,7 @@
     "url": "/social-tcl-qinwen-ifa-deep-dive.html"
   },
   {
-    "collection": "social",
+    "collection": "fashion",
     "kind": "video",
     "title": "Paris Haute Couture Week 2026",
     "vimeo": "1232912231",
@@ -1247,10 +1257,11 @@
         ]
       }
     ],
-    "fashionPriority": true
+    "fashionPriority": true,
+    "fashionOrder": 10
   },
   {
-    "collection": "social",
+    "collection": "fashion",
     "kind": "video",
     "title": "Paris Fashion Week 2025",
     "vimeo": "1233567606",
@@ -1316,10 +1327,11 @@
           }
         ]
       }
-    ]
+    ],
+    "fashionOrder": 11
   },
   {
-    "collection": "social",
+    "collection": "fashion",
     "kind": "video",
     "title": "London Fashion Week 2025",
     "vimeo": "1232912858",
@@ -1367,10 +1379,11 @@
           }
         ]
       }
-    ]
+    ],
+    "fashionOrder": 12
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "The Fruit Wave of Stride 2021",
     "vimeo": "748230681",
@@ -1411,7 +1424,7 @@
     "year": "2018"
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Blanc de Chine — Dehua Porcelain International Tour",
     "vimeo": "1233724357",
@@ -1451,7 +1464,7 @@
     ]
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Ceramics Exhibition — Brussels",
     "vimeo": "1233724356",
@@ -1471,7 +1484,7 @@
     "listed": false
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "The Capston — Lunar New Year Art Exhibition",
     "vimeo": "1233725018",
@@ -1491,7 +1504,7 @@
     "pinLastOrder": 0
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Hanchu ESS — Solar & Storage Live UK 2026",
     "vimeo": "1233790591",
@@ -1511,7 +1524,7 @@
     "contentOrder": 3.5
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Knight Frank × Rockwell — Event",
     "vimeo": "1232915674",
@@ -1862,7 +1875,7 @@
     "uniformPhotoCover": true
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Savills × EcoWorld Ballymore × TEMPLESPA — Lunar New Year Celebration 2024",
     "vimeo": "1233750119",
@@ -1881,7 +1894,7 @@
     "year": "2024"
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "ZUKER — 10th Anniversary Celebration",
     "vimeo": "1233752487",
@@ -1898,7 +1911,7 @@
     "contentOrder": 90
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "Oxford — Chinese Cultural Event",
     "vimeo": "1233752486",
@@ -2029,7 +2042,7 @@
     "previewDuration": 24
   },
   {
-    "collection": "social",
+    "collection": "content",
     "kind": "video",
     "title": "SUXINDAI — Vertical Ad Series (2 Films)",
     "vimeo": "1233762162",

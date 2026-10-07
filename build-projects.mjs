@@ -6,8 +6,8 @@ import path from 'node:path';
 const root = path.dirname(fileURLToPath(import.meta.url));
 // Keep designated closing projects last, even when new entries are appended.
 const projects = JSON.parse(readFileSync(path.join(root, 'projects-data.json'), 'utf8'))
-  .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(a.contentOrder || 99) - Number(b.contentOrder || 99) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1)));
-const labels = { films: 'Films', commercials: 'Commercials', 'branded-content': 'Editorial', social: 'Content', photography: 'Photography' };
+  .sort((a, b) => String(a.collection).localeCompare(String(b.collection)) || (a.collection === 'fashion' ? Number(a.fashionOrder || 99) - Number(b.fashionOrder || 99) : Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : Number(b.fashionPriority === true) - Number(a.fashionPriority === true) || Number(a.contentOrder || 99) - Number(b.contentOrder || 99) || Number(Number(a.aspectRatio) < 1) - Number(Number(b.aspectRatio) < 1))));
+const labels = { films: 'Films', commercials: 'Commercials', 'branded-content': 'Editorial', fashion: 'Fashion', content: 'Content', social: 'Fashion', photography: 'Photography' };
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const version = 'film-stage-4';
 writeFileSync(path.join(root, 'projects.js'), '// Generated from projects-data.json by build-projects.mjs.\nconst projects = ' + JSON.stringify(projects, null, 2) + ';\n');
@@ -31,7 +31,7 @@ for (const project of projects) {
   const images = project.images || [];
   const isPhoto = project.kind === 'photo';
   const label = labels[project.collection];
-  const back = (project.collection === 'branded-content' ? '/work.html#' : '/#') + project.collection;
+  const back = '/work.html#' + (project.collection === 'content' ? 'commercials' : project.collection);
   // Retain merged project routes, but show one entry in Work and project navigation.
   const siblings = projects.filter(p => p.listed !== false && p.collection === project.collection);
   const next = siblings.length > 1 ? siblings[(siblings.indexOf(project) + 1) % siblings.length] : null;
