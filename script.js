@@ -30,8 +30,9 @@ function initPortfolio() {
   const categories = [
     { id: 'films', label: 'Films' },
     { id: 'commercials', label: 'Commercials' },
+    { id: 'branded-content', label: 'Branded Content' },
+    { id: 'social', label: 'Social' },
     { id: 'photography', label: 'Photography' },
-    { id: 'social', label: 'Social Contents' },
   ];
   const viewport = document.querySelector('#work-viewport');
   const swipeArea = document.querySelector('#work-swipe-area');

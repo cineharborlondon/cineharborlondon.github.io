@@ -7,7 +7,7 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 // Keep designated closing projects last, even when new entries are appended.
 const projects = JSON.parse(readFileSync(path.join(root, 'projects-data.json'), 'utf8'))
   .sort((a, b) => Number(a.pinLast === true) - Number(b.pinLast === true) || (a.pinLast === true && b.pinLast === true ? Number(a.pinLastOrder || 0) - Number(b.pinLastOrder || 0) : 0));
-const labels = { films: 'Films', commercials: 'Commercials', photography: 'Photography', social: 'Social Contents' };
+const labels = { films: 'Films', commercials: 'Commercials', 'branded-content': 'Branded Content', social: 'Social', photography: 'Photography' };
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const version = 'film-stage-4';
 writeFileSync(path.join(root, 'projects.js'), '// Generated from projects-data.json by build-projects.mjs.\nconst projects = ' + JSON.stringify(projects, null, 2) + ';\n');
@@ -31,7 +31,7 @@ for (const project of projects) {
   const images = project.images || [];
   const isPhoto = project.kind === 'photo';
   const label = labels[project.collection];
-  const back = '/#' + project.collection;
+  const back = (project.collection === 'branded-content' ? '/work.html#' : '/#') + project.collection;
   // Retain merged project routes, but show one entry in Work and project navigation.
   const siblings = projects.filter(p => p.listed !== false && p.collection === project.collection);
   const next = siblings.length > 1 ? siblings[(siblings.indexOf(project) + 1) % siblings.length] : null;
