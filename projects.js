@@ -1244,7 +1244,7 @@ const projects = [
     "vimeo": "1232912873",
     "vimeoHash": "5a2c1627ad",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 68,
+    "previewStart": 160,
     "cover": "/assets/threshold-of-bloom-cover.jpg",
     "credit": "",
     "sample": false,
