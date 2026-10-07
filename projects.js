@@ -276,6 +276,25 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
+    "title": "The Capston — Lunar New Year Art Exhibition",
+    "vimeo": "1233725018",
+    "vimeoHash": "4c4e8eb988",
+    "aspectRatio": 0.5625,
+    "previewStart": 8,
+    "previewDuration": 12,
+    "cover": "https://i.vimeocdn.com/video/2209470606-b23ae4d5985c7cf3f36887c3a1d8171b2f6a6a094432bc5ce745e432e4daded7-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "lunar-new-year-art-exhibition-london",
+    "description": "An event film from a Lunar New Year art exhibition in London, featuring emerging Chinese artists.",
+    "images": [],
+    "url": "/social-lunar-new-year-art-exhibition-london.html",
+    "location": "London, UK",
+    "contentOrder": 1.5
+  },
+  {
+    "collection": "social",
+    "kind": "video",
     "title": "Knight Frank — The OWO Residences",
     "vimeo": "1232901833",
     "vimeoHash": "51f3668da2",
@@ -312,20 +331,40 @@ const projects = [
   {
     "collection": "social",
     "kind": "video",
-    "title": "TCL × Qinwen — IFA Deep Dive",
-    "vimeo": "1233712586",
-    "vimeoHash": "8044223874",
+    "title": "Ceramics Exhibition — Copenhagen",
+    "vimeo": "1233724357",
+    "vimeoHash": "b85c75a951",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 2384,
-    "previewDuration": 8,
-    "cover": "/assets/tcl-qinwen-ifa-cover.jpg",
+    "previewStart": 8,
+    "previewDuration": 12,
+    "cover": "https://i.vimeocdn.com/video/2209469760-c194df2aa578592941e80b1638500aab7d86bbeb17f444c0644bf0b79b7dbb9a-d_1280",
     "credit": "",
     "sample": false,
-    "slug": "tcl-qinwen-ifa-deep-dive",
-    "description": "An in-depth exploration of TCL at IFA with creator Qinwen, looking at its technology, products and international presence.",
+    "slug": "ceramics-exhibition-copenhagen",
+    "description": "A ceramics exhibition in Copenhagen, Denmark.",
     "images": [],
-    "url": "/social-tcl-qinwen-ifa-deep-dive.html",
+    "url": "/social-ceramics-exhibition-copenhagen.html",
+    "location": "Copenhagen, Denmark",
     "contentOrder": 4
+  },
+  {
+    "collection": "social",
+    "kind": "video",
+    "title": "Ceramics Exhibition — Brussels",
+    "vimeo": "1233724356",
+    "vimeoHash": "b09a62623b",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 8,
+    "previewDuration": 12,
+    "cover": "https://i.vimeocdn.com/video/2209469763-36c8f4a3db11ca1b370707152232b5485dd897ac08b29f876759951033232244-d_1280",
+    "credit": "",
+    "sample": false,
+    "slug": "ceramics-exhibition-brussels",
+    "description": "A ceramics exhibition in Brussels, Belgium.",
+    "images": [],
+    "url": "/social-ceramics-exhibition-brussels.html",
+    "location": "Brussels, Belgium",
+    "contentOrder": 5
   },
   {
     "collection": "commercials",
@@ -609,6 +648,16 @@ const projects = [
         "role": "UK Filming Support",
         "name": "Cine Harbor"
       }
+    ],
+    "previewSegments": [
+      {
+        "start": 8,
+        "duration": 4
+      },
+      {
+        "start": 3293,
+        "duration": 18
+      }
     ]
   },
   {
@@ -653,7 +702,7 @@ const projects = [
     "vimeoHash": "325bac0003",
     "aspectRatio": 1.7777777777777777,
     "previewStart": 8,
-    "cover": "/assets/bvlgari-modern-weekly-cover.jpg",
+    "cover": "/assets/bvlgari-title-cover.svg",
     "credit": "",
     "sample": false,
     "slug": "bvlgari-nowness-venice-biennale",
@@ -906,7 +955,7 @@ const projects = [
     "vimeoHash": "ed4eb51274",
     "aspectRatio": 2.3315118397085612,
     "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209274619-9efa2a784ea1522a020a3d05d2967bf5eed0a56ec54802c062eb7dab395517e7-d_1280?region=us",
+    "cover": "/assets/graff-title-cover.svg",
     "credit": "",
     "sample": false,
     "slug": "graff-commercial",
@@ -922,7 +971,7 @@ const projects = [
     "vimeoHash": "ce0d8eaa79",
     "aspectRatio": 1,
     "previewStart": 0,
-    "cover": "https://i.vimeocdn.com/video/2209265047-dd722f5716d3bdb501eb80c2118b6e1749fefbbb02e237442ab350f9d9fcf0f2-d_1280",
+    "cover": "/assets/moussaieff-title-cover.svg",
     "credit": "",
     "sample": false,
     "slug": "moussaieff",
@@ -969,15 +1018,16 @@ const projects = [
     "vimeo": "1233570001",
     "vimeoHash": "96810d44de",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 8,
-    "cover": "https://i.vimeocdn.com/video/2209275820-898262958000322d3e7b5651c168d7aec418a28ce471e1214184c0fd1fefadee-d_1280",
+    "previewStart": 1100,
+    "cover": "/assets/oppo-live-stage-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "oppo-find-x9-global-launch",
     "description": "Multi-camera live broadcast of the OPPO Find X9 Series and ColorOS 16 global launch event.",
     "images": [],
     "url": "/commercials-oppo-find-x9-global-launch.html",
-    "displayCategory": "Commercials · Live Broadcast"
+    "displayCategory": "Commercials · Live Broadcast",
+    "previewDuration": 8
   },
   {
     "collection": "branded-content",
@@ -1046,15 +1096,15 @@ const projects = [
     "vimeo": "1233570186",
     "vimeoHash": "dd2a634e17",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 58,
-    "cover": "/assets/genesis-cover.jpg",
+    "previewStart": 13,
+    "cover": "/assets/genesis-cover.jpg?v=portrait-20261007",
     "credit": "",
     "sample": false,
     "slug": "genesis",
     "description": "",
     "images": [],
     "url": "/editorial-genesis.html",
-    "previewDuration": 12
+    "previewDuration": 4
   },
   {
     "collection": "branded-content",
@@ -1071,6 +1121,23 @@ const projects = [
     "description": "Qin Wen in conversation with Leif Lindner on the new China era in global consumer electronics.",
     "images": [],
     "url": "/social-qin-wen-leif-lindner-ifa.html"
+  },
+  {
+    "collection": "branded-content",
+    "kind": "video",
+    "title": "TCL × Qinwen — IFA Deep Dive",
+    "vimeo": "1233712586",
+    "vimeoHash": "8044223874",
+    "aspectRatio": 1.7777777777777777,
+    "previewStart": 2384,
+    "previewDuration": 8,
+    "cover": "/assets/tcl-qinwen-ifa-english-cover.jpg",
+    "credit": "",
+    "sample": false,
+    "slug": "tcl-qinwen-ifa-deep-dive",
+    "description": "An in-depth exploration of TCL at IFA with creator Qinwen, looking at its technology, products and international presence.",
+    "images": [],
+    "url": "/social-tcl-qinwen-ifa-deep-dive.html"
   },
   {
     "collection": "commercials",
@@ -1177,7 +1244,7 @@ const projects = [
     "vimeo": "1232912873",
     "vimeoHash": "5a2c1627ad",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 375,
+    "previewStart": 68,
     "cover": "/assets/threshold-of-bloom-cover.jpg",
     "credit": "",
     "sample": false,
@@ -1187,7 +1254,7 @@ const projects = [
     "url": "/films-threshold-of-bloom-2026.html",
     "pinLast": true,
     "pinLastOrder": 1,
-    "previewDuration": 12
+    "previewDuration": 8
   },
   {
     "collection": "commercials",
@@ -1196,8 +1263,8 @@ const projects = [
     "vimeo": "1232915774",
     "vimeoHash": "4ee734b1db",
     "aspectRatio": 1.7777777777777777,
-    "previewStart": 0,
-    "cover": "https://i.vimeocdn.com/video/2208446192-81424320c746e5abc46d69f8cce54eff5bae1d58cb86acea92c4571e3fcf8807-d_1280",
+    "previewStart": 16.5,
+    "cover": "/assets/dahua-smart-lock-cover.jpg",
     "credit": "",
     "sample": false,
     "slug": "dahua-split-tvc",
@@ -1205,7 +1272,8 @@ const projects = [
     "images": [],
     "url": "/commercials-dahua-split-tvc.html",
     "pinLast": true,
-    "pinLastOrder": 1
+    "pinLastOrder": 1,
+    "previewDuration": 3
   },
   {
     "collection": "social",

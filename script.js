@@ -409,13 +409,19 @@ function createPreviews() {
       await player.ready();
       await player.setMuted(true);
       entry.visual.dataset.previewMuted = 'true';
-      const start = Math.max(0, Number(entry.project.previewStart) || 0);
+      const segments = (entry.project.previewSegments || [{ start: entry.project.previewStart || 0, duration: entry.project.previewDuration || 24 }])
+        .filter(segment => Number.isFinite(Number(segment.start)) && Number(segment.start) >= 0 && Number(segment.duration) > 0);
+      if (!segments.length) segments.push({ start: 0, duration: 24 });
+      let segmentIndex = 0;
+      const start = Number(segments[0].start);
       if (start) await player.setCurrentTime(start).catch(() => {});
       let seeking = false;
       player.on('timeupdate', ({ seconds }) => {
-        if (seconds < start + (Number(entry.project.previewDuration) || 24) || seeking || !shouldPlay(entry)) return;
+        const segment = segments[segmentIndex];
+        if (seconds < Number(segment.start) + Number(segment.duration) || seeking || !shouldPlay(entry)) return;
         seeking = true;
-        player.setCurrentTime(start).catch(() => {}).finally(() => { seeking = false; });
+        segmentIndex = (segmentIndex + 1) % segments.length;
+        player.setCurrentTime(Number(segments[segmentIndex].start)).catch(() => {}).finally(() => { seeking = false; });
       });
       entry.ready = true;
       entry.loading = false;

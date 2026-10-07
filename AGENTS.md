@@ -19,3 +19,9 @@
 - Desktop Content begins with the five W/Vogue fashion projects in one compact row; the square Libby card uses its native ratio. Starry Mart starts the next row ahead of Knight Frank OWO and DALTON.
 
 - Use well-exposed, readable scenes for posters and automatic previews; avoid dark introductions or fades.
+
+- TCL × Qinwen — IFA Deep Dive belongs in Editorial immediately after Qin Wen × Leif Lindner — IFA Interview; preserve its existing social project route. Its cover headline is English; the original Chinese creator logo may remain.
+- Genshin preview shows its title briefly, then jumps to the UK performance at 54:53.
+
+- Jewellery covers use black backgrounds and white brand titles for MOUSSAIEFF, GRAFF and BVLGARI.
+- The Capston vertical event film in Content goes immediately before Knight Frank — The OWO Residences, after Starry Mart.
