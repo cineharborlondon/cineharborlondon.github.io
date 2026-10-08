@@ -168,7 +168,7 @@ function initPortfolio() {
         const section = element('section', 'commercial-content-section');
         section.id = 'commercial-content';
         section.setAttribute('aria-labelledby', 'commercial-content-heading');
-        const heading = element('h2', 'commercial-content-heading', 'Content');
+        const heading = element('h2', 'commercial-content-heading', 'Event / Social Content');
         heading.id = 'commercial-content-heading';
         section.append(heading, renderGrid(contentItems));
         panel.append(section);

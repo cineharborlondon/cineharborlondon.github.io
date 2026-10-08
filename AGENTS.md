@@ -77,3 +77,5 @@ Preview initialization primes the muted player behind its poster before seeking,
 
 
 Latest user override: ALLSO Work poster is the original Lip Combo gloss/product frame around 1 second; COMMENSE is the Yacht 02 yellow-dress frame. Portrait detail and grouped-series films use larger inline players at native aspect ratio, with no popup player. Grouped players fill their grid columns; Work card sizes and all videos remain unchanged.
+
+Latest user label update: The Content subsection heading under Commercials is Event / Social Content. Preserve the internal content collection, all projects, their order and routes.
