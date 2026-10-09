@@ -23,7 +23,7 @@
   background: #171916; color: #eee7d9; overflow: hidden;
 }
 .video-viewer::backdrop { background: rgba(17,19,16,.92); }
-.video-viewer[open] { display: grid; grid-template-rows: auto 1fr; }
+.video-viewer[open] { display: grid; place-items: stretch; grid-template-rows: auto minmax(0, 1fr); }
 .video-viewer-toolbar {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   padding: max(14px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) 14px max(18px, env(safe-area-inset-left));
