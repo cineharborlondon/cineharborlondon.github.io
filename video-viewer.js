@@ -22,6 +22,9 @@
   window.visualViewport?.addEventListener('resize', fit);
   const close = () => dialog.close();
   dialog.querySelector('.video-viewer-close').addEventListener('click', close);
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog || event.target === stage || event.target.classList.contains('video-viewer-toolbar')) close();
+  });
   dialog.addEventListener('close', () => {
     activeFrame?.remove(); activeFrame = null;
     document.documentElement.style.overflow = '';
