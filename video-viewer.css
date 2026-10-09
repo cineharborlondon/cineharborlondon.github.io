@@ -1,0 +1,39 @@
+/* Inline films remain readable without growing beyond the viewport. */
+.detail-page .related-video-grid { columns: 2; }
+.detail-page .related-video-player[style] {
+  width: min(100%, calc(min(640px, 72svh) * var(--video-ratio, 1.7778)));
+  margin-inline: auto;
+}
+.detail-page .detail-player-portrait {
+  width: min(100%, calc(min(680px, 74svh) * var(--video-ratio)));
+}
+.video-expand {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin: 12px auto 0; padding: 9px 14px; min-height: 44px;
+  border: 1px solid var(--line); border-radius: 4px;
+  background: transparent; color: var(--ink); font: inherit; font-size: 14px;
+  cursor: pointer;
+}
+.video-expand svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.video-expand:hover { background: var(--highlight); }
+.video-expand:focus-visible, .video-viewer-close:focus-visible { outline: 2px solid #c8aa7a; outline-offset: 3px; }
+.video-viewer {
+  position: fixed; inset: 0; margin: auto; padding: 0; border: 0;
+  width: 100vw; max-width: none; height: 100dvh; max-height: none;
+  background: #171916; color: #eee7d9; overflow: hidden;
+}
+.video-viewer::backdrop { background: rgba(17,19,16,.92); }
+.video-viewer[open] { display: grid; grid-template-rows: auto 1fr; }
+.video-viewer-toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: max(14px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) 14px max(18px, env(safe-area-inset-left));
+}
+.video-viewer-title { margin: 0; font-size: 14px; line-height: 1.3; }
+.video-viewer-close { flex-shrink: 0; min-width: 44px; min-height: 44px; border: 1px solid #716c5d; border-radius: 4px; background: transparent; color: inherit; font: inherit; padding: 8px 12px; cursor: pointer; }
+.video-viewer-stage { display: grid; place-items: center; min-height: 0; padding: 0 max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); }
+.video-viewer-frame { display: block; border: 0; background: #101110; max-width: 100%; max-height: 100%; }
+@media (max-width: 600px) {
+  .detail-page .related-video-grid { columns: 1; }
+  .detail-page .related-video-player[style] { width: min(100%, calc(70svh * var(--video-ratio, 1.7778))); }
+  .detail-page .detail-player-portrait { width: min(100%, calc(72svh * var(--video-ratio))); }
+}
