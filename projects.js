@@ -529,7 +529,21 @@ const projects = [
     "slug": "dyson-hair-oil-official-launch",
     "description": "",
     "images": [],
-    "url": "/commercials-dyson-hair-oil-official-launch.html"
+    "url": "/commercials-dyson-hair-oil-official-launch.html",
+    "showVideoTitles": true,
+    "relatedVideoGroups": [
+      {
+        "title": "Behind the Scenes",
+        "videos": [
+          {
+            "title": "Dyson Hair Oil — Behind the Scenes",
+            "vimeo": "1233561252",
+            "vimeoHash": "4812e3d84e",
+            "aspectRatio": 0.5625
+          }
+        ]
+      }
+    ]
   },
   {
     "collection": "commercials",
